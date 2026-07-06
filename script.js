@@ -68,22 +68,25 @@ const MODULE1_STEPS = [
 ];
 
 const MODULE2_GOALS = [
-  "AI can build a working thing astonishingly fast.",
-  "A great prompt is a precise instruction, not a vague wish.",
-  "Your design docs are the raw material — Module 1 pays off here.",
-  "A rough, playable prototype beats a perfect plan on paper.",
-  "Constraints and examples make prompts stronger.",
-  "You're still the Director — you judge what's good, boring, or wrong.",
+  "The real skill isn't code — it's communicating with an AI engineer.",
+  "MVP thinking: the smallest version that's still fun beats a big plan.",
+  "Studios build versions (0.1, 0.2…), not whole games at once.",
+  "A precise spec gets a better build than \"make my game.\"",
+  "Software can be simple — three files, no frameworks.",
+  "You're the Director: even the AI's own work gets reviewed and improved.",
 ];
 
 const MODULE2_STEPS = [
-  "Claude re-reads your design harness — the prompt is built from YOUR decisions.",
-  "Learn the anatomy of a one-shot prompt: goal, must-haves, constraints, style.",
-  "Co-write THE prompt — turn your whole game into one big, specific instruction.",
-  "Fire it. One shot. Claude builds a playable first version into the game/ folder.",
-  "Play it in the browser. It won't be perfect — that's the point.",
-  "React like a Director: what's cool? boring? confusing? (This feeds Module 3.)",
-  "Achievement unlock: One-Shot Power — and First Playable when it runs.",
+  "Claude re-reads your design — the build comes from YOUR decisions.",
+  "MVP thinking: \"If we only had two hours, what's the smallest version that's still fun?\"",
+  "Write a tiny spec together — one room, one locked door, one puzzle, one key.",
+  "One shot — Claude builds the whole playable Version 0.1 into the game/ folder.",
+  "Play it in the browser.",
+  "Don't celebrate yet — that's Version 0.1, not the whole game. Studios build versions.",
+  "AI Review — Claude rates its own build: what works, what's missing.",
+  "Peek under the hood — just 3 files, no frameworks. Software can be simple.",
+  "Make ONE change and watch it update — a taste of directing (the real thing is Module 3).",
+  "Trophies: One-Shot Power + First Playable.",
 ];
 
 const MODULE3_GOALS = [
@@ -433,16 +436,17 @@ const MISSIONS = {
   },
   2: {
     title: "One-Shot Power",
-    purpose: `You've designed your game. Now feel what AI can really do: turn your
-      whole Module 1 design into ONE carefully-built prompt, fire it once, and
-      watch Claude build a real, playable first version of your game in a single
-      shot. One big instruction. One working prototype. Whoa.`,
+    purpose: `You became a Creative Director. Now learn to direct an AI
+      engineering team. You'll scope your game down to the smallest fun version,
+      write a tiny spec, and fire ONE shot — watching Claude build a real,
+      playable Version 0.1 of your game in the browser. The skill isn't code;
+      it's telling an AI engineer exactly what you mean.`,
     goals: MODULE2_GOALS,
     steps: MODULE2_STEPS,
     start: `"Start Module 2 — let's use One-Shot Power to build my game."`,
-    outro: `It won't be perfect — that's the whole point. A rough thing you can
-      play beats a perfect plan on paper; you'll sharpen it later. Save the
-      session, then refresh here to see your new trophies.`,
+    outro: `Don't celebrate yet 😄 — you'll build Version 0.1, not the whole
+      game. That's how studios work: versions, not miracles. Save the session,
+      then refresh here to claim your trophies.`,
   },
   3: {
     title: "Director Mode",

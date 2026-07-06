@@ -5,6 +5,21 @@
 
 ---
 
+## Session 4 — Module 2 deepened (Dad's ChatGPT notes) (2026-07-06)
+
+- Reworked `modules/module-02.md` + the dashboard mission using the best of
+  Dad's original Module 2 concept: framed as **directing an AI engineering
+  team**; added **MVP thinking** ("smallest version that's still fun"), the
+  **tiny spec** (one room/door/puzzle/key), **Version 0.1** language + "don't
+  celebrate yet", an **AI Review** of Claude's own build, and the "just 3 files,
+  no frameworks" reveal.
+- Deliberately kept **project memory** and **deep iteration** OUT of Module 2
+  (those are Modules 4 and 3) — Module 2 only gets a single "make one change"
+  taste, so the later modules stay fresh.
+- **Next (unchanged):** Eli does Module 2.
+
+---
+
 ## Session 3 — Dad tunes rewards & opens Modules 3–4 (gated) (2026-07-06)
 
 - **Module 2 payout lowered to $5** (was $15) — make Eli earn the cash. Updated

@@ -61,12 +61,15 @@ dashboard reads the sections below to display progress.
 <!-- Claude Code: check these off as Eli completes each step of Module 2. -->
 
 - [ ] 1. Claude re-reads the design harness
-- [ ] 2. Learn the anatomy of a one-shot prompt
-- [ ] 3. Co-write the one big build prompt
-- [ ] 4. Fire it — Claude builds a playable first version in game/
+- [ ] 2. MVP thinking — smallest version that's still fun (Version 0.1)
+- [ ] 3. Write a tiny spec (one room, one door, one puzzle, one key)
+- [ ] 4. One shot — Claude builds Version 0.1 into game/
 - [ ] 5. Play it in the browser
-- [ ] 6. Director's reaction: cool / boring / confusing
-- [ ] 7. Achievements unlocked: One-Shot Power + First Playable
+- [ ] 6. Reframe: that's Version 0.1, not the whole game
+- [ ] 7. AI Review — Claude rates its own build (what works / what's missing)
+- [ ] 8. Peek under the hood — just 3 files, no frameworks
+- [ ] 9. Make one change and watch it update (a taste of directing)
+- [ ] 10. Achievements unlocked: One-Shot Power + First Playable
 
 ## Module 3 Steps
 
