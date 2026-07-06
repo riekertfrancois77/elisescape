@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eli AI Game Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="logo" id="studio-logo" title="ELI AI GAME STUDIO">
+      <span class="logo-mark">◢◤</span>
+      <span class="logo-text">ELI <em>AI</em> GAME STUDIO</span>
+    </div>
+    <div class="topbar-right">
+      <span class="status-dot"></span>
+      <span id="studio-status">STUDIO ONLINE</span>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== WELCOME ===== -->
+    <section class="hero" id="hero">
+      <p class="hero-kicker">// TRANSMISSION FOR THE CREATIVE DIRECTOR</p>
+      <h1>Welcome back, <span class="glow">Eli</span>.</h1>
+      <p class="hero-sub">
+        This is your studio. Twelve missions stand between you and a shipped
+        game — a game nobody has imagined yet, because it only exists in
+        <em>your</em> head. The AI is your team. You give the direction.
+      </p>
+      <button class="cta" id="cta-module1">▸ ENTER MODULE 1</button>
+    </section>
+
+    <!-- ===== PROGRESS ===== -->
+    <section class="panel progress-panel">
+      <div class="panel-head">
+        <h2>MISSION PROGRESS</h2>
+        <span class="panel-tag" id="progress-label">0 / 12 MODULES</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+      <div class="progress-steps" id="step-label">Module 1 · Step 0 of 12</div>
+    </section>
+
+    <!-- ===== MODULES ===== -->
+    <section>
+      <div class="section-head">
+        <h2>THE TWELVE MODULES</h2>
+        <p>One unlocked. Eleven sealed. Earn your way forward.</p>
+      </div>
+      <div class="modules-grid" id="modules-grid"></div>
+    </section>
+
+    <!-- ===== PANELS ===== -->
+    <section class="panels-grid">
+
+      <div class="panel" id="memory-panel">
+        <div class="panel-head">
+          <h2>SESSION MEMORY</h2>
+          <span class="panel-tag">MEMORY.md</span>
+        </div>
+        <ul class="memory-list" id="memory-list"></ul>
+        <p class="panel-foot">The studio brain. Updated by Claude Code after every session — refresh this page to sync.</p>
+      </div>
+
+      <div class="panel accent" id="claude-panel">
+        <div class="panel-head">
+          <h2>CLAUDE INSTRUCTIONS</h2>
+          <span class="panel-tag">YOUR NEXT MOVE</span>
+        </div>
+        <div class="claude-body" id="claude-body"></div>
+      </div>
+
+      <div class="panel" id="achievements-panel">
+        <div class="panel-head">
+          <h2>ACHIEVEMENTS</h2>
+          <span class="panel-tag" id="ach-count">0 UNLOCKED</span>
+        </div>
+        <ul class="ach-list" id="ach-list"></ul>
+        <p class="panel-foot">Five are listed. Five are not. <span class="whisper" id="whisper">Some things only reveal themselves.</span></p>
+      </div>
+
+      <div class="panel vault" id="vault-panel">
+        <div class="panel-head">
+          <h2>DAD VAULT</h2>
+          <span class="panel-tag">REAL-WORLD REWARDS</span>
+        </div>
+        <ul class="vault-list">
+          <li><span class="vault-icon">🔐</span><div><strong>Reward 1</strong><span>Unlocks: Module 1 complete · Contents: <em>Dad decides</em></span></div></li>
+          <li><span class="vault-icon">🔐</span><div><strong>Reward 2</strong><span>Unlocks: first playable feature · Contents: <em>Dad decides</em></span></div></li>
+          <li class="vault-secret"><span class="vault-icon">❓</span><div><strong>Secret Reward</strong><span>Unlocks: ??? · Contents: <em>Dad decides</em></span></div></li>
+        </ul>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <span>ELI AI GAME STUDIO — powered by one human brain and an AI team</span>
+    <span class="footer-secret" id="footer-secret" title="">·</span>
+  </footer>
+
+  <!-- ===== MODAL ===== -->
+  <div class="modal-backdrop" id="modal-backdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
