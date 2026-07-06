@@ -111,6 +111,14 @@ corrupt powerful wrongdoers. Adds a moral question — should the detective even
 catch a killer who hunts bad men? Makes the villain understandable and the duel
 personal.
 
+**Q:** Why does the killer do what they do? (avenger / believer / rival / game-player)
+**Eli:** "a beliver"
+**Studio note:** The killer acts on *principle* — believes the powerful escape
+justice, so someone must deliver it. Thinks of themselves as the hero, not the
+villain: calm, certain, unafraid. Most unsettling antagonist type; deepens the
+moral fog and justifies the taunting/argumentative clues (they're making their
+case to the detective).
+
 <!-- Format for entries:
 
 ## 2026-07-06 — Module 1, Step 2

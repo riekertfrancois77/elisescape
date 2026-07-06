@@ -57,6 +57,15 @@ powerful men who do wrong. Not a random monster; a hunter with a *code*. This
 raises the game's central moral question: *the victim was a bad man — does that
 change whether the detective should catch his killer?* Moral fog, Sherlock-style.
 
+**The killer's WHY — a BELIEVER (chosen 2026-07-06):** they kill on *principle*,
+not for personal revenge. They believe the law never punishes the powerful, so
+*someone* must — and they've cast themselves as that someone. In their own mind
+they're the **hero**, not the villain: calm, patient, unafraid, certain they're
+right. This is the most unsettling kind of antagonist — one who thinks they're
+doing good and might even have a *point*. It forces the detective (and player)
+to wrestle with a killer they can partly understand, and it justifies the
+taunting, argumentative clues: the killer is *making their case*.
+
 Design payoffs:
 - A guilty victim = a houseful of motives (rich suspect pool, natural red
   herrings).
