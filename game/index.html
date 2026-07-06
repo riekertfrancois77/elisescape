@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+  One Night at Thornwood Manor — Version 0.1
+  A tiny playable slice designed by Eli (Creative Director).
+  Built by Claude Code (Lead Engineer) in Module 2 — One-Shot Power.
+
+  This is just ONE page, ONE stylesheet, and ONE script. No frameworks.
+  Software can be simple.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Night at Thornwood Manor — v0.1</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- The whole game lives inside this frame -->
+  <main id="game">
+
+    <!-- Sound on/off. Some browsers only allow sound after you click, so
+         the tick and murmur begin once you press "Begin the night". -->
+    <button id="mute-btn" title="Sound on / off">🔊</button>
+
+    <!-- ============ TITLE SCREEN ============ -->
+    <section id="title-screen" class="screen active">
+      <div class="title-inner">
+        <p class="kicker">Eli AI Game Studio presents</p>
+        <h1>One Night at<br /><span class="gold">Thornwood Manor</span></h1>
+        <p class="subtitle">A detective mystery &middot; Version&nbsp;0.1</p>
+        <button class="btn" id="begin-btn">Begin the night</button>
+        <p class="hint">A killer is hiding among the guests. Notice what's off.</p>
+      </div>
+    </section>
+
+    <!-- ============ STORY / INTRO SCREEN ============ -->
+    <section id="story-screen" class="screen">
+      <div class="story-inner">
+        <p id="story-text" class="story-text"></p>
+        <button class="btn" id="story-next">Continue</button>
+      </div>
+    </section>
+
+    <!-- ============ THE FOYER (the playable room) ============ -->
+    <section id="room-screen" class="screen">
+
+      <!-- The room itself: warm, cozy, hiding one thing that's wrong -->
+      <div class="room" id="foyer">
+        <div class="room-label">The Grand Foyer &middot; Thornwood Manor</div>
+
+        <!-- Clickable things in the room. Each has a data-object name.
+             The great clock is tucked into a shadowy corner and dimmed
+             (class "dim") so it blends in — you have to notice it yourself. -->
+        <button class="hotspot" data-object="guests"    style="left:14%; top:56%;">🥂<span>Guests</span></button>
+        <button class="hotspot" data-object="fireplace" style="left:33%; top:62%;">🔥<span>Fireplace</span></button>
+        <button class="hotspot" data-object="portrait"  style="left:50%; top:28%;">🖼️<span>Portrait</span></button>
+        <button class="hotspot" data-object="coats"      style="left:72%; top:58%;">🎩<span>Coat rack</span></button>
+        <button class="hotspot dim" data-object="clock"  style="left:9%; top:84%;">🕰️<span>&nbsp;</span></button>
+        <button class="hotspot door" data-object="door"  style="left:88%; top:40%;">🚪<span>Way deeper</span></button>
+      </div>
+
+      <!-- The detective's tools: what you're looking at, and what you've found -->
+      <div class="panel">
+        <div class="examine">
+          <h2>Examine</h2>
+          <p id="examine-text">You stand in the warm glow of the foyer. Click things to look closely, Detective.</p>
+        </div>
+
+        <div class="notebook">
+          <h2>Detective's Notebook</h2>
+          <ul id="clue-list">
+            <li class="empty">No clues yet. Look closer.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WIN SCREEN ============ -->
+    <section id="win-screen" class="screen">
+      <div class="win-inner">
+        <h1 class="gold">The way opens.</h1>
+        <p id="win-text"></p>
+        <p class="win-tag">The night has only begun&hellip;</p>
+        <p class="version-note">That's <strong>Version&nbsp;0.1</strong> — the very first playable slice of your game.</p>
+        <button class="btn" id="replay-btn">Play again</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Our one script that makes everything work -->
+  <script src="script.js"></script>
+</body>
+</html>

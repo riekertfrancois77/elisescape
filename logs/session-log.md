@@ -5,6 +5,45 @@
 
 ---
 
+## Session 5 — Module 2 COMPLETE: "One-Shot Power" (2026-07-06)
+
+Eli ran Module 2 end to end as Creative Director, with Claude wearing the
+**Lead Engineer** hat. What happened:
+
+- **Hat change:** Claude opened as Lead Engineer — "my job is to build what
+  you've imagined," teaching that AI wears different hats.
+- **MVP decision:** Eli chose to build the **arrival / first 60 seconds** as
+  Version 0.1 (the hook) rather than the flashier statue room. The engineer
+  shaped it into a fair one-room puzzle so it's a game, not a cutscene.
+- **The spec:** one room (the Grand Foyer), one locked way forward (a brass
+  time-lock door), one "notice what's off" moment (the great clock stopped at
+  9:47 while the party lives on), one clue (the time = the key).
+- **Estimate lesson:** Eli guessed **"a few hours."** Real build time: **under
+  a minute.** The lesson — AI changed the math; the expensive part is now
+  *deciding what to build* (the Director's job). Logged in `MEMORY.md`.
+- **One-shot build:** created `game/index.html`, `game/style.css`,
+  `game/script.js` — three files, no frameworks, all commented for reading.
+  Playtested end-to-end in a headless browser (no bugs, fair puzzle, win flow).
+- **File-not-found unblock:** Eli couldn't open the game because the new files
+  hadn't reached his computer yet — explained commit/push ("saving to the
+  project"), pushed the branch, and also handed him a single-file playable copy
+  so he could play immediately. He played it and cracked the case. ✅
+- **Reframe:** "Don't celebrate yet — that's Version 0.1." Walked the honest
+  scorecard (Vision 100%, Prototype done, Gameplay ~15%, Art ~5%, Audio 0→now a
+  little, Testing ~2%, Polish/Shipping 0%). Studios celebrate shipping.
+- **Studio Review** written to `MEMORY.md` (6 lenses) — it shows on the dashboard.
+- **Under the hood:** showed the game is just 3 plain files, no React/npm/webpack.
+- **First directing (taste of Module 3):** Eli combined three directions —
+  *hide the clock harder, make the puzzle tougher, add sound.* The engineer
+  rebuilt it: the clock is now dimmed in a shadowy corner, the door no longer
+  auto-lights (no hand-holding), and the room has code-made audio (ticking,
+  party murmur, a clue chime, an unlock click) plus a 🔊 mute button. Re-tested.
+- **Trophies:** 🏆 One-Shot Power, 🏆 First Playable, and secret 🕵️ AI Tamer.
+- **Next:** **Module 3 — Director Mode is now unlocked.** Eli says *"Start
+  Module 3 — I'm ready to direct."* Module 4 stays locked until Module 3 is done.
+
+---
+
 ## Session 4 — Module 2 deepened (Dad's ChatGPT notes) (2026-07-06)
 
 - Reworked `modules/module-02.md` + the dashboard mission using the best of
