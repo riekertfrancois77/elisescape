@@ -81,6 +81,19 @@ Which calls to you?
 **Result:** FIRST BIG DECISION — Direction **A, "One Night at Thornwood Manor"**
 chosen and locked. B and C not chosen; their flavors may be borrowed inside A.
 
+## 2026-07-06 — Module 1, Step 11 (Studio Review)
+
+**Q (Producer Sam's challenge):** If the killer is hidden at the scene, what
+stops the player from just searching everywhere until they bump into them? Why
+must the rooms be solved in order?
+**Eli:** "it was a house party when the murder happened so the murder is hiding betweens countloess people"
+**Studio note:** Big design solve. The murder happened during a **house party**,
+so the killer hides **among the guests, in plain sight** — not physically
+cornered. The player can't win by walking everywhere; they must *deduce WHO*
+the culprit is by narrowing down suspects. Applies "Notice What's Off" to
+**people**, gives red herrings for free (every guest is a suspect), and is pure
+Sherlock (reading people, catching the story that doesn't add up).
+
 <!-- Format for entries:
 
 ## 2026-07-06 — Module 1, Step 2

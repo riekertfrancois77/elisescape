@@ -38,6 +38,13 @@ Why this engine is strong (studio notes):
 - **Built-in finale:** the final clue doesn't just name the culprit — it can
   reveal *where they've been hiding the whole time* (setup & payoff).
 
+**The party (added in the Studio Review, 2026-07-06):** the murder happens
+during a **house party**, so the killer hides **among the guests, in plain
+sight** — not physically cornered in a room. This means the player can't win by
+searching everywhere; they must **deduce *which guest* is the culprit** by
+narrowing down suspects. Every guest is a potential suspect (red herrings come
+for free), and reading people who don't add up is peak Sherlock.
+
 ## Story Shape
 
 *Does this game tell a story, suggest one, or let the player make their own?
