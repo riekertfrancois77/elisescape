@@ -72,6 +72,19 @@ Design payoffs:
 - A killer-with-a-code = a villain the player can *understand*, which makes the
   cat-and-mouse duel personal and thoughtful, not just scary.
 
+**Detective & killer are OLD RIVALS (chosen 2026-07-06):** the detective has
+been chasing this killer for a **long time** and has *never* caught them — the
+killer is always one step ahead. This is the detective's white whale, their
+haunting, half-obsession. Why it's powerful:
+- Gives the detective a *wound* — haunted and driven, not untouchable — so the
+  player cares.
+- Explains the clues even more deeply: the killer *enjoys the duel with this
+  specific detective*; the clues are a conversation between two minds that know
+  each other well.
+- Raises the stakes of tonight: for the first time the killer is **trapped in
+  the same house**. This could finally be the night the detective wins — or the
+  night the killer escapes one last time.
+
 ## Story Shape
 
 *Does this game tell a story, suggest one, or let the player make their own?

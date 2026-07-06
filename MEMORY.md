@@ -58,6 +58,10 @@ dashboard reads the sections below to display progress.
 <!-- The dashboard shows these bullets in the "Session Memory" panel.
      Claude Code: add a bullet per session, newest first. Keep them short. -->
 
+- 🎭 **Story deepened:** victim = the corrupt, powerful **party host**; killer
+  is a **believer** who hunts corrupt men (thinks he's the hero); detective &
+  killer are **old rivals** — chased for years, never caught, always one step
+  ahead. Tonight the killer is finally trapped in the same house.
 - 🎬 **FIRST BIG DECISION MADE:** the game is **"One Night at Thornwood
   Manor"** — a detective trapped one night in a cozy 1900s mansion with a
   clue-leaving killer, solving room-by-room until they corner the culprit.

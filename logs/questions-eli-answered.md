@@ -119,6 +119,15 @@ villain: calm, certain, unafraid. Most unsettling antagonist type; deepens the
 moral fog and justifies the taunting/argumentative clues (they're making their
 case to the detective).
 
+**Q:** Does the detective have history with this killer? (first clash / old
+rivals / shocking connection)
+**Eli:** "they are old rivals as the detective has been chasing the kilelr for a long time but the killer was always one step ahead and he has never caughjt them"
+**Studio note:** OLD RIVALS — the killer is the detective's white whale, chased
+for years, never caught, always one step ahead. Gives the detective a wound/
+obsession (player cares), makes the clues a personal conversation between two
+minds, and makes tonight special: the killer is finally trapped in the same
+house. Could be the night it ends — or the last escape.
+
 <!-- Format for entries:
 
 ## 2026-07-06 — Module 1, Step 2
