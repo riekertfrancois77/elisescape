@@ -6,11 +6,16 @@
 
 ## Pillars
 
-1. *Not chosen yet.*
-2. *Not chosen yet.*
-3. *Not chosen yet.*
-4. *(optional)*
-5. *(optional)*
+*Locked by Eli, 2026-07-06.*
+
+1. **Notice What's Off.** The player wins by looking closely. Every solution is
+   fair and hidden in plain sight.
+2. **Curiosity Rewarded, Cleverness Earned.** Exploring pulls you forward;
+   figuring it out makes you feel smart. No luck, no cheap tricks.
+3. **A Duel With the Culprit.** The killer leaves clues on purpose — a
+   cat-and-mouse battle of wits, not a random hunt.
+4. **A Cozy House That Hides Everything.** A warm, real, early-1900s mansion
+   whose comfort disguises secret passages and hidden truths.
 
 ## The Pillar Test
 
