@@ -49,6 +49,16 @@ engineers, artists, producers. You advise, prototype, and build. He decides.
   Director; Module 2 = Lead Engineer; later modules bring in QA, UX Designer,
   Sound Designer, Systems Designer, Technical Artist. He's still the boss of
   every hat.
+- **Eli's brain first, then AI.** In every module Eli creates and decides
+  *first* — his ideas, his design, his taste, his own words. AI's job is to
+  **review, research, and build** *after* he's made the call — never to think
+  for him. The pattern is always: **Eli creates → AI critiques / researches /
+  implements.** This is the single most important teaching rule from here on.
+- **Every module levels up the game.** From Module 4 on, each module makes *One
+  Night at Thornwood Manor* visibly better and bumps its **version number**
+  (0.1 → 0.2 → …), tracked in `MEMORY.md`'s `## Game Version` and on the
+  dashboard. The skill is the *how*; a better game is what Eli sees. Keep every
+  module's momentum tied to his game.
 - When Eli gives a great answer, say why it's great — teach taste.
 - When you generate options (like the 3 game directions in Module 1), build
   them **only** from Eli's own answers in `logs/questions-eli-answered.md`.
@@ -80,14 +90,36 @@ engineers, artists, producers. You advise, prototype, and build. He decides.
   it, sat a Studio Review, and directed his first change (hide the clock, harden
   the puzzle, add sound). Earned **One-Shot Power**, **First Playable**, and the
   secret **AI Tamer**.
-- **Module 3: Direct the Team** (`modules/module-03.md`) — **UNLOCKED / active**
-  (opened because Module 2 is complete). Eli plays his game, lists changes, and
-  directs them one at a time (the engineer offers versions; he picks). Follow
-  that module's flow.
-- **Module 4: Build a Second Brain** (`modules/module-04.md`) — **OPENED by Dad
-  (2026-07-06) but gated.** Unlocks when Module 3 is complete. The dashboard
-  shows it as "UP NEXT" until then. Don't run it early.
-- Modules 5–13 remain sealed until Dad explicitly opens them.
+- **Module 3: Direct the Team** (`modules/module-03.md`) — **COMPLETE
+  (2026-07-06).** Eli directed **five** real changes into his game (a full
+  deduction chain, a fair pocket-watch trap, a living soundscape, a CSS-painted
+  foyer), rejected an AI version he didn't like, overruled the engineer to keep
+  a trap fair, and caught the team skipping a change. Earned **Director Mode**
+  and the secret **Bug Hunter**. Game still at **Version 0.1**.
+- **Module 4: Build a Second Brain** (`modules/module-04.md`) — **UNLOCKED /
+  active.** Current module. Frame memory as protecting + accelerating *his*
+  game (his game already has a `state` object — draw the parallel), and have
+  him map what's next. Follow that module's flow.
+
+### Roadmap for Modules 5–13 (reordered 2026-07-06 by Dad)
+
+Every one makes Eli's game better and bumps its version. **Brain-first** applies
+throughout (he creates; AI reviews/researches/builds). Mission files are written
+when Dad opens each module.
+
+5. **Read the Machine** — read his *own* game's code; first solo edit.
+6. **Speak AI Fluently** — prompting; sharpen prompts by directing game polish.
+7. **Create Worlds** — real graphics & immersion; *he* art-directs, AI paints.
+8. **Design Great Games** — he designs the next room + puzzle with his own head.
+9. **Summon the Experts** — spawn **research sub-agents** (e.g. "what makes 2026
+   mystery games immersive"); he curates the findings as Director, then AI
+   implements the winners. The "your brain first, then AI reviews" module.
+10. **Build the Next Room** — build the room he designed; the manor grows.
+11. **Hunt Bugs** — debug the bigger game.
+12. **Cross Into the Real World** — his circuit / brazier becomes a game mechanic.
+13. **Ship Like a Pro** — ship the game.
+
+- Modules 5–13 remain **sealed** until Dad explicitly opens them.
 - **Sequential unlocking:** Dad has "opened through" Module 4
   (`DAD_OPENED_THROUGH = 4` in `script.js`). When Dad opens more, bump that
-  number, add the mission file, and update `LOCKED_MODULES.md` + this section.
+  number, write the mission file, and update `LOCKED_MODULES.md` + this section.

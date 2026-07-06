@@ -90,6 +90,28 @@ Eli ran Module 2 end to end as Creative Director, with Claude wearing the
 
 ---
 
+## Session 6 — Dad re-threads the journey around the game (2026-07-06)
+
+After reviewing Eli's game and his momentum (he loves iterating *his* game,
+version by version), Dad reshaped the road ahead so every remaining module makes
+the game better instead of feeling like a detour.
+
+- **New studio rule — "Eli's brain first, then AI":** he creates/decides first;
+  AI reviews, researches, and builds after. Baked into `CLAUDE.md`.
+- **Reordered Modules 5–13** (dashboard, `MEMORY.md`, `LOCKED_MODULES.md`,
+  `CLAUDE.md`): 5 Read the Machine · 6 Speak AI Fluently · **7 Create Worlds**
+  (moved up — graphics/immersion) · 8 Design Great Games · **9 Summon the
+  Experts** (NEW spot — research sub-agents → curate → implement, right *after*
+  puzzle design) · **10 Build the Next Room** (reframed from "Build Features",
+  which was stale — the game's long built) · 11 Hunt Bugs · 12 Cross Into the
+  Real World · 13 Ship Like a Pro.
+- **Game Version tracker** added to the dashboard (reads `## Game Version` in
+  `MEMORY.md`); starts at **v0.1** and climbs as modules improve the game.
+- No modules unlocked — 5–13 stay sealed until Dad opens them (`DAD_OPENED_
+  THROUGH` still 4).
+
+---
+
 ## Session 4 — Module 2 deepened (Dad's ChatGPT notes) (2026-07-06)
 
 - Reworked `modules/module-02.md` + the dashboard mission using the best of

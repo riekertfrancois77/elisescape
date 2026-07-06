@@ -19,6 +19,15 @@ dashboard reads the sections below to display progress.
 - **Studio status:** First game designed. Foundation locked. Director earned
   his title.
 
+## Game Version
+
+<!-- Claude bumps this as modules make the game better; the dashboard shows it.
+     Keep the number at the start of the first line (e.g. "0.2 — ..."). -->
+
+**0.1** — *Arrival at Thornwood Manor* (the Grand Foyer). This number climbs
+every time a module makes the game better — that's the whole point of the
+journey.
+
 ## Progress Tracker
 
 <!-- The dashboard counts the [x] boxes below. Claude Code: check a box only
@@ -30,12 +39,12 @@ dashboard reads the sections below to display progress.
 - [ ] Module 4 — Build a Second Brain
 - [ ] Module 5 — Read the Machine
 - [ ] Module 6 — Speak AI Fluently
-- [ ] Module 7 — Design Great Games
-- [ ] Module 8 — Build Features
-- [ ] Module 9 — Hunt Bugs
-- [ ] Module 10 — Create Worlds
-- [ ] Module 11 — Cross Into the Real World
-- [ ] Module 12 — Supercharge Your Studio
+- [ ] Module 7 — Create Worlds
+- [ ] Module 8 — Design Great Games
+- [ ] Module 9 — Summon the Experts
+- [ ] Module 10 — Build the Next Room
+- [ ] Module 11 — Hunt Bugs
+- [ ] Module 12 — Cross Into the Real World
 - [ ] Module 13 — Ship Like a Pro
 
 ## Module 1 Steps

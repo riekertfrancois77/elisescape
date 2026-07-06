@@ -20,12 +20,12 @@ const MODULES = [
   { n: 4,  title: "Build a Second Brain",          teaser: "Teach the studio to remember everything, so every session starts smarter than the last." },
   { n: 5,  title: "Read the Machine",              teaser: "See through the machine. Read code the way a director reads a script." },
   { n: 6,  title: "Speak AI Fluently",             teaser: "Words are your controller. Learn the inputs that make AI do exactly what you mean." },
-  { n: 7,  title: "Design Great Games",            teaser: "The secret craft of making players feel clever." },
-  { n: 8,  title: "Build Features",                teaser: "The first real piece of your game gets built. For real. This is where it begins." },
-  { n: 9,  title: "Hunt Bugs",                     teaser: "Things will break. Directors don't panic — they hunt." },
-  { n: 10, title: "Create Worlds",                 teaser: "Give your world a face, a voice, and a mood." },
-  { n: 11, title: "Cross Into the Real World",     teaser: "Your studio skills escape the screen. The things you design in the real world become game mechanics." },
-  { n: 12, title: "Supercharge Your Studio",       teaser: "Peek behind the studio's own walls. Harnesses, agents, and MCP — the wiring that lets AI read, remember, and act." },
+  { n: 7,  title: "Create Worlds",                 teaser: "Give your game a face. Real graphics and atmosphere — you art-direct, the studio paints." },
+  { n: 8,  title: "Design Great Games",            teaser: "The craft of making players feel clever. Design your next room and its puzzle — with your own head." },
+  { n: 9,  title: "Summon the Experts",            teaser: "Send a team of AI researchers after the world's best ideas, curate the winners, and build them into your game." },
+  { n: 10, title: "Build the Next Room",           teaser: "Grow the manor. Turn your next design into a whole new playable room." },
+  { n: 11, title: "Hunt Bugs",                     teaser: "Things will break. Directors don't panic — they hunt." },
+  { n: 12, title: "Cross Into the Real World",     teaser: "Your studio skills escape the screen. The things you design in the real world become game mechanics." },
   { n: 13, title: "Ship Like a Pro",               teaser: "Release day. An audience. Your game, in other people's hands." },
 ];
 
@@ -457,6 +457,16 @@ function renderRewards(state) {
   $("vault-list").innerHTML = rows;
 }
 
+// The game's own version number climbs as modules make it better. Claude bumps
+// it in MEMORY.md's "## Game Version" section; the dashboard shows it.
+function renderVersion(memoryMd) {
+  const el = $("game-version");
+  if (!el) return;
+  const lines = section(memoryMd, "Game Version").map((l) => l.trim()).filter(Boolean).filter((l) => !l.startsWith("<!--"));
+  const m = (lines[0] || "0.1").match(/([0-9]+\.[0-9]+)/);
+  el.textContent = "GAME v" + (m ? m[1] : "0.1");
+}
+
 function renderStudioStatus(state) {
   $("status-list").innerHTML = STUDIO_STATUS.map((item) => {
     const on = item.done(state);
@@ -699,6 +709,7 @@ console.log(
     missionStepsDone[n] = checkboxes(section(memoryMd, `Module ${n} Steps`)).map((c) => c.done);
   }
   const rState = rewardState(memoryMd, achMd);
+  renderVersion(memoryMd);
   renderModules(completedModules);
   renderStudioStatus(rState);
   renderMemory(memoryMd);
