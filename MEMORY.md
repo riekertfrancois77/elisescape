@@ -101,6 +101,11 @@ dashboard reads the sections below to display progress.
 <!-- The dashboard shows these bullets in the "Session Memory" panel.
      Claude Code: add a bullet per session, newest first. Keep them short. -->
 
+- 🐛 **Eli found a real bug (Bug Hunter unlocked):** he noticed the dashboard
+  wrongly showed Module 2 incomplete and Module 3 locked, and reported it —
+  *noticing what's off*, the exact skill his game is built on. Root cause: the
+  dashboard's embedded `file://` fallback state in `script.js` was stale; fixed
+  to mirror real progress.
 - 🎬 **Eli directed his FIRST change (a taste of Module 3):** he combined three
   directions at once — *hide the clock harder, make the puzzle tougher, and add
   sound* — and the engineer rebuilt it. The clock now lurks dimmed in a shadowy
@@ -168,6 +173,9 @@ When you're ready, open Claude Code in this folder and say:
   very first time; Eli cracked the case and opened the door.
 - 🕵️ **AI Tamer** (secret, 2026-07-06) — Eli directed the AI to build his vision
   *his* way: he combined three changes at once and the engineer delivered.
+- 🐛 **Bug Hunter** (secret, 2026-07-06) — Eli noticed the dashboard was wrong
+  (Module 2 not marked done, Module 3 still locked) and reported it — noticing
+  what's off in real software, the very skill his game is built on.
 
 ## Latest Build Review
 

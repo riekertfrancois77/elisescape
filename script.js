@@ -177,10 +177,13 @@ const STUDIO_STATUS = [
    the Markdown files is blocked by the browser. Mirrors the
    starting state of MEMORY.md / ACHIEVEMENTS.md.               */
 
+// NOTE: this file:// fallback must be kept in step with real progress, or a
+// double-clicked dashboard shows stale state (the bug Eli caught). Better: open
+// the live URL, which reads the real MEMORY.md/ACHIEVEMENTS.md.
 const FALLBACK_MEMORY = `
 ## Progress Tracker
-- [ ] Module 1
-- [ ] Module 2
+- [x] Module 1
+- [x] Module 2
 - [ ] Module 3
 - [ ] Module 4
 - [ ] Module 5
@@ -194,50 +197,62 @@ const FALLBACK_MEMORY = `
 - [ ] Module 13
 
 ## Module 1 Steps
-- [ ] 1
-- [ ] 2
-- [ ] 3
-- [ ] 4
-- [ ] 5
-- [ ] 6
-- [ ] 7
-- [ ] 8
-- [ ] 9
-- [ ] 10
-- [ ] 11
-- [ ] 12
-- [ ] 13
+- [x] 1
+- [x] 2
+- [x] 3
+- [x] 4
+- [x] 5
+- [x] 6
+- [x] 7
+- [x] 8
+- [x] 9
+- [x] 10
+- [x] 11
+- [x] 12
+- [x] 13
+
+## Module 2 Steps
+- [x] 1
+- [x] 2
+- [x] 3
+- [x] 4
+- [x] 5
+- [x] 6
+- [x] 7
+- [x] 8
+- [x] 9
+- [x] 10
 
 ## Session Memory
-- The studio has been founded. All systems online.
-- Module 1 is unlocked and waiting: **Think Like a Game Studio**.
-- No game exists yet. That's the point — it starts in Eli's head.
+- 🎮 **Module 2 COMPLETE** — a playable Version 0.1 of *One Night at Thornwood Manor* runs in the browser.
+- 🏆 Trophies so far: Creative Director, First Big Decision, Game Pillars Chosen, Studio Review Complete, Memory Created, One-Shot Power, First Playable, plus secret **AI Tamer** and **Bug Hunter**.
+- 🔓 **Module 3 — Direct the Team** is unlocked and waiting.
 
 ## Claude Instructions
 Open Claude Code in this folder and say:
 
-> **"Start Module 1. I'm ready to think like a game studio."**
+> **"Start Module 3 — I'm ready to direct."**
 
-Claude will welcome you to the studio and ask you the first big question. Answer honestly — there are no wrong answers, only *your* answers.
+Module 4 (Build a Second Brain) unlocks once Module 3 is complete.
 `;
 
 const FALLBACK_ACHIEVEMENTS = `
 ## Visible Achievements
-- [ ] **Creative Director**
-- [ ] **First Big Decision**
-- [ ] **Game Pillars Chosen**
-- [ ] **Studio Review Complete**
-- [ ] **Memory Created**
-- [ ] **One-Shot Power**
-- [ ] **First Playable**
+- [x] **Creative Director**
+- [x] **First Big Decision**
+- [x] **Game Pillars Chosen**
+- [x] **Studio Review Complete**
+- [x] **Memory Created**
+- [x] **One-Shot Power**
+- [x] **First Playable**
 - [ ] **Director Mode**
 - [ ] **Memory Keeper**
 
 ## Secret Achievements
 - [ ] **Curiosity Pays**
 - [ ] **Better Than School**
-- [ ] **AI Tamer**
-- [ ] **Bug Hunter**
+- [x] **AI Tamer**
+- [x] **Bug Hunter**
 - [ ] **Game Studio Brain**
 `;
 

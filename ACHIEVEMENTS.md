@@ -40,5 +40,8 @@ earn them.
 - [x] **AI Tamer** — ??? *(Unlocked 2026-07-06 — Eli directed the AI like a true
   Creative Director: he combined three changes into one instruction — hide the
   clock, harden the puzzle, add sound — and the engineer built exactly that.)*
-- [ ] **Bug Hunter** — ???
+- [x] **Bug Hunter** — ??? *(Unlocked 2026-07-06 — Eli noticed the dashboard was
+  wrong: it showed Module 2 incomplete and Module 3 locked when they weren't. He
+  spotted what was off in real software — the exact skill his own game is built
+  on — and reported it, which led to the fix.)*
 - [ ] **Game Studio Brain** — ???
