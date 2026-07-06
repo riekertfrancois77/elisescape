@@ -231,6 +231,52 @@ h1 {
   color: #ede1cc;
 }
 
+/* ---- The brass dial (the door's code entry, built into the room) ---- */
+#dial {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+.dial-input {
+  font-family: Georgia, serif;
+  font-size: 1.05rem;
+  letter-spacing: 3px;
+  padding: 8px 12px;
+  width: 150px;
+  color: #f3e9d8;
+  background: #120c07;
+  border: 1px solid #6b5325;
+  border-radius: 6px;
+  outline: none;
+}
+.dial-input:focus {
+  border-color: #e8c169;
+  box-shadow: 0 0 10px rgba(232, 193, 105, 0.35);
+}
+.dial-btn {
+  font-family: Georgia, serif;
+  font-size: 0.95rem;
+  padding: 8px 18px;
+  color: #201509;
+  background: linear-gradient(#f0d089, #d8a84c);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 3px 12px rgba(216, 168, 76, 0.3);
+  transition: transform 0.12s ease;
+}
+.dial-btn:hover { transform: translateY(-2px); }
+.dial-msg {
+  flex-basis: 100%;
+  margin: 2px 0 0;
+  min-height: 1em;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #cf9b7a;
+}
+
 .notebook { flex: 1; }
 #clue-list {
   list-style: none;

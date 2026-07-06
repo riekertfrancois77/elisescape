@@ -188,6 +188,9 @@ function addClue(text) {
    --------------------------------------------------------------------- */
 function examine(text) {
   document.getElementById("examine-text").textContent = text;
+  // Looking at anything else puts the brass dial away.
+  const dial = document.getElementById("dial");
+  if (dial) dial.innerHTML = "";
 }
 
 
@@ -252,26 +255,48 @@ function handleClock() {
    You can't guess your way through — you have to have noticed the clock.
    --------------------------------------------------------------------- */
 function handleDoor() {
-  // HARD MODE: the dial is always there to try — no gate, no nudge, and NO hint
-  // that the code is a time. It just asks for three digits. The player has to
-  // have found the right number AND worked out that it's the one that matters.
-  const answer = prompt(
-    "A brass dial is set into the heavy oak door — three worn digits, waiting to be turned.\n\nEnter the 3-digit code:"
-  );
+  // HARD MODE: a brass dial, built right into the room (no browser pop-up).
+  // No gate, no nudge, and NO hint that the code is a time. It just asks for
+  // three digits. The player has to have found the right number AND worked out
+  // that it's the one that matters.
+  examine("A brass dial is set into the heavy oak door — three worn digits, waiting to be turned.");
 
-  // If they close the box, do nothing.
-  if (answer === null) return;
+  const dial = document.getElementById("dial");
+  dial.innerHTML = ""; // start fresh
 
-  // The code is the digits of the stopped clock: 9:47 -> "947".
-  const cleaned = answer.replace(/[^0-9]/g, ""); // keep only the digits
-  const target = MURDER_TIME.replace(/[^0-9]/g, "");
+  const input = document.createElement("input");
+  input.type = "text";
+  input.inputMode = "numeric";
+  input.maxLength = 5; // allows "9:47" style typing too
+  input.placeholder = "3-digit code";
+  input.className = "dial-input";
 
-  if (cleaned === target) {
-    win();
-  } else {
-    // Terse. No clue, no reminder, no pointing at the clock. You're on your own.
-    examine("The dial doesn't move. That isn't the code.");
+  const btn = document.createElement("button");
+  btn.textContent = "Turn the dial";
+  btn.className = "dial-btn";
+
+  const msg = document.createElement("p");
+  msg.className = "dial-msg";
+
+  // Check the code: 9:47 -> "947". Forgiving about colons/spaces.
+  function tryCode() {
+    const cleaned = input.value.replace(/[^0-9]/g, "");
+    const target = MURDER_TIME.replace(/[^0-9]/g, "");
+    if (cleaned === target) {
+      win();
+    } else {
+      // Terse. No clue, no reminder, no pointing at the clock. You're on your own.
+      msg.textContent = "The dial doesn't move. That isn't the code.";
+    }
   }
+
+  btn.addEventListener("click", tryCode);
+  input.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") tryCode();
+  });
+
+  dial.append(input, btn, msg);
+  input.focus();
 }
 
 
