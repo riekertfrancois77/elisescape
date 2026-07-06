@@ -101,6 +101,16 @@ storybook, rich-and-tense, or in between?
 (not gory, not babyish). The warmth lowers the player's guard so wrong details
 hit harder — contrast serves the "Notice What's Off" pillar.
 
+## 2026-07-06 — Post-Module-1 refinement (Victim & Killer)
+
+**Q:** Who got murdered at Thornwood Manor, and why?
+**Eli:** "it will be the owner of the party who was a very powerful man but was dirty as he did illegal things and this murderer had only been killing people like this"
+**Studio note:** Victim = the corrupt, powerful **host** of the party (a
+*guilty* victim → many suspects/red herrings). Killer has a **code**: only kills
+corrupt powerful wrongdoers. Adds a moral question — should the detective even
+catch a killer who hunts bad men? Makes the villain understandable and the duel
+personal.
+
 <!-- Format for entries:
 
 ## 2026-07-06 — Module 1, Step 2

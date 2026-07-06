@@ -45,6 +45,24 @@ searching everywhere; they must **deduce *which guest* is the culprit** by
 narrowing down suspects. Every guest is a potential suspect (red herrings come
 for free), and reading people who don't add up is peak Sherlock.
 
+## The Victim & The Killer's Code (added 2026-07-06)
+
+**The victim:** the **host** of the party — the powerful owner of Thornwood
+Manor. Rich and influential, but **dirty**: he did illegal things behind his
+respectable face. Because he was corrupt, *many* people had reason to want him
+gone — a built-in crowd of suspects and red herrings.
+
+**The killer's code:** the murderer **only kills people like this** — corrupt,
+powerful men who do wrong. Not a random monster; a hunter with a *code*. This
+raises the game's central moral question: *the victim was a bad man — does that
+change whether the detective should catch his killer?* Moral fog, Sherlock-style.
+
+Design payoffs:
+- A guilty victim = a houseful of motives (rich suspect pool, natural red
+  herrings).
+- A killer-with-a-code = a villain the player can *understand*, which makes the
+  cat-and-mouse duel personal and thoughtful, not just scary.
+
 ## Story Shape
 
 *Does this game tell a story, suggest one, or let the player make their own?
