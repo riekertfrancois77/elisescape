@@ -205,6 +205,184 @@ h1 {
   50%      { filter: drop-shadow(0 0 20px rgba(232, 193, 105, 1)); }
 }
 
+/* =====================================================================
+   THE SET — the room, painted in pure CSS (Module 3, Change #3).
+   "Warm & Polished, with a little Moody & Cinematic." Cozy golden firelight
+   and wood, plus cold moonlight and shadow creeping in so it never feels safe.
+   Every layer ignores clicks (pointer-events: none) so the game is unchanged.
+   ===================================================================== */
+.scene {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Wood-paneled wall (top ~62%) with vertical wainscot lines + a chair rail. */
+.wall {
+  position: absolute;
+  left: 0; right: 0; top: 0; height: 62%;
+  background:
+    repeating-linear-gradient(90deg, rgba(0,0,0,0.16) 0 2px, transparent 2px 88px),
+    linear-gradient(#3a2a1a 0%, #31241699 60%, #2b1f14 100%);
+  box-shadow: inset 0 -8px 14px rgba(0,0,0,0.45);
+}
+.wall::after { /* the chair rail — a molding line near the floor */
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0; height: 6px;
+  background: linear-gradient(#5a4325, #4a3720 40%, #241a10);
+}
+
+/* The floor — dark wood planks receding into the dark. */
+.floor {
+  position: absolute;
+  left: 0; right: 0; top: 62%; bottom: 0;
+  background:
+    repeating-linear-gradient(90deg, rgba(0,0,0,0.24) 0 3px, transparent 3px 64px),
+    linear-gradient(#2a1e12 0%, #1a1109 70%, #120b06 100%);
+}
+
+/* A warm patterned rug on the floor. */
+.rug {
+  position: absolute;
+  left: 50%; top: 82%;
+  transform: translate(-50%, -50%);
+  width: 54%; height: 26%;
+  border-radius: 50%;
+  background:
+    radial-gradient(ellipse at center, rgba(150,45,45,0.42), rgba(95,28,28,0.28) 58%, transparent 74%);
+  box-shadow: inset 0 0 30px rgba(0,0,0,0.45);
+}
+
+/* An arched oak doorway — the "way deeper". Sits under the 🚪 hotspot. */
+.doorway {
+  position: absolute;
+  left: 88%; top: 45%;
+  transform: translate(-50%, -50%);
+  width: 13%; height: 54%;
+  background: linear-gradient(#160f09, #0a0705);
+  border: 4px solid #2e2114;
+  border-radius: 60px 60px 5px 5px;
+  box-shadow: inset 0 0 30px rgba(0,0,0,0.85), 0 6px 20px rgba(0,0,0,0.5);
+}
+
+/* The fireplace — a dark hearth with a living, flickering fire. Under the 🔥. */
+.hearth {
+  position: absolute;
+  left: 33%; top: 63%;
+  transform: translate(-50%, -50%);
+  width: 17%; height: 21%;
+  background: linear-gradient(#1a120b, #0d0805);
+  border: 4px solid #2e2114;
+  border-radius: 8px 8px 4px 4px;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.9);
+}
+.hearth::after { /* warm glow spilling into the room */
+  content: "";
+  position: absolute;
+  left: 50%; top: 45%;
+  transform: translate(-50%, -50%);
+  width: 360%; height: 360%;
+  background: radial-gradient(ellipse at center, rgba(255,150,60,0.18), transparent 62%);
+  animation: glowpulse 3.4s ease-in-out infinite;
+}
+.fire-glow {
+  position: absolute;
+  inset: 28% 16% 8% 16%;
+  border-radius: 40% 40% 30% 30%;
+  background: radial-gradient(ellipse at 50% 85%, #ffd27a, #ff8a1e 38%, #c23c08 68%, transparent 80%);
+  filter: blur(3px);
+  animation: flicker 1.5s ease-in-out infinite;
+}
+@keyframes flicker {
+  0%, 100% { opacity: 0.85; transform: scaleY(1); }
+  25%      { opacity: 1;    transform: scaleY(1.07); }
+  50%      { opacity: 0.72; transform: scaleY(0.95); }
+  75%      { opacity: 0.95; transform: scaleY(1.03); }
+}
+@keyframes glowpulse {
+  0%, 100% { opacity: 0.8; }
+  50%      { opacity: 1; }
+}
+
+/* A gilded portrait frame on the wall, under the 🖼️ hotspot. */
+.frame {
+  position: absolute;
+  left: 50%; top: 28%;
+  transform: translate(-50%, -50%);
+  width: 12%; height: 23%;
+  background: linear-gradient(#2b2233, #1a1426);
+  border: 6px solid #7a5a24;
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px #3a2c14, 0 6px 20px rgba(0,0,0,0.6), inset 0 0 26px rgba(0,0,0,0.7);
+}
+
+/* A tall window with cold night beyond it — the source of the moonlight. */
+.window {
+  position: absolute;
+  top: 8%; left: 69%;
+  width: 14%; height: 34%;
+  background: linear-gradient(#2b3856, #1a2440);
+  border: 4px solid #241a12;
+  border-radius: 7px 7px 0 0;
+  box-shadow: 0 0 26px rgba(150,180,230,0.22), inset 0 0 18px rgba(0,0,0,0.5);
+}
+.window::before { /* window bars (muntins): a cross of panes */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, transparent 47%, #241a12 47% 53%, transparent 53%),
+    linear-gradient(180deg, transparent 47%, #241a12 47% 53%, transparent 53%);
+}
+
+/* A cold shaft of moonlight falling from the window across the room. */
+.moonbeam {
+  position: absolute;
+  top: 9%; left: 58%;
+  width: 22%; height: 74%;
+  background: linear-gradient(180deg, rgba(160,190,235,0.18), rgba(160,190,235,0.05) 65%, transparent);
+  transform: skewX(-16deg);
+  filter: blur(3px);
+}
+
+/* Two lights fighting: warm firelight from the left, cold moonlight from the
+   right. This is "A with a bit of B" made of light. */
+.firelight {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 30% 66%, rgba(255,150,60,0.14), transparent 46%);
+  animation: firelightpulse 3.4s ease-in-out infinite;
+}
+@keyframes firelightpulse {
+  0%, 100% { opacity: 0.85; }
+  50%      { opacity: 1; }
+}
+.moonlight {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 72% 22%, rgba(150,180,230,0.12), transparent 46%);
+}
+
+/* Deep shadow pooling in the bottom-left corner — where the clock hides. It
+   keeps the "Notice What's Off" puzzle honest AND adds the cinematic dread. */
+.shadow-corner {
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 30%; height: 38%;
+  background: radial-gradient(ellipse at 0% 100%, rgba(0,0,0,0.62), transparent 72%);
+}
+
+/* A heavy vignette closing in on the edges (the "bit of B"). */
+.vignette {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 42% 46%, transparent 38%, rgba(8,5,3,0.5) 82%, rgba(3,2,1,0.85) 100%);
+}
+
+/* Keep the clickable objects and the label ABOVE the painted set. */
+.room-label { z-index: 3; }
+.hotspot { z-index: 2; }
+
 /* ---- The side panel: Examine + Notebook ---- */
 .panel {
   flex: 1;

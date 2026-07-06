@@ -49,6 +49,25 @@
       <div class="room" id="foyer">
         <div class="room-label">The Grand Foyer &middot; Thornwood Manor</div>
 
+        <!-- The SET: painted entirely in CSS (shapes + light, no image files).
+             It sits BEHIND the clickable objects and ignores clicks, so the
+             game plays exactly as before — it just looks like a real room now.
+             Warm firelight (Version A) fights cold moonlight (a little of B). -->
+        <div class="scene" aria-hidden="true">
+          <div class="wall"></div>
+          <div class="floor"></div>
+          <div class="rug"></div>
+          <div class="moonbeam"></div>
+          <div class="doorway"></div>
+          <div class="hearth"><div class="fire-glow"></div></div>
+          <div class="frame"></div>
+          <div class="window"></div>
+          <div class="firelight"></div>
+          <div class="moonlight"></div>
+          <div class="shadow-corner"></div>
+          <div class="vignette"></div>
+        </div>
+
         <!-- Clickable things in the room. Each has a data-object name.
              The great clock is tucked into a shadowy corner and dimmed
              (class "dim") so it blends in — you have to notice it yourself. -->
