@@ -38,7 +38,7 @@ dashboard reads the sections below to display progress.
 - [x] 1. Welcome to the Studio
 - [x] 2. What should players feel?
 - [x] 3. Map the emotional curve
-- [ ] 4. Who does the player become?
+- [x] 4. Who does the player become?
 - [ ] 5. What kind of world is this?
 - [ ] 6. What problem or challenge drives the game?
 - [ ] 7. The game's 3–5 pillars

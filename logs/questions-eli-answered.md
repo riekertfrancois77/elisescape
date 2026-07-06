@@ -24,6 +24,15 @@
 **Eli:** "i want the nearly quit moment ot be when they make it far but then they get nothing at all for moving foawrd but then they remeber they got a clue at the very start that will help them"
 **Studio note:** This is *setup & payoff / foreshadowing* ("Chekhov's Gun") — a clue planted at the very start that seems like nothing, then becomes the key to escaping a late-game dead end. Rewards long-term memory and connecting threads across the whole game.
 
+## 2026-07-06 — Module 1, Step 4
+
+**Q:** Who does the player become?
+**Eli:** "the player will get to feel like a detective finding the culprit for the crime"
+**Studio note:** Adds a *story engine* — a crime/mystery. Clues become
+**evidence**, not just puzzle pieces. The ultimate payoff shifts from "a door
+opened" to "I know who did it — and I can prove it." Turns observation into
+*interrogating the room*.
+
 <!-- Format for entries:
 
 ## 2026-07-06 — Module 1, Step 2

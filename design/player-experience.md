@@ -41,7 +41,10 @@ calm    exploring  thinking  stuck   "AHA!"   escape!
 
 ## Who the Player Becomes
 
-*Pending — Module 1 ("Who does the player become?").*
+**A DETECTIVE** — someone solving a crime by finding the culprit. The player
+doesn't just *see* the room, they *interrogate* it: every clue is **evidence**,
+every "off" detail is a lead. The dream sentence a player says afterward:
+*"I felt like a detective — and I cracked the case."*
 
 ## The First 60 Seconds
 
