@@ -210,25 +210,30 @@ function examine(text) {
    --------------------------------------------------------------------- */
 function clickObject(object) {
   if (object === "guests") {
-    // CLUE 1 — a lower bound. He was alive at 9:30.
-    examine("A guest dabs her eyes and remembers the host's final toast. 'Half past nine, sharp,' she says. 'He raised his glass, and he was merry.' So the host was still alive at 9:30.");
-    addClue("The host was alive at 9:30 — his last toast.");
+    // CLUE 1 — a lower bound, told as testimony. The notebook records only the
+    // FACT (a half-hour chime just gone nine); the detective must realise that
+    // means the host was still alive at 9:30.
+    examine("A tearful guest clutches your sleeve. 'His last toast — he raised his glass the very moment the hall clock chimed the half hour. So merry, he was. Who could have...' Her voice breaks.");
+    addClue("Host's last toast: on the half-hour chime, just gone nine.");
 
   } else if (object === "fireplace") {
-    // CLUE 2 — the hour. It happened in the 9 o'clock hour.
-    examine("A spent match lies in the cooling ash, and the tall mantel candle — marked with the hours — has burned down into its nine-o'clock ring. Whatever happened, happened within the nine-o'clock hour.");
-    addClue("It happened in the 9 o'clock hour — the candle and the match.");
+    // CLUE 2 — the hour, told obliquely. You read a burnt candle, not a sentence
+    // that says "the 9 o'clock hour".
+    examine("On the mantel, a tall candle is scored with a ring for every hour. Its flame has eaten down past the ninth ring — but stops short of the tenth. Beside it lies a single spent match.");
+    addClue("Candle burned past the 9th hour-ring, not yet the 10th.");
 
   } else if (object === "portrait") {
-    // THE TRAP — the pocket watch reads 9:52, but it always ran fast. Trust it
-    // and you set the clock wrong. A true detective triangulates instead.
-    examine("Beneath the host's proud portrait, on a side table, lies his gold pocket watch — smashed in the struggle, its hands frozen at 9:52. Yet every guest knew the truth: the host's watch always ran a few minutes fast.");
-    addClue("The host's pocket watch stopped at 9:52 — but it always ran fast.");
+    // THE TRAP — now WITHOUT the "always ran fast" giveaway (Eli's call). The
+    // only tell is subtle and physical: the hands were knocked crooked in the
+    // struggle, so the time it shows can't be trusted. You have to NOTICE that.
+    examine("Beneath the host's proud portrait, on a side table, lies his gold pocket watch — smashed in the fall, its glass starred, the hands knocked crooked on their pin. Jarred as they are, they point somewhere near 9:52.");
+    addClue("Pocket watch, hands jarred crooked — points near 9:52.");
 
   } else if (object === "coats") {
-    // CLUE 3 — the exact minute, by deduction. 10:00 minus 13 = 9:47.
-    examine("By the cloakroom, a trembling guest swears to what he heard: 'The scream tore through the hall thirteen minutes before the clock would have struck ten. I was counting down to the hour.'");
-    addClue("The scream came 13 minutes before 10:00.");
+    // CLUE 3 — the exact minute, by deduction, told as testimony not a formula.
+    // "Thirteen before ten" -> the detective works out 9:47.
+    examine("By the cloakroom a footman is shaking. 'The ten o'clock chime never came — the scream swallowed it whole. Thirteen strokes early, I'd swear on it. I was counting down to the hour.'");
+    addClue("Scream: thirteen minutes before the ten o'clock chime.");
 
   } else if (object === "clock") {
     // The great clock is now the LOCK: set its hands to the deduced time.
