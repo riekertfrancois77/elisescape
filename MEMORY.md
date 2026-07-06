@@ -42,7 +42,7 @@ dashboard reads the sections below to display progress.
 - [x] 5. What kind of world is this?
 - [x] 6. What problem or challenge drives the game?
 - [x] 7. The game's 3–5 pillars
-- [ ] 8. References that inspire the game
+- [x] 8. References that inspire the game
 - [ ] 9. Three possible game directions generated
 - [ ] 10. Eli chooses / rejects / combines directions
 - [ ] 11. Studio team review

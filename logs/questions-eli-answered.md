@@ -60,6 +60,16 @@ Culprit; 4) A Cozy House That Hides Everything.)
 **Eli:** "yes they seem right"
 **Result:** All four pillars approved and LOCKED by Eli.
 
+## 2026-07-06 — Module 1, Step 8
+
+**Q:** What references inspire the game?
+**Eli:** "i want it to be kind of sherklock homes kind of vibe with how he thinks and looks at everything"
+**Studio note:** Sherlock Holmes as the north star — specifically his *way of
+thinking and observing* ("You see, but you do not observe"). Not superpowers:
+looking harder + thinking clearer + noticing tiny details. Directly embodies
+Pillar 1 (Notice What's Off) and the setup/payoff deduction style. Puzzle-design
+test going forward: "Would this make the player feel like Sherlock?"
+
 <!-- Format for entries:
 
 ## 2026-07-06 — Module 1, Step 2
