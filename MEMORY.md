@@ -7,11 +7,10 @@ dashboard reads the sections below to display progress.
 ## Project State
 
 - **Creative Director:** Eli
-- **Current module:** **Module 3 — Direct the Team (now UNLOCKED)**. Module 2
-  (From Vision to Prototype) is **COMPLETE** — Eli built and directed a playable
-  Version 0.1 of the game. **Module 4 (Build a Second Brain)** stays locked until
-  Module 3 is complete (they unlock in order; Dad opened through Module 4).
-  Module 1 is complete.
+- **Current module:** **Module 4 — Build a Second Brain (now UNLOCKED / active)**.
+  **Module 3 (Direct the Team) is COMPLETE** — Eli directed five real changes into
+  his game and earned **Director Mode**. Modules 1 and 2 are complete. Module 4
+  unlocked because Module 3 is done (modules open in order; Dad opened through 4).
 - **Game concept:** ***One Night at Thornwood Manor*** — a famous detective is
   trapped one night in a cozy, secret-filled early-1900s mansion during a house
   party where a murder has happened. A killer who leaves clues on purpose hides
@@ -27,7 +26,7 @@ dashboard reads the sections below to display progress.
 
 - [x] Module 1 — Think Like a Game Studio
 - [x] Module 2 — From Vision to Prototype
-- [ ] Module 3 — Direct the Team
+- [x] Module 3 — Direct the Team
 - [ ] Module 4 — Build a Second Brain
 - [ ] Module 5 — Read the Machine
 - [ ] Module 6 — Speak AI Fluently
@@ -77,13 +76,13 @@ dashboard reads the sections below to display progress.
 
 <!-- Unlocks when Module 2 is complete. -->
 
-- [ ] 1. Play the game and make a change list
-- [ ] 2. Pick the top 3 changes
-- [ ] 3. Direct one change (Claude offers versions)
-- [ ] 4. Choose the version that feels most like your game
-- [ ] 5. See it land, play again, react
-- [ ] 6. Repeat for the top changes
-- [ ] 7. Achievement unlocked: Director Mode
+- [x] 1. Play the game and make a change list
+- [x] 2. Pick the top 3 changes
+- [x] 3. Direct one change (Claude offers versions)
+- [x] 4. Choose the version that feels most like your game
+- [x] 5. See it land, play again, react
+- [x] 6. Repeat for the top changes
+- [x] 7. Achievement unlocked: Director Mode
 
 ## Module 4 Steps
 
@@ -101,6 +100,17 @@ dashboard reads the sections below to display progress.
 <!-- The dashboard shows these bullets in the "Session Memory" panel.
      Claude Code: add a bullet per session, newest first. Keep them short. -->
 
+- 🏆 **MODULE 3 COMPLETE — Director Mode unlocked.** Eli directed **five real
+  changes** into *Thornwood Manor* and made it his. He turned "read the clue" into
+  a full **deduction chain** (gather clues → work out the 9:47 time of death → set
+  the great clock's hands → a hidden panel gives up a brass key → the key opens the
+  door), **hid the clues** and added a **9:52 pocket-watch trap**, filled the room
+  with a **living code-made soundscape**, and **art-directed** the whole foyer
+  (warm firelight vs. cold moonlight, painted in pure CSS). Real directing muscle:
+  he **rejected** an AI version (the ugly pop-up → a brass dial), **overruled** the
+  engineer to keep the trap *fair* (a subtle tell, not a coin-flip), and **caught
+  the team skipping** the sounds change he'd asked for. He called it: *"this looks
+  good for Version 0.1."*
 - 🐛 **Eli found a real bug (Bug Hunter unlocked):** he noticed the dashboard
   wrongly showed Module 2 incomplete and Module 3 locked, and reported it —
   *noticing what's off*, the exact skill his game is built on. Root cause: the
@@ -143,22 +153,22 @@ dashboard reads the sections below to display progress.
      Claude Code: rewrite it after each session so Eli always knows his
      exact next move. -->
 
-🎉 **MODULE 2 COMPLETE, Director — your game is REAL.** You built *Version 0.1*
-of *Thornwood Manor*, played it, and directed your first change. Three trophies
-lit up: **One-Shot Power**, **First Playable**, and a *secret* one you'll spot
-on the dashboard. Refresh to claim them.
+🏆 **MODULE 3 COMPLETE, Director — you earned Director Mode.** You took a working
+game and made it *yours*: five directed changes, one rejected AI version, one
+overruled design call, and one change you caught the team skipping. *Thornwood
+Manor* is a real detective puzzle now — deduce the time of death, set the clock,
+earn the key, open the door — in a room lit by firelight and moonlight.
 
-🔓 **UP NEXT: MODULE 3 — DIRECT THE TEAM (now unlocked).** In Module 2 you got a
-*taste* of directing (that one change). Module 3 is the real thing: you play
-your game, make a list of everything you'd change, then **direct change after
-change** — the engineer offers you versions, and you pick the one that feels
-most like *your* game. This is where the game starts becoming truly yours.
+🔓 **UP NEXT: MODULE 4 — BUILD A SECOND BRAIN (now unlocked).** You've felt the
+studio "remember" your game between sessions. Module 4 shows you the trick behind
+it: **project memory**. You'll open the memory files, learn what each one holds,
+and start writing to them yourself — so every session starts smarter than the last.
 
 When you're ready, open Claude Code in this folder and say:
 
-> **"Start Module 3 — I'm ready to direct."**
+> **"Start Module 4 — teach me how the studio remembers."**
 
-*(Module 4 — Build a Second Brain stays locked until Module 3 is complete.)*
+*(Modules 5–13 stay sealed until Dad opens them.)*
 
 ## Achievements Unlocked
 
@@ -171,6 +181,9 @@ When you're ready, open Claude Code in this folder and say:
   watched Claude create a playable Version 0.1.
 - 🏆 **First Playable** (2026-07-06) — *Thornwood Manor* ran in a browser for the
   very first time; Eli cracked the case and opened the door.
+- 🏆 **Director Mode** (2026-07-06) — Directed five real changes into the game,
+  rejected an AI version, overruled a design call to keep it fair, and made the
+  studio build *Thornwood Manor* his way.
 - 🕵️ **AI Tamer** (secret, 2026-07-06) — Eli directed the AI to build his vision
   *his* way: he combined three changes at once and the engineer delivered.
 - 🐛 **Bug Hunter** (secret, 2026-07-06) — Eli noticed the dashboard was wrong
@@ -190,13 +203,14 @@ When you're ready, open Claude Code in this folder and say:
        - Producer · ⭐⭐⭐⭐☆ · Excellent progress for Version 0.1.
      Use ⭐ for filled stars and ☆ for empty. -->
 
-**Version 0.1 — "Arrival at Thornwood Manor" (2026-07-06)**
-- Creative Director (Eli) · ⭐⭐⭐⭐☆ · The arrival hook is real, and the stopped clock feels like *his* game.
-- Player Experience · ⭐⭐⭐☆☆ · The mood lands; a first-timer may not realize the clock is *clickable* — needs a nudge later.
-- Lead Engineer · ⭐⭐⭐⭐☆ · Clean state, no bugs, three files, fully playtested end-to-end.
-- QA · ⭐⭐⭐⭐☆ · Puzzle is fair — the door won't open until you've noticed the clue. Accepts messy input ("947", "9:47"). No crashes.
-- Art Director · ⭐⭐⭐☆☆ · Warm-and-shadowed tone is right; still emoji + gradients, not real art (that's Module 10).
-- Producer · ⭐⭐⭐⭐⭐ · A playable first slice, built and tested in one session. Excellent progress for Version 0.1.
+**Version 0.1 — Director's Cut (Module 3, 2026-07-06)**
+- Creative Director (Eli) · ⭐⭐⭐⭐⭐ · *"This looks good for Version 0.1."* The puzzle, the mood, and the room are finally *his*.
+- Player Experience · ⭐⭐⭐⭐☆ · The deduction chain is a real "aha", and the 9:52 trap is a fair gotcha. A first-timer may need a beat to find the clock in the shadow.
+- Lead Engineer · ⭐⭐⭐⭐⭐ · Clean state machine; the whole chain (clues → clock → key → door) verified end-to-end in a headless browser, no JS errors.
+- QA · ⭐⭐⭐⭐☆ · The trap gives no key, the door needs the key, wrong times fail quietly. Fair and unbreakable in testing.
+- Art Director · ⭐⭐⭐⭐☆ · A real set now — firelight vs. moonlight, a flickering hearth, an arched doorway — all in pure CSS. (Real illustration is still Module 10.)
+- Sound Designer · ⭐⭐⭐☆☆ · A living room of code-made sounds (crackle, clinks, piano, creaks, laughter). Eli's right that they're placeholder-ish — flagged for a later polish pass.
+- Producer · ⭐⭐⭐⭐⭐ · Five directed changes landed and verified in a single session. Version 0.1 is genuinely Eli's now.
 
 ## Eli's Estimate vs Reality
 

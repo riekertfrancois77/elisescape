@@ -5,6 +5,52 @@
 
 ---
 
+## Session 6 — Module 3 COMPLETE: "Director Mode" (2026-07-06)
+
+Eli ran Module 3 as Creative Director, with Claude wearing the **build team**
+hat (engineer / sound / art). He played his game, made a change list, and
+directed it one change at a time — the team offered versions, he chose. What
+happened:
+
+- **His change list (from playing):** (1) too easy / stop giving the answer
+  away, (2) more sounds — the ticking gives the clock away, (3) make it look
+  better.
+- **Change #1 — "Make it hard" (chose Version C):** door asks only for a
+  "3-digit code" (no hint it's a time); the clock no longer names 9:47 the
+  murder time; no glow/chime singling out the clock; two more objects dimmed; a
+  red-herring number added.
+- **Rejected an AI version:** the browser `prompt()` pop-up (which also failed
+  in the cloud panel) — replaced with an in-room **brass dial**. Rejecting AI is
+  the skill; praised it.
+- **Change #2 — the deduction chain (chose Version C, the hardest):** Eli's own
+  big idea — turn "read the clue" into real detective work: **gather clues →
+  deduce the 9:47 time of death → set the great clock's hands → a hidden panel
+  gives up a brass key → the key opens the door.** Clues: alive at 9:30, the
+  9-o'clock hour (candle+match), "thirteen before ten" → 9:47; a **trap**: the
+  host's pocket watch reads 9:52.
+- **Overruled the engineer to keep it fair:** Eli asked to drop the watch's
+  "always ran fast" tell; flagged that with zero tell the puzzle becomes a
+  coin-flip, so we kept it fair with a *subtler* tell (hands knocked crooked).
+  Also made all clues oblique (notebook records raw facts, not conclusions) and
+  the scream clue tell less (a countdown reaching "thirteen").
+- **Caught a skipped change:** Eli noticed we'd never done his **sounds** change.
+  Added a living code-made soundscape — quieter tick plus random fireplace
+  crackles, glass clinks, a piano note, house creaks, laughter — so no single
+  sound points at the clock. (Eli: sounds are "ok, fix later" — flagged.)
+- **Change #3 — the look (chose "A with a bit of B"):** repainted the foyer in
+  pure CSS — wood-paneled walls, plank floor, rug, a flickering hearth, a gilded
+  frame, an arched doorway, and a **moonlit window** whose cold beam fights the
+  warm firelight; heavy vignette; shadow pooled where the clock hides.
+- **Verification:** the whole chain re-tested end-to-end in headless Chromium
+  after every change (repo game + the panel build) — door blocked without key,
+  the 9:52 trap yields nothing, 9:47 releases the key, key wins; no JS errors.
+- **Eli's call:** *"this looks good for Version 0.1."* Module 3 complete.
+- **Trophy:** 🏆 Director Mode.
+- **Next:** **Module 4 — Build a Second Brain is now unlocked.** Eli says *"Start
+  Module 4 — teach me how the studio remembers."* Modules 5–13 stay sealed.
+
+---
+
 ## Session 5 — Module 2 COMPLETE: "One-Shot Power" (2026-07-06)
 
 Eli ran Module 2 end to end as Creative Director, with Claude wearing the

@@ -184,7 +184,7 @@ const FALLBACK_MEMORY = `
 ## Progress Tracker
 - [x] Module 1
 - [x] Module 2
-- [ ] Module 3
+- [x] Module 3
 - [ ] Module 4
 - [ ] Module 5
 - [ ] Module 6
@@ -223,17 +223,27 @@ const FALLBACK_MEMORY = `
 - [x] 9
 - [x] 10
 
+## Module 3 Steps
+- [x] 1
+- [x] 2
+- [x] 3
+- [x] 4
+- [x] 5
+- [x] 6
+- [x] 7
+
 ## Session Memory
+- 🏆 **Module 3 COMPLETE — Director Mode unlocked.** Eli directed five real changes into *Thornwood Manor*: a full deduction chain (clues → the 9:47 time of death → set the clock → a hidden key → the door), hidden clues + a 9:52 pocket-watch trap, a living code-made soundscape, and a CSS-painted foyer (firelight vs. moonlight). He rejected an AI version, overruled a design call to keep it fair, and caught a skipped change.
 - 🎮 **Module 2 COMPLETE** — a playable Version 0.1 of *One Night at Thornwood Manor* runs in the browser.
-- 🏆 Trophies so far: Creative Director, First Big Decision, Game Pillars Chosen, Studio Review Complete, Memory Created, One-Shot Power, First Playable, plus secret **AI Tamer** and **Bug Hunter**.
-- 🔓 **Module 3 — Direct the Team** is unlocked and waiting.
+- 🏆 Trophies so far: Creative Director, First Big Decision, Game Pillars Chosen, Studio Review Complete, Memory Created, One-Shot Power, First Playable, **Director Mode**, plus secret **AI Tamer** and **Bug Hunter**.
+- 🔓 **Module 4 — Build a Second Brain** is unlocked and waiting.
 
 ## Claude Instructions
 Open Claude Code in this folder and say:
 
-> **"Start Module 3 — I'm ready to direct."**
+> **"Start Module 4 — teach me how the studio remembers."**
 
-Module 4 (Build a Second Brain) unlocks once Module 3 is complete.
+Modules 5–13 stay sealed until Dad opens them.
 `;
 
 const FALLBACK_ACHIEVEMENTS = `
@@ -245,7 +255,7 @@ const FALLBACK_ACHIEVEMENTS = `
 - [x] **Memory Created**
 - [x] **One-Shot Power**
 - [x] **First Playable**
-- [ ] **Director Mode**
+- [x] **Director Mode**
 - [ ] **Memory Keeper**
 
 ## Secret Achievements

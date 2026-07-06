@@ -25,8 +25,11 @@ earn them.
 - [x] **First Playable** — Your game runs in a browser for the very first time.
   *(Unlocked 2026-07-06 — Eli played the foyer, noticed the stopped clock, and
   opened the time-lock door.)*
-- [ ] **Director Mode** — Take the director's chair: reshape your game and make
-  the AI build it your way. *(Module 3.)*
+- [x] **Director Mode** — Take the director's chair: reshape your game and make
+  the AI build it your way. *(Unlocked 2026-07-06 — Eli directed five real changes
+  into Thornwood Manor: a full deduction chain, hidden clues + a pocket-watch trap,
+  a room soundscape, and a CSS-painted set. He rejected an AI version, overruled a
+  design call to keep the trap fair, and caught the team skipping a change.)*
 - [ ] **Memory Keeper** — Teach the studio to remember, so every session starts
   smarter than the last. *(Module 4.)*
 

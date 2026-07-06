@@ -6,6 +6,44 @@
 
 ---
 
+## 2026-07-06 — Module 3 (Direct the Team)
+
+**Q (first change to direct):** What's the first thing you'd change about your
+game?
+**Eli:** *"first its still a bit too easy... when they click on the door just say
+its a 3 digit code needed dont tell them its a time and for the clock just say the
+clock seems to be stuck on the time 9:47 dont tell them thats when the murder
+happened and its a bit too easy to know its the clock you have to click as its the
+only one tucked away. second right now it needs more sounds as it only had the
+clock ticking which is giving it away that its the clock. and 3 if we can improve
+the way it looks that would be great."*
+**Studio note:** A real, sharp change-list in one breath — all three notes share
+one instinct: *stop the game doing the detective's thinking for it.* Made 9:47 →
+murder a player realization (Pillar 2, Cleverness Earned). Became his top 3.
+
+**Q (Change #1 — how hard?):** Version A "Fair Detective", B "Sharp", or C
+"Master" (hardest — adds a red-herring number)?
+**Eli:** *"c i want this game to be hard."*
+
+**Q (Change #2 — the deduction chain):** Eli's own idea — instead of the clock
+being stuck at a given time, get clues to figure out the time of death, turn the
+clock to it, and earn a key for the door. How hard should the deduction be — A
+(clues help), B (combine them), or C (hardest, no confirmation)?
+**Eli:** *"give me c for now and ill see if i like it."*
+**Studio note:** Perfect director's attitude — commit, then judge. He later
+refined it (drop the "ran fast" tell, make clues subtler, scream clue tell less).
+
+**Q (Change #3 — the look):** A "Warm & Polished", B "Moody & Cinematic", or C
+"Storybook Illustrated"?
+**Eli:** *"can we do a with a little bit of b."*
+**Studio note:** Cozy-and-golden but never quite safe — exactly the Thornwood
+tone. Delivered warm firelight fighting cold moonlight, all in CSS.
+
+**Q (call it done?):** Ready to lock Version 0.1 and complete Module 3?
+**Eli:** *"this looks good for version 0.1."* → Module 3 complete, Director Mode.
+
+---
+
 ## 2026-07-06 — Module 2 (One-Shot Power)
 
 **Q (MVP room):** Which ONE room should we build as Version 0.1 — the first
