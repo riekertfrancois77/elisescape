@@ -48,9 +48,18 @@ every "off" detail is a lead. The dream sentence a player says afterward:
 
 ## The First 60 Seconds
 
-*What a brand-new player sees, does, and feels in their first minute.
-Pending.*
+The player arrives as the famous detective at a grand, glowing early-1900s
+mansion mid–house party — warm light, music, chatter. Word spreads: there's
+been a murder, and no one may leave. In the first minute the player learns
+they're trapped for the night with a killer hiding among the guests, and gets
+their **very first clue** — one that seems small now but will matter at the
+very end. The mood: welcomed and curious, with the first cold prickle that
+something here is wrong.
 
 ## The Moment Players Remember
 
-*The one moment they'll tell friends about. Pending.*
+Standing in a room with no way forward and nothing obviously out of place —
+then *really looking* and realizing the statue doesn't match the painting
+beside it. Fixing it, and watching a **secret passage swing open.** The rush of
+*"I saw what nobody else saw."* (Runner-up: the late-game moment they suddenly
+remember the very first clue and everything clicks.)

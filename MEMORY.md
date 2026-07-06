@@ -7,17 +7,21 @@ dashboard reads the sections below to display progress.
 ## Project State
 
 - **Creative Director:** Eli
-- **Current module:** Module 1 — Think Like a Game Studio
-- **Game concept:** UNDEFINED — Eli has not chosen it yet. Nobody chooses it
-  but him.
-- **Studio status:** Doors just opened. Lights on. Waiting for the Director.
+- **Current module:** Module 1 COMPLETE. Module 2 locked until Dad unlocks it.
+- **Game concept:** ***One Night at Thornwood Manor*** — a famous detective is
+  trapped one night in a cozy, secret-filled early-1900s mansion during a house
+  party where a murder has happened. A killer who leaves clues on purpose hides
+  among the guests. The detective wins by noticing what's "off," room by room,
+  deducing who the culprit is, and cornering them before dawn.
+- **Studio status:** First game designed. Foundation locked. Director earned
+  his title.
 
 ## Progress Tracker
 
 <!-- The dashboard counts the [x] boxes below. Claude Code: check a box only
      when a module is fully complete. -->
 
-- [ ] Module 1 — Think Like a Game Studio
+- [x] Module 1 — Think Like a Game Studio
 - [ ] Module 2 — One-Shot Power
 - [ ] Module 3 — Director Mode
 - [ ] Module 4 — Project Memory
@@ -45,9 +49,9 @@ dashboard reads the sections below to display progress.
 - [x] 8. References that inspire the game
 - [x] 9. Three possible game directions generated
 - [x] 10. Eli chooses / rejects / combines directions
-- [ ] 11. Studio team review
-- [ ] 12. Design harness files written
-- [ ] 13. Achievement unlocked: Creative Director
+- [x] 11. Studio team review
+- [x] 12. Design harness files written
+- [x] 13. Achievement unlocked: Creative Director
 
 ## Session Memory
 
@@ -70,19 +74,22 @@ dashboard reads the sections below to display progress.
      Claude Code: rewrite it after each session so Eli always knows his
      exact next move. -->
 
-You've made your **First Big Decision** — the game is *One Night at Thornwood
-Manor*. Next up (Step 11): the **Studio Team Review**, where your designer,
-engineer, artist, and a skeptical producer each react to your choice, and you
-respond as Director to make it sharper.
+🎉 **MODULE 1 IS COMPLETE, Creative Director.** You designed a real game from
+nothing but your own ideas — *One Night at Thornwood Manor* — and earned **5
+achievements**, including the **Creative Director** title.
 
-To keep going, just say:
+Your design harness is written. The studio brain knows your game. **Refresh the
+dashboard** to see Module 1 checked off and your trophies on the shelf.
 
-> **"Let's run the studio review."**
-
-After that, I'll write your full design harness and unlock the **Creative
-Director** achievement — the finish line of Module 1.
+**What's next?** Module 2 (*One-Shot Power*) is **locked** — only Dad can open
+the next module. Until then, you can keep sharpening this design with me
+(more suspects, room ideas, the mansion's map, the first clue…). Just say what
+you want to explore, Director.
 
 ## Achievements Unlocked
 
+- 🏆 **Creative Director** (2026-07-06) — Completed Module 1; the studio is his.
+- 🏆 **Memory Created** (2026-07-06) — The full design harness is written.
+- 🏆 **Studio Review Complete** (2026-07-06) — Survived the team review sharper.
 - 🏆 **First Big Decision** (2026-07-06) — Eli chose game Direction A.
 - 🏆 **Game Pillars Chosen** (2026-07-06) — Eli locked the game's 4 pillars.

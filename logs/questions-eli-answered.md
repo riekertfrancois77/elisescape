@@ -94,6 +94,13 @@ the culprit is by narrowing down suspects. Applies "Notice What's Off" to
 **people**, gives red herrings for free (every guest is a suspect), and is pure
 Sherlock (reading people, catching the story that doesn't add up).
 
+**Q (Art Director Iris):** How does the game feel to look at — cozy-creepy
+storybook, rich-and-tense, or in between?
+**Eli:** "somewhere inbetween the two"
+**Studio note:** Warm/elegant surface with real shadow and tension underneath
+(not gory, not babyish). The warmth lowers the player's guard so wrong details
+hit harder — contrast serves the "Notice What's Off" pillar.
+
 <!-- Format for entries:
 
 ## 2026-07-06 — Module 1, Step 2
