@@ -15,6 +15,11 @@
   coming).
 - The mission: turn Eli's *Thornwood Manor* design into one prompt and one-shot
   build a playable first version into `game/`.
+- **Cash Vault made real (Dad's call):** the Dad Vault now shows **real dollar
+  amounts** Eli has earned (was placeholders). Reward map (~$100 total) lives in
+  `DAD_VAULT.md` and the `REWARDS` array in `script.js`; the dashboard computes
+  "earned" from achievements/progress. Earned so far: **$10** (Creative
+  Director). Eli sees the total and asks Dad to claim it.
 - **Next:** Eli says *"Start Module 2 — let's use One-Shot Power to build my
   game."*
 

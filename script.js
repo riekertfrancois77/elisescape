@@ -85,6 +85,24 @@ const ACHIEVEMENTS = [
 ];
 const SECRET_ACHIEVEMENTS = ["Curiosity Pays", "Better Than School", "AI Tamer", "Bug Hunter", "Game Studio Brain"];
 
+/* ---------------- cash rewards (Dad Vault) ----------------
+   Real money, set by Dad, SHOWN to Eli on purpose. Each reward is tied to a
+   milestone the dashboard can already see, so the earned total updates itself
+   as Eli progresses. To change an amount, edit here and DAD_VAULT.md.        */
+
+const REWARDS = [
+  { label: "Become Creative Director — finish Module 1", amount: 10, when: "Module 1 complete",
+    earned: (s) => s.earnedNames.has("Creative Director") },
+  { label: "Build your first playable game — Module 2", amount: 15, when: "unlock First Playable",
+    earned: (s) => s.earnedNames.has("First Playable") },
+  { label: "Discover secret achievements", per: 5, cap: 5, when: "$5 each — keep exploring",
+    count: (s) => s.secretCount },
+  { label: "Ship & demo your game to the family — Module 13", amount: 25, when: "Module 13 complete",
+    earned: (s) => s.moduleDone[12] === true },
+  { label: "Finish the whole 13-module journey", amount: 25, when: "all 13 modules complete",
+    earned: (s) => s.allDone },
+];
+
 /* ---------------- embedded fallback state ----------------
    Used when the dashboard is opened as file:// and fetch() of
    the Markdown files is blocked by the browser. Mirrors the
@@ -295,6 +313,51 @@ function renderAchievements(achMd) {
   $("ach-list").innerHTML = visItems.join("") + secItems.join("");
 }
 
+// Build the reward state from what the dashboard already knows.
+function rewardState(memoryMd, achMd) {
+  const vis = checkboxes(section(achMd, "Visible Achievements"));
+  const sec = checkboxes(section(achMd, "Secret Achievements"));
+  const mods = checkboxes(section(memoryMd, "Progress Tracker"));
+  const earnedNames = new Set();
+  ACHIEVEMENTS.forEach((a, i) => { if (vis[i] && vis[i].done) earnedNames.add(a.name); });
+  const moduleDone = mods.map((c) => c.done);
+  return {
+    earnedNames,
+    secretCount: sec.filter((c) => c.done).length,
+    moduleDone,
+    allDone: moduleDone.length > 0 && moduleDone.every(Boolean),
+  };
+}
+
+function rewardRow(done, label, amt, sub) {
+  return `<li class="${done ? "reward-earned" : "reward-locked"}">
+    <span class="vault-icon">${done ? "💰" : "🔒"}</span>
+    <div><strong>${label}</strong><span>${sub}</span></div>
+    <span class="reward-amt">${done ? "✓ " : ""}${amt}</span>
+  </li>`;
+}
+
+function renderRewards(state) {
+  let earned = 0, possible = 0;
+  const rows = REWARDS.map((r) => {
+    if (r.per) {
+      const n = Math.min(r.count(state), r.cap), amt = n * r.per, max = r.cap * r.per;
+      earned += amt; possible += max;
+      return rewardRow(n > 0, r.label, `$${amt} / $${max}`, `found ${n} of ${r.cap} · ${r.when}`);
+    }
+    const done = r.earned(state);
+    earned += done ? r.amount : 0; possible += r.amount;
+    return rewardRow(done, r.label, `$${r.amount}`, done ? "ready — ask Dad!" : r.when);
+  }).join("");
+
+  $("vault-total").innerHTML = earned > 0
+    ? `<span class="vault-amount">$${earned}</span>
+       <span class="vault-amount-label">earned so far — <strong>ask Dad to claim it!</strong></span>
+       <span class="vault-possible">of $${possible} up for grabs across the whole journey</span>`
+    : `<span class="vault-amount-label">No cash banked yet — your first <strong>$${REWARDS[0].amount}</strong> is one module away.</span>`;
+  $("vault-list").innerHTML = rows;
+}
+
 /* ---------------- modal ---------------- */
 
 // Per-module step completion, read from MEMORY.md "## Module N Steps".
@@ -454,6 +517,7 @@ console.log(
   renderMemory(memoryMd);
   renderClaudePanel(memoryMd);
   renderAchievements(achMd);
+  renderRewards(rewardState(memoryMd, achMd));
 
   // Hero button → the lowest unlocked module that isn't finished yet.
   const unlocked = MODULES.filter((m) => m.locked === false);

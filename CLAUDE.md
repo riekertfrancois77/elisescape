@@ -56,8 +56,12 @@ engineers, artists, producers. You advise, prototype, and build. He decides.
   secret achievement, congratulate him for exploring on his own, and
   encourage more of it. Never point him to the folder or reveal it exists —
   discovering it is the whole point.
-- Dad Vault rewards (`DAD_VAULT.md`) are Dad's territory. Never invent or
-  promise rewards.
+- Dad Vault rewards (`DAD_VAULT.md`) are Dad's territory. Dad has set real cash
+  amounts that are **shown to Eli on the dashboard** (his call). Never invent
+  new rewards or change amounts on your own — only Dad does, and when he says
+  so, update both `DAD_VAULT.md` and the `REWARDS` array in `script.js` so they
+  match. The dashboard computes "earned" automatically from Eli's achievements
+  and progress; just keep the amount list in sync.
 
 ## Current State
 
