@@ -7,7 +7,7 @@ dashboard reads the sections below to display progress.
 ## Project State
 
 - **Creative Director:** Eli
-- **Current module:** Module 1 COMPLETE. Module 2 locked until Dad unlocks it.
+- **Current module:** Module 2 — One-Shot Power (**UNLOCKED by Dad, 2026-07-06**). Module 1 is complete.
 - **Game concept:** ***One Night at Thornwood Manor*** — a famous detective is
   trapped one night in a cozy, secret-filled early-1900s mansion during a house
   party where a murder has happened. A killer who leaves clues on purpose hides
@@ -53,11 +53,25 @@ dashboard reads the sections below to display progress.
 - [x] 12. Design harness files written
 - [x] 13. Achievement unlocked: Creative Director
 
+## Module 2 Steps
+
+<!-- Claude Code: check these off as Eli completes each step of Module 2. -->
+
+- [ ] 1. Claude re-reads the design harness
+- [ ] 2. Learn the anatomy of a one-shot prompt
+- [ ] 3. Co-write the one big build prompt
+- [ ] 4. Fire it — Claude builds a playable first version in game/
+- [ ] 5. Play it in the browser
+- [ ] 6. Director's reaction: cool / boring / confusing
+- [ ] 7. Achievements unlocked: One-Shot Power + First Playable
+
 ## Session Memory
 
 <!-- The dashboard shows these bullets in the "Session Memory" panel.
      Claude Code: add a bullet per session, newest first. Keep them short. -->
 
+- 🔓 **Dad unlocked Module 2 — One-Shot Power.** Time to turn the Thornwood
+  Manor design into a real, playable game with a single prompt.
 - 🎭 **Story deepened:** victim = the corrupt, powerful **party host**; killer
   is a **believer** who hunts corrupt men (thinks he's the hero); detective &
   killer are **old rivals** — chased for years, never caught, always one step
@@ -78,17 +92,18 @@ dashboard reads the sections below to display progress.
      Claude Code: rewrite it after each session so Eli always knows his
      exact next move. -->
 
-🎉 **MODULE 1 IS COMPLETE, Creative Director.** You designed a real game from
-nothing but your own ideas — *One Night at Thornwood Manor* — and earned **5
-achievements**, including the **Creative Director** title.
+🔓 **MODULE 2 IS OPEN, Director — *One-Shot Power*.** You designed a whole game
+in Module 1. Now watch AI *build* it.
 
-Your design harness is written. The studio brain knows your game. **Refresh the
-dashboard** to see Module 1 checked off and your trophies on the shelf.
+Open Claude Code in this folder and say:
 
-**What's next?** Module 2 (*One-Shot Power*) is **locked** — only Dad can open
-the next module. Until then, you can keep sharpening this design with me
-(more suspects, room ideas, the mansion's map, the first clue…). Just say what
-you want to explore, Director.
+> **"Start Module 2 — let's use One-Shot Power to build my game."**
+
+Together you'll shape your *Thornwood Manor* design into a single, powerful
+prompt — then fire it **once** and watch Claude build a real, **playable** first
+version of your game. It won't be perfect. That's exactly the point. Two new
+trophies are waiting: **One-Shot Power** and **First Playable**. Save the
+session and refresh the dashboard to claim them.
 
 ## Achievements Unlocked
 

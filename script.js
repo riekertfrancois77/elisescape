@@ -16,7 +16,7 @@ const MODULES = [
     teaser: "Design your own game from scratch — before any code exists. The studio opens its doors to its Director.",
     locked: false,
   },
-  { n: 2,  title: "One-Shot Power",                teaser: "Make Claude build something real from a single, perfect prompt. One shot. No edits." },
+  { n: 2,  title: "One-Shot Power",                teaser: "Make Claude build something real from a single, perfect prompt. One shot. No edits.", locked: false },
   { n: 3,  title: "Director Mode",                 teaser: "Stop typing code requests. Start running a studio. You give direction; the team executes." },
   { n: 4,  title: "Project Memory",                teaser: "Teach the studio to remember everything, so every session starts smarter than the last." },
   { n: 5,  title: "Code Reading",                  teaser: "See through the machine. Read code the way a director reads a script." },
@@ -55,12 +55,33 @@ const MODULE1_STEPS = [
   "Achievement unlock: Creative Director.",
 ];
 
+const MODULE2_GOALS = [
+  "AI can build a working thing astonishingly fast.",
+  "A great prompt is a precise instruction, not a vague wish.",
+  "Your design docs are the raw material — Module 1 pays off here.",
+  "A rough, playable prototype beats a perfect plan on paper.",
+  "Constraints and examples make prompts stronger.",
+  "You're still the Director — you judge what's good, boring, or wrong.",
+];
+
+const MODULE2_STEPS = [
+  "Claude re-reads your design harness — the prompt is built from YOUR decisions.",
+  "Learn the anatomy of a one-shot prompt: goal, must-haves, constraints, style.",
+  "Co-write THE prompt — turn your whole game into one big, specific instruction.",
+  "Fire it. One shot. Claude builds a playable first version into the game/ folder.",
+  "Play it in the browser. It won't be perfect — that's the point.",
+  "React like a Director: what's cool? boring? confusing? (This feeds Module 3.)",
+  "Achievement unlock: One-Shot Power — and First Playable when it runs.",
+];
+
 const ACHIEVEMENTS = [
   { name: "Creative Director",      desc: "Complete Module 1 and lock in your game's direction." },
   { name: "First Big Decision",     desc: "Choose, reject, or combine the three game directions." },
   { name: "Game Pillars Chosen",    desc: "Define the 3–5 pillars every decision gets tested against." },
   { name: "Studio Review Complete", desc: "Survive your first studio team review." },
   { name: "Memory Created",         desc: "The design harness exists and the studio brain knows your game." },
+  { name: "One-Shot Power",         desc: "Turn your whole design into one prompt and watch Claude build a real, playable game." },
+  { name: "First Playable",         desc: "Your game runs in a browser for the very first time." },
 ];
 const SECRET_ACHIEVEMENTS = ["Curiosity Pays", "Better Than School", "AI Tamer", "Bug Hunter", "Game Studio Brain"];
 
@@ -120,6 +141,8 @@ const FALLBACK_ACHIEVEMENTS = `
 - [ ] **Game Pillars Chosen**
 - [ ] **Studio Review Complete**
 - [ ] **Memory Created**
+- [ ] **One-Shot Power**
+- [ ] **First Playable**
 
 ## Secret Achievements
 - [ ] **Curiosity Pays**
@@ -274,11 +297,39 @@ function renderAchievements(achMd) {
 
 /* ---------------- modal ---------------- */
 
-let module1StepsDone = [];
+// Per-module step completion, read from MEMORY.md "## Module N Steps".
+let missionStepsDone = {};
+
+const MISSIONS = {
+  1: {
+    title: "Think Like a Game Studio",
+    purpose: `Design your own game from scratch — before any coding begins. Real
+      studios don't start with code; they start with decisions. This one's done,
+      Director — but the briefing lives on.`,
+    goals: MODULE1_GOALS,
+    steps: MODULE1_STEPS,
+    start: `"Start Module 1. I'm ready to think like a game studio."`,
+    outro: `Claude runs the mission. You make the decisions. Save the session,
+      then refresh here — the studio remembers.`,
+  },
+  2: {
+    title: "One-Shot Power",
+    purpose: `You've designed your game. Now feel what AI can really do: turn your
+      whole Module 1 design into ONE carefully-built prompt, fire it once, and
+      watch Claude build a real, playable first version of your game in a single
+      shot. One big instruction. One working prototype. Whoa.`,
+    goals: MODULE2_GOALS,
+    steps: MODULE2_STEPS,
+    start: `"Start Module 2 — let's use One-Shot Power to build my game."`,
+    outro: `It won't be perfect — that's the whole point. A rough thing you can
+      play beats a perfect plan on paper; you'll sharpen it later. Save the
+      session, then refresh here to see your new trophies.`,
+  },
+};
 
 function openModule(n) {
-  if (n === 1) return openMission();
   const m = MODULES[n - 1];
+  if (m && m.locked === false) return openMission(n);
   showModal(`
     <div class="locked-tease">
       <span class="lock-glyph">🔒</span>
@@ -286,33 +337,31 @@ function openModule(n) {
       <h3>${m.title}</h3>
       <p class="tease-line">${m.teaser}</p>
       <p>That's all you get. This door doesn't open with curiosity — it opens with progress.</p>
-      <p class="redirect">▸ RETURN TO MODULE 01 — THINK LIKE A GAME STUDIO</p>
+      <p class="redirect">▸ RETURN TO YOUR UNLOCKED MODULES</p>
     </div>`);
 }
 
-function openMission() {
-  const steps = MODULE1_STEPS.map((s, i) =>
-    `<li class="${module1StepsDone[i] ? "done" : ""}">${s}</li>`).join("");
+function openMission(n) {
+  const mi = MISSIONS[n];
+  if (!mi) return;
+  const done = missionStepsDone[n] || [];
+  const steps = mi.steps.map((s, i) =>
+    `<li class="${done[i] ? "done" : ""}">${s}</li>`).join("");
   showModal(`
-    <p class="m-kicker">// MODULE 01 — UNLOCKED — MISSION BRIEFING</p>
-    <h3>Think Like a Game Studio</h3>
-    <p class="m-purpose">Design your own game from scratch — before any coding
-    begins. Real studios don't start with code; they start with decisions.
-    Nobody knows what your game is yet. Not even the AI. Especially not the
-    AI. It's waiting for its Director.</p>
+    <p class="m-kicker">// MODULE ${String(n).padStart(2, "0")} — UNLOCKED — MISSION BRIEFING</p>
+    <h3>${mi.title}</h3>
+    <p class="m-purpose">${mi.purpose}</p>
 
     <h4>WHAT YOU'LL LEARN</h4>
-    <ul class="goal-list">${MODULE1_GOALS.map((g) => `<li>${g}</li>`).join("")}</ul>
+    <ul class="goal-list">${mi.goals.map((g) => `<li>${g}</li>`).join("")}</ul>
 
     <h4>MISSION FLOW</h4>
     <ol class="mission-steps">${steps}</ol>
 
     <h4>HOW TO START</h4>
     <p class="m-purpose">Open <strong>Claude Code</strong> in this project folder and say:</p>
-    <blockquote>"Start Module 1. I'm ready to think like a game studio."</blockquote>
-    <p class="m-purpose">Claude runs the mission. You make the decisions. When
-    you're done for the day, tell Claude to save the session — then come back
-    here and refresh. The studio remembers.</p>`);
+    <blockquote>${mi.start}</blockquote>
+    <p class="m-purpose">${mi.outro}</p>`);
 }
 
 function showModal(html) {
@@ -328,7 +377,7 @@ $("modal-close").addEventListener("click", closeModal);
 $("modal-backdrop").addEventListener("click", (e) => { if (e.target === $("modal-backdrop")) closeModal(); });
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
 
-$("cta-module1").addEventListener("click", () => openMission());
+// The hero button targets the current active module (wired in boot()).
 
 /* ---------------- easter eggs ---------------- */
 
@@ -396,10 +445,22 @@ console.log(
     loadMd("ACHIEVEMENTS.md", FALLBACK_ACHIEVEMENTS),
   ])).map(stripComments);
 
-  const { completedModules, stepsDone } = renderProgress(memoryMd);
-  module1StepsDone = stepsDone;
+  const { completedModules } = renderProgress(memoryMd);
+  missionStepsDone = {
+    1: checkboxes(section(memoryMd, "Module 1 Steps")).map((c) => c.done),
+    2: checkboxes(section(memoryMd, "Module 2 Steps")).map((c) => c.done),
+  };
   renderModules(completedModules);
   renderMemory(memoryMd);
   renderClaudePanel(memoryMd);
   renderAchievements(achMd);
+
+  // Hero button → the lowest unlocked module that isn't finished yet.
+  const unlocked = MODULES.filter((m) => m.locked === false);
+  const active = unlocked.find((m) => !completedModules[m.n - 1]) || unlocked[unlocked.length - 1];
+  const cta = $("cta-module1");
+  if (cta && active) {
+    cta.textContent = `▸ ENTER MODULE ${active.n}`;
+    cta.addEventListener("click", () => openMission(active.n));
+  }
 })();

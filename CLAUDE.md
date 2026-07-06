@@ -61,5 +61,11 @@ engineers, artists, producers. You advise, prototype, and build. He decides.
 
 ## Current State
 
-The only unlocked module is **Module 1: Think Like a Game Studio**
-(`modules/module-01.md`). Start there. Follow its flow step by step.
+- **Module 1: Think Like a Game Studio** (`modules/module-01.md`) — **COMPLETE.**
+  Eli designed *One Night at Thornwood Manor* (a detective mystery) and earned
+  the Creative Director title plus 4 more achievements.
+- **Module 2: One-Shot Power** (`modules/module-02.md`) — **UNLOCKED** by Dad on
+  2026-07-06. This is the current module: use Eli's design harness to co-write a
+  single prompt and one-shot build a playable first version of his game into
+  `game/`. Follow that module's flow and rules.
+- Modules 3–13 remain locked until Dad explicitly opens them.

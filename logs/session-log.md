@@ -5,6 +5,21 @@
 
 ---
 
+## Session 2 — Dad unlocks Module 2: "One-Shot Power" (2026-07-06)
+
+- **Dad explicitly unlocked Module 2** (One-Shot Power). It is now the current
+  module; `modules/module-02.md` written; dashboard, `MEMORY.md`,
+  `LOCKED_MODULES.md`, and `CLAUDE.md` updated.
+- Added two new visible achievements Eli can earn in Module 2: **One-Shot
+  Power** and **First Playable** (he loved the achievement unlocks — keep them
+  coming).
+- The mission: turn Eli's *Thornwood Manor* design into one prompt and one-shot
+  build a playable first version into `game/`.
+- **Next:** Eli says *"Start Module 2 — let's use One-Shot Power to build my
+  game."*
+
+---
+
 ## Session 1 — Module 1 Complete: "Think Like a Game Studio" (2026-07-06)
 
 Eli ran Module 1 end to end as Creative Director. What we decided:
