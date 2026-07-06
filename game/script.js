@@ -33,10 +33,11 @@ const MURDER_TIME = "9:47";
    lock clicks open when you win. The ticking makes the STOPPED clock feel
    even more wrong — everything ticks except the one that matters.
    --------------------------------------------------------------------- */
-let audioCtx = null;   // the sound engine (created on the first click)
-let muted = false;     // is sound turned off?
-let tickTimer = null;  // the repeating tick... tock...
-let murmur = null;     // the low party hum
+let audioCtx = null;     // the sound engine (created on the first click)
+let muted = false;       // is sound turned off?
+let tickTimer = null;    // the repeating tick... tock...
+let murmur = null;        // the low party hum
+let ambienceTimer = null; // the random "room is alive" sounds
 
 // Turn the sound engine on. Browsers only allow this after a user clicks,
 // so we call it from the "Begin the night" button.
@@ -63,22 +64,118 @@ function beep(freq, startVol, seconds, type) {
   osc.stop(now + seconds + 0.02);
 }
 
-// The soft wooden tick of a clock.
+// The soft wooden tick of a clock. Quieter now — it's just ONE voice in the
+// room, not the loud thing that gives the clock away.
 function tick(high) {
-  beep(high ? 880 : 660, 0.05, 0.05, "sine");
+  beep(high ? 880 : 660, 0.028, 0.05, "sine");
 }
 
-// Start the room's atmosphere: ticking + a low party murmur.
+// A short burst of filtered static — the raw material for crackles and pops.
+function noiseBurst(seconds, vol, freq, band) {
+  if (!audioCtx || muted) return;
+  const size = Math.max(1, Math.floor(audioCtx.sampleRate * seconds));
+  const buffer = audioCtx.createBuffer(1, size, audioCtx.sampleRate);
+  const data = buffer.getChannelData(0);
+  for (let i = 0; i < size; i++) data[i] = Math.random() * 2 - 1;
+  const src = audioCtx.createBufferSource();
+  src.buffer = buffer;
+  const filter = audioCtx.createBiquadFilter();
+  filter.type = band || "bandpass";
+  filter.frequency.value = freq;
+  const g = audioCtx.createGain();
+  const now = audioCtx.currentTime;
+  g.gain.setValueAtTime(vol, now);
+  g.gain.exponentialRampToValueAtTime(0.0001, now + seconds);
+  src.connect(filter).connect(g).connect(audioCtx.destination);
+  src.start(now);
+  src.stop(now + seconds + 0.02);
+}
+
+// The fireplace: a little run of tiny pops and snaps.
+function crackle() {
+  const n = 2 + Math.floor(Math.random() * 3);
+  for (let i = 0; i < n; i++) {
+    setTimeout(function () {
+      noiseBurst(0.03, 0.05, 1200 + Math.random() * 2200);
+    }, i * (50 + Math.random() * 120));
+  }
+}
+
+// A far-off clink of glasses at the party.
+function glassClink() {
+  beep(1568, 0.03, 0.12, "triangle");
+  setTimeout(function () { beep(2093, 0.02, 0.14, "triangle"); }, 55);
+}
+
+// A single wistful piano note drifting in from another room.
+function pianoNote() {
+  const notes = [392, 440, 494, 587, 659]; // G A B D E — a soft, sad little scale
+  beep(notes[Math.floor(Math.random() * notes.length)], 0.035, 0.7, "triangle");
+}
+
+// An old house settling — a low wooden creak.
+function creak() {
+  if (!audioCtx || muted) return;
+  const now = audioCtx.currentTime;
+  const osc = audioCtx.createOscillator();
+  const g = audioCtx.createGain();
+  osc.type = "sawtooth";
+  osc.frequency.setValueAtTime(90, now);
+  osc.frequency.exponentialRampToValueAtTime(52, now + 0.5);
+  g.gain.setValueAtTime(0.0001, now);
+  g.gain.exponentialRampToValueAtTime(0.03, now + 0.05);
+  g.gain.exponentialRampToValueAtTime(0.0001, now + 0.5);
+  const lp = audioCtx.createBiquadFilter();
+  lp.type = "lowpass";
+  lp.frequency.value = 300;
+  osc.connect(lp).connect(g).connect(audioCtx.destination);
+  osc.start(now);
+  osc.stop(now + 0.55);
+}
+
+// A distant swell of party laughter.
+function laughter() {
+  const base = 300 + Math.random() * 80;
+  for (let i = 0; i < 4; i++) {
+    setTimeout(function () {
+      beep(base + (i % 2 ? 40 : -30) + Math.random() * 20, 0.02, 0.09, "sine");
+    }, i * 90);
+  }
+}
+
+// Every few seconds, one random sound of life fills the room. This is the fix
+// for "the ticking gives the clock away" — now the tick is lost in a crowd of
+// crackles, clinks, piano and laughter.
+function scheduleRoomSound() {
+  if (!audioCtx) return;
+  const delay = 2500 + Math.random() * 4000; // 2.5–6.5 seconds apart
+  ambienceTimer = setTimeout(function () {
+    const roll = Math.random();
+    if (roll < 0.32) crackle();
+    else if (roll < 0.58) glassClink();
+    else if (roll < 0.80) pianoNote();
+    else if (roll < 0.93) creak();
+    else laughter();
+    scheduleRoomSound(); // keep the room breathing
+  }, delay);
+}
+
+// Start the room's atmosphere: a quiet tick, a party murmur, and a living
+// room full of random sounds.
 function startAmbience() {
   if (!audioCtx) return;
 
-  // tick... tock... once a second, alternating pitch.
+  // tick... tock... once a second, alternating pitch (quiet now).
   if (tickTimer) clearInterval(tickTimer);
   let high = true;
   tickTimer = setInterval(function () {
     tick(high);
     high = !high;
   }, 1000);
+
+  // the living, breathing room: crackles, clinks, piano, creaks, laughter.
+  if (ambienceTimer) clearTimeout(ambienceTimer);
+  scheduleRoomSound();
 
   // A low murmur of the party: quiet filtered noise, like distant voices.
   if (murmur) return; // only build it once
@@ -99,9 +196,10 @@ function startAmbience() {
   murmur = vol;
 }
 
-// Stop the ticking (used when the night's puzzle is solved).
-function stopTicking() {
+// Stop the ticking AND the room sounds (used when the night's puzzle is solved).
+function stopAmbience() {
   if (tickTimer) { clearInterval(tickTimer); tickTimer = null; }
+  if (ambienceTimer) { clearTimeout(ambienceTimer); ambienceTimer = null; }
 }
 
 // A little rising chime — you found something.
@@ -230,10 +328,12 @@ function clickObject(object) {
     addClue("Pocket watch, hands jarred crooked — points near 9:52.");
 
   } else if (object === "coats") {
-    // CLUE 3 — the exact minute, by deduction, told as testimony not a formula.
-    // "Thirteen before ten" -> the detective works out 9:47.
-    examine("By the cloakroom a footman is shaking. 'The ten o'clock chime never came — the scream swallowed it whole. Thirteen strokes early, I'd swear on it. I was counting down to the hour.'");
-    addClue("Scream: thirteen minutes before the ten o'clock chime.");
+    // CLUE 3 — the exact minute, but told LESS directly now. The footman was
+    // counting the minutes DOWN to the ten o'clock chime; he'd reached "thirteen"
+    // when the scream came. The detective has to realise: thirteen minutes left
+    // before ten = 9:47. No "before the chime" spelled out anymore.
+    examine("By the cloakroom a footman is shaking. 'I count the minutes down to the hour — a habit, sir. I'd just whispered \"thirteen\" when the scream tore through the hall. The ten o'clock chime never followed it.'");
+    addClue("Footman counting down to ten's chime — had reached 'thirteen' when the scream came.");
 
   } else if (object === "clock") {
     // The great clock is now the LOCK: set its hands to the deduced time.
@@ -324,7 +424,7 @@ function handleDoor() {
    That's "setup and payoff" — exactly like Eli's design.
    --------------------------------------------------------------------- */
 function win() {
-  stopTicking();  // the ticking falls silent as the lock turns
+  stopAmbience();  // the whole room falls silent as the lock turns
   unlockSound();  // a deep brass click, then a warm chord
   document.getElementById("win-text").innerHTML =
     "The brass key bites into the lock and turns with a deep click. The oak door swings inward onto a dark corridor — the manor's hidden heart, where the killer fled." +
