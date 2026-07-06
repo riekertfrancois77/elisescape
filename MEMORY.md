@@ -160,7 +160,13 @@ Module 3, finish Module 3 to open Module 4.)*
        - Producer · ⭐⭐⭐⭐☆ · Excellent progress for Version 0.1.
      Use ⭐ for filled stars and ☆ for empty. -->
 
-*No build yet — the Studio Review appears here after Module 2's first build.*
+**Version 0.1 — "Arrival at Thornwood Manor" (2026-07-06)**
+- Creative Director (Eli) · ⭐⭐⭐⭐☆ · The arrival hook is real, and the stopped clock feels like *his* game.
+- Player Experience · ⭐⭐⭐☆☆ · The mood lands; a first-timer may not realize the clock is *clickable* — needs a nudge later.
+- Lead Engineer · ⭐⭐⭐⭐☆ · Clean state, no bugs, three files, fully playtested end-to-end.
+- QA · ⭐⭐⭐⭐☆ · Puzzle is fair — the door won't open until you've noticed the clue. Accepts messy input ("947", "9:47"). No crashes.
+- Art Director · ⭐⭐⭐☆☆ · Warm-and-shadowed tone is right; still emoji + gradients, not real art (that's Module 10).
+- Producer · ⭐⭐⭐⭐⭐ · A playable first slice, built and tested in one session. Excellent progress for Version 0.1.
 
 ## Eli's Estimate vs Reality
 
@@ -168,4 +174,10 @@ Module 3, finish Module 3 to open Module 4.)*
      will take, and logs his guess here. After the ~1-minute build, they compare.
      A quiet lesson in how AI changes the math of software. -->
 
-*Not set yet — Eli makes his estimate in Module 2, before the one-shot build.*
+**Eli's estimate (2026-07-06):** *"A few hours."* A smart, sensible guess — the
+old math of software.
+
+**The reality:** the one-shot build took **under a minute.** The lesson landed:
+AI changed the math. Building got cheap; **deciding what to build** is now the
+expensive, human part — which is exactly the Director's job. The hard part is
+the part only Eli can do.
