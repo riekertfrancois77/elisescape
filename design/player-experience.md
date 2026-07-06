@@ -20,14 +20,24 @@ about the next thing.* Discovery and mastery, not power or fear.
 > clever, triumphant. Real studios draw this before they build.
 
 ```
-🙂  →  😨  →  😱  →  🤔  →  😄  →  🏆
+🙂  →  🔍  →  🤔  →  😖  →  💡  →  🏆
+calm    exploring  thinking  stuck   "AHA!"   escape!
 ```
 
-- **Where players get stuck:** *pending.*
-- **Where players nearly quit:** *pending.*
-- **Where players celebrate:** *pending.*
+- **Where players get stuck:** The "tried everything and it doesn't work"
+  feeling — the player is convinced they've exhausted every option, until they
+  spot the *missing piece* or notice the *one thing* they'd overlooked.
+- **Where players nearly quit:** They push far into the game, then hit a wall
+  where moving forward seems to give them *nothing* — a dead end. They almost
+  give up... then **remember a clue from the very start** that turns out to be
+  the key. (Setup & payoff — the clue was planted all along.)
+- **Where players celebrate:** The big "AHA!" — standing in a room with no way
+  forward and nothing obviously out of place, until they *really look* and
+  notice something (e.g. a painting and a statue match, but the statue is
+  **slightly off**). They fix it, and a **secret passage opens.** Discovery
+  reignites the curiosity loop.
 
-*Filled in during Module 1 ("Map the emotional curve").*
+*Mapped with Eli during Module 1, Step 3 (2026-07-06).*
 
 ## Who the Player Becomes
 

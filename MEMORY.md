@@ -35,9 +35,9 @@ dashboard reads the sections below to display progress.
 
 <!-- Claude Code: check these off as Eli completes each step of Module 1. -->
 
-- [ ] 1. Welcome to the Studio
-- [ ] 2. What should players feel?
-- [ ] 3. Map the emotional curve
+- [x] 1. Welcome to the Studio
+- [x] 2. What should players feel?
+- [x] 3. Map the emotional curve
 - [ ] 4. Who does the player become?
 - [ ] 5. What kind of world is this?
 - [ ] 6. What problem or challenge drives the game?
@@ -54,9 +54,12 @@ dashboard reads the sections below to display progress.
 <!-- The dashboard shows these bullets in the "Session Memory" panel.
      Claude Code: add a bullet per session, newest first. Keep them short. -->
 
+- Module 1 in progress. Feelings + emotional curve locked in.
+- **Core feelings:** curious while playing, clever when advancing.
+- **The ride:** explore → get stuck → notice the missing detail → AHA → a
+  secret opens. Late-game "nearly quit" is saved by a clue from the very start.
+- Game is pointing toward observation / room-puzzle territory — not locked yet.
 - The studio has been founded. All systems online.
-- Module 1 is unlocked and waiting: **Think Like a Game Studio**.
-- No game exists yet. That's the point — it starts in Eli's head.
 
 ## Claude Instructions
 
@@ -64,12 +67,17 @@ dashboard reads the sections below to display progress.
      Claude Code: rewrite it after each session so Eli always knows his
      exact next move. -->
 
-Open Claude Code in this folder and say:
+Module 1 is underway. You've mapped the **feelings** and the **emotional
+curve**. Next up (Step 4): **Who does the player become?**
 
-> **"Start Module 1. I'm ready to think like a game studio."**
+To keep going, just say:
 
-Claude will welcome you to the studio and ask you the first big question.
-Answer honestly — there are no wrong answers, only *your* answers.
+> **"Let's keep building the studio."**
+
+We'll figure out who the *player* gets to be, what kind of world this is, and
+the challenge that drives it — then I'll show you three game directions built
+only from your answers. Answer honestly — there are no wrong answers, only
+*your* answers.
 
 ## Achievements Unlocked
 
