@@ -6,8 +6,10 @@
 
 ---
 
-*No questions asked yet. Module 1, step 2 puts the first one on the table:*
-***What should players feel?***
+## 2026-07-06 — Module 1, Step 2
+
+**Q:** What should players feel?
+**Eli:** "i want them to feel curious while playing but also feel clever when they make advancements"
 
 <!-- Format for entries:
 

@@ -6,7 +6,13 @@
 
 ## What Players Should Feel
 
-*Pending — Module 1 ("What should players feel?").*
+**Primary feeling: CURIOUS** while playing — pulled forward by the need to
+know what's next. **Secondary feeling: CLEVER** — the reward of feeling smart
+whenever they make an advancement or figure something out.
+
+The core loop Eli is chasing: *curiosity pulls the player forward → they
+solve/discover something → they feel clever → the payoff makes them curious
+about the next thing.* Discovery and mastery, not power or fear.
 
 ## The Emotional Curve
 
