@@ -70,6 +70,17 @@ looking harder + thinking clearer + noticing tiny details. Directly embodies
 Pillar 1 (Notice What's Off) and the setup/payoff deduction style. Puzzle-design
 test going forward: "Would this make the player feel like Sherlock?"
 
+## 2026-07-06 — Module 1, Steps 9 & 10
+
+**Q:** Three game directions (built only from Eli's answers): A) "One Night at
+Thornwood Manor" (trapped night, room-by-room deduction, trail to a final
+confrontation); B) "The Detective's Notebook" (open mansion, connect clues in a
+notebook); C) "The Clue-Leaver's Game" (move-for-move duel with the killer).
+Which calls to you?
+**Eli:** "i like a the best"
+**Result:** FIRST BIG DECISION — Direction **A, "One Night at Thornwood Manor"**
+chosen and locked. B and C not chosen; their flavors may be borrowed inside A.
+
 <!-- Format for entries:
 
 ## 2026-07-06 — Module 1, Step 2

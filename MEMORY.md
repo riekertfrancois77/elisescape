@@ -43,8 +43,8 @@ dashboard reads the sections below to display progress.
 - [x] 6. What problem or challenge drives the game?
 - [x] 7. The game's 3–5 pillars
 - [x] 8. References that inspire the game
-- [ ] 9. Three possible game directions generated
-- [ ] 10. Eli chooses / rejects / combines directions
+- [x] 9. Three possible game directions generated
+- [x] 10. Eli chooses / rejects / combines directions
 - [ ] 11. Studio team review
 - [ ] 12. Design harness files written
 - [ ] 13. Achievement unlocked: Creative Director
@@ -54,12 +54,15 @@ dashboard reads the sections below to display progress.
 <!-- The dashboard shows these bullets in the "Session Memory" panel.
      Claude Code: add a bullet per session, newest first. Keep them short. -->
 
-- Module 1 in progress. Feelings + emotional curve locked in.
-- **Core feelings:** curious while playing, clever when advancing.
+- 🎬 **FIRST BIG DECISION MADE:** the game is **"One Night at Thornwood
+  Manor"** — a detective trapped one night in a cozy 1900s mansion with a
+  clue-leaving killer, solving room-by-room until they corner the culprit.
+- **Core feelings:** curious while playing, clever when advancing (Sherlock).
+- **Pillars locked:** Notice What's Off · Curiosity Rewarded/Cleverness Earned
+  · A Duel With the Culprit · A Cozy House That Hides Everything.
 - **The ride:** explore → get stuck → notice the missing detail → AHA → a
   secret opens. Late-game "nearly quit" is saved by a clue from the very start.
-- Game is pointing toward observation / room-puzzle territory — not locked yet.
-- The studio has been founded. All systems online.
+- Next: Studio team review (Step 11), then write the full design harness.
 
 ## Claude Instructions
 
@@ -67,18 +70,19 @@ dashboard reads the sections below to display progress.
      Claude Code: rewrite it after each session so Eli always knows his
      exact next move. -->
 
-Module 1 is underway. You've mapped the **feelings** and the **emotional
-curve**. Next up (Step 4): **Who does the player become?**
+You've made your **First Big Decision** — the game is *One Night at Thornwood
+Manor*. Next up (Step 11): the **Studio Team Review**, where your designer,
+engineer, artist, and a skeptical producer each react to your choice, and you
+respond as Director to make it sharper.
 
 To keep going, just say:
 
-> **"Let's keep building the studio."**
+> **"Let's run the studio review."**
 
-We'll figure out who the *player* gets to be, what kind of world this is, and
-the challenge that drives it — then I'll show you three game directions built
-only from your answers. Answer honestly — there are no wrong answers, only
-*your* answers.
+After that, I'll write your full design harness and unlock the **Creative
+Director** achievement — the finish line of Module 1.
 
 ## Achievements Unlocked
 
+- 🏆 **First Big Decision** (2026-07-06) — Eli chose game Direction A.
 - 🏆 **Game Pillars Chosen** (2026-07-06) — Eli locked the game's 4 pillars.

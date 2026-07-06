@@ -9,8 +9,8 @@ earn them.
 
 - [ ] **Creative Director** — Complete Module 1 and lock in your game's
   direction. The studio is yours.
-- [ ] **First Big Decision** — Choose, reject, or combine the three game
-  directions. Deciding is the job.
+- [x] **First Big Decision** — Choose, reject, or combine the three game
+  directions. Deciding is the job. *(Unlocked 2026-07-06 — chose Direction A.)*
 - [x] **Game Pillars Chosen** — Define the 3–5 pillars every future decision
   will be tested against. *(Unlocked 2026-07-06 — 4 pillars locked.)*
 - [ ] **Studio Review Complete** — Survive your first studio team review and
