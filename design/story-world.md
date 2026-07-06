@@ -22,8 +22,21 @@ Why these choices are strong (studio notes):
 
 ## The Driving Problem
 
-*The challenge or conflict that powers the whole game. Pending — Module 1
-("What problem or challenge drives the game?").*
+A **murder** in the mansion. The killer is a **signature murderer known for
+leaving clues that reveal more** — they *want* to be found, on their own terms.
+The player is a **well-known local detective** called to the scene. The
+pressure: **the murderer is still at the crime scene, hidden.**
+
+Why this engine is strong (studio notes):
+- **The clue-leaving killer justifies the whole design.** It answers the
+  question every detective game struggles with — *why are there clues at all?*
+  Here, the villain plants them. The mystery becomes a **cat-and-mouse duel**
+  between two clever minds: *what is the killer telling me, and can I outsmart
+  them?*
+- **A killer still hidden on-site = a clock that watches you.** Constant
+  tension; any cozy room or secret passage could conceal them.
+- **Built-in finale:** the final clue doesn't just name the culprit — it can
+  reveal *where they've been hiding the whole time* (setup & payoff).
 
 ## Story Shape
 

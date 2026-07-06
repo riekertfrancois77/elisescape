@@ -42,6 +42,15 @@ secrets throughout; grounded/real (no magic). Period = pure observation-based
 detective work (no phones/cameras/DNA). Cozy-as-disguise heightens the thrill
 of hidden passages. "Real" keeps every clue fair and logical.
 
+## 2026-07-06 — Module 1, Step 6
+
+**Q:** What problem or challenge drives the game?
+**Eli:** "it was a murder that was done by a murderer known for leaving clues to revel more and the detective is a well known detective in the town he lives in amd the pressure is that the murder is still at crime scene just hidden"
+**Studio note:** A *signature clue-leaving killer* (cat-and-mouse duel) — this
+justifies why clues exist in the world. Player = well-known local detective.
+Pressure = the murderer is STILL hidden at the scene (a clock that watches
+you). Sets up a finale where the last clue reveals the killer's hiding place.
+
 <!-- Format for entries:
 
 ## 2026-07-06 — Module 1, Step 2

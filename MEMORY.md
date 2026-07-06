@@ -40,7 +40,7 @@ dashboard reads the sections below to display progress.
 - [x] 3. Map the emotional curve
 - [x] 4. Who does the player become?
 - [x] 5. What kind of world is this?
-- [ ] 6. What problem or challenge drives the game?
+- [x] 6. What problem or challenge drives the game?
 - [ ] 7. The game's 3–5 pillars
 - [ ] 8. References that inspire the game
 - [ ] 9. Three possible game directions generated
