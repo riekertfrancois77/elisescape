@@ -175,6 +175,11 @@ function addClue(text) {
   const li = document.createElement("li");
   li.textContent = text;
   list.appendChild(li);
+
+  // Every new clue rings the same soft chime — so the sound never singles out
+  // the clock. Finding the red-herring ticket sounds exactly like finding the
+  // clock. Your ears won't solve this for you.
+  chime();
 }
 
 
@@ -202,7 +207,11 @@ function clickObject(object) {
     examine("A proud portrait of the host hangs above the mantel. His painted eyes follow you across the room. Unsettling — but portraits do that. Nothing truly wrong here.");
 
   } else if (object === "coats") {
-    examine("A rack of fine coats and hats from the evening's guests. Damp with the night air. Ordinary. The manor keeps its secrets better than this.");
+    // A RED HERRING. There is a number here too — a cloakroom ticket, No. 214 —
+    // so the clock's 9:47 is no longer the only number in the room. Part of
+    // "hard mode": the detective must decide WHICH number the code wants.
+    examine("A rack of fine coats and hats from the evening's guests. Pinned to one lapel, a cloakroom ticket: No. 214. Damp with the night air. Ordinary — the manor keeps its real secrets better than this.");
+    addClue("A cloakroom ticket: No. 214.");
 
   } else if (object === "clock") {
     // THE "notice what's off" moment.
@@ -219,25 +228,20 @@ function clickObject(object) {
    --------------------------------------------------------------------- */
 function handleClock() {
   if (!state.noticedClock) {
-    // First real look: the detective realises what's wrong.
+    // HARD MODE: we describe what's WRONG, but we no longer connect the dots.
+    // No "the moment of the murder", no glow, no fanfare. The detective sees a
+    // stopped clock frozen at 9:47 and has to decide for themselves that this
+    // is the thing that's off — and that the number might matter.
     examine(
-      "The great hall clock. Beautiful, brass, taller than you are — and... stopped. Its hands are frozen at " +
-      MURDER_TIME + ", while the whole party breathes and moves around it. Every other timepiece in the room ticks on. This one died at a single moment. The moment of the murder."
+      "The great hall clock — brass, taller than you are — has stopped. Its hands are frozen at " +
+      MURDER_TIME + ". Around it, the whole party breathes and moves on."
     );
-    addClue("The great clock stopped at " + MURDER_TIME + " — the time of the murder. (Your first clue.)");
+    addClue("The great clock has stopped at " + MURDER_TIME + ".");
     state.noticedClock = true;
-    chime(); // a little "you found it" ring
-
-    // The clock steps out of shadow now that you've spotted it...
-    const clockEl = document.querySelector('.hotspot[data-object="clock"]');
-    clockEl.classList.remove("dim");
-    clockEl.classList.add("noticed");
-
-    // ...but we do NOT light up the door. Finding the way is now up to you —
-    // the lock will work, but you have to go and try it yourself.
-    state.doorUnlocked = true;
+    // No pulse, no "you found it!" — the clock stays in shadow like everything
+    // else. The game has stopped congratulating you. You're on your own now.
   } else {
-    examine("The clock stays frozen at " + MURDER_TIME + ". You've noted the time. Now — the way deeper into the manor.");
+    examine("The great clock is still frozen at " + MURDER_TIME + ".");
   }
 }
 
@@ -248,28 +252,25 @@ function handleClock() {
    You can't guess your way through — you have to have noticed the clock.
    --------------------------------------------------------------------- */
 function handleDoor() {
-  if (!state.doorUnlocked) {
-    // The player hasn't found the clue yet. Nudge them to look closer.
-    examine("A heavy oak door leads deeper into the house — locked by an old brass time-lock, its little dial waiting for an hour. You don't yet know which. Something in this room must tell you the time that matters. Keep looking.");
-    return;
-  }
-
-  // The player HAS the clue. Ask them to set the time-lock.
+  // HARD MODE: the dial is always there to try — no gate, no nudge, and NO hint
+  // that the code is a time. It just asks for three digits. The player has to
+  // have found the right number AND worked out that it's the one that matters.
   const answer = prompt(
-    "The brass time-lock guards the way deeper.\nSet it to the hour that matters.\n\nEnter the time (like 9:47):"
+    "A brass dial is set into the heavy oak door — three worn digits, waiting to be turned.\n\nEnter the 3-digit code:"
   );
 
   // If they close the box, do nothing.
   if (answer === null) return;
 
-  // Be forgiving: accept "9:47", "947", "9 47", extra spaces, etc.
+  // The code is the digits of the stopped clock: 9:47 -> "947".
   const cleaned = answer.replace(/[^0-9]/g, ""); // keep only the digits
   const target = MURDER_TIME.replace(/[^0-9]/g, "");
 
   if (cleaned === target) {
     win();
   } else {
-    examine("The time-lock doesn't budge. That isn't the hour. Remember what the great clock told you...");
+    // Terse. No clue, no reminder, no pointing at the clock. You're on your own.
+    examine("The dial doesn't move. That isn't the code.");
   }
 }
 
