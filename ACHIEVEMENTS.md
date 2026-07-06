@@ -11,8 +11,8 @@ earn them.
   direction. The studio is yours.
 - [ ] **First Big Decision** — Choose, reject, or combine the three game
   directions. Deciding is the job.
-- [ ] **Game Pillars Chosen** — Define the 3–5 pillars every future decision
-  will be tested against.
+- [x] **Game Pillars Chosen** — Define the 3–5 pillars every future decision
+  will be tested against. *(Unlocked 2026-07-06 — 4 pillars locked.)*
 - [ ] **Studio Review Complete** — Survive your first studio team review and
   come out with a sharper design.
 - [ ] **Memory Created** — The design harness files exist and the studio

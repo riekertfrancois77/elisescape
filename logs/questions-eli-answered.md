@@ -51,6 +51,15 @@ justifies why clues exist in the world. Player = well-known local detective.
 Pressure = the murderer is STILL hidden at the scene (a clock that watches
 you). Sets up a finale where the last clue reveals the killer's hiding place.
 
+## 2026-07-06 — Module 1, Step 7
+
+**Q:** The game's 3–5 pillars — here's a draft built only from your answers;
+do these feel right / cut / reword / anything missing? (Pillars: 1) Notice
+What's Off; 2) Curiosity Rewarded, Cleverness Earned; 3) A Duel With the
+Culprit; 4) A Cozy House That Hides Everything.)
+**Eli:** "yes they seem right"
+**Result:** All four pillars approved and LOCKED by Eli.
+
 <!-- Format for entries:
 
 ## 2026-07-06 — Module 1, Step 2
