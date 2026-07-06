@@ -10,12 +10,12 @@ achievements and progress Eli sees). This table is the canonical amount list —
 it must match the `REWARDS` array in `script.js`. To change a payout, update
 both.
 
-## Reward Map (~$100 total)
+## Reward Map (~$90 total)
 
 | Reward | Amount | Earned when |
 |---|---|---|
 | Become Creative Director | $10 | Module 1 complete |
-| Build your first playable game | $15 | Module 2 (First Playable unlocked) |
+| Build your first playable game | $5 | Module 2 (First Playable unlocked) |
 | Discover secret achievements | $5 each (up to $25) | each secret achievement found |
 | Ship & demo your game to the family | $25 | Module 13 complete |
 | Finish the whole 13-module journey | $25 | all 13 modules complete |

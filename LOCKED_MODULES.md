@@ -1,18 +1,15 @@
 # LOCKED_MODULES.md
 
-Modules 3–13 are sealed. Only Dad can order an unlock. If Eli asks about one,
+Modules 5–13 are sealed. Only Dad can order an unlock. If Eli asks about one,
 Claude Code may share **only** the teaser line below, then redirect him to the
 current unlocked module.
 
-**Unlocked so far:** Module 1 (Think Like a Game Studio) · Module 2 (One-Shot
-Power).
+**Opened by Dad so far:** Modules 1–4. They unlock **in order** — each opens
+when the one before it is complete (Module 1 ✓ done · Module 2 active · Modules
+3–4 waiting their turn).
 
 ## Locked Previews
 
-3. **Director Mode** 🔒 — Stop typing code requests. Start running a studio.
-   You give direction; the team executes.
-4. **Project Memory** 🔒 — Teach the studio to remember everything, so every
-   session starts smarter than the last.
 5. **Code Reading** 🔒 — See through the machine. Learn to read code the way
    a director reads a script.
 6. **Prompt Engineering** 🔒 — Words are your controller. Learn the inputs

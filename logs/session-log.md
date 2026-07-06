@@ -5,6 +5,20 @@
 
 ---
 
+## Session 3 — Dad tunes rewards & opens Modules 3–4 (gated) (2026-07-06)
+
+- **Module 2 payout lowered to $5** (was $15) — make Eli earn the cash. Updated
+  `DAD_VAULT.md` + `REWARDS` in `script.js`; reward pool now ~$90.
+- **Opened Modules 3 (Director Mode) & 4 (Project Memory) — but GATED.** The
+  dashboard now unlocks modules **in order**: a module becomes playable only
+  once the one before it is complete (`DAD_OPENED_THROUGH = 4` in `script.js`).
+  They display as "UP NEXT" until earned.
+- Wrote `modules/module-03.md` and `modules/module-04.md`; added **Director
+  Mode** + **Memory Keeper** achievements; added Module 3/4 step trackers.
+- **Next (unchanged):** Eli does Module 2. Finishing it opens Module 3.
+
+---
+
 ## Session 2 — Dad unlocks Module 2: "One-Shot Power" (2026-07-06)
 
 - **Dad explicitly unlocked Module 2** (One-Shot Power). It is now the current

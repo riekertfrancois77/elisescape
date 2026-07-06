@@ -14,9 +14,8 @@ const MODULES = [
     n: 1,
     title: "Think Like a Game Studio",
     teaser: "Design your own game from scratch — before any code exists. The studio opens its doors to its Director.",
-    locked: false,
   },
-  { n: 2,  title: "One-Shot Power",                teaser: "Make Claude build something real from a single, perfect prompt. One shot. No edits.", locked: false },
+  { n: 2,  title: "One-Shot Power",                teaser: "Make Claude build something real from a single, perfect prompt. One shot. No edits." },
   { n: 3,  title: "Director Mode",                 teaser: "Stop typing code requests. Start running a studio. You give direction; the team executes." },
   { n: 4,  title: "Project Memory",                teaser: "Teach the studio to remember everything, so every session starts smarter than the last." },
   { n: 5,  title: "Code Reading",                  teaser: "See through the machine. Read code the way a director reads a script." },
@@ -29,6 +28,19 @@ const MODULES = [
   { n: 12, title: "The Machine Room",              teaser: "Peek behind the studio's own walls. Harnesses, agents, and MCP — the wiring that lets AI read, remember, and act." },
   { n: 13, title: "Ship and Demo",                 teaser: "Release day. An audience. Your game, in other people's hands." },
 ];
+
+// Dad has opened modules 1..N. Opened modules unlock IN ORDER — a module only
+// becomes playable once the one before it is complete. Modules past this number
+// stay sealed until Dad opens them. (Dad opened through 4 on 2026-07-06.)
+const DAD_OPENED_THROUGH = 4;
+
+// State of a module for the given completion array: complete | active | queued | sealed.
+function moduleState(n, done) {
+  if (done[n - 1]) return "complete";        // finished
+  if (n > DAD_OPENED_THROUGH) return "sealed"; // Dad hasn't opened it yet
+  if (n === 1 || done[n - 2]) return "active"; // opened AND the previous one is done
+  return "queued";                             // opened, but waiting on the previous module
+}
 
 const MODULE1_GOALS = [
   "AI helps with thinking, not just coding.",
@@ -74,6 +86,41 @@ const MODULE2_STEPS = [
   "Achievement unlock: One-Shot Power — and First Playable when it runs.",
 ];
 
+const MODULE3_GOALS = [
+  "AI's work is clay, not stone — nothing it makes is final.",
+  "Your taste is the job: you decide what's good, boring, or wrong.",
+  "You're allowed to reject AI's version and ask for another.",
+  "Small, specific change requests beat vague ones.",
+  "Directing is choosing between options, not doing it all yourself.",
+];
+
+const MODULE3_STEPS = [
+  "Play your game and make a 'change list' — what feels off, boring, or not-you.",
+  "Pick the top 3 changes worth making first.",
+  "Direct one change — tell Claude what you want; it offers a few versions.",
+  "Choose the version that feels most like YOUR game.",
+  "See the change land, play again, react.",
+  "Repeat for your top changes.",
+  "Achievement unlock: Director Mode.",
+];
+
+const MODULE4_GOALS = [
+  "AI forgets between sessions — the project has to remember for it.",
+  "The memory files (MEMORY.md, logs/) are the studio's shared brain.",
+  "Good builders leave notes for their future selves.",
+  "Writing memory in your own words makes it truly yours.",
+  "Memory is what turns a chat into a studio.",
+];
+
+const MODULE4_STEPS = [
+  "Open MEMORY.md and the logs — see what the studio remembers about your game.",
+  "Learn what each memory file is for: state, sessions, decisions.",
+  "Summarize, in your OWN words, what your game is and where you're at.",
+  "Add your summary to the memory with Claude.",
+  "Test it: end the session, start fresh, watch Claude pick up right where you left off.",
+  "Achievement unlock: Memory Keeper.",
+];
+
 const ACHIEVEMENTS = [
   { name: "Creative Director",      desc: "Complete Module 1 and lock in your game's direction." },
   { name: "First Big Decision",     desc: "Choose, reject, or combine the three game directions." },
@@ -82,6 +129,8 @@ const ACHIEVEMENTS = [
   { name: "Memory Created",         desc: "The design harness exists and the studio brain knows your game." },
   { name: "One-Shot Power",         desc: "Turn your whole design into one prompt and watch Claude build a real, playable game." },
   { name: "First Playable",         desc: "Your game runs in a browser for the very first time." },
+  { name: "Director Mode",          desc: "Take the director's chair — reshape your game and make the AI build it your way." },
+  { name: "Memory Keeper",          desc: "Teach the studio to remember, so every session starts smarter than the last." },
 ];
 const SECRET_ACHIEVEMENTS = ["Curiosity Pays", "Better Than School", "AI Tamer", "Bug Hunter", "Game Studio Brain"];
 
@@ -93,7 +142,7 @@ const SECRET_ACHIEVEMENTS = ["Curiosity Pays", "Better Than School", "AI Tamer",
 const REWARDS = [
   { label: "Become Creative Director — finish Module 1", amount: 10, when: "Module 1 complete",
     earned: (s) => s.earnedNames.has("Creative Director") },
-  { label: "Build your first playable game — Module 2", amount: 15, when: "unlock First Playable",
+  { label: "Build your first playable game — Module 2", amount: 5, when: "unlock First Playable",
     earned: (s) => s.earnedNames.has("First Playable") },
   { label: "Discover secret achievements", per: 5, cap: 5, when: "$5 each — keep exploring",
     count: (s) => s.secretCount },
@@ -161,6 +210,8 @@ const FALLBACK_ACHIEVEMENTS = `
 - [ ] **Memory Created**
 - [ ] **One-Shot Power**
 - [ ] **First Playable**
+- [ ] **Director Mode**
+- [ ] **Memory Keeper**
 
 ## Secret Achievements
 - [ ] **Curiosity Pays**
@@ -222,18 +273,21 @@ function inlineMd(text) {
 
 const $ = (id) => document.getElementById(id);
 
-function renderModules(completedModules) {
+function renderModules(done) {
+  const CLS = { complete: "unlocked done", active: "unlocked", queued: "locked queued", sealed: "locked" };
+  const BADGE = { complete: "COMPLETE", active: "UNLOCKED", queued: "UP NEXT", sealed: "LOCKED" };
   $("modules-grid").innerHTML = MODULES.map((m) => {
-    const done = completedModules[m.n - 1];
-    const cls = m.locked === false ? (done ? "unlocked done" : "unlocked") : "locked";
-    const badge = m.locked === false ? (done ? "COMPLETE" : "UNLOCKED") : "LOCKED";
+    const st = moduleState(m.n, done);
+    const teaser = st === "queued"
+      ? `${m.teaser} <em class="module-hint">Unlocks when you finish Module ${String(m.n - 1).padStart(2, "0")}.</em>`
+      : m.teaser;
     return `
-      <article class="module-card ${cls}" data-module="${m.n}" tabindex="0"
-               role="button" aria-label="Module ${m.n}: ${m.title} (${badge})">
-        <span class="module-badge">${badge}</span>
+      <article class="module-card ${CLS[st]}" data-module="${m.n}" tabindex="0"
+               role="button" aria-label="Module ${m.n}: ${m.title} (${BADGE[st]})">
+        <span class="module-badge">${BADGE[st]}</span>
         <div class="module-num">${String(m.n).padStart(2, "0")}</div>
         <div class="module-title">${m.title}</div>
-        <p class="module-teaser">${m.teaser}</p>
+        <p class="module-teaser">${teaser}</p>
       </article>`;
   }).join("");
 
@@ -362,6 +416,8 @@ function renderRewards(state) {
 
 // Per-module step completion, read from MEMORY.md "## Module N Steps".
 let missionStepsDone = {};
+// Module completion array (from MEMORY.md Progress Tracker), for gating.
+let completedModulesState = [];
 
 const MISSIONS = {
   1: {
@@ -388,15 +444,53 @@ const MISSIONS = {
       play beats a perfect plan on paper; you'll sharpen it later. Save the
       session, then refresh here to see your new trophies.`,
   },
+  3: {
+    title: "Director Mode",
+    purpose: `You've got a playable game. Now stop being a passenger. Play
+      Director: find what you don't like — a room, a name, the mood, a rule —
+      and make the AI rebuild it your way. AI output is clay, not stone. Your
+      taste is the whole job.`,
+    goals: MODULE3_GOALS,
+    steps: MODULE3_STEPS,
+    start: `"Start Module 3 — I want to direct some changes to my game."`,
+    outro: `Change one thing at a time, and always ask: does this feel more like
+      MY game? Save the session, then refresh here to claim Director Mode.`,
+  },
+  4: {
+    title: "Project Memory",
+    purpose: `You've felt the studio "remember" your game between sessions. Now
+      learn the trick behind it: project memory. Open the memory files, see what
+      they hold, and start writing to them yourself — so every session starts
+      smarter than the last.`,
+    goals: MODULE4_GOALS,
+    steps: MODULE4_STEPS,
+    start: `"Start Module 4 — teach me how the studio remembers."`,
+    outro: `Memory is the difference between a chat and a studio. Write it in
+      your own words. Save the session, then refresh here to claim Memory Keeper.`,
+  },
 };
 
 function openModule(n) {
+  const st = moduleState(n, completedModulesState);
+  if (st === "complete" || st === "active") return openMission(n);
   const m = MODULES[n - 1];
-  if (m && m.locked === false) return openMission(n);
+  const pad = (x) => String(x).padStart(2, "0");
+  if (st === "queued") {
+    return showModal(`
+      <div class="locked-tease">
+        <span class="lock-glyph">⏳</span>
+        <p class="m-kicker">// MODULE ${pad(n)} — UP NEXT</p>
+        <h3>${m.title}</h3>
+        <p class="tease-line">${m.teaser}</p>
+        <p>Dad's opened this one — it unlocks the moment you finish
+        <strong>Module ${pad(n - 1)}</strong>. Keep going, Director.</p>
+        <p class="redirect">▸ FINISH MODULE ${pad(n - 1)} TO UNLOCK</p>
+      </div>`);
+  }
   showModal(`
     <div class="locked-tease">
       <span class="lock-glyph">🔒</span>
-      <p class="m-kicker">// MODULE ${String(n).padStart(2, "0")} — SEALED</p>
+      <p class="m-kicker">// MODULE ${pad(n)} — SEALED</p>
       <h3>${m.title}</h3>
       <p class="tease-line">${m.teaser}</p>
       <p>That's all you get. This door doesn't open with curiosity — it opens with progress.</p>
@@ -509,19 +603,19 @@ console.log(
   ])).map(stripComments);
 
   const { completedModules } = renderProgress(memoryMd);
-  missionStepsDone = {
-    1: checkboxes(section(memoryMd, "Module 1 Steps")).map((c) => c.done),
-    2: checkboxes(section(memoryMd, "Module 2 Steps")).map((c) => c.done),
-  };
+  completedModulesState = completedModules;
+  missionStepsDone = {};
+  for (let n = 1; n <= MODULES.length; n++) {
+    missionStepsDone[n] = checkboxes(section(memoryMd, `Module ${n} Steps`)).map((c) => c.done);
+  }
   renderModules(completedModules);
   renderMemory(memoryMd);
   renderClaudePanel(memoryMd);
   renderAchievements(achMd);
   renderRewards(rewardState(memoryMd, achMd));
 
-  // Hero button → the lowest unlocked module that isn't finished yet.
-  const unlocked = MODULES.filter((m) => m.locked === false);
-  const active = unlocked.find((m) => !completedModules[m.n - 1]) || unlocked[unlocked.length - 1];
+  // Hero button → the currently active (playable, unfinished) module.
+  const active = MODULES.find((m) => moduleState(m.n, completedModules) === "active");
   const cta = $("cta-module1");
   if (cta && active) {
     cta.textContent = `▸ ENTER MODULE ${active.n}`;

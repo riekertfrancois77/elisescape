@@ -68,8 +68,15 @@ engineers, artists, producers. You advise, prototype, and build. He decides.
 - **Module 1: Think Like a Game Studio** (`modules/module-01.md`) — **COMPLETE.**
   Eli designed *One Night at Thornwood Manor* (a detective mystery) and earned
   the Creative Director title plus 4 more achievements.
-- **Module 2: One-Shot Power** (`modules/module-02.md`) — **UNLOCKED** by Dad on
-  2026-07-06. This is the current module: use Eli's design harness to co-write a
-  single prompt and one-shot build a playable first version of his game into
-  `game/`. Follow that module's flow and rules.
-- Modules 3–13 remain locked until Dad explicitly opens them.
+- **Module 2: One-Shot Power** (`modules/module-02.md`) — **UNLOCKED / active.**
+  Use Eli's design harness to co-write a single prompt and one-shot build a
+  playable first version of his game into `game/`. Follow that module's flow.
+- **Modules 3 (Director Mode) & 4 (Project Memory)** (`modules/module-03.md`,
+  `modules/module-04.md`) — **OPENED by Dad (2026-07-06) but gated.** They
+  unlock **in order**: Module 3 opens when Module 2 is complete, Module 4 when
+  Module 3 is complete. The dashboard shows them as "UP NEXT" until then. Don't
+  run them early.
+- Modules 5–13 remain sealed until Dad explicitly opens them.
+- **Sequential unlocking:** Dad has "opened through" Module 4
+  (`DAD_OPENED_THROUGH = 4` in `script.js`). When Dad opens more, bump that
+  number, add the mission file, and update `LOCKED_MODULES.md` + this section.

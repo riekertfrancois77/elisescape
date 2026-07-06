@@ -7,7 +7,10 @@ dashboard reads the sections below to display progress.
 ## Project State
 
 - **Creative Director:** Eli
-- **Current module:** Module 2 — One-Shot Power (**UNLOCKED by Dad, 2026-07-06**). Module 1 is complete.
+- **Current module:** Module 2 — One-Shot Power (active). **Modules 3 (Director
+  Mode) & 4 (Project Memory) were opened by Dad (2026-07-06)** but stay locked
+  until the module before each is complete — they unlock in order. Module 1 is
+  complete.
 - **Game concept:** ***One Night at Thornwood Manor*** — a famous detective is
   trapped one night in a cozy, secret-filled early-1900s mansion during a house
   party where a murder has happened. A killer who leaves clues on purpose hides
@@ -65,6 +68,29 @@ dashboard reads the sections below to display progress.
 - [ ] 6. Director's reaction: cool / boring / confusing
 - [ ] 7. Achievements unlocked: One-Shot Power + First Playable
 
+## Module 3 Steps
+
+<!-- Unlocks when Module 2 is complete. -->
+
+- [ ] 1. Play the game and make a change list
+- [ ] 2. Pick the top 3 changes
+- [ ] 3. Direct one change (Claude offers versions)
+- [ ] 4. Choose the version that feels most like your game
+- [ ] 5. See it land, play again, react
+- [ ] 6. Repeat for the top changes
+- [ ] 7. Achievement unlocked: Director Mode
+
+## Module 4 Steps
+
+<!-- Unlocks when Module 3 is complete. -->
+
+- [ ] 1. Open MEMORY.md and the logs
+- [ ] 2. Learn what each memory file is for
+- [ ] 3. Summarize your game in your own words
+- [ ] 4. Write it into the memory with Claude
+- [ ] 5. Test it across a fresh session
+- [ ] 6. Achievement unlocked: Memory Keeper
+
 ## Session Memory
 
 <!-- The dashboard shows these bullets in the "Session Memory" panel.
@@ -104,6 +130,10 @@ prompt — then fire it **once** and watch Claude build a real, **playable** fir
 version of your game. It won't be perfect. That's exactly the point. Two new
 trophies are waiting: **One-Shot Power** and **First Playable**. Save the
 session and refresh the dashboard to claim them.
+
+*(Dad has also opened **Module 3 — Director Mode** and **Module 4 — Project
+Memory**. They're locked for now and unlock in order: finish Module 2 to open
+Module 3, finish Module 3 to open Module 4.)*
 
 ## Achievements Unlocked
 

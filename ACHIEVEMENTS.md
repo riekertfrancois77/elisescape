@@ -19,6 +19,14 @@ earn them.
   tone.)*
 - [x] **Memory Created** — The design harness files exist and the studio
   brain knows your game. *(Unlocked 2026-07-06 — all design/ files written.)*
+- [ ] **One-Shot Power** — Turn your whole design into one prompt and watch
+  Claude build a real, playable first version of your game. *(Module 2.)*
+- [ ] **First Playable** — Your game runs in a browser for the very first time.
+  *(Module 2.)*
+- [ ] **Director Mode** — Take the director's chair: reshape your game and make
+  the AI build it your way. *(Module 3.)*
+- [ ] **Memory Keeper** — Teach the studio to remember, so every session starts
+  smarter than the last. *(Module 4.)*
 
 ## Secret Achievements
 
