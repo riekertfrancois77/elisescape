@@ -1,8 +1,9 @@
 # Mechanics
 
 > What the player actually *does*, moment to moment. Drafted after the game
-> direction is chosen (Module 1, steps 9–11). Detailed design happens in
-> later modules — this file starts as the high-level sketch.
+> direction is chosen (the decision, review, and harness steps of Module 1).
+> Detailed design happens in later modules — this file starts as the
+> high-level sketch.
 
 ## Core Loop
 

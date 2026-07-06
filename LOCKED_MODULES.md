@@ -1,6 +1,6 @@
 # LOCKED_MODULES.md
 
-Modules 2–12 are sealed. Only Dad can order an unlock. If Eli asks about one,
+Modules 2–13 are sealed. Only Dad can order an unlock. If Eli asks about one,
 Claude Code may share **only** the teaser line below, then redirect him to the
 current unlocked module.
 
@@ -22,6 +22,11 @@ current unlocked module.
 9. **Debugging** 🔒 — Things will break. Directors don't panic — they hunt.
 10. **AI Art, Audio and Atmosphere** 🔒 — Give your world a face, a voice,
     and a mood.
-11. **Real-World Crossover** 🔒 — Your studio skills escape the screen.
-12. **Ship and Demo** 🔒 — Release day. An audience. Your game, in other
+11. **Real-World Crossover** 🔒 — Your studio skills escape the screen. The
+    stuff you design in the real world — circuits, builds, systems — becomes
+    game mechanics.
+12. **The Machine Room** 🔒 — Peek behind the studio's own walls. Harnesses,
+    agents, and MCP — the hidden wiring that lets AI read files, remember,
+    and reach out to real tools. This is how the magic actually works.
+13. **Ship and Demo** 🔒 — Release day. An audience. Your game, in other
     people's hands.

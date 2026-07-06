@@ -25,8 +25,9 @@ const MODULES = [
   { n: 8,  title: "Build One Feature",             teaser: "The first real piece of your game gets built. For real. This is where it begins." },
   { n: 9,  title: "Debugging",                     teaser: "Things will break. Directors don't panic — they hunt." },
   { n: 10, title: "AI Art, Audio and Atmosphere",  teaser: "Give your world a face, a voice, and a mood." },
-  { n: 11, title: "Real-World Crossover",          teaser: "Your studio skills escape the screen." },
-  { n: 12, title: "Ship and Demo",                 teaser: "Release day. An audience. Your game, in other people's hands." },
+  { n: 11, title: "Real-World Crossover",          teaser: "Your studio skills escape the screen. The things you design in the real world become game mechanics." },
+  { n: 12, title: "The Machine Room",              teaser: "Peek behind the studio's own walls. Harnesses, agents, and MCP — the wiring that lets AI read, remember, and act." },
+  { n: 13, title: "Ship and Demo",                 teaser: "Release day. An audience. Your game, in other people's hands." },
 ];
 
 const MODULE1_GOALS = [
@@ -41,6 +42,7 @@ const MODULE1_GOALS = [
 const MODULE1_STEPS = [
   "Welcome to the Studio",
   "What should players feel?",
+  "Map the emotional curve — where players get stuck, nearly quit, celebrate.",
   "Who does the player become?",
   "What kind of world is this?",
   "What problem or challenge drives the game?",
@@ -81,6 +83,7 @@ const FALLBACK_MEMORY = `
 - [ ] Module 10
 - [ ] Module 11
 - [ ] Module 12
+- [ ] Module 13
 
 ## Module 1 Steps
 - [ ] 1
@@ -95,6 +98,7 @@ const FALLBACK_MEMORY = `
 - [ ] 10
 - [ ] 11
 - [ ] 12
+- [ ] 13
 
 ## Session Memory
 - The studio has been founded. All systems online.

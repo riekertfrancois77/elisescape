@@ -13,7 +13,8 @@
 
 ## Style References
 
-*From Eli's inspiration list (Module 1, step 7). Pending.*
+*From Eli's inspiration list (Module 1, "What references inspire the game?").
+Pending.*
 
 ## Sound & Atmosphere (early notes)
 

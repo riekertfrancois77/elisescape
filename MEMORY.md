@@ -28,7 +28,8 @@ dashboard reads the sections below to display progress.
 - [ ] Module 9 — Debugging
 - [ ] Module 10 — AI Art, Audio and Atmosphere
 - [ ] Module 11 — Real-World Crossover
-- [ ] Module 12 — Ship and Demo
+- [ ] Module 12 — The Machine Room
+- [ ] Module 13 — Ship and Demo
 
 ## Module 1 Steps
 
@@ -36,16 +37,17 @@ dashboard reads the sections below to display progress.
 
 - [ ] 1. Welcome to the Studio
 - [ ] 2. What should players feel?
-- [ ] 3. Who does the player become?
-- [ ] 4. What kind of world is this?
-- [ ] 5. What problem or challenge drives the game?
-- [ ] 6. The game's 3–5 pillars
-- [ ] 7. References that inspire the game
-- [ ] 8. Three possible game directions generated
-- [ ] 9. Eli chooses / rejects / combines directions
-- [ ] 10. Studio team review
-- [ ] 11. Design harness files written
-- [ ] 12. Achievement unlocked: Creative Director
+- [ ] 3. Map the emotional curve
+- [ ] 4. Who does the player become?
+- [ ] 5. What kind of world is this?
+- [ ] 6. What problem or challenge drives the game?
+- [ ] 7. The game's 3–5 pillars
+- [ ] 8. References that inspire the game
+- [ ] 9. Three possible game directions generated
+- [ ] 10. Eli chooses / rejects / combines directions
+- [ ] 11. Studio team review
+- [ ] 12. Design harness files written
+- [ ] 13. Achievement unlocked: Creative Director
 
 ## Session Memory
 

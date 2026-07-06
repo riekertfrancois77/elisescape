@@ -39,7 +39,7 @@ memory, and Claude Code is the only writer.
 | `MEMORY.md` | The project's brain — current state, progress, next prompt |
 | `ACHIEVEMENTS.md` | Visible + secret achievements |
 | `DAD_VAULT.md` | Real-world rewards (Dad fills these in) |
-| `LOCKED_MODULES.md` | Teasers for Modules 2–12 |
+| `LOCKED_MODULES.md` | Teasers for Modules 2–13 |
 | `modules/` | Mission files, one per module |
 | `design/` | The design harness Eli fills in during Module 1 |
 | `logs/` | Session log, Eli's answers, decisions made |
@@ -48,6 +48,6 @@ memory, and Claude Code is the only writer.
 ## For Dad: Controls
 
 - **Rewards:** edit `DAD_VAULT.md` with real rewards whenever you like.
-- **Unlocking modules:** only you can unlock Modules 2–12. Tell Claude Code
+- **Unlocking modules:** only you can unlock Modules 2–13. Tell Claude Code
   explicitly (e.g. "Dad here — unlock Module 2") and it will update the files.
 - Everything is plain text. Read `logs/` anytime to see exactly what happened.

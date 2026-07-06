@@ -1,7 +1,7 @@
 # Vision
 
 > The one-page truth of this game. Written by Claude Code **from Eli's
-> decisions only** — never before Module 1, step 11.
+> decisions only** — never before the design-harness step of Module 1.
 
 ## The Game in One Sentence
 

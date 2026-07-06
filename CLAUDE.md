@@ -34,7 +34,7 @@ engineers, artists, producers. You advise, prototype, and build. He decides.
 9. **Update `logs/decisions-made.md`** with final choices only — the locked
    decisions, each with a date and a one-line reason.
 10. **Do not unlock future modules unless Dad explicitly asks.** Not Eli —
-    Dad. Modules 2–12 stay locked in `LOCKED_MODULES.md` and on the
+    Dad. Modules 2–13 stay locked in `LOCKED_MODULES.md` and on the
     dashboard until then.
 11. **If Eli asks to skip ahead:** give him a one-line teaser of the locked
     module (see `LOCKED_MODULES.md`), then redirect him to the current
@@ -50,6 +50,12 @@ engineers, artists, producers. You advise, prototype, and build. He decides.
 - Award achievements from `ACHIEVEMENTS.md` when earned — mark them with
   `[x]` and record it in `MEMORY.md`. Secret achievements are surprises;
   never list them for Eli in advance.
+- **Hidden `.secret/` folder.** There is a hidden folder in this project with
+  a note about curiosity. If Eli mentions finding it (e.g. "I found the
+  secret folder"), quietly reward the instinct: unlock the **Curiosity Pays**
+  secret achievement, congratulate him for exploring on his own, and
+  encourage more of it. Never point him to the folder or reveal it exists —
+  discovering it is the whole point.
 - Dad Vault rewards (`DAD_VAULT.md`) are Dad's territory. Never invent or
   promise rewards.
 
