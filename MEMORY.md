@@ -7,10 +7,11 @@ dashboard reads the sections below to display progress.
 ## Project State
 
 - **Creative Director:** Eli
-- **Current module:** Module 2 — One-Shot Power (active). **Modules 3 (Director
-  Mode) & 4 (Project Memory) were opened by Dad (2026-07-06)** but stay locked
-  until the module before each is complete — they unlock in order. Module 1 is
-  complete.
+- **Current module:** **Module 3 — Director Mode (now UNLOCKED)**. Module 2
+  (One-Shot Power) is **COMPLETE** — Eli built and directed a playable
+  Version 0.1 of the game. **Module 4 (Project Memory)** stays locked until
+  Module 3 is complete (they unlock in order; Dad opened through Module 4).
+  Module 1 is complete.
 - **Game concept:** ***One Night at Thornwood Manor*** — a famous detective is
   trapped one night in a cozy, secret-filled early-1900s mansion during a house
   party where a murder has happened. A killer who leaves clues on purpose hides
@@ -25,7 +26,7 @@ dashboard reads the sections below to display progress.
      when a module is fully complete. -->
 
 - [x] Module 1 — Think Like a Game Studio
-- [ ] Module 2 — One-Shot Power
+- [x] Module 2 — One-Shot Power
 - [ ] Module 3 — Director Mode
 - [ ] Module 4 — Project Memory
 - [ ] Module 5 — Code Reading
@@ -60,17 +61,17 @@ dashboard reads the sections below to display progress.
 
 <!-- Claude Code: check these off as Eli completes each step of Module 2. -->
 
-- [ ] 1. Meet your Lead Engineer (Claude changes hats)
-- [ ] 2. MVP thinking — the ONE room that proves the game
-- [ ] 3. Write a tiny spec (one room, one door, one puzzle, one key)
-- [ ] 4. Make your estimate — how long will this take?
-- [ ] 5. One shot — Claude builds Version 0.1 into game/
-- [ ] 6. Play it — and remember your estimate
-- [ ] 7. Reframe: that's Version 0.1 (how much is actually done?)
-- [ ] 8. Studio Review — the team rates it through different lenses
-- [ ] 9. Under the hood — just 3 files, no frameworks
-- [ ] 10. Make one change (a taste of directing)
-- [ ] 11. Achievements unlocked: One-Shot Power + First Playable
+- [x] 1. Meet your Lead Engineer (Claude changes hats)
+- [x] 2. MVP thinking — the ONE room that proves the game
+- [x] 3. Write a tiny spec (one room, one door, one puzzle, one key)
+- [x] 4. Make your estimate — how long will this take?
+- [x] 5. One shot — Claude builds Version 0.1 into game/
+- [x] 6. Play it — and remember your estimate
+- [x] 7. Reframe: that's Version 0.1 (how much is actually done?)
+- [x] 8. Studio Review — the team rates it through different lenses
+- [x] 9. Under the hood — just 3 files, no frameworks
+- [x] 10. Make one change (a taste of directing)
+- [x] 11. Achievements unlocked: One-Shot Power + First Playable
 
 ## Module 3 Steps
 
@@ -100,6 +101,21 @@ dashboard reads the sections below to display progress.
 <!-- The dashboard shows these bullets in the "Session Memory" panel.
      Claude Code: add a bullet per session, newest first. Keep them short. -->
 
+- 🎬 **Eli directed his FIRST change (a taste of Module 3):** he combined three
+  directions at once — *hide the clock harder, make the puzzle tougher, and add
+  sound* — and the engineer rebuilt it. The clock now lurks dimmed in a shadowy
+  corner; the game no longer lights the door for you; and the room ticks, murmurs,
+  chimes on a clue, and clicks on the unlock (all made in code, no sound files).
+- 🎮 **FIRST PLAYABLE — the game runs!** *Version 0.1 — "Arrival at Thornwood
+  Manor"* is live in `game/`: the glowing foyer, the murder, the stopped clock
+  ("notice what's off"), and a brass time-lock door. Eli played it and cracked
+  the case. Trophies earned: **One-Shot Power** + **First Playable**.
+- ⚡ **The estimate lesson landed:** Eli guessed the build would take *"a few
+  hours"* — it took under a minute. AI changed the math of software; *deciding
+  what to build* is now the hard, human, Director's part.
+- 🎯 **MVP decision:** Eli chose to build **the arrival / first-60-seconds** as
+  Version 0.1 (the hook), shaped into a fair one-room "notice the stopped clock"
+  puzzle. One room, one locked way forward, one clue.
 - 🔓 **Dad unlocked Module 2 — One-Shot Power.** Time to turn the Thornwood
   Manor design into a real, playable game with a single prompt.
 - 🎭 **Story deepened:** victim = the corrupt, powerful **party host**; killer
@@ -122,22 +138,22 @@ dashboard reads the sections below to display progress.
      Claude Code: rewrite it after each session so Eli always knows his
      exact next move. -->
 
-🔓 **MODULE 2 IS OPEN, Director — *One-Shot Power*.** You designed a whole game
-in Module 1. Now watch AI *build* it.
+🎉 **MODULE 2 COMPLETE, Director — your game is REAL.** You built *Version 0.1*
+of *Thornwood Manor*, played it, and directed your first change. Three trophies
+lit up: **One-Shot Power**, **First Playable**, and a *secret* one you'll spot
+on the dashboard. Refresh to claim them.
 
-Open Claude Code in this folder and say:
+🔓 **UP NEXT: MODULE 3 — DIRECTOR MODE (now unlocked).** In Module 2 you got a
+*taste* of directing (that one change). Module 3 is the real thing: you play
+your game, make a list of everything you'd change, then **direct change after
+change** — the engineer offers you versions, and you pick the one that feels
+most like *your* game. This is where the game starts becoming truly yours.
 
-> **"Start Module 2 — let's use One-Shot Power to build my game."**
+When you're ready, open Claude Code in this folder and say:
 
-Together you'll shape your *Thornwood Manor* design into a single, powerful
-prompt — then fire it **once** and watch Claude build a real, **playable** first
-version of your game. It won't be perfect. That's exactly the point. Two new
-trophies are waiting: **One-Shot Power** and **First Playable**. Save the
-session and refresh the dashboard to claim them.
+> **"Start Module 3 — I'm ready to direct."**
 
-*(Dad has also opened **Module 3 — Director Mode** and **Module 4 — Project
-Memory**. They're locked for now and unlock in order: finish Module 2 to open
-Module 3, finish Module 3 to open Module 4.)*
+*(Module 4 — Project Memory stays locked until Module 3 is complete.)*
 
 ## Achievements Unlocked
 
@@ -146,6 +162,12 @@ Module 3, finish Module 3 to open Module 4.)*
 - 🏆 **Studio Review Complete** (2026-07-06) — Survived the team review sharper.
 - 🏆 **First Big Decision** (2026-07-06) — Eli chose game Direction A.
 - 🏆 **Game Pillars Chosen** (2026-07-06) — Eli locked the game's 4 pillars.
+- 🏆 **One-Shot Power** (2026-07-06) — Turned the whole design into one build and
+  watched Claude create a playable Version 0.1.
+- 🏆 **First Playable** (2026-07-06) — *Thornwood Manor* ran in a browser for the
+  very first time; Eli cracked the case and opened the door.
+- 🕵️ **AI Tamer** (secret, 2026-07-06) — Eli directed the AI to build his vision
+  *his* way: he combined three changes at once and the engineer delivered.
 
 ## Latest Build Review
 

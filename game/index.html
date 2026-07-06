@@ -19,6 +19,10 @@
   <!-- The whole game lives inside this frame -->
   <main id="game">
 
+    <!-- Sound on/off. Some browsers only allow sound after you click, so
+         the tick and murmur begin once you press "Begin the night". -->
+    <button id="mute-btn" title="Sound on / off">🔊</button>
+
     <!-- ============ TITLE SCREEN ============ -->
     <section id="title-screen" class="screen active">
       <div class="title-inner">
@@ -45,13 +49,15 @@
       <div class="room" id="foyer">
         <div class="room-label">The Grand Foyer &middot; Thornwood Manor</div>
 
-        <!-- Clickable things in the room. Each has a data-object name. -->
-        <button class="hotspot" data-object="guests"    style="left:12%; top:58%;">🥂<span>Guests</span></button>
-        <button class="hotspot" data-object="fireplace" style="left:32%; top:64%;">🔥<span>Fireplace</span></button>
-        <button class="hotspot" data-object="portrait"  style="left:50%; top:30%;">🖼️<span>Portrait</span></button>
-        <button class="hotspot" data-object="coats"      style="left:70%; top:60%;">🎩<span>Coat rack</span></button>
-        <button class="hotspot" data-object="clock"      style="left:50%; top:60%;">🕰️<span>Great clock</span></button>
-        <button class="hotspot door" data-object="door"  style="left:87%; top:40%;">🚪<span>Way deeper</span></button>
+        <!-- Clickable things in the room. Each has a data-object name.
+             The great clock is tucked into a shadowy corner and dimmed
+             (class "dim") so it blends in — you have to notice it yourself. -->
+        <button class="hotspot" data-object="guests"    style="left:14%; top:56%;">🥂<span>Guests</span></button>
+        <button class="hotspot" data-object="fireplace" style="left:33%; top:62%;">🔥<span>Fireplace</span></button>
+        <button class="hotspot" data-object="portrait"  style="left:50%; top:28%;">🖼️<span>Portrait</span></button>
+        <button class="hotspot" data-object="coats"      style="left:72%; top:58%;">🎩<span>Coat rack</span></button>
+        <button class="hotspot dim" data-object="clock"  style="left:9%; top:84%;">🕰️<span>&nbsp;</span></button>
+        <button class="hotspot door" data-object="door"  style="left:88%; top:40%;">🚪<span>Way deeper</span></button>
       </div>
 
       <!-- The detective's tools: what you're looking at, and what you've found -->

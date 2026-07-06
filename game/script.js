@@ -26,6 +26,98 @@ const MURDER_TIME = "9:47";
 
 
 /* ---------------------------------------------------------------------
+   1b. SOUND — made entirely with code (the Web Audio API), no sound files.
+   The manor's OTHER clocks tick softly (tick... tock...), a low murmur of
+   the party hums underneath, a chime rings when you find a clue, and the
+   lock clicks open when you win. The ticking makes the STOPPED clock feel
+   even more wrong — everything ticks except the one that matters.
+   --------------------------------------------------------------------- */
+let audioCtx = null;   // the sound engine (created on the first click)
+let muted = false;     // is sound turned off?
+let tickTimer = null;  // the repeating tick... tock...
+let murmur = null;     // the low party hum
+
+// Turn the sound engine on. Browsers only allow this after a user clicks,
+// so we call it from the "Begin the night" button.
+function initAudio() {
+  if (audioCtx) return;
+  const AudioEngine = window.AudioContext || window.webkitAudioContext;
+  if (!AudioEngine) return; // very old browser — game still works, just silent
+  audioCtx = new AudioEngine();
+}
+
+// Play one short sound (a "note") with a soft fade in and out so it never clicks.
+function beep(freq, startVol, seconds, type) {
+  if (!audioCtx || muted) return;
+  const now = audioCtx.currentTime;
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = type || "sine";
+  osc.frequency.value = freq;
+  gain.gain.setValueAtTime(0.0001, now);
+  gain.gain.exponentialRampToValueAtTime(startVol, now + 0.008);
+  gain.gain.exponentialRampToValueAtTime(0.0001, now + seconds);
+  osc.connect(gain).connect(audioCtx.destination);
+  osc.start(now);
+  osc.stop(now + seconds + 0.02);
+}
+
+// The soft wooden tick of a clock.
+function tick(high) {
+  beep(high ? 880 : 660, 0.05, 0.05, "sine");
+}
+
+// Start the room's atmosphere: ticking + a low party murmur.
+function startAmbience() {
+  if (!audioCtx) return;
+
+  // tick... tock... once a second, alternating pitch.
+  if (tickTimer) clearInterval(tickTimer);
+  let high = true;
+  tickTimer = setInterval(function () {
+    tick(high);
+    high = !high;
+  }, 1000);
+
+  // A low murmur of the party: quiet filtered noise, like distant voices.
+  if (murmur) return; // only build it once
+  const size = audioCtx.sampleRate * 2;
+  const buffer = audioCtx.createBuffer(1, size, audioCtx.sampleRate);
+  const data = buffer.getChannelData(0);
+  for (let i = 0; i < size; i++) data[i] = Math.random() * 2 - 1; // static
+  const source = audioCtx.createBufferSource();
+  source.buffer = buffer;
+  source.loop = true;
+  const lowpass = audioCtx.createBiquadFilter();
+  lowpass.type = "lowpass";
+  lowpass.frequency.value = 380; // muffle it so it sounds far away
+  const vol = audioCtx.createGain();
+  vol.gain.value = 0.02; // very quiet
+  source.connect(lowpass).connect(vol).connect(audioCtx.destination);
+  source.start();
+  murmur = vol;
+}
+
+// Stop the ticking (used when the night's puzzle is solved).
+function stopTicking() {
+  if (tickTimer) { clearInterval(tickTimer); tickTimer = null; }
+}
+
+// A little rising chime — you found something.
+function chime() {
+  beep(660, 0.06, 0.18, "triangle");
+  setTimeout(function () { beep(990, 0.06, 0.25, "triangle"); }, 90);
+}
+
+// A deep brass "click", then a warm chord — the lock opens.
+function unlockSound() {
+  beep(150, 0.09, 0.18, "square");
+  setTimeout(function () { beep(392, 0.05, 0.5, "sine"); }, 120); // G
+  setTimeout(function () { beep(523, 0.05, 0.6, "sine"); }, 180); // C
+}
+
+
+/* ---------------------------------------------------------------------
    2. SCREENS — show one, hide the rest.
    --------------------------------------------------------------------- */
 function showScreen(id) {
@@ -63,6 +155,7 @@ function showNextStoryLine() {
     }
   } else {
     showScreen("room-screen"); // Story's done — into the game!
+    startAmbience();            // the room comes alive: ticking + murmur
   }
 }
 
@@ -133,10 +226,15 @@ function handleClock() {
     );
     addClue("The great clock stopped at " + MURDER_TIME + " — the time of the murder. (Your first clue.)");
     state.noticedClock = true;
+    chime(); // a little "you found it" ring
 
-    // Give the clock a soft glow now that you've spotted it, and light up the door.
-    document.querySelector('.hotspot[data-object="clock"]').classList.add("noticed");
-    document.querySelector('.hotspot[data-object="door"]').classList.add("unlocked");
+    // The clock steps out of shadow now that you've spotted it...
+    const clockEl = document.querySelector('.hotspot[data-object="clock"]');
+    clockEl.classList.remove("dim");
+    clockEl.classList.add("noticed");
+
+    // ...but we do NOT light up the door. Finding the way is now up to you —
+    // the lock will work, but you have to go and try it yourself.
     state.doorUnlocked = true;
   } else {
     examine("The clock stays frozen at " + MURDER_TIME + ". You've noted the time. Now — the way deeper into the manor.");
@@ -182,6 +280,8 @@ function handleDoor() {
    That's "setup and payoff" — exactly like Eli's design.
    --------------------------------------------------------------------- */
 function win() {
+  stopTicking();  // the ticking falls silent as the lock turns
+  unlockSound();  // a deep brass click, then a warm chord
   document.getElementById("win-text").innerHTML =
     "The time-lock turns with a deep brass click. The oak door swings inward onto a dark corridor — the manor's hidden heart, where the killer fled." +
     "<br /><br />You noticed what everyone else walked past. You saw the one thing that was wrong." +
@@ -202,9 +302,11 @@ function resetGame() {
   const list = document.getElementById("clue-list");
   list.innerHTML = '<li class="empty">No clues yet. Look closer.</li>';
 
-  // Reset the examine text and the glows.
+  // Reset the examine text and hide the clock back in shadow.
   examine("You stand in the warm glow of the foyer. Click things to look closely, Detective.");
-  document.querySelector('.hotspot[data-object="clock"]').classList.remove("noticed");
+  const clockEl = document.querySelector('.hotspot[data-object="clock"]');
+  clockEl.classList.remove("noticed");
+  clockEl.classList.add("dim");
   document.querySelector('.hotspot[data-object="door"]').classList.remove("unlocked");
 
   // Reset the story.
@@ -217,10 +319,17 @@ function resetGame() {
    WIRING — connect the buttons and hotspots to the functions above.
    This runs once when the page loads.
    --------------------------------------------------------------------- */
-// Title screen: "Begin the night" -> show the story.
+// Title screen: "Begin the night" -> turn on sound + show the story.
 document.getElementById("begin-btn").addEventListener("click", function () {
+  initAudio(); // browsers allow sound only after a click — this is that click
   showScreen("story-screen");
   showNextStoryLine();
+});
+
+// Sound on/off button.
+document.getElementById("mute-btn").addEventListener("click", function () {
+  muted = !muted;
+  this.textContent = muted ? "🔇" : "🔊";
 });
 
 // Story screen: "Continue" -> next line, or into the room.

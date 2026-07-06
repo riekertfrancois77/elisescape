@@ -73,14 +73,20 @@ engineers, artists, producers. You advise, prototype, and build. He decides.
 - **Module 1: Think Like a Game Studio** (`modules/module-01.md`) — **COMPLETE.**
   Eli designed *One Night at Thornwood Manor* (a detective mystery) and earned
   the Creative Director title plus 4 more achievements.
-- **Module 2: One-Shot Power** (`modules/module-02.md`) — **UNLOCKED / active.**
-  Use Eli's design harness to co-write a single prompt and one-shot build a
-  playable first version of his game into `game/`. Follow that module's flow.
-- **Modules 3 (Director Mode) & 4 (Project Memory)** (`modules/module-03.md`,
-  `modules/module-04.md`) — **OPENED by Dad (2026-07-06) but gated.** They
-  unlock **in order**: Module 3 opens when Module 2 is complete, Module 4 when
-  Module 3 is complete. The dashboard shows them as "UP NEXT" until then. Don't
-  run them early.
+- **Module 2: One-Shot Power** (`modules/module-02.md`) — **COMPLETE
+  (2026-07-06).** Eli chose the Arrival as his MVP, wrote a one-room spec, made
+  an estimate ("a few hours" vs the ~1-minute reality), and one-shot built a
+  playable *Version 0.1* into `game/` (three files, no frameworks). He played
+  it, sat a Studio Review, and directed his first change (hide the clock, harden
+  the puzzle, add sound). Earned **One-Shot Power**, **First Playable**, and the
+  secret **AI Tamer**.
+- **Module 3: Director Mode** (`modules/module-03.md`) — **UNLOCKED / active**
+  (opened because Module 2 is complete). Eli plays his game, lists changes, and
+  directs them one at a time (the engineer offers versions; he picks). Follow
+  that module's flow.
+- **Module 4: Project Memory** (`modules/module-04.md`) — **OPENED by Dad
+  (2026-07-06) but gated.** Unlocks when Module 3 is complete. The dashboard
+  shows it as "UP NEXT" until then. Don't run it early.
 - Modules 5–13 remain sealed until Dad explicitly opens them.
 - **Sequential unlocking:** Dad has "opened through" Module 4
   (`DAD_OPENED_THROUGH = 4` in `script.js`). When Dad opens more, bump that

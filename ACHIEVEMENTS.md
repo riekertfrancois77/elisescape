@@ -19,10 +19,12 @@ earn them.
   tone.)*
 - [x] **Memory Created** — The design harness files exist and the studio
   brain knows your game. *(Unlocked 2026-07-06 — all design/ files written.)*
-- [ ] **One-Shot Power** — Turn your whole design into one prompt and watch
-  Claude build a real, playable first version of your game. *(Module 2.)*
-- [ ] **First Playable** — Your game runs in a browser for the very first time.
-  *(Module 2.)*
+- [x] **One-Shot Power** — Turn your whole design into one prompt and watch
+  Claude build a real, playable first version of your game. *(Unlocked
+  2026-07-06 — one-shot built Version 0.1 of Thornwood Manor into `game/`.)*
+- [x] **First Playable** — Your game runs in a browser for the very first time.
+  *(Unlocked 2026-07-06 — Eli played the foyer, noticed the stopped clock, and
+  opened the time-lock door.)*
 - [ ] **Director Mode** — Take the director's chair: reshape your game and make
   the AI build it your way. *(Module 3.)*
 - [ ] **Memory Keeper** — Teach the studio to remember, so every session starts
@@ -35,6 +37,8 @@ earn them.
 
 - [ ] **Curiosity Pays** — ???
 - [ ] **Better Than School** — ???
-- [ ] **AI Tamer** — ???
+- [x] **AI Tamer** — ??? *(Unlocked 2026-07-06 — Eli directed the AI like a true
+  Creative Director: he combined three changes into one instruction — hide the
+  clock, harden the puzzle, add sound — and the engineer built exactly that.)*
 - [ ] **Bug Hunter** — ???
 - [ ] **Game Studio Brain** — ???

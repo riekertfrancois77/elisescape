@@ -6,6 +6,37 @@
 
 ---
 
+## 2026-07-06 — Module 2 (One-Shot Power)
+
+**Q (MVP room):** Which ONE room should we build as Version 0.1 — the first
+playable slice of Thornwood Manor? (Options: the signature statue-&-painting
+room; the arrival / first clue; a locked study with a hidden key.)
+**Eli:** chose **"The Arrival / First Clue."**
+**Studio note:** Brave, pro instinct — he chose the *hook* (the first 60
+seconds), the part that decides whether a player keeps going at all. The
+engineer shaped it into a fair one-room "notice the stopped clock" puzzle so it
+plays like a game, not a cutscene. True to Pillars 1 (Notice What's Off), 2
+(Curiosity Rewarded) and 4 (A Cozy House That Hides Everything).
+
+**Q (the estimate lesson):** How long do you think it'll take the engineer to
+build this whole playable room?
+**Eli:** chose **"A few hours."**
+**Studio note:** A smart, sensible guess — the *old* math of software. Real
+build time was under a minute. The point isn't that he was wrong; it's that AI
+changed the math, so the expensive part is now *deciding what to build* — the
+Director's job. Logged in `MEMORY.md` under "Eli's Estimate vs Reality."
+
+**Q (direct one change):** Pick ONE change to direct — darken the room after the
+murder, add a ticking-clock sound, or make the clock harder to spot.
+**Eli:** "i would like it to be harder to figure out the puzzle and make the
+cloak [clock] harder to spot and could you also add the cloak [clock] ticking
+and the otehr sounds"
+**Studio note:** He *combined* directions like a real director. Delivered all
+three: the clock now hides dimmed in a shadowy corner, the game no longer
+auto-lights the door (harder puzzle, no hand-holding), and the room has
+code-made audio — ticking, party murmur, a clue chime, an unlock click — plus a
+mute button. This earned the secret **AI Tamer** achievement.
+
 ## 2026-07-06 — Module 1, Step 2
 
 **Q:** What should players feel?
