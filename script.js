@@ -77,16 +77,16 @@ const MODULE2_GOALS = [
 ];
 
 const MODULE2_STEPS = [
-  "Claude re-reads your design — the build comes from YOUR decisions.",
-  "MVP thinking: \"If we only had two hours, what's the smallest version that's still fun?\"",
+  "Meet your Lead Engineer — Claude swaps hats (Creative Director → Lead Engineer).",
+  "MVP thinking: \"If we only had two hours, which ONE room proves your game's worth playing?\"",
   "Write a tiny spec together — one room, one locked door, one puzzle, one key.",
-  "One shot — Claude builds the whole playable Version 0.1 into the game/ folder.",
-  "Play it in the browser.",
-  "Don't celebrate yet — that's Version 0.1, not the whole game. Studios build versions.",
-  "AI Review — Claude rates its own build: what works, what's missing.",
-  "Peek under the hood — just 3 files, no frameworks. Software can be simple.",
-  "Make ONE change and watch it update — a taste of directing (the real thing is Module 3).",
-  "Trophies: One-Shot Power + First Playable.",
+  "Make your estimate — how long do YOU think this'll take to build? (Claude logs it.)",
+  "One shot — Claude builds the whole playable Version 0.1 into game/… in seconds.",
+  "Play it — and remember your estimate.",
+  "Don't celebrate yet — that's Version 0.1. (How much of the game is actually done?)",
+  "Studio Review — the team rates the build through different lenses.",
+  "Under the hood — just 3 files, no frameworks. Software can be simple.",
+  "One change, watch it update — a taste of directing. Trophies: One-Shot Power + First Playable.",
 ];
 
 const MODULE3_GOALS = [
@@ -147,12 +147,29 @@ const REWARDS = [
     earned: (s) => s.earnedNames.has("Creative Director") },
   { label: "Build your first playable game — Module 2", amount: 5, when: "unlock First Playable",
     earned: (s) => s.earnedNames.has("First Playable") },
+  { label: "Direct your game your way — Module 3", amount: 5, when: "unlock Director Mode",
+    earned: (s) => s.earnedNames.has("Director Mode") },
+  { label: "Master project memory — Module 4", amount: 5, when: "unlock Memory Keeper",
+    earned: (s) => s.earnedNames.has("Memory Keeper") },
   { label: "Discover secret achievements", per: 5, cap: 5, when: "$5 each — keep exploring",
     count: (s) => s.secretCount },
   { label: "Ship & demo your game to the family — Module 13", amount: 25, when: "Module 13 complete",
     earned: (s) => s.moduleDone[12] === true },
   { label: "Finish the whole 13-module journey", amount: 25, when: "all 13 modules complete",
     earned: (s) => s.allDone },
+];
+
+/* ---------------- studio status (capabilities) ----------------
+   High-level abilities the studio unlocks as Eli progresses.            */
+
+const STUDIO_STATUS = [
+  { label: "Pre-Production (Planning)", done: (s) => s.moduleDone[0] === true },
+  { label: "Creative Director",         done: (s) => s.earnedNames.has("Creative Director") },
+  { label: "Engineering Team",          done: (s) => s.earnedNames.has("One-Shot Power") },
+  { label: "First Prototype",           done: (s) => s.earnedNames.has("First Playable") },
+  { label: "Director's Eye",            done: (s) => s.earnedNames.has("Director Mode") },
+  { label: "Studio Memory",             done: (s) => s.earnedNames.has("Memory Keeper") },
+  { label: "Shipped to an Audience",    done: (s) => s.moduleDone[12] === true },
 ];
 
 /* ---------------- embedded fallback state ----------------
@@ -415,6 +432,50 @@ function renderRewards(state) {
   $("vault-list").innerHTML = rows;
 }
 
+function renderStudioStatus(state) {
+  $("status-list").innerHTML = STUDIO_STATUS.map((item) => {
+    const on = item.done(state);
+    return `<li class="${on ? "status-on" : "status-off"}">
+      <span class="status-mark">${on ? "✅" : "▢"}</span>${item.label}</li>`;
+  }).join("");
+}
+
+// Studio Review of the latest build — the team rates it through different
+// lenses. Claude writes it into MEMORY.md's "## Latest Build Review" section:
+//   **Version 0.1**
+//   - Creative Director · ⭐⭐⭐⭐☆ · Feels close to the vision.
+//   - QA · ⭐⭐⭐☆☆ · Found two bugs.
+function renderReview(memoryMd) {
+  const lines = section(memoryMd, "Latest Build Review")
+    .map((l) => l.trim()).filter(Boolean).filter((l) => !l.startsWith("<!--") && !l.startsWith("-->"));
+  const lenses = lines.filter((l) => l.startsWith("- ") && /[⭐★]/.test(l)).map((l) => {
+    const parts = l.slice(2).split("·").map((s) => s.trim());
+    const starPart = parts[1] || "";
+    const filled = (starPart.match(/[⭐★]/g) || []).length;
+    const empty = (starPart.match(/☆/g) || []).length;
+    return { role: parts[0] || "", filled, total: filled + empty || 5, note: parts.slice(2).join(" · ") };
+  });
+
+  if (!lenses.length) {
+    $("review-body").innerHTML =
+      `<p class="review-empty">No build yet. After Module 2's one-shot build,
+       your studio team reviews it here — each role rating the game through its
+       own lens (Creative Director, Player Experience, QA, Producer…).</p>`;
+    return;
+  }
+  const verLine = lines.find((l) => /\*\*/.test(l) && !/[⭐★]/.test(l));
+  $("review-body").innerHTML = `
+    ${verLine ? `<div class="review-ver-head">${inlineMd(verLine)}</div>` : ""}
+    <ul class="review-lenses">${lenses.map((x) => `
+      <li>
+        <div class="lens-top">
+          <span class="lens-role">${x.role}</span>
+          <span class="lens-stars" aria-label="${x.filled} of ${x.total}">${"★".repeat(x.filled)}${"☆".repeat(Math.max(0, x.total - x.filled))}</span>
+        </div>
+        ${x.note ? `<span class="lens-note">${inlineMd(x.note)}</span>` : ""}
+      </li>`).join("")}</ul>`;
+}
+
 /* ---------------- modal ---------------- */
 
 // Per-module step completion, read from MEMORY.md "## Module N Steps".
@@ -436,11 +497,11 @@ const MISSIONS = {
   },
   2: {
     title: "One-Shot Power",
-    purpose: `You became a Creative Director. Now learn to direct an AI
-      engineering team. You'll scope your game down to the smallest fun version,
-      write a tiny spec, and fire ONE shot — watching Claude build a real,
-      playable Version 0.1 of your game in the browser. The skill isn't code;
-      it's telling an AI engineer exactly what you mean.`,
+    purpose: `In Module 1 Claude was your Creative Director. Today it changes
+      hats and becomes your Lead Engineer. You'll scope your game to the smallest
+      fun version, write a tiny spec, guess how long it'll take — then fire ONE
+      shot and watch Claude build a playable Version 0.1 in seconds. The skill
+      isn't code; it's telling an AI engineer exactly what you mean.`,
     goals: MODULE2_GOALS,
     steps: MODULE2_STEPS,
     start: `"Start Module 2 — let's use One-Shot Power to build my game."`,
@@ -612,11 +673,14 @@ console.log(
   for (let n = 1; n <= MODULES.length; n++) {
     missionStepsDone[n] = checkboxes(section(memoryMd, `Module ${n} Steps`)).map((c) => c.done);
   }
+  const rState = rewardState(memoryMd, achMd);
   renderModules(completedModules);
+  renderStudioStatus(rState);
   renderMemory(memoryMd);
   renderClaudePanel(memoryMd);
+  renderReview(memoryMd);
   renderAchievements(achMd);
-  renderRewards(rewardState(memoryMd, achMd));
+  renderRewards(rState);
 
   // Hero button → the currently active (playable, unfinished) module.
   const active = MODULES.find((m) => moduleState(m.n, completedModules) === "active");

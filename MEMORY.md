@@ -60,16 +60,17 @@ dashboard reads the sections below to display progress.
 
 <!-- Claude Code: check these off as Eli completes each step of Module 2. -->
 
-- [ ] 1. Claude re-reads the design harness
-- [ ] 2. MVP thinking — smallest version that's still fun (Version 0.1)
+- [ ] 1. Meet your Lead Engineer (Claude changes hats)
+- [ ] 2. MVP thinking — the ONE room that proves the game
 - [ ] 3. Write a tiny spec (one room, one door, one puzzle, one key)
-- [ ] 4. One shot — Claude builds Version 0.1 into game/
-- [ ] 5. Play it in the browser
-- [ ] 6. Reframe: that's Version 0.1, not the whole game
-- [ ] 7. AI Review — Claude rates its own build (what works / what's missing)
-- [ ] 8. Peek under the hood — just 3 files, no frameworks
-- [ ] 9. Make one change and watch it update (a taste of directing)
-- [ ] 10. Achievements unlocked: One-Shot Power + First Playable
+- [ ] 4. Make your estimate — how long will this take?
+- [ ] 5. One shot — Claude builds Version 0.1 into game/
+- [ ] 6. Play it — and remember your estimate
+- [ ] 7. Reframe: that's Version 0.1 (how much is actually done?)
+- [ ] 8. Studio Review — the team rates it through different lenses
+- [ ] 9. Under the hood — just 3 files, no frameworks
+- [ ] 10. Make one change (a taste of directing)
+- [ ] 11. Achievements unlocked: One-Shot Power + First Playable
 
 ## Module 3 Steps
 
@@ -145,3 +146,26 @@ Module 3, finish Module 3 to open Module 4.)*
 - 🏆 **Studio Review Complete** (2026-07-06) — Survived the team review sharper.
 - 🏆 **First Big Decision** (2026-07-06) — Eli chose game Direction A.
 - 🏆 **Game Pillars Chosen** (2026-07-06) — Eli locked the game's 4 pillars.
+
+## Latest Build Review
+
+<!-- Claude writes this in Module 2+ after building a version. The dashboard's
+     AI Review panel reads it. The studio team reviews through DIFFERENT LENSES.
+     Format (one bullet per role: Role · stars · note):
+       **Version 0.1**
+       - Creative Director · ⭐⭐⭐⭐☆ · Feels close to the vision.
+       - Player Experience · ⭐⭐⭐☆☆ · The first puzzle is confusing.
+       - Lead Engineer · ⭐⭐⭐⭐☆ · Technically solid.
+       - QA · ⭐⭐⭐☆☆ · Found two bugs.
+       - Producer · ⭐⭐⭐⭐☆ · Excellent progress for Version 0.1.
+     Use ⭐ for filled stars and ☆ for empty. -->
+
+*No build yet — the Studio Review appears here after Module 2's first build.*
+
+## Eli's Estimate vs Reality
+
+<!-- Module 2: before building, Claude asks Eli how long HE thinks the build
+     will take, and logs his guess here. After the ~1-minute build, they compare.
+     A quiet lesson in how AI changes the math of software. -->
+
+*Not set yet — Eli makes his estimate in Module 2, before the one-shot build.*
