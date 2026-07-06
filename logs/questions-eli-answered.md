@@ -33,6 +33,15 @@
 opened" to "I know who did it — and I can prove it." Turns observation into
 *interrogating the room*.
 
+## 2026-07-06 — Module 1, Step 5
+
+**Q:** What kind of world is this?
+**Eli:** "they will be in a single mansion but it will secrets all through out it and they are in the early 1900's its a majestic house with a cozy vibe but its has secrets all over and a place like this could be real"
+**Studio note:** Single early-1900s mansion; majestic + cozy on the surface,
+secrets throughout; grounded/real (no magic). Period = pure observation-based
+detective work (no phones/cameras/DNA). Cozy-as-disguise heightens the thrill
+of hidden passages. "Real" keeps every clue fair and logical.
+
 <!-- Format for entries:
 
 ## 2026-07-06 — Module 1, Step 2
