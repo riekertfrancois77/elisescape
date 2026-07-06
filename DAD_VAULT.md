@@ -17,22 +17,8 @@ this file is Dad's territory.
 Replace the placeholder values above with real rewards whenever you're ready.
 Keep the "Secret reward" trigger blank or vague — mystery is the fuel.
 
-## Suggested Reward Map (~$100 total)
-
-Private to Dad. The dashboard only ever shows "Dad decides" — this is your
-planning sheet. Guiding principle from day one: **pay for discovery, not
-completion.** Reward curiosity, judgement, and finishing — not just clicking
-through.
-
-| Milestone | Suggested |
-|---|---|
-| Module 1 complete — locks in his game as Creative Director | $10 |
-| First real feature ships (Module 8) | $15 |
-| First bug hunted down and fixed (Module 9) | $10 |
-| Each secret achievement he discovers (5 total × $5) | $25 |
-| Ships and demos the game to the family (Module 13) | $25 |
-| Finishes the whole journey — Game Studio Brain | $15 |
-
-That lands at about **$100** if he does it all. Tune the numbers however you
-like — the amounts matter less than the fact that the surprises are real.
-Tell Eli *nothing* about the totals; let him find that curiosity pays.
+> **Keep real amounts out of this repo.** Eli has full access to these files
+> (and the repo is public), so anything written here is something he can
+> read. Guiding principle: **pay for discovery, not completion** — reward
+> curiosity, judgement, and finishing. Keep your actual reward map somewhere
+> private, not in the project.
