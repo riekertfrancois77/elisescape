@@ -17,16 +17,23 @@ the whole studio becomes something Eli understands and owns.
 ## What You'll Learn
 
 - AI **forgets** between sessions — the *project* has to remember for it.
-- The memory files (`MEMORY.md`, `logs/`) are the studio's **shared brain**.
+- His game's memory files are the studio's **shared brain**.
 - Good builders leave **notes for their future selves**.
 - Writing memory **in your own words** makes it truly yours.
 - Memory is what turns a *chat* into a *studio*.
 
 ## Rules for Claude Code in This Module
 
-- Show, don't lecture. Open the real files with Eli and walk through what each
-  one holds (`MEMORY.md` = current state; `logs/session-log.md` = the story so
-  far; `logs/decisions-made.md` = locked calls).
+- Open **only Eli's game-facing memory** with him — every file here is his own
+  game and his own words:
+  - `MEMORY.md` — the studio's memory of his game (state, progress, decisions).
+  - `logs/session-log.md` — the diary of his own module play-throughs.
+  - `logs/decisions-made.md` — his locked design calls.
+  - `logs/questions-eli-answered.md` — his answers, verbatim.
+  - `design/*.md` — his design harness.
+  Do **not** point him at `logs/studio-build-log.md` — that's the backstage
+  workshop log (Dad + Claude building the studio), not part of his game.
+- Show, don't lecture. Walk through what each file holds and why it matters.
 - Ask Eli to summarize his game and where he's at **in his own words**, then
   help him write that into `MEMORY.md`. His words, not yours.
 - Prove it works: end the session, then (next time) start cold and show how you

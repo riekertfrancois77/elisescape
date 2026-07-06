@@ -1,8 +1,9 @@
 # MEMORY.md — The Studio Brain
 
-This file is the shared memory of Eli AI Game Studio. Claude Code reads it at
-the start of every session and updates it at the end of every session. The
-dashboard reads the sections below to display progress.
+This is your studio's memory of *your game*. Your AI team reads it at the start
+of every session to remember exactly where you are, and updates it as you work —
+so nothing you decide ever gets lost. (That's the whole idea behind Module 4.)
+Everything here is *your* game and *your* journey.
 
 ## Project State
 
@@ -21,8 +22,8 @@ dashboard reads the sections below to display progress.
 
 ## Game Version
 
-<!-- Claude bumps this as modules make the game better; the dashboard shows it.
-     Keep the number at the start of the first line (e.g. "0.2 — ..."). -->
+<!-- Your game's version number. It climbs as modules make the game better.
+     (Keep the number at the start of the first line, e.g. "0.2 — ...".) -->
 
 **0.1** — *Arrival at Thornwood Manor* (the Grand Foyer). This number climbs
 every time a module makes the game better — that's the whole point of the
@@ -30,8 +31,8 @@ journey.
 
 ## Progress Tracker
 
-<!-- The dashboard counts the [x] boxes below. Claude Code: check a box only
-     when a module is fully complete. -->
+<!-- Your journey through the 13 modules. A box is ticked when you finish a
+     module. -->
 
 - [x] Module 1 — Think Like a Game Studio
 - [x] Module 2 — From Vision to Prototype
@@ -49,7 +50,7 @@ journey.
 
 ## Module 1 Steps
 
-<!-- Claude Code: check these off as Eli completes each step of Module 1. -->
+<!-- The steps of Module 1, ticked off as you go. -->
 
 - [x] 1. Welcome to the Studio
 - [x] 2. What should players feel?
@@ -67,7 +68,7 @@ journey.
 
 ## Module 2 Steps
 
-<!-- Claude Code: check these off as Eli completes each step of Module 2. -->
+<!-- The steps of Module 2, ticked off as you go. -->
 
 - [x] 1. Meet your Lead Engineer (Claude changes hats)
 - [x] 2. MVP thinking — the ONE room that proves the game
@@ -97,7 +98,7 @@ journey.
 
 <!-- Unlocks when Module 3 is complete. -->
 
-- [ ] 1. Open MEMORY.md and the logs
+- [ ] 1. Open your game's memory (MEMORY.md + your journey log)
 - [ ] 2. Learn what each memory file is for
 - [ ] 3. Summarize your game in your own words
 - [ ] 4. Write it into the memory with Claude
@@ -106,8 +107,7 @@ journey.
 
 ## Session Memory
 
-<!-- The dashboard shows these bullets in the "Session Memory" panel.
-     Claude Code: add a bullet per session, newest first. Keep them short. -->
+<!-- The story of your studio so far — newest first. (Shown on the dashboard.) -->
 
 - 🏆 **MODULE 3 COMPLETE — Director Mode unlocked.** Eli directed **five real
   changes** into *Thornwood Manor* and made it his. He turned "read the clue" into
@@ -120,11 +120,9 @@ journey.
   engineer to keep the trap *fair* (a subtle tell, not a coin-flip), and **caught
   the team skipping** the sounds change he'd asked for. He called it: *"this looks
   good for Version 0.1."*
-- 🐛 **Eli found a real bug (Bug Hunter unlocked):** he noticed the dashboard
-  wrongly showed Module 2 incomplete and Module 3 locked, and reported it —
-  *noticing what's off*, the exact skill his game is built on. Root cause: the
-  dashboard's embedded `file://` fallback state in `script.js` was stale; fixed
-  to mirror real progress.
+- 🐛 **Bug Hunter — Eli caught a real bug:** he noticed his studio dashboard was
+  showing the wrong thing and reported it. *Noticing what's off* is the exact
+  skill his own game is built on — so it earned a secret trophy.
 - 🎬 **Eli directed his FIRST change (a taste of Module 3):** he combined three
   directions at once — *hide the clock harder, make the puzzle tougher, and add
   sound* — and the engineer rebuilt it. The clock now lurks dimmed in a shadowy
@@ -140,8 +138,8 @@ journey.
 - 🎯 **MVP decision:** Eli chose to build **the arrival / first-60-seconds** as
   Version 0.1 (the hook), shaped into a fair one-room "notice the stopped clock"
   puzzle. One room, one locked way forward, one clue.
-- 🔓 **Dad unlocked Module 2 — From Vision to Prototype.** Time to turn the
-  Thornwood Manor design into a real, playable game with a single prompt.
+- 🚀 **Building began (Module 2).** The Thornwood Manor design turned into a
+  real, playable game with a single prompt.
 - 🎭 **Story deepened:** victim = the corrupt, powerful **party host**; killer
   is a **believer** who hunts corrupt men (thinks he's the hero); detective &
   killer are **old rivals** — chased for years, never caught, always one step
@@ -158,9 +156,7 @@ journey.
 
 ## Claude Instructions
 
-<!-- The dashboard shows this section in the "Claude Instructions" panel.
-     Claude Code: rewrite it after each session so Eli always knows his
-     exact next move. -->
+<!-- Your exact next move. (Shown on the dashboard.) -->
 
 🏆 **MODULE 3 COMPLETE, Director — you earned Director Mode.** You took a working
 game and made it *yours*: five directed changes, one rejected AI version, one
@@ -201,16 +197,14 @@ When you're ready, open Claude Code in this folder and say:
 
 ## Latest Build Review
 
-<!-- Claude writes this in Module 2+ after building a version. The dashboard's
-     AI Review panel reads it. The studio team reviews through DIFFERENT LENSES.
-     Format (one bullet per role: Role · stars · note):
+<!-- Your studio team's review of the latest build (shown on the dashboard).
+     One bullet per role: Role · stars · note. Use ⭐ for filled, ☆ for empty.
        **Version 0.1**
        - Creative Director · ⭐⭐⭐⭐☆ · Feels close to the vision.
        - Player Experience · ⭐⭐⭐☆☆ · The first puzzle is confusing.
        - Lead Engineer · ⭐⭐⭐⭐☆ · Technically solid.
        - QA · ⭐⭐⭐☆☆ · Found two bugs.
-       - Producer · ⭐⭐⭐⭐☆ · Excellent progress for Version 0.1.
-     Use ⭐ for filled stars and ☆ for empty. -->
+       - Producer · ⭐⭐⭐⭐☆ · Excellent progress for Version 0.1. -->
 
 **Version 0.1 — Director's Cut (Module 3, 2026-07-06)**
 - Creative Director (Eli) · ⭐⭐⭐⭐⭐ · *"This looks good for Version 0.1."* The puzzle, the mood, and the room are finally *his*.
@@ -223,9 +217,8 @@ When you're ready, open Claude Code in this folder and say:
 
 ## Eli's Estimate vs Reality
 
-<!-- Module 2: before building, Claude asks Eli how long HE thinks the build
-     will take, and logs his guess here. After the ~1-minute build, they compare.
-     A quiet lesson in how AI changes the math of software. -->
+<!-- Module 2's estimate-vs-reality lesson: your guess for how long the build
+     would take, next to the real time. -->
 
 **Eli's estimate (2026-07-06):** *"A few hours."* A smart, sensible guess — the
 old math of software.

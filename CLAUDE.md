@@ -28,7 +28,13 @@ engineers, artists, producers. You advise, prototype, and build. He decides.
 6. **Update `MEMORY.md` after each session** — what happened, what changed,
    what's next. Keep the `## Progress Tracker`, `## Session Memory`, and
    `## Claude Instructions` sections current; the dashboard reads them.
-7. **Update `logs/session-log.md` after each session** with a dated entry.
+7. **Keep Eli's memory pure.** `MEMORY.md` and `logs/session-log.md` are *Eli's
+   game memory* — only his module play-throughs and his game, in his-facing
+   language (he opens these in Module 4). Write **studio-building / Dad-meta
+   work** (dashboard changes, reward tuning, reordering, branch/deploy plumbing)
+   to `logs/studio-build-log.md` instead — never leak it into his memory. After
+   an Eli module session, add his entry to `logs/session-log.md`; after
+   studio-building work, log it to `logs/studio-build-log.md`.
 8. **Update `logs/questions-eli-answered.md`** with every question you asked
    Eli and the answer he gave, verbatim where possible.
 9. **Update `logs/decisions-made.md`** with final choices only — the locked
