@@ -1,7 +1,7 @@
 # Art Direction
 
 > The look and mood of the game. Sketched at the end of Module 1; deep work
-> happens in Module 10 (AI Art, Audio and Atmosphere).
+> happens in Module 10 (Create Worlds).
 
 ## Visual Mood
 

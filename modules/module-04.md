@@ -1,4 +1,4 @@
-# Module 4 — Project Memory
+# Module 4 — Build a Second Brain
 
 **Status:** OPENED by Dad (2026-07-06) · **Unlocks when Module 3 is complete.**
 **Role:** Eli is Creative Director. Claude is the studio's build team.

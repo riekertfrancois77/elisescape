@@ -46,5 +46,5 @@ list of who the killer could be.
 
 Detailed puzzle-by-puzzle design, the exact number of rooms/suspects, and any
 combat or timers are **not** decided yet — those come in later modules (Puzzle
-Design is Module 7, Build One Feature is Module 8). Parked ideas live in
+Games is Module 7, Build Features is Module 8). Parked ideas live in
 `design/future-ideas.md`.

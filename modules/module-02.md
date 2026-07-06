@@ -1,4 +1,4 @@
-# Module 2 — One-Shot Power
+# Module 2 — From Vision to Prototype
 
 **Status:** UNLOCKED / active (opened by Dad, 2026-07-06)
 **Role this module:** Claude changes hats — from **Creative Director** (Module 1)

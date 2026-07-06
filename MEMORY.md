@@ -7,9 +7,10 @@ dashboard reads the sections below to display progress.
 ## Project State
 
 - **Creative Director:** Eli
-- **Current module:** Module 2 — One-Shot Power (active). **Modules 3 (Director
-  Mode) & 4 (Project Memory) were opened by Dad (2026-07-06)** but stay locked
-  until the module before each is complete — they unlock in order. Module 1 is
+- **Current module:** Module 2 — From Vision to Prototype (active). **Modules 3
+  (Direct the Team) & 4 (Build a Second Brain) were opened by Dad (2026-07-06)**
+  but stay locked until the module before each is complete — they unlock in
+  order. Module 1 is
   complete.
 - **Game concept:** ***One Night at Thornwood Manor*** — a famous detective is
   trapped one night in a cozy, secret-filled early-1900s mansion during a house
@@ -25,18 +26,18 @@ dashboard reads the sections below to display progress.
      when a module is fully complete. -->
 
 - [x] Module 1 — Think Like a Game Studio
-- [ ] Module 2 — One-Shot Power
-- [ ] Module 3 — Director Mode
-- [ ] Module 4 — Project Memory
-- [ ] Module 5 — Code Reading
-- [ ] Module 6 — Prompt Engineering
-- [ ] Module 7 — Puzzle Design
-- [ ] Module 8 — Build One Feature
-- [ ] Module 9 — Debugging
-- [ ] Module 10 — AI Art, Audio and Atmosphere
-- [ ] Module 11 — Real-World Crossover
-- [ ] Module 12 — The Machine Room
-- [ ] Module 13 — Ship and Demo
+- [ ] Module 2 — From Vision to Prototype
+- [ ] Module 3 — Direct the Team
+- [ ] Module 4 — Build a Second Brain
+- [ ] Module 5 — Read the Machine
+- [ ] Module 6 — Speak AI Fluently
+- [ ] Module 7 — Design Great Games
+- [ ] Module 8 — Build Features
+- [ ] Module 9 — Hunt Bugs
+- [ ] Module 10 — Create Worlds
+- [ ] Module 11 — Cross Into the Real World
+- [ ] Module 12 — Supercharge Your Studio
+- [ ] Module 13 — Ship Like a Pro
 
 ## Module 1 Steps
 
@@ -100,8 +101,8 @@ dashboard reads the sections below to display progress.
 <!-- The dashboard shows these bullets in the "Session Memory" panel.
      Claude Code: add a bullet per session, newest first. Keep them short. -->
 
-- 🔓 **Dad unlocked Module 2 — One-Shot Power.** Time to turn the Thornwood
-  Manor design into a real, playable game with a single prompt.
+- 🔓 **Dad unlocked Module 2 — From Vision to Prototype.** Time to turn the
+  Thornwood Manor design into a real, playable game with a single prompt.
 - 🎭 **Story deepened:** victim = the corrupt, powerful **party host**; killer
   is a **believer** who hunts corrupt men (thinks he's the hero); detective &
   killer are **old rivals** — chased for years, never caught, always one step
@@ -122,12 +123,12 @@ dashboard reads the sections below to display progress.
      Claude Code: rewrite it after each session so Eli always knows his
      exact next move. -->
 
-🔓 **MODULE 2 IS OPEN, Director — *One-Shot Power*.** You designed a whole game
-in Module 1. Now watch AI *build* it.
+🔓 **MODULE 2 IS OPEN, Director — *From Vision to Prototype*.** You designed a
+whole game in Module 1. Now watch AI *build* it.
 
 Open Claude Code in this folder and say:
 
-> **"Start Module 2 — let's use One-Shot Power to build my game."**
+> **"Start Module 2 — let's build my first playable prototype."**
 
 Together you'll shape your *Thornwood Manor* design into a single, powerful
 prompt — then fire it **once** and watch Claude build a real, **playable** first
@@ -135,9 +136,9 @@ version of your game. It won't be perfect. That's exactly the point. Two new
 trophies are waiting: **One-Shot Power** and **First Playable**. Save the
 session and refresh the dashboard to claim them.
 
-*(Dad has also opened **Module 3 — Director Mode** and **Module 4 — Project
-Memory**. They're locked for now and unlock in order: finish Module 2 to open
-Module 3, finish Module 3 to open Module 4.)*
+*(Dad has also opened **Module 3 — Direct the Team** and **Module 4 — Build a
+Second Brain**. They're locked for now and unlock in order: finish Module 2 to
+open Module 3, finish Module 3 to open Module 4.)*
 
 ## Achievements Unlocked
 

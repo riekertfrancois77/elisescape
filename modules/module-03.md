@@ -1,4 +1,4 @@
-# Module 3 — Director Mode
+# Module 3 — Direct the Team
 
 **Status:** OPENED by Dad (2026-07-06) · **Unlocks when Module 2 is complete.**
 **Role:** Eli is Creative Director. Claude is the studio's build team.

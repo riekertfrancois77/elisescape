@@ -15,18 +15,18 @@ const MODULES = [
     title: "Think Like a Game Studio",
     teaser: "Design your own game from scratch — before any code exists. The studio opens its doors to its Director.",
   },
-  { n: 2,  title: "One-Shot Power",                teaser: "Make Claude build something real from a single, perfect prompt. One shot. No edits." },
-  { n: 3,  title: "Director Mode",                 teaser: "Stop typing code requests. Start running a studio. You give direction; the team executes." },
-  { n: 4,  title: "Project Memory",                teaser: "Teach the studio to remember everything, so every session starts smarter than the last." },
-  { n: 5,  title: "Code Reading",                  teaser: "See through the machine. Read code the way a director reads a script." },
-  { n: 6,  title: "Prompt Engineering",            teaser: "Words are your controller. Learn the inputs that make AI do exactly what you mean." },
-  { n: 7,  title: "Puzzle Design",                 teaser: "The secret craft of making players feel clever." },
-  { n: 8,  title: "Build One Feature",             teaser: "The first real piece of your game gets built. For real. This is where it begins." },
-  { n: 9,  title: "Debugging",                     teaser: "Things will break. Directors don't panic — they hunt." },
-  { n: 10, title: "AI Art, Audio and Atmosphere",  teaser: "Give your world a face, a voice, and a mood." },
-  { n: 11, title: "Real-World Crossover",          teaser: "Your studio skills escape the screen. The things you design in the real world become game mechanics." },
-  { n: 12, title: "The Machine Room",              teaser: "Peek behind the studio's own walls. Harnesses, agents, and MCP — the wiring that lets AI read, remember, and act." },
-  { n: 13, title: "Ship and Demo",                 teaser: "Release day. An audience. Your game, in other people's hands." },
+  { n: 2,  title: "From Vision to Prototype",      teaser: "Make Claude build something real from a single, perfect prompt. One shot. No edits." },
+  { n: 3,  title: "Direct the Team",               teaser: "Stop typing code requests. Start running a studio. You give direction; the team executes." },
+  { n: 4,  title: "Build a Second Brain",          teaser: "Teach the studio to remember everything, so every session starts smarter than the last." },
+  { n: 5,  title: "Read the Machine",              teaser: "See through the machine. Read code the way a director reads a script." },
+  { n: 6,  title: "Speak AI Fluently",             teaser: "Words are your controller. Learn the inputs that make AI do exactly what you mean." },
+  { n: 7,  title: "Design Great Games",            teaser: "The secret craft of making players feel clever." },
+  { n: 8,  title: "Build Features",                teaser: "The first real piece of your game gets built. For real. This is where it begins." },
+  { n: 9,  title: "Hunt Bugs",                     teaser: "Things will break. Directors don't panic — they hunt." },
+  { n: 10, title: "Create Worlds",                 teaser: "Give your world a face, a voice, and a mood." },
+  { n: 11, title: "Cross Into the Real World",     teaser: "Your studio skills escape the screen. The things you design in the real world become game mechanics." },
+  { n: 12, title: "Supercharge Your Studio",       teaser: "Peek behind the studio's own walls. Harnesses, agents, and MCP — the wiring that lets AI read, remember, and act." },
+  { n: 13, title: "Ship Like a Pro",               teaser: "Release day. An audience. Your game, in other people's hands." },
 ];
 
 // Dad has opened modules 1..N. Opened modules unlock IN ORDER — a module only
@@ -496,7 +496,7 @@ const MISSIONS = {
       then refresh here — the studio remembers.`,
   },
   2: {
-    title: "One-Shot Power",
+    title: "From Vision to Prototype",
     purpose: `In Module 1 Claude was your Creative Director. Today it changes
       hats and becomes your Lead Engineer. You'll scope your game to the smallest
       fun version, write a tiny spec, guess how long it'll take — then fire ONE
@@ -504,13 +504,13 @@ const MISSIONS = {
       isn't code; it's telling an AI engineer exactly what you mean.`,
     goals: MODULE2_GOALS,
     steps: MODULE2_STEPS,
-    start: `"Start Module 2 — let's use One-Shot Power to build my game."`,
+    start: `"Start Module 2 — let's build my first playable prototype."`,
     outro: `Don't celebrate yet 😄 — you'll build Version 0.1, not the whole
       game. That's how studios work: versions, not miracles. Save the session,
       then refresh here to claim your trophies.`,
   },
   3: {
-    title: "Director Mode",
+    title: "Direct the Team",
     purpose: `You've got a playable game. Now stop being a passenger. Play
       Director: find what you don't like — a room, a name, the mood, a rule —
       and make the AI rebuild it your way. AI output is clay, not stone. Your
@@ -522,7 +522,7 @@ const MISSIONS = {
       MY game? Save the session, then refresh here to claim Director Mode.`,
   },
   4: {
-    title: "Project Memory",
+    title: "Build a Second Brain",
     purpose: `You've felt the studio "remember" your game between sessions. Now
       learn the trick behind it: project memory. Open the memory files, see what
       they hold, and start writing to them yourself — so every session starts
