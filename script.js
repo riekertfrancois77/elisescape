@@ -266,12 +266,15 @@ const STUDIO_STATUS = [
 // double-clicked dashboard shows stale state (the bug Eli caught). Better: open
 // the live URL, which reads the real MEMORY.md/ACHIEVEMENTS.md.
 const FALLBACK_MEMORY = `
+## Game Version
+**0.2** — Arrival at Thornwood Manor, first changed by Eli's own hand (murder moved 9:47 → 10:36).
+
 ## Progress Tracker
 - [x] Module 1
 - [x] Module 2
 - [x] Module 3
 - [x] Module 4
-- [ ] Module 5
+- [x] Module 5
 - [ ] Module 6
 - [ ] Module 7
 - [ ] Module 8
@@ -326,21 +329,24 @@ const FALLBACK_MEMORY = `
 - [x] 6
 
 ## Session Memory
+- 🔧 **Module 5 COMPLETE — Code Reader unlocked. Game → Version 0.2.** Eli opened the hood on his own game and made his **first solo edit by his own hand** — he moved the murder from 9:47 to 10:36 in \`MURDER_TIME\`, then learned the engineer's loop (read → change → trace the ripple → verify): he chased the change through the whole clue chain (toast, candle, pocket-watch decoy, footman's countdown) and proved the case still solves. His game is now changed by *him*, not just directed.
 - 🧠 **Module 4 COMPLETE — Memory Keeper unlocked.** Eli learned the studio's biggest secret: AI forgets between sessions, so the *project* remembers for it — the same idea as his game's \`state\` object, one level up. He wrote his game into \`MEMORY.md\` in his own words ("an escape-room type of game with a murder-mystery aspect… looking at everything closely and solving clues") plus what he wants next (design + mechanics to keep improving).
 - 🏆 **Module 3 COMPLETE — Director Mode unlocked.** Eli directed five real changes into *Thornwood Manor*: a full deduction chain (clues → the 9:47 time of death → set the clock → a hidden key → the door), hidden clues + a 9:52 pocket-watch trap, a living code-made soundscape, and a CSS-painted foyer (firelight vs. moonlight). He rejected an AI version, overruled a design call to keep it fair, and caught a skipped change.
 - 🎮 **Module 2 COMPLETE** — a playable Version 0.1 of *One Night at Thornwood Manor* runs in the browser.
 - 🏆 Trophies so far: Creative Director, First Big Decision, Game Pillars Chosen, Studio Review Complete, Memory Created, One-Shot Power, First Playable, Director Mode, **Memory Keeper**, plus secret **AI Tamer** and **Bug Hunter**.
-- 🔓 **Dad opened Modules 5–8** — the "make your game visibly better" run: **5 Read the Machine → 6 Speak AI Fluently → 7 Create Worlds → 8 Design Great Games.** They unlock in order. **Module 5 is UP NOW.**
+- 🔓 **Dad opened Modules 5–8** — the "make your game visibly better" run: **5 Read the Machine ✅ → 6 Speak AI Fluently → 7 Create Worlds → 8 Design Great Games.** They unlock in order. **Module 6 is UP NOW.**
 
 ## Claude Instructions
-🧠 **Module 4 complete, Director — you earned Memory Keeper.** The studio now
-remembers your game across every session, in your own words.
+🔧 **Module 5 complete, Director — you earned Code Reader.** You cracked open your
+game's own code, read your \`state\` object alive and running, and made your first
+solo edit by your own hand (murder 9:47 → 10:36) — then traced the ripple through
+the whole clue chain and verified the case still solves. **Version 0.2.**
 
-🔓 **UP NOW: MODULE 5 — READ THE MACHINE.** Dad opened it (plus 6, 7, and 8).
-You crack open your game's own code and make your first solo edit — the game
-climbs to **Version 0.2.** Open Claude Code in this folder and say:
+🔓 **UP NEXT: MODULE 6 — SPEAK AI FLUENTLY.** Sharpen your sharpest tool — words.
+Turn a vague "make it better" into a precise prompt that gets exactly what you
+pictured, and polish your game to **Version 0.3.** Open Claude Code and say:
 
-> **"Start Module 5 — show me my own game's code and let me edit it."**
+> **"Start Module 6 — teach me to prompt like a pro."**
 `;
 
 const FALLBACK_ACHIEVEMENTS = `
@@ -354,7 +360,7 @@ const FALLBACK_ACHIEVEMENTS = `
 - [x] **First Playable**
 - [x] **Director Mode**
 - [x] **Memory Keeper**
-- [ ] **Code Reader**
+- [x] **Code Reader**
 - [ ] **AI Whisperer**
 - [ ] **World Builder**
 - [ ] **Game Designer**
