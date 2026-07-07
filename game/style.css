@@ -507,14 +507,24 @@ h1 {
   align-items: center;
   justify-content: center;
   line-height: 1;
-  background: rgba(20, 14, 9, 0.7);
-  border: 1px solid #3a2c1c;
+  /* A little brass fixture on the wall — warm shadow, a brass rim, and a
+     glowing gold icon, so it matches the great clock and the gold accents
+     instead of sitting on top of the game. */
+  background: radial-gradient(circle at 50% 36%, #2a1f12, #160f09);
+  border: 1px solid #7a5a24;
   border-radius: 50%;
   cursor: pointer;
-  color: #f3e9d8;
-  transition: transform 0.12s ease;
+  color: #e8c169;
+  box-shadow: 0 0 0 1px rgba(58, 44, 20, 0.6),
+              0 2px 8px rgba(0, 0, 0, 0.55),
+              inset 0 1px 2px rgba(240, 208, 137, 0.18);
+  transition: transform 0.12s ease, border-color 0.12s ease, color 0.12s ease;
 }
-#mute-btn:hover { transform: scale(1.1); }
+#mute-btn:hover {
+  transform: scale(1.1);
+  border-color: #e8c169;
+  color: #f0d089;
+}
 
 /* ---- Small screens ---- */
 @media (max-width: 640px) {
