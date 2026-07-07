@@ -22,8 +22,8 @@ const state = {
 
 // The one true answer: the time of the murder. You DON'T get told it — you
 // DEDUCE it from the clues, then turn the great clock's hands to it to release
-// the hidden key. 9:47 = the 9 o'clock hour, thirteen minutes before ten.
-const MURDER_TIME = "9:47";
+// the hidden key. 10:36 = the 10 o'clock hour, twenty-four minutes before eleven.
+const MURDER_TIME = "10:36";
 
 
 /* ---------------------------------------------------------------------
@@ -309,31 +309,31 @@ function examine(text) {
 function clickObject(object) {
   if (object === "guests") {
     // CLUE 1 — a lower bound, told as testimony. The notebook records only the
-    // FACT (a half-hour chime just gone nine); the detective must realise that
-    // means the host was still alive at 9:30.
-    examine("A tearful guest clutches your sleeve. 'His last toast — he raised his glass the very moment the hall clock chimed the half hour. So merry, he was. Who could have...' Her voice breaks.");
-    addClue("Host's last toast: on the half-hour chime, just gone nine.");
+    // FACT (a half-hour chime just gone ten); the detective must realise that
+    // means the host was still alive at 10:30.
+    examine("A tearful guest clutches your sleeve. 'His last toast — he raised his glass the very moment the hall clock chimed the half hour, just gone ten. So merry, he was. Who could have...' Her voice breaks.");
+    addClue("Host's last toast: on the half-hour chime, just gone ten.");
 
   } else if (object === "fireplace") {
     // CLUE 2 — the hour, told obliquely. You read a burnt candle, not a sentence
     // that says "the 9 o'clock hour".
-    examine("On the mantel, a tall candle is scored with a ring for every hour. Its flame has eaten down past the ninth ring — but stops short of the tenth. Beside it lies a single spent match.");
-    addClue("Candle burned past the 9th hour-ring, not yet the 10th.");
+    examine("On the mantel, a tall candle is scored with a ring for every hour. Its flame has eaten down past the tenth ring — but stops short of the eleventh. Beside it lies a single spent match.");
+    addClue("Candle burned past the 10th hour-ring, not yet the 11th.");
 
   } else if (object === "portrait") {
     // THE TRAP — now WITHOUT the "always ran fast" giveaway (Eli's call). The
     // only tell is subtle and physical: the hands were knocked crooked in the
     // struggle, so the time it shows can't be trusted. You have to NOTICE that.
-    examine("Beneath the host's proud portrait, on a side table, lies his gold pocket watch — smashed in the fall, its glass starred, the hands knocked crooked on their pin. Jarred as they are, they point somewhere near 9:52.");
-    addClue("Pocket watch, hands jarred crooked — points near 9:52.");
+    examine("Beneath the host's proud portrait, on a side table, lies his gold pocket watch — smashed in the fall, its glass starred, the hands knocked crooked on their pin. Jarred as they are, they point somewhere near 10:41.");
+    addClue("Pocket watch, hands jarred crooked — points near 10:41.");
 
   } else if (object === "coats") {
     // CLUE 3 — the exact minute, but told LESS directly now. The footman was
-    // counting the minutes DOWN to the ten o'clock chime; he'd reached "thirteen"
-    // when the scream came. The detective has to realise: thirteen minutes left
-    // before ten = 9:47. No "before the chime" spelled out anymore.
-    examine("By the cloakroom a footman is shaking. 'I count the minutes down to the hour — a habit, sir. I'd just whispered \"thirteen\" when the scream tore through the hall. The ten o'clock chime never followed it.'");
-    addClue("Footman counting down to ten's chime — had reached 'thirteen' when the scream came.");
+    // counting the minutes DOWN to the eleven o'clock chime; he'd reached "twenty-four"
+    // when the scream came. The detective has to realise: twenty-four minutes left
+    // before eleven = 10:36. No "before the chime" spelled out anymore.
+    examine("By the cloakroom a footman is shaking. 'I count the minutes down to the hour — a habit, sir. I'd just whispered \"twenty-four\" when the scream tore through the hall. The eleven o'clock chime never followed it.'");
+    addClue("Footman counting down to eleven's chime — had reached 'twenty-four' when the scream came.");
 
   } else if (object === "clock") {
     // The great clock is now the LOCK: set its hands to the deduced time.
@@ -366,8 +366,8 @@ function handleClock() {
   const input = document.createElement("input");
   input.type = "text";
   input.inputMode = "numeric";
-  input.maxLength = 5; // "9:47" or "947"
-  input.placeholder = "set the hands (e.g. 9:47)";
+  input.maxLength = 5; // "10:36" or "1036"
+  input.placeholder = "set the hands (e.g. 3:15)";
   input.className = "dial-input";
 
   const btn = document.createElement("button");
