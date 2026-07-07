@@ -51,8 +51,13 @@ earn them.
   cloaked coat rack, a detailed crimson rug, and a shadowed grandfather clock —
   then brought it alive with flickering light and a warm grand-hall sound. Game
   bumped to Version 0.4.)*
-- [ ] **Game Designer** — Design a new room and puzzle that make players feel
-  clever. *(Module 8 — Design Great Games.)*
+- [x] **Game Designer** — Design a new room and puzzle that make players feel
+  clever. *(Unlocked 2026-07-07 — Module 8. Eli designed his next room himself —
+  a candlelit library with a statue that must be made to match the host's portrait
+  (a raised goblet of wine), sliding open a hidden room — named his own puzzle
+  rules (fair + hard/clever), and defended the design under pressure-testing. He
+  shipped a real improvement to the live game (the planted goblet setup, Version
+  0.5) and locked the blueprint in `design/next-room.md` for Module 10.)*
 
 ## Secret Achievements
 

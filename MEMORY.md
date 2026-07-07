@@ -8,14 +8,13 @@ Everything here is *your* game and *your* journey.
 ## Project State
 
 - **Creative Director:** Eli
-- **Current module:** **Module 8 — Design Great Games (now UNLOCKED / active)**.
-  **Module 7 (Create Worlds) is COMPLETE** — Eli earned **World Builder** by
-  art-directing his game's whole look (gold + mahogany + deep crimson; a grand
-  chandelier, a mantel-and-chimney fireplace, a coat rack, a shadowed grandfather
-  clock) and layering in moving light + a warm grand-hall sound, bumping it to
-  **Version 0.4**. Modules 1–7 are all complete. Dad has opened **Modules 5–8**
-  (the "make your game visibly better" run: read code → prompt → graphics →
-  design); they unlock in order, so **Module 8 is active** — the last of the run.
+- **Current module:** **None active — Dad's opened run (Modules 5–8) is COMPLETE.**
+  **Module 8 (Design Great Games) is COMPLETE** — Eli earned **Game Designer** by
+  designing his next room (a candlelit library with a statue-matches-the-portrait
+  puzzle) himself and defending it, then shipping a design improvement that bumped
+  the game to **Version 0.5**. **Modules 1–8 are all complete.** Modules **9–13 are
+  sealed** until **Dad** opens them (`DAD_OPENED_THROUGH = 8`). The next-room
+  blueprint is saved in `design/next-room.md`, ready to *build* in Module 10.
 - **Game concept:** ***One Night at Thornwood Manor*** — a famous detective is
   trapped one night in a cozy, secret-filled early-1900s mansion during a house
   party where a murder has happened. A killer who leaves clues on purpose hides
@@ -45,6 +44,15 @@ Everything here is *your* game and *your* journey.
 <!-- Your game's version number. It climbs as modules make the game better.
      (Keep the number at the start of the first line, e.g. "0.2 — ...".) -->
 
+**0.5** — *Arrival at Thornwood Manor* (the Grand Foyer), sharpened by Eli's own
+**game-designer eye** (Module 8): the host's foyer portrait now shows him
+**mid-toast, a goblet of deep red wine raised high** — a deliberate *setup* Eli
+planted for his next room's puzzle (a statue that must be made to match the
+portrait). Design craft applied to the live game. Built on **0.4** (the look Eli
+art-directed), **0.3** (prompt polish) and **0.2** (the hand-changed murder time
+10:36). This number climbs every time a module makes the game better — that's the
+whole point of the journey.
+
 **0.4** — *Arrival at Thornwood Manor* (the Grand Foyer), given **a real face**
 that Eli **art-directed himself** (Module 7). He chose the mood — *"warm but
 wrong, grand and rich, a touch of creepy"* — and the palette — *gold + mahogany
@@ -69,7 +77,7 @@ module makes the game better — that's the whole point of the journey.
 - [x] Module 5 — Read the Machine
 - [x] Module 6 — Speak AI Fluently
 - [x] Module 7 — Create Worlds
-- [ ] Module 8 — Design Great Games
+- [x] Module 8 — Design Great Games
 - [ ] Module 9 — Summon the Experts
 - [ ] Module 10 — Build the Next Room
 - [ ] Module 11 — Hunt Bugs
@@ -176,19 +184,35 @@ module makes the game better — that's the whole point of the journey.
 
 <!-- Unlocks when Module 7 is complete. Target: game climbs to Version 0.5. -->
 
-- [ ] 1. Meet the Game Designer — Claude becomes your design critic
-- [ ] 2. Study what already works — why the foyer puzzle feels fair
-- [ ] 3. You design the next room — on your own
-- [ ] 4. You design its puzzle — clues, deduction, payoff
-- [ ] 5. Pressure-test — Claude plays devil's advocate
-- [ ] 6. Sharpen the current game with your new design eye (Version 0.5)
-- [ ] 7. Lock the blueprint — next-room design saved for Module 10
-- [ ] 8. Achievement unlocked: Game Designer
+- [x] 1. Meet the Game Designer — Claude becomes your design critic
+- [x] 2. Study what already works — why the foyer puzzle feels fair
+- [x] 3. You design the next room — on your own
+- [x] 4. You design its puzzle — clues, deduction, payoff
+- [x] 5. Pressure-test — Claude plays devil's advocate
+- [x] 6. Sharpen the current game with your new design eye (Version 0.5)
+- [x] 7. Lock the blueprint — next-room design saved for Module 10
+- [x] 8. Achievement unlocked: Game Designer
 
 ## Session Memory
 
 <!-- The story of your studio so far — newest first. (Shown on the dashboard.) -->
 
+- 🧩 **MODULE 8 COMPLETE — Game Designer unlocked. Game → Version 0.5.** The purest
+  "Eli's brain first" module of the run: he **designed his next room and its puzzle
+  entirely himself**, and Claude (the **Game Designer / critic** hat) only asked
+  hard questions and tried to break it. First Eli named *why* his foyer puzzle
+  works — his own **checklist**: (1) **FAIR** (answers come from findable clues, no
+  guessing) and (2) **HARD & CLEVER** (you *earn* the aha). Then he designed: a
+  **candlelit library** full of books, with a **statue that matches the host's
+  portrait but holds the wrong thing** — the player must notice and fix what it
+  holds. Under pressure-testing he **defended its fairness himself** ("you can go
+  between rooms, so the portrait's always checkable") and chose the object (**a
+  goblet of wine**) and the payoff (**a hidden room slides open**). He shipped a
+  real improvement to the live game — the foyer portrait now shows the host
+  mid-toast with that raised goblet, **planting the setup** for the new puzzle
+  (**Version 0.5**) — and the full **blueprint is locked** in
+  `design/next-room.md`, ready to build in Module 10. He designed like a pro:
+  setup-and-payoff, a fair clue, a real reward.
 - 🎨 **MODULE 7 COMPLETE — World Builder unlocked. Game → Version 0.4.** Eli's game
   got a **face**, and *he* was the Art Director the whole way (Claude wore the
   **Technical Artist** hat and only held the brush). Brain-first: he decided the
@@ -290,29 +314,27 @@ module makes the game better — that's the whole point of the journey.
 
 <!-- Your exact next move. (Shown on the dashboard.) -->
 
-🎨 **MODULE 7 COMPLETE, Director — you earned World Builder.** You gave your game
-a **face**, and *you* art-directed every bit of it. You chose the feeling first
-(*warm but wrong, grand and rich, a touch of creepy*) and the palette (*gold +
-mahogany + a bit of deep crimson*), then directed pass after pass — a grand
-chandelier, a mantel-and-chimney fireplace, a gilded door, a cloaked coat rack, a
-detailed crimson rug, and the shadowed grandfather clock — before bringing it
-alive with flickering light and a warm grand-hall sound. Your taste led every
-call. **Version 0.4.**
+🧩 **MODULE 8 COMPLETE, Director — you earned Game Designer.** The hardest, most
+*you* module yet: you **designed your next room and its puzzle with your own head**
+— a candlelit library with a statue that must be made to match the host's portrait
+(a goblet of wine), sliding a hidden room open when you fix it. You **defended it
+under pressure**, kept it fair, and planted the setup into your live game.
+**Version 0.5.** Your blueprint is saved in `design/next-room.md`.
 
-🔓 **UP NEXT: MODULE 8 — DESIGN GREAT GAMES.** This is the last of Dad's four-module
-run, and the biggest test of your *designer* brain: you'll **design the next room
-and its puzzle yourself** — clues, deduction, payoff — and Claude becomes your
-design critic (devil's advocate) to pressure-test it. You'll also sharpen the
-current game with your new design eye. Your game climbs to **Version 0.5.** Open
-Claude Code in this folder and say:
+🏁 **YOU'VE COMPLETED DAD'S WHOLE RUN (Modules 5–8).** Your game climbed from
+**0.1 → 0.5** — smarter, sharper, better-looking, and better-designed, all by
+*you*. A huge milestone, Director.
 
-> **"Start Module 8 — let's design my next room."**
+🔒 **What's next is up to Dad.** Modules **9–13 are sealed** until he opens them
+(`DAD_OPENED_THROUGH = 8`). A tiny taste: **Module 9 — Summon the Experts** (spawn
+research sub-agents and curate their findings), then **Module 10 — Build the Next
+Room** (your library blueprint becomes *real*). Ask Dad when you want more unlocked.
 
-**The run Dad opened, in order** (each unlocks when the one before is done):
+**The run Dad opened — all done:**
 - **5 · Read the Machine** → read your code, first solo edit → **v0.2** ✅ DONE
 - **6 · Speak AI Fluently** → prompt like a pro, polish the game → **v0.3** ✅ DONE
 - **7 · Create Worlds** → real graphics & atmosphere, you art-direct → **v0.4** ✅ DONE
-- **8 · Design Great Games** → design your next room + puzzle → **v0.5**
+- **8 · Design Great Games** → design your next room + puzzle → **v0.5** ✅ DONE
 
 Modules 9–13 stay sealed until Dad opens them.
 
@@ -353,6 +375,12 @@ perfectly, because the project remembered.
   door, cloaked coat rack, detailed crimson rug, shadowed grandfather clock — and
   layered in moving light + a warm grand-hall sound. His taste led every call.
   Game bumped to Version 0.4.
+- 🧩 **Game Designer** (2026-07-07) — Designed his next room and its puzzle himself
+  (a candlelit library; a statue that must be made to match the host's portrait —
+  a raised goblet of wine — sliding open a hidden room), named his own puzzle rules
+  (fair + hard/clever), and defended the design under pressure-testing. Shipped a
+  real improvement to the live game (planted the goblet setup in the foyer portrait,
+  Version 0.5) and locked the blueprint in `design/next-room.md` for Module 10.
 - 🕵️ **AI Tamer** (secret, 2026-07-06) — Eli directed the AI to build his vision
   *his* way: he combined three changes at once and the engineer delivered.
 - 🐛 **Bug Hunter** (secret, 2026-07-06) — Eli noticed the dashboard was wrong
@@ -369,6 +397,13 @@ perfectly, because the project remembered.
        - Lead Engineer · ⭐⭐⭐⭐☆ · Technically solid.
        - QA · ⭐⭐⭐☆☆ · Found two bugs.
        - Producer · ⭐⭐⭐⭐☆ · Excellent progress for Version 0.1. -->
+
+**Version 0.5 — The Designer's Eye (Module 8, 2026-07-07)**
+- Creative Director & Game Designer (Eli) · ⭐⭐⭐⭐⭐ · Designed the next room + puzzle himself and defended it; shipped the setup into the live game.
+- Game Designer (lens) · ⭐⭐⭐⭐⭐ · Fair (findable clue), clever (setup-and-payoff, earns the aha), consistent (fix-the-wrong-thing mirrors the clock). A defensible design.
+- Player Experience · ⭐⭐⭐⭐☆ · The foyer portrait is richer now — the raised goblet is a quiet hook a sharp player will remember later.
+- QA · ⭐⭐⭐⭐⭐ · Verified headless: the case still solves, the clock stays hidden, no console errors.
+- Producer · ⭐⭐⭐⭐⭐ · One shipped improvement + a locked, buildable next-room blueprint. Dad's whole run (5–8) is complete; game at 0.5.
 
 **Version 0.4 — The Manor Gets a Face (Module 7, 2026-07-07)**
 - Creative & Art Director (Eli) · ⭐⭐⭐⭐⭐ · Art-directed the whole look himself — feeling first, palette locked, then pass after pass of react-and-redirect. *"Looks good."*

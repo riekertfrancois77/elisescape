@@ -6,6 +6,35 @@
 
 ---
 
+## Module 8 — Design Great Games (COMPLETE · 2026-07-07)
+
+Claude wore the **Game Designer** hat — but only as my *critic*. This was the
+most "my brain first" module of all: **I** designed the next room and its puzzle,
+and Claude just asked hard questions and tried to break it.
+
+- **I figured out my own puzzle rules** first, by explaining why my foyer puzzle
+  works: **1) it's FAIR** — you get clues that point to the answer, no guessing;
+  **2) it's HARD & CLEVER** — you have to work to put it together. That became my
+  checklist.
+- **I designed the next room:** a **library**, full of books and shelves, with one
+  **candlelit table** in the middle.
+- **What's off:** a **statue that matches the portrait from the first room** — but
+  it's holding the **wrong thing.** You have to notice and fix it.
+- **The clue (why it's fair):** you can **walk back between rooms**, so you can
+  always go check the portrait again. And the statue won't be the only puzzle in
+  that room.
+- **What he's holding:** a **goblet of wine** (that's the host — raising a toast
+  the night he dies). Fix the statue to hold the goblet and a **hidden room slides
+  open.**
+- **My real improvement to the game (Version 0.5):** we put the goblet **into the
+  foyer portrait now** — so the setup is already there, waiting, before I even
+  build the library. That's setup and payoff, and it was my idea.
+- My whole next-room design is **saved** so it can be built in Module 10. Earned
+  the **Game Designer** trophy. 🧩 **That finishes Dad's whole run — my game went
+  from 0.1 to 0.5, all by me.**
+
+---
+
 ## Module 7 — Create Worlds (COMPLETE · 2026-07-07)
 
 Claude wore the **Technical Artist** hat, but *I* was the Art Director. The rule

@@ -359,7 +359,7 @@ function clickObject(object) {
     // THE TRAP — now WITHOUT the "always ran fast" giveaway (Eli's call). The
     // only tell is subtle and physical: the hands were knocked crooked in the
     // struggle, so the time it shows can't be trusted. You have to NOTICE that.
-    examine("Beneath the host's proud portrait, on a side table, lies his gold pocket watch — smashed in the fall, its glass starred, the hands knocked crooked on their pin. Jarred as they are, they point somewhere near 10:41.");
+    examine("The host's proud portrait looms above a side table — painted mid-toast, a goblet of deep red wine raised high in his right hand, his smile too pleased. Below it lies his gold pocket watch, smashed in the fall, its glass starred, the hands knocked crooked on their pin. Jarred as they are, they point somewhere near 10:41.");
     addClue("Pocket watch, hands jarred crooked — points near 10:41.");
 
   } else if (object === "coats") {

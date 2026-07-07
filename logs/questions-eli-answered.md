@@ -6,6 +6,52 @@
 
 ---
 
+## 2026-07-07 — Module 8 (Design Great Games)
+
+**Q (name what works):** Where does the answer 10:36 come from — could a player
+really work it out, or would they have to guess?
+**Eli:** *"it fair they get clues that point towards the time its meant to be
+hard"*
+**Studio note:** He named his own two puzzle rules — FAIR (clues point to the
+answer) and HARD & CLEVER (it's meant to make you work). That became his checklist.
+
+**Q (design the next room):** What is the next room, after the foyer?
+**Eli:** *"they walk into a room fileld with books and shelfs everywhere and one
+table in the middle with candle light on it"* — a **library**.
+**Studio note:** Great instinct — a library is full of hiding places (fair clues)
+and the single candlelit table gives the eye a focal point.
+
+**Q (what's "off"?):** In this library, what's the ONE wrong thing?
+**Eli:** *"there will be a staute that will match the picture from the first room
+and the staute will be slightly off and you have to adjust it"*
+**Studio note:** Advanced design — **setup and payoff.** The portrait from room 1
+comes back and matters in room 2.
+
+**Q (fairness — Rule 1):** How does the player know what the statue should look
+like?
+**Eli:** *"they can go between rooms so yes its fair and it wont be the only puzzle
+in that room"*
+**Studio note:** Defended his own design under pressure — the portrait stays a
+findable, re-checkable clue.
+
+**Q (the exact off detail):** What's different about the statue — facing wrong,
+wrong arm, wrong object, or your own idea?
+**Eli:** **C** — *"something missing or extra"* (the statue holds the wrong
+object; fix what it's holding).
+
+**Q (the payoff):** When the player fixes the statue, what happens?
+**Eli:** *"it will slide open a hidden room"*
+**Studio note:** Rewards the solve AND pulls the player deeper. Peak "cozy house
+that hides everything."
+
+**Q (the object):** What is the host holding in his portrait (that the statue must
+match)?
+**Eli:** *"they will need a goblet filled with wine"*
+**Studio note:** Belongs to the host (the toast-raising party-thrower). Became the
+Version 0.5 improvement — planted into the foyer portrait as setup.
+
+---
+
 ## 2026-07-07 — Module 7 (Create Worlds)
 
 **Q (art-direct first — the feeling):** When someone walks into your manor, what
