@@ -407,14 +407,27 @@ h1 {
   border-radius: 4px;
   box-shadow: 0 5px 12px rgba(0,0,0,0.55), inset 0 1px 0 rgba(232,193,105,0.4);
 }
-.hearth .overmantel { /* a grand gilded panel on the wall above the mantel */
+.hearth .chimney { /* a grand chimney breast rising from the mantel to the ceiling */
   position: absolute;
-  top: -60%; left: 12%; right: 12%;
-  height: 46%;
-  background: linear-gradient(#2a1f33, #171021);
-  border: 2px solid #7a5a24;
-  border-radius: 4px;
-  box-shadow: 0 0 0 1px rgba(201,162,74,0.2), inset 0 0 18px rgba(0,0,0,0.65);
+  bottom: 116%; left: 15%; right: 15%;
+  height: 188%;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,0.28), transparent 14%, transparent 86%, rgba(0,0,0,0.3)),
+    linear-gradient(#4a3524, #372817);
+  border-left: 2px solid #7a5a24;
+  border-right: 2px solid #7a5a24;
+  border-radius: 2px;
+  box-shadow: inset 0 0 18px rgba(0,0,0,0.45), 0 0 0 1px rgba(201,162,74,0.12);
+}
+.hearth .chimney::before { /* a gilded cornice where the breast meets the ceiling */
+  content: "";
+  position: absolute;
+  top: 0; left: -8%; right: -8%;
+  height: 5%;
+  background: linear-gradient(#5a4224, #2e2114);
+  border-top: 2px solid #c9a24a;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 .hearth::after { /* warm glow spilling into the room */
   content: "";
