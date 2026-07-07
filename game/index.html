@@ -21,7 +21,15 @@
 
     <!-- Sound on/off. Some browsers only allow sound after you click, so
          the tick and murmur begin once you press "Begin the night". -->
-    <button id="mute-btn" title="Sound on / off">🔊</button>
+    <button id="mute-btn" title="Sound on / off" aria-label="Sound on / off">
+      <svg class="ico-sound" viewBox="0 0 24 24" width="18" height="18" fill="none"
+           stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+           stroke-linejoin="round" aria-hidden="true">
+        <path d="M4 9v6h3l5 4V5L7 9H4z" fill="currentColor" stroke="none" />
+        <path d="M15.5 8.5a5 5 0 0 1 0 7" />
+        <path d="M17.7 6a8 8 0 0 1 0 12" />
+      </svg>
+    </button>
 
     <!-- ============ TITLE SCREEN ============ -->
     <section id="title-screen" class="screen active">

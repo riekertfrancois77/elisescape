@@ -384,7 +384,7 @@ function handleClock() {
       // VERSION C: no "correct!" — just a soft click and the key, quietly.
       state.hasKey = true;
       keyClick();
-      addClue("🔑 A brass key, hidden inside the clock's case.", true); // silent
+      addClue("A brass key, hidden inside the clock's case.", true); // silent
       examine("You turn the hands to the hour of death. Deep in the old case something shifts — a soft click — and a little panel springs open. Inside lies a brass key. You take it.");
     } else {
       // No hint. No pointing back at the clues. You have to be sure.
@@ -469,10 +469,27 @@ document.getElementById("begin-btn").addEventListener("click", function () {
   showNextStoryLine();
 });
 
-// Sound on/off button.
+// Sound on/off button. The icon is DRAWN in code (an SVG), not a cartoon emoji:
+// a little brass speaker with sound-waves when on, and the waves replaced by an
+// X when muted. Same button, same job — it just fits the manor now.
+const SPEAKER_ON =
+  '<svg class="ico-sound" viewBox="0 0 24 24" width="18" height="18" fill="none"' +
+  ' stroke="currentColor" stroke-width="1.6" stroke-linecap="round"' +
+  ' stroke-linejoin="round" aria-hidden="true">' +
+  '<path d="M4 9v6h3l5 4V5L7 9H4z" fill="currentColor" stroke="none" />' +
+  '<path d="M15.5 8.5a5 5 0 0 1 0 7" />' +
+  '<path d="M17.7 6a8 8 0 0 1 0 12" /></svg>';
+const SPEAKER_OFF =
+  '<svg class="ico-sound" viewBox="0 0 24 24" width="18" height="18" fill="none"' +
+  ' stroke="currentColor" stroke-width="1.6" stroke-linecap="round"' +
+  ' stroke-linejoin="round" aria-hidden="true">' +
+  '<path d="M4 9v6h3l5 4V5L7 9H4z" fill="currentColor" stroke="none" />' +
+  '<line x1="15.5" y1="9.5" x2="20.5" y2="14.5" />' +
+  '<line x1="20.5" y1="9.5" x2="15.5" y2="14.5" /></svg>';
+
 document.getElementById("mute-btn").addEventListener("click", function () {
   muted = !muted;
-  this.textContent = muted ? "🔇" : "🔊";
+  this.innerHTML = muted ? SPEAKER_OFF : SPEAKER_ON;
 });
 
 // Story screen: "Continue" -> next line, or into the room.
