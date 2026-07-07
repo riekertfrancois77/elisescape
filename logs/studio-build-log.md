@@ -8,6 +8,35 @@
 
 ---
 
+## Dad opens Modules 5–8 — the "make the game visibly better" run (2026-07-07)
+
+Eli finished Module 4 but said it felt "way too short" (fair — it's the one
+conceptual module, no version bump). Dad's answer: open the next four at once so
+the hands-on, game-first momentum is uninterrupted. Each bumps the game's version.
+
+- **`DAD_OPENED_THROUGH` 4 → 8** in `script.js`. Gating stays sequential, so Eli
+  still sees only **Module 5 active**; 6–8 show "UP NEXT" until earned.
+- **Wrote 4 mission files** — `modules/module-05.md` … `module-08.md` — each with
+  a role/hat, an explicit **brain-first rule**, a version target, and "done when".
+  Hats: 5 Lead Engineer (pair-reading code), 6 Prompt Coach, 7 Technical Artist,
+  8 Game Designer/critic.
+- **Version arc set:** 5 → **v0.2** (first solo code edit), 6 → **v0.3** (prompt
+  polish), 7 → **v0.4** (real graphics/immersion), 8 → **v0.5** (design eye
+  sharpens the current game + locks the next-room blueprint for Module 10).
+- **Dashboard content** in `script.js`: added `MODULE5–8_GOALS/STEPS`, `MISSIONS`
+  5–8, 4 new visible achievements (**Code Reader, AI Whisperer, World Builder,
+  Game Designer**) + matching `STUDIO_STATUS` capabilities. Synced both `file://`
+  fallbacks (`FALLBACK_MEMORY` Claude-Instructions/Session-Memory + the 4 new
+  unearned achievements) so a double-clicked dashboard doesn't lie.
+- **Memory + docs:** `MEMORY.md` (current module → 5, Claude Instructions rewritten
+  to invite Module 5 + list the 5→8 arc, empty Module 5–8 step trackers added),
+  `ACHIEVEMENTS.md` (4 new, unearned), `LOCKED_MODULES.md` (5–8 opened, 9–13
+  sealed), `CLAUDE.md` (Current State + roadmap + `DAD_OPENED_THROUGH = 8`).
+- **Cash:** deliberately **left `REWARDS` untouched** — rewards are Dad's call.
+  Flagged to Dad that 5–8 currently pay $0 and the pool math needs his decision.
+
+---
+
 ## Module 4 dashboard sync (2026-07-07)
 
 After Eli's Module 4 session, kept the dashboard's `file://` fallback in step

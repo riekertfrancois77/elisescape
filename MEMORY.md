@@ -8,10 +8,11 @@ Everything here is *your* game and *your* journey.
 ## Project State
 
 - **Creative Director:** Eli
-- **Current module:** **Module 4 — Build a Second Brain (now UNLOCKED / active)**.
-  **Module 3 (Direct the Team) is COMPLETE** — Eli directed five real changes into
-  his game and earned **Director Mode**. Modules 1 and 2 are complete. Module 4
-  unlocked because Module 3 is done (modules open in order; Dad opened through 4).
+- **Current module:** **Module 5 — Read the Machine (now UNLOCKED / active)**.
+  **Module 4 (Build a Second Brain) is COMPLETE** — Eli earned **Memory Keeper**.
+  Modules 1–4 are all complete. Dad has now opened **Modules 5–8** (the "make
+  your game visibly better" run: read code → prompt → graphics → design); they
+  unlock in order, so **Module 5 is active** and 6–8 wait their turn.
 - **Game concept:** ***One Night at Thornwood Manor*** — a famous detective is
   trapped one night in a cozy, secret-filled early-1900s mansion during a house
   party where a murder has happened. A killer who leaves clues on purpose hides
@@ -121,6 +122,58 @@ journey.
 - [x] 5. Test it across a fresh session
 - [x] 6. Achievement unlocked: Memory Keeper
 
+## Module 5 Steps
+
+<!-- Unlocks when Module 4 is complete. Target: game climbs to Version 0.2. -->
+
+- [ ] 1. Meet your codebase — open game/script.js, the machine you built
+- [ ] 2. Find the memory — spot your `state` object alive in real code
+- [ ] 3. Read before you're told — predict what a chunk does, then check
+- [ ] 4. Trace one clue — from click to deduction to the door
+- [ ] 5. Your first solo edit — change the murder time yourself
+- [ ] 6. Make it yours — a few more safe edits (a line, a color, a sound)
+- [ ] 7. Version bump — the game you edited by hand is Version 0.2
+- [ ] 8. Achievement unlocked: Code Reader
+
+## Module 6 Steps
+
+<!-- Unlocks when Module 5 is complete. Target: game climbs to Version 0.3. -->
+
+- [ ] 1. Meet the Prompt Coach — words are your controller
+- [ ] 2. The weak prompt — "make it better" and its vague result
+- [ ] 3. The strong prompt — who / what / why / limits
+- [ ] 4. Anatomy of a great prompt
+- [ ] 5. Sharpen a real one — you write a prompt to polish your game
+- [ ] 6. Direct 2–3 polish prompts into the game
+- [ ] 7. Version bump — Version 0.3
+- [ ] 8. Achievement unlocked: AI Whisperer
+
+## Module 7 Steps
+
+<!-- Unlocks when Module 6 is complete. Target: game climbs to Version 0.4. -->
+
+- [ ] 1. Meet the Technical Artist — you art-direct, the studio paints
+- [ ] 2. Art-direct first — describe the look and mood in your own words
+- [ ] 3. Lock a palette + atmosphere
+- [ ] 4. The studio paints — real graphics/atmosphere to your direction
+- [ ] 5. React & redirect — send it back for another pass
+- [ ] 6. Add immersion — light, motion, and sound layers
+- [ ] 7. Version bump — your game has a face: Version 0.4
+- [ ] 8. Achievement unlocked: World Builder
+
+## Module 8 Steps
+
+<!-- Unlocks when Module 7 is complete. Target: game climbs to Version 0.5. -->
+
+- [ ] 1. Meet the Game Designer — Claude becomes your design critic
+- [ ] 2. Study what already works — why the foyer puzzle feels fair
+- [ ] 3. You design the next room — on your own
+- [ ] 4. You design its puzzle — clues, deduction, payoff
+- [ ] 5. Pressure-test — Claude plays devil's advocate
+- [ ] 6. Sharpen the current game with your new design eye (Version 0.5)
+- [ ] 7. Lock the blueprint — next-room design saved for Module 10
+- [ ] 8. Achievement unlocked: Game Designer
+
 ## Session Memory
 
 <!-- The story of your studio so far — newest first. (Shown on the dashboard.) -->
@@ -189,22 +242,26 @@ remembers for it** — the same way your game's `state` object remembers every
 clue. You wrote your game into `MEMORY.md` in your *own words*, so every future
 session starts already knowing *One Night at Thornwood Manor*.
 
-🔒 **UP NEXT: MODULE 5 — READ THE MACHINE (sealed until Dad opens it).** This is
-the big one: you crack open your game's *own code* and make your **first solo
+🔓 **UP NOW: MODULE 5 — READ THE MACHINE.** Dad just opened it (plus 6, 7, and
+8 — the run that makes your game *visibly better*, version by version). This is
+the big one: you crack open your game's **own code** and make your **first solo
 edit** — the moment you stop only directing and start *building* with your own
-hands. It's also when your game bumps to **Version 0.2**, because from here on
-every module makes *Thornwood Manor* visibly better (your call: design +
-mechanics).
+hands. Your game bumps to **Version 0.2.** Open Claude Code in this folder and
+say:
 
-Modules 5–13 stay sealed until **Dad** opens them. When Dad's ready, he opens
-Module 5 and I'll write the mission.
+> **"Start Module 5 — show me my own game's code and let me edit it."**
 
-**To run the memory test yourself:** close this session, come back later, open
-Claude Code in this folder and say:
+**The run Dad opened, in order** (each unlocks when the one before is done):
+- **5 · Read the Machine** → read your code, first solo edit → **v0.2**
+- **6 · Speak AI Fluently** → prompt like a pro, polish the game → **v0.3**
+- **7 · Create Worlds** → real graphics & atmosphere, you art-direct → **v0.4**
+- **8 · Design Great Games** → design your next room + puzzle → **v0.5**
 
-> **"Hey studio, where are we?"**
+Modules 9–13 stay sealed until Dad opens them.
 
-Watch a brand-new me answer perfectly — because the project remembered.
+**And to run the Module 4 memory test any time:** close this session, come back
+later, and say **"Hey studio, where are we?"** — watch a brand-new me answer
+perfectly, because the project remembered.
 
 ## Achievements Unlocked
 

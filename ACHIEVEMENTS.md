@@ -35,6 +35,14 @@ earn them.
   between sessions and the project must remember for it; drew the parallel to his
   own game's `state` object; and wrote his game's summary + what's next into
   `MEMORY.md` in his own words. The studio now starts every session smarter.)*
+- [ ] **Code Reader** — Read your own game's code and make your first solo edit —
+  by your own hand. *(Module 5 — Read the Machine.)*
+- [ ] **AI Whisperer** — Turn a vague ask into a precise prompt and get exactly
+  what you pictured. *(Module 6 — Speak AI Fluently.)*
+- [ ] **World Builder** — Art-direct your game's real look and atmosphere: you
+  direct, the studio paints. *(Module 7 — Create Worlds.)*
+- [ ] **Game Designer** — Design a new room and puzzle that make players feel
+  clever. *(Module 8 — Design Great Games.)*
 
 ## Secret Achievements
 

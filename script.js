@@ -31,8 +31,9 @@ const MODULES = [
 
 // Dad has opened modules 1..N. Opened modules unlock IN ORDER — a module only
 // becomes playable once the one before it is complete. Modules past this number
-// stay sealed until Dad opens them. (Dad opened through 4 on 2026-07-06.)
-const DAD_OPENED_THROUGH = 4;
+// stay sealed until Dad opens them. (Dad opened through 8 on 2026-07-07 — the
+// "make the game visibly better" run: read code, prompt, graphics, design.)
+const DAD_OPENED_THROUGH = 8;
 
 // State of a module for the given completion array: complete | active | queued | sealed.
 function moduleState(n, done) {
@@ -124,6 +125,82 @@ const MODULE4_STEPS = [
   "Achievement unlock: Memory Keeper.",
 ];
 
+const MODULE5_GOALS = [
+  "The game you've been directing is just code — and you can read it.",
+  "Your game's `state` object (from Module 4) lives here, in real code.",
+  "Read first, guess what it does, THEN check — that's how pros learn a codebase.",
+  "You don't need to write code from scratch to change a game.",
+  "Your first solo edit: change the game with your own hands, not just direction.",
+];
+
+const MODULE5_STEPS = [
+  "Meet your codebase — Claude (Lead Engineer) opens game/script.js, the machine you built.",
+  "Find the memory — spot the `state` object you met in Module 4, alive in real code.",
+  "Read before you're told — you predict what a chunk of code does; THEN Claude confirms.",
+  "Trace one clue — follow a single clue from click → deduction → the door.",
+  "Your first solo edit — change the murder time (9:47 → your call) yourself and watch the game change.",
+  "Make it yours — a few more safe edits: a host's line, a color, a sound.",
+  "Version bump — the game you edited by hand is now Version 0.2.",
+  "Achievement unlock: Code Reader.",
+];
+
+const MODULE6_GOALS = [
+  "Words are your controller — the better the prompt, the better the game.",
+  "\"Make it better\" gets you noise; specifics get you what you pictured.",
+  "A great prompt names WHO, WHAT, WHY, and the LIMITS.",
+  "Write your prompt first, then sharpen it — don't outsource the thinking.",
+  "Prompting is a real skill you'll use for the rest of your life.",
+];
+
+const MODULE6_STEPS = [
+  "Meet the Prompt Coach — Claude shows you words as a controller.",
+  "The weak prompt — try \"make my game better\" and watch the vague result.",
+  "The strong prompt — add who/what/why/limits; feel the difference.",
+  "Anatomy of a great prompt — specific, full of your taste, with clear limits.",
+  "Sharpen a real one — YOU write a prompt to polish a real moment in your game.",
+  "Direct 2–3 polish prompts into the game and see them land.",
+  "Version bump — sharper prompts, sharper game: Version 0.3.",
+  "Achievement unlock: AI Whisperer.",
+];
+
+const MODULE7_GOALS = [
+  "A game's look is a feeling — you decide the feeling first.",
+  "You art-direct (references, mood, palette); the studio paints.",
+  "Real graphics and atmosphere are the biggest glow-up your game gets.",
+  "Immersion is built from layers: light, motion, and sound together.",
+  "Your taste leads every visual call — the AI serves it.",
+];
+
+const MODULE7_STEPS = [
+  "Meet the Technical Artist — Claude changes hats; you art-direct, it paints.",
+  "Art-direct first — describe the look and mood you want, in your own words.",
+  "Lock a palette + atmosphere — set the vibe before a single pixel.",
+  "The studio paints — Claude builds real graphics/atmosphere to your direction.",
+  "React & redirect — what's right, what's not-you; send it back for another pass.",
+  "Add immersion — layers of light, ambient motion, and sound that pull the player in.",
+  "Version bump — your game has a real face now: Version 0.4.",
+  "Achievement unlock: World Builder.",
+];
+
+const MODULE8_GOALS = [
+  "Great games are designed to make players feel clever.",
+  "You design the next room and its puzzle with YOUR head — first, alone.",
+  "A good puzzle is fair: solvable from clues the player can find.",
+  "Claude's job is to pressure-test your design, not invent it for you.",
+  "A design you can defend is a design worth building.",
+];
+
+const MODULE8_STEPS = [
+  "Meet the Game Designer — Claude becomes your design partner and critic.",
+  "Study what already works — why the foyer puzzle feels fair and clever.",
+  "You design the next room — on your own: the space, the 'notice what's off', the puzzle.",
+  "You design its puzzle — clues in, deduction, payoff. Your idea first.",
+  "Pressure-test — Claude plays devil's advocate: is it fair? clear? clever?",
+  "Sharpen the CURRENT game with your new design eye — one real improvement (Version 0.5).",
+  "Lock the blueprint — your next-room design is saved, ready to build in Module 10.",
+  "Achievement unlock: Game Designer.",
+];
+
 const ACHIEVEMENTS = [
   { name: "Creative Director",      desc: "Complete Module 1 and lock in your game's direction." },
   { name: "First Big Decision",     desc: "Choose, reject, or combine the three game directions." },
@@ -134,6 +211,10 @@ const ACHIEVEMENTS = [
   { name: "First Playable",         desc: "Your game runs in a browser for the very first time." },
   { name: "Director Mode",          desc: "Take the director's chair — reshape your game and make the AI build it your way." },
   { name: "Memory Keeper",          desc: "Teach the studio to remember, so every session starts smarter than the last." },
+  { name: "Code Reader",            desc: "Read your own game's code and make your first solo edit — by your own hand." },
+  { name: "AI Whisperer",           desc: "Turn a vague ask into a precise prompt and get exactly what you pictured." },
+  { name: "World Builder",          desc: "Art-direct your game's real look and atmosphere — you direct, the studio paints." },
+  { name: "Game Designer",          desc: "Design a new room and puzzle that make players feel clever." },
 ];
 const SECRET_ACHIEVEMENTS = ["Curiosity Pays", "Better Than School", "AI Tamer", "Bug Hunter", "Game Studio Brain"];
 
@@ -169,6 +250,10 @@ const STUDIO_STATUS = [
   { label: "First Prototype",           done: (s) => s.earnedNames.has("First Playable") },
   { label: "Director's Eye",            done: (s) => s.earnedNames.has("Director Mode") },
   { label: "Studio Memory",             done: (s) => s.earnedNames.has("Memory Keeper") },
+  { label: "Reads the Machine",         done: (s) => s.earnedNames.has("Code Reader") },
+  { label: "Fluent in AI",              done: (s) => s.earnedNames.has("AI Whisperer") },
+  { label: "Art Department",            done: (s) => s.earnedNames.has("World Builder") },
+  { label: "Game Design",               done: (s) => s.earnedNames.has("Game Designer") },
   { label: "Shipped to an Audience",    done: (s) => s.moduleDone[12] === true },
 ];
 
@@ -241,20 +326,21 @@ const FALLBACK_MEMORY = `
 - [x] 6
 
 ## Session Memory
-- 🧠 **Module 4 COMPLETE — Memory Keeper unlocked.** Eli learned the studio's biggest secret: AI forgets between sessions, so the *project* remembers for it — the same idea as his game's `state` object, one level up. He wrote his game into `MEMORY.md` in his own words ("an escape-room type of game with a murder-mystery aspect… looking at everything closely and solving clues") plus what he wants next (design + mechanics to keep improving).
+- 🧠 **Module 4 COMPLETE — Memory Keeper unlocked.** Eli learned the studio's biggest secret: AI forgets between sessions, so the *project* remembers for it — the same idea as his game's \`state\` object, one level up. He wrote his game into \`MEMORY.md\` in his own words ("an escape-room type of game with a murder-mystery aspect… looking at everything closely and solving clues") plus what he wants next (design + mechanics to keep improving).
 - 🏆 **Module 3 COMPLETE — Director Mode unlocked.** Eli directed five real changes into *Thornwood Manor*: a full deduction chain (clues → the 9:47 time of death → set the clock → a hidden key → the door), hidden clues + a 9:52 pocket-watch trap, a living code-made soundscape, and a CSS-painted foyer (firelight vs. moonlight). He rejected an AI version, overruled a design call to keep it fair, and caught a skipped change.
 - 🎮 **Module 2 COMPLETE** — a playable Version 0.1 of *One Night at Thornwood Manor* runs in the browser.
 - 🏆 Trophies so far: Creative Director, First Big Decision, Game Pillars Chosen, Studio Review Complete, Memory Created, One-Shot Power, First Playable, Director Mode, **Memory Keeper**, plus secret **AI Tamer** and **Bug Hunter**.
-- 🔒 **Module 5 — Read the Machine** is sealed until Dad opens it.
+- 🔓 **Dad opened Modules 5–8** — the "make your game visibly better" run: **5 Read the Machine → 6 Speak AI Fluently → 7 Create Worlds → 8 Design Great Games.** They unlock in order. **Module 5 is UP NOW.**
 
 ## Claude Instructions
 🧠 **Module 4 complete, Director — you earned Memory Keeper.** The studio now
 remembers your game across every session, in your own words.
 
-Modules 5–13 stay sealed until Dad opens them. To test your new second brain,
-open Claude Code in this folder and say:
+🔓 **UP NOW: MODULE 5 — READ THE MACHINE.** Dad opened it (plus 6, 7, and 8).
+You crack open your game's own code and make your first solo edit — the game
+climbs to **Version 0.2.** Open Claude Code in this folder and say:
 
-> **"Hey studio, where are we?"**
+> **"Start Module 5 — show me my own game's code and let me edit it."**
 `;
 
 const FALLBACK_ACHIEVEMENTS = `
@@ -268,6 +354,10 @@ const FALLBACK_ACHIEVEMENTS = `
 - [x] **First Playable**
 - [x] **Director Mode**
 - [x] **Memory Keeper**
+- [ ] **Code Reader**
+- [ ] **AI Whisperer**
+- [ ] **World Builder**
+- [ ] **Game Designer**
 
 ## Secret Achievements
 - [ ] **Curiosity Pays**
@@ -578,6 +668,65 @@ const MISSIONS = {
     start: `"Start Module 4 — teach me how the studio remembers."`,
     outro: `Memory is the difference between a chat and a studio. Write it in
       your own words. Save the session, then refresh here to claim Memory Keeper.`,
+  },
+  5: {
+    title: "Read the Machine",
+    purpose: `You've directed your game. You've remembered it. Now open it up.
+      Claude puts its Lead Engineer hat back on and walks you through your game's
+      OWN code — the machine you built. You'll find your <code>state</code> object
+      (yes, the one from Module 4) living in real code, read a chunk and guess
+      what it does BEFORE you're told, then make your first solo edit with your
+      own hands. Your game climbs to Version 0.2.`,
+    goals: MODULE5_GOALS,
+    steps: MODULE5_STEPS,
+    start: `"Start Module 5 — show me my own game's code and let me edit it."`,
+    outro: `Read first, guess, then check — that's how you learn any machine. By
+      the end you'll have changed your game by your own hand. Save the session,
+      then refresh here to claim Code Reader and see Version 0.2.`,
+  },
+  6: {
+    title: "Speak AI Fluently",
+    purpose: `Words are your controller. This module makes you dangerous with a
+      prompt: you'll see how "make it better" gets you noise, and how naming the
+      WHO, WHAT, WHY and LIMITS gets you exactly what you pictured. You write the
+      prompts yourself, sharpen them with a coach, and point them at real polish
+      for your game — climbing it to Version 0.3.`,
+    goals: MODULE6_GOALS,
+    steps: MODULE6_STEPS,
+    start: `"Start Module 6 — teach me to prompt like a pro and polish my game."`,
+    outro: `The prompt is the skill of the decade — and you drive it. Write your
+      own first, then sharpen. Save the session, then refresh here to claim AI
+      Whisperer and see Version 0.3.`,
+  },
+  7: {
+    title: "Create Worlds",
+    purpose: `Time for the glow-up. Your game gets a real face — graphics and
+      atmosphere that pull a player in. Here's the rule: YOU art-direct — the
+      look, the mood, the palette come from your head first — and the studio
+      paints to your direction. React, redirect, layer in light and motion and
+      sound until it feels like your world. Your biggest visual jump yet:
+      Version 0.4.`,
+    goals: MODULE7_GOALS,
+    steps: MODULE7_STEPS,
+    start: `"Start Module 7 — I want to art-direct my game's real look."`,
+    outro: `You're the Art Director; the AI holds the brush. Decide the feeling
+      first, then make the studio chase it. Save the session, then refresh here
+      to claim World Builder and see Version 0.4.`,
+  },
+  8: {
+    title: "Design Great Games",
+    purpose: `The real craft: making players feel clever. You'll design your
+      game's NEXT room and its puzzle — with your own head, first and alone —
+      while Claude waits, then pressure-tests it: is it fair? clear? clever? You
+      also turn your new design eye on the room you already have and make it
+      better (Version 0.5), and lock the blueprint for the room you'll build in
+      Module 10.`,
+    goals: MODULE8_GOALS,
+    steps: MODULE8_STEPS,
+    start: `"Start Module 8 — I want to design my game's next room and puzzle."`,
+    outro: `Design first with your own head; let Claude poke holes after. A design
+      you can defend is one worth building. Save the session, then refresh here to
+      claim Game Designer and see Version 0.5.`,
   },
 };
 

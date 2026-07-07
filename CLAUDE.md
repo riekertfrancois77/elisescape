@@ -102,30 +102,40 @@ engineers, artists, producers. You advise, prototype, and build. He decides.
   foyer), rejected an AI version he didn't like, overruled the engineer to keep
   a trap fair, and caught the team skipping a change. Earned **Director Mode**
   and the secret **Bug Hunter**. Game still at **Version 0.1**.
-- **Module 4: Build a Second Brain** (`modules/module-04.md`) — **UNLOCKED /
-  active.** Current module. Frame memory as protecting + accelerating *his*
-  game (his game already has a `state` object — draw the parallel), and have
-  him map what's next. Follow that module's flow.
+- **Module 4: Build a Second Brain** (`modules/module-04.md`) — **COMPLETE
+  (2026-07-07).** Eli learned that AI forgets between sessions and the project
+  must remember for it, drew the parallel to his game's `state` object, and wrote
+  his game's summary + what's next into `MEMORY.md` in his own words. Earned
+  **Memory Keeper**. (He said it felt "way too short" — expected for the one
+  conceptual module; the modules below are the hands-on, game-first answer.)
+- **Module 5: Read the Machine** (`modules/module-05.md`) — **UNLOCKED /
+  active.** Current module. Claude wears the **Lead Engineer** hat; Eli reads his
+  *own* game's code (brain-first: predict, then confirm) and makes his first solo
+  edit. Bumps the game to **Version 0.2**. Follow that module's flow.
 
 ### Roadmap for Modules 5–13 (reordered 2026-07-06 by Dad)
 
 Every one makes Eli's game better and bumps its version. **Brain-first** applies
 throughout (he creates; AI reviews/researches/builds). Mission files are written
-when Dad opens each module.
+when Dad opens each module. **Modules 5–8 are opened** — mission files written,
+version targets set (v0.2 → v0.5).
 
-5. **Read the Machine** — read his *own* game's code; first solo edit.
-6. **Speak AI Fluently** — prompting; sharpen prompts by directing game polish.
-7. **Create Worlds** — real graphics & immersion; *he* art-directs, AI paints.
-8. **Design Great Games** — he designs the next room + puzzle with his own head.
+5. **Read the Machine** 🔓 — read his *own* game's code; first solo edit. → v0.2
+6. **Speak AI Fluently** 🔓 — prompting; sharpen prompts by directing polish. → v0.3
+7. **Create Worlds** 🔓 — real graphics & immersion; *he* art-directs, AI paints. → v0.4
+8. **Design Great Games** 🔓 — he designs the next room + puzzle with his own
+   head; also sharpens the current game. → v0.5
 9. **Summon the Experts** — spawn **research sub-agents** (e.g. "what makes 2026
    mystery games immersive"); he curates the findings as Director, then AI
    implements the winners. The "your brain first, then AI reviews" module.
-10. **Build the Next Room** — build the room he designed; the manor grows.
+10. **Build the Next Room** — build the room he designed in Module 8; the manor grows.
 11. **Hunt Bugs** — debug the bigger game.
 12. **Cross Into the Real World** — his circuit / brazier becomes a game mechanic.
 13. **Ship Like a Pro** — ship the game.
 
-- Modules 5–13 remain **sealed** until Dad explicitly opens them.
-- **Sequential unlocking:** Dad has "opened through" Module 4
-  (`DAD_OPENED_THROUGH = 4` in `script.js`). When Dad opens more, bump that
-  number, write the mission file, and update `LOCKED_MODULES.md` + this section.
+- Modules 9–13 remain **sealed** until Dad explicitly opens them.
+- **Sequential unlocking:** Dad has "opened through" Module 8
+  (`DAD_OPENED_THROUGH = 8` in `script.js`, set 2026-07-07). Opened modules still
+  unlock **in order** — Eli sees only Module 5 as active until he finishes it.
+  When Dad opens more, bump that number, write the mission file, and update
+  `LOCKED_MODULES.md` + this section.
