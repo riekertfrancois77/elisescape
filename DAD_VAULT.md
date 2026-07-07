@@ -10,7 +10,7 @@ achievements and progress Eli sees). This table is the canonical amount list —
 it must match the `REWARDS` array in `script.js`. To change a payout, update
 both.
 
-## Reward Map (~$100 total)
+## Reward Map ($100 total)
 
 | Reward | Amount | Earned when |
 |---|---|---|
@@ -18,12 +18,21 @@ both.
 | Build your first playable game | $5 | Module 2 (First Playable unlocked) |
 | Direct your game your way | $5 | Module 3 (Director Mode unlocked) |
 | Master project memory | $5 | Module 4 (Memory Keeper unlocked) |
+| Read your own code + first solo edit | $5 | Module 5 (Code Reader unlocked) |
+| Prompt like a pro | $5 | Module 6 (AI Whisperer unlocked) |
+| Art-direct your game's world | $5 | Module 7 (World Builder unlocked) |
+| Design your next room + puzzle | $5 | Module 8 (Game Designer unlocked) |
 | Discover secret achievements | $5 each (up to $25) | each secret achievement found |
 | Ship & demo your game to the family | $25 | Module 13 complete |
-| Finish the whole 13-module journey | $25 | all 13 modules complete |
+| Finish the whole 13-module journey | $5 | all 13 modules complete |
 
-**Earned so far:** $10 (Creative Director — Module 1 complete). Eli can ask Dad
-to claim it now.
+**Dad's change (2026-07-07):** added **$5 each for Modules 5–8** (reward the real
+work along the way) and lowered the **finish-all-13 bonus from $25 → $5** to fund
+it — pool holds at **$100**. Big lump-sums now sit earlier and at the ship, not
+piled on the very end.
+
+**Earned so far:** $40 — Creative Director ($10) + Modules 2–5 ($5 each) + secrets
+AI Tamer & Bug Hunter ($5 each). Eli can ask Dad to claim it.
 
 ## Dad's Notes
 

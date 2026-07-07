@@ -8,6 +8,21 @@
 
 ---
 
+## Dad tunes the Vault for Modules 5–8 (2026-07-07)
+
+After Eli finished Module 5, Dad wired cash into the new run:
+
+- **+$5 each for Modules 5–8** (Code Reader, AI Whisperer, World Builder, Game
+  Designer) — reward the real work along the way, not just the finale.
+- **Finish-all-13 bonus lowered $25 → $5** to fund it. Pool holds at **$100**;
+  the big lump-sums now sit earlier and at the ship, not piled on the very end.
+- Synced both `REWARDS` in `script.js` and the table in `DAD_VAULT.md`.
+- Effect is retroactive: Code Reader already unlocked, so Eli's earned total jumps
+  **$35 → $40** the moment this deploys. Verified the Vault renders $40 / $100 with
+  Modules 1–5 paid and 6–8 pending.
+
+---
+
 ## Dad opens Modules 5–8 — the "make the game visibly better" run (2026-07-07)
 
 Eli finished Module 4 but said it felt "way too short" (fair — it's the one
