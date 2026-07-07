@@ -8,6 +8,9 @@
 
 | Date | Decision | Why |
 |---|---|---|
+| 2026-07-07 | **Module 6 — no more emojis in the game.** The cartoon emojis (🔑 notebook key, 🔊 sound button, and the six floating room icons 🥂🔥🖼️🎩🕰️🚪) are replaced with hand-drawn objects/SVG line-art in the manor's brass-and-gold style. | Eli's call: emojis looked "cartoonish and silly" and "floating in the air" in a serious 1900s murder mystery — they broke the mood (a thing that's "off"). |
+| 2026-07-07 | **Module 6 — sound button = a drawn brass speaker** (Eli chose option A over a word), styled to match the great clock and gold accents. | Eli's pick, then his redirect ("style it to look like the rest of the game"); it belongs to the set instead of sitting on top of it. |
+| 2026-07-07 | **Module 6 — room objects redrawn under three locked limits:** still clickable · nothing moves (same positions) · the clock stays hidden/dim so the puzzle stays fair. Icons sized in `em` so the existing font-size rules keep the dimmed clock small and hidden. | Eli's prompt set the fences; protecting the puzzle's fairness (Pillar 1, Notice What's Off) is a hard rule. Game bumped to **Version 0.3**. |
 | 2026-07-06 | Eli is Creative Director. All creative decisions are his. | Founding rule of the studio. |
 | 2026-07-06 | No game theme, genre, setting, story, or mechanics until Eli decides them in Module 1. | The game must come from Eli's head, not the AI's. |
 | 2026-07-06 | Four game pillars locked: (1) Notice What's Off, (2) Curiosity Rewarded/Cleverness Earned, (3) A Duel With the Culprit, (4) A Cozy House That Hides Everything. | The core of the game; every future decision is tested against these. |

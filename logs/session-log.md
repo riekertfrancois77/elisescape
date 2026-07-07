@@ -6,6 +6,35 @@
 
 ---
 
+## Module 6 — Speak AI Fluently (COMPLETE · 2026-07-07)
+
+Claude wore the **Prompt Coach** hat. The whole module was about one thing: my
+words are the controller — the better my prompt, the better my game.
+
+- **The vague prompt was mine.** I started by saying "polish my game," and Claude
+  showed me that "polish" could mean five totally different things — so a vague
+  prompt makes the AI guess and decide for me. A Director never lets that happen.
+- **The rule: I write the prompt first, then we sharpen it.** Claude wouldn't hand
+  me a finished prompt. I had to try, then we made it stronger together and named
+  *why* it got better.
+- **What I fixed:** the emojis. They looked cartoonish and silly in a murder game,
+  and some of them just floated in the air. (I actually spotted six emojis
+  floating in my room that Claude had missed — I used my game's own "notice what's
+  off" skill on my own studio!)
+- **My prompts landed three changes:** the 🔑 in the notebook became a real
+  detective's line, the cartoon 🔊 sound button became a **drawn brass speaker**
+  that matches the game, and every floating emoji in the foyer became a **drawn
+  object** in the same style.
+- **My best prompt had LIMITS.** I said: real objects, same style, still
+  clickable, DON'T move anything, and keep the clock hidden so it's not obvious.
+  Claude said three limits in one prompt is pro-level — the limits protected my
+  puzzle so the AI couldn't wreck it.
+- We **verified** every change: the game still solves, the clock is still hidden,
+  nothing moved. My game is sharper now — **Version 0.3.** Earned the
+  **AI Whisperer** trophy. 🗣️
+
+---
+
 ## Module 5 — Read the Machine (COMPLETE · 2026-07-07)
 
 I opened up my own game's code with Claude wearing the **Lead Engineer** hat. The

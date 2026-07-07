@@ -6,6 +6,47 @@
 
 ---
 
+## 2026-07-07 — Module 6 (Speak AI Fluently)
+
+**Q (pick the target):** Which ONE moment in *Thornwood Manor* do you most wish
+felt better right now?
+**Eli:** *"the sounds and the emojis right now"*
+**Studio note:** Sharp Director's eye — the emojis are cartoonish in a serious
+1900s mystery (they're a thing that's "off," which is his game's own superpower).
+
+**Q (write your own prompt — the emojis):** Write me a prompt, in your own words,
+telling the studio what you want done about the emojis.
+**Eli:** *"they just feel out of place in how the game looks they look catoonish
+and silly when the game is about a murder and how they just sit there floating in
+the air you can change anything you want there is no limits"*
+**Studio note:** Strong WHAT + a genuinely strong WHY (cartoonish in a murder
+story; they float). The one coaching note: "no limits" hands your decisions away —
+limits *protect* the parts you love. We sharpened it to add a fence (change the
+look; don't touch the puzzle, story, or how the sound button works).
+
+**Q (the sound button decision):** The 🔊 isn't just decoration — players click it
+to mute. What should it become: a drawn speaker icon, a word, or your own idea?
+**Eli:** *"give me a for now and ill see if i like it"* (chose **A**, the drawn
+speaker) — then, after seeing it: *"it looks good nuy could you style it to look
+like the rest of of the game"* → *"it looks good"*.
+**Studio note:** Perfect Director loop — write, see it land, react, redirect.
+"Make it look like the rest of the game" is a sharp prompt too: it points at a
+clear reference so the studio knows exactly what to match.
+
+**Q (write your own prompt — the six floating room emojis):** Take a swing — WHAT,
+WHY, and the LIMITS.
+**Eli:** *"they seem to out of place i still wnt them to clickable but i dont want
+them to be emoji but rather the actual object that has the same style as the rest
+of everything and but DONT move anything yet and make it so the clock is still
+hidden but not abvoius that that is the thing"*
+**Studio note:** Pro-level prompt — WHAT (real objects, same style), WHY (out of
+place), and **three protective LIMITS** in one breath (still clickable · don't
+move anything · keep the clock hidden). The clock limit is the sharpest: it fenced
+off the puzzle's fairness so the AI couldn't give the game away. This is the moment
+that earned **AI Whisperer**.
+
+---
+
 ## 2026-07-07 — Module 5 (Read the Machine)
 
 **Q (predict the code):** Look at those two lines inside `state`: `hasKey: false`

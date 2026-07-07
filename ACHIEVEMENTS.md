@@ -37,8 +37,13 @@ earn them.
   `MEMORY.md` in his own words. The studio now starts every session smarter.)*
 - [x] **Code Reader** — Read your own game's code and make your first solo edit —
   by your own hand. *(Module 5 — Read the Machine, 2026-07-07.)*
-- [ ] **AI Whisperer** — Turn a vague ask into a precise prompt and get exactly
-  what you pictured. *(Module 6 — Speak AI Fluently.)*
+- [x] **AI Whisperer** — Turn a vague ask into a precise prompt and get exactly
+  what you pictured. *(Unlocked 2026-07-07 — Module 6. Eli wrote his own polish
+  prompts and sharpened each with a real WHY and clear LIMITS, landing three into
+  the game: a drawn brass sound button and drawn objects replacing every foyer
+  emoji. His strongest prompt fenced off three things at once — still clickable,
+  don't move anything, keep the clock hidden — so the AI couldn't break his
+  puzzle. Game bumped to Version 0.3.)*
 - [ ] **World Builder** — Art-direct your game's real look and atmosphere: you
   direct, the studio paints. *(Module 7 — Create Worlds.)*
 - [ ] **Game Designer** — Design a new room and puzzle that make players feel

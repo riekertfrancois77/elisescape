@@ -8,12 +8,12 @@ Everything here is *your* game and *your* journey.
 ## Project State
 
 - **Creative Director:** Eli
-- **Current module:** **Module 6 — Speak AI Fluently (now UNLOCKED / active)**.
-  **Module 5 (Read the Machine) is COMPLETE** — Eli earned **Code Reader** and
-  made his first solo edit, bumping the game to **Version 0.2**. Modules 1–5 are
-  all complete. Dad has opened **Modules 5–8** (the "make your game visibly
-  better" run: read code → prompt → graphics → design); they unlock in order, so
-  **Module 6 is active** and 7–8 wait their turn.
+- **Current module:** **Module 7 — Create Worlds (now UNLOCKED / active)**.
+  **Module 6 (Speak AI Fluently) is COMPLETE** — Eli earned **AI Whisperer** by
+  writing and sharpening his *own* prompts to polish the game, bumping it to
+  **Version 0.3**. Modules 1–6 are all complete. Dad has opened **Modules 5–8**
+  (the "make your game visibly better" run: read code → prompt → graphics →
+  design); they unlock in order, so **Module 7 is active** and 8 waits its turn.
 - **Game concept:** ***One Night at Thornwood Manor*** — a famous detective is
   trapped one night in a cozy, secret-filled early-1900s mansion during a house
   party where a murder has happened. A killer who leaves clues on purpose hides
@@ -43,10 +43,16 @@ Everything here is *your* game and *your* journey.
 <!-- Your game's version number. It climbs as modules make the game better.
      (Keep the number at the start of the first line, e.g. "0.2 — ...".) -->
 
-**0.2** — *Arrival at Thornwood Manor* (the Grand Foyer), first changed by
-Eli's **own hand**: he read his game's code and moved the murder from 9:47 to
-**10:36**, updating the whole clue chain to match. This number climbs every
-time a module makes the game better — that's the whole point of the journey.
+**0.3** — *Arrival at Thornwood Manor* (the Grand Foyer), **polished by prompts
+Eli wrote and sharpened himself** (Module 6). He hunted down the cartoonish
+emojis that broke his 1900s mood and replaced them with real drawn objects in
+the manor's own brass-and-gold style — a brass sound button, and drawn objects
+for every clickable thing in the foyer (toasting glasses, a hearth, a framed
+portrait, a coat rack, the hall clock, an arched door) — all while keeping the
+puzzle fair (clock still hidden, nothing moved, everything still clickable).
+Built on **0.2**, where he moved the murder from 9:47 to **10:36** by his own
+hand. This number climbs every time a module makes the game better — that's the
+whole point of the journey.
 
 ## Progress Tracker
 
@@ -58,7 +64,7 @@ time a module makes the game better — that's the whole point of the journey.
 - [x] Module 3 — Direct the Team
 - [x] Module 4 — Build a Second Brain
 - [x] Module 5 — Read the Machine
-- [ ] Module 6 — Speak AI Fluently
+- [x] Module 6 — Speak AI Fluently
 - [ ] Module 7 — Create Worlds
 - [ ] Module 8 — Design Great Games
 - [ ] Module 9 — Summon the Experts
@@ -141,14 +147,14 @@ time a module makes the game better — that's the whole point of the journey.
 
 <!-- Unlocks when Module 5 is complete. Target: game climbs to Version 0.3. -->
 
-- [ ] 1. Meet the Prompt Coach — words are your controller
-- [ ] 2. The weak prompt — "make it better" and its vague result
-- [ ] 3. The strong prompt — who / what / why / limits
-- [ ] 4. Anatomy of a great prompt
-- [ ] 5. Sharpen a real one — you write a prompt to polish your game
-- [ ] 6. Direct 2–3 polish prompts into the game
-- [ ] 7. Version bump — Version 0.3
-- [ ] 8. Achievement unlocked: AI Whisperer
+- [x] 1. Meet the Prompt Coach — words are your controller
+- [x] 2. The weak prompt — "make it better" and its vague result
+- [x] 3. The strong prompt — who / what / why / limits
+- [x] 4. Anatomy of a great prompt
+- [x] 5. Sharpen a real one — you write a prompt to polish your game
+- [x] 6. Direct 2–3 polish prompts into the game
+- [x] 7. Version bump — Version 0.3
+- [x] 8. Achievement unlocked: AI Whisperer
 
 ## Module 7 Steps
 
@@ -180,6 +186,21 @@ time a module makes the game better — that's the whole point of the journey.
 
 <!-- The story of your studio so far — newest first. (Shown on the dashboard.) -->
 
+- 🗣️ **MODULE 6 COMPLETE — AI Whisperer unlocked. Game → Version 0.3.** Eli learned
+  the studio's most reusable skill: **words are the controller.** With Claude in the
+  **Prompt Coach** hat, he felt the gap between a vague ask and a sharp one — and his
+  very first message ("polish my game") *was* the vague one, which made the lesson
+  land honestly. Then, brain-first, **he wrote the prompts himself** and we sharpened
+  each together, naming what made it stronger: a real **WHY** and clear **LIMITS**.
+  His last prompt was pro-level — *"real objects not emojis, same style, still
+  clickable, DON'T move anything, keep the clock hidden"* — three protective limits
+  in one breath, fencing off the puzzle's fairness so the AI couldn't wreck it. Three
+  polish prompts landed and were verified headless: the cartoon 🔑/🔊 gone (a **drawn
+  brass sound button** now), and every **floating emoji in the foyer replaced with a
+  drawn object** in the manor's own style — with the hall clock *still* hidden in its
+  shadow. He also caught the studio under-counting the emojis (using his game's own
+  "notice what's off" skill on his own studio). Sharper prompts, sharper game —
+  **Version 0.3.**
 - 🔧 **MODULE 5 COMPLETE — Code Reader unlocked. Game → Version 0.2.** Eli opened
   the hood on his own game and stopped being *only* a director. Brain-first the
   whole way: he read his `state` object as **real running code** (and nailed what
@@ -251,26 +272,26 @@ time a module makes the game better — that's the whole point of the journey.
 
 <!-- Your exact next move. (Shown on the dashboard.) -->
 
-🔧 **MODULE 5 COMPLETE, Director — you earned Code Reader.** You cracked open
-your game's **own code**, found your `state` object alive and running, read it
-*before* being told what it does — and then made your **first solo edit by your
-own hand**: you moved the murder from 9:47 to **10:36**. You learned the loop
-every real engineer lives by: **read → change → trace the ripple → verify.** One
-tweak touched the whole clue chain, and you chased down every piece and proved
-the case still solves. Your game is now changed by *you*, not just directed by
-you — **Version 0.2.**
+🗣️ **MODULE 6 COMPLETE, Director — you earned AI Whisperer.** You learned the
+skill under every other skill: **your words are the controller.** You wrote your
+own prompts, sharpened each one with a real **WHY** and clear **LIMITS**, and
+watched them land — the cartoon emojis that broke your 1900s mood are gone,
+replaced by drawn objects in the manor's own brass style, with your puzzle kept
+perfectly fair. Your sharpest prompt fenced off three things at once (still
+clickable · don't move anything · keep the clock hidden). Sharper prompts,
+sharper game — **Version 0.3.**
 
-🔓 **UP NEXT: MODULE 6 — SPEAK AI FLUENTLY.** You've directed the team and now
-you've reached into the machine yourself. Next you sharpen your sharpest tool:
-**words.** You'll learn to turn a vague "make it better" into a precise prompt
-that gets you *exactly* what you pictured — and use it to polish your game to
-**Version 0.3.** Open Claude Code in this folder and say:
+🔓 **UP NEXT: MODULE 7 — CREATE WORLDS.** You've prompted the team like a pro —
+now you point that skill at the biggest thing yet: your game's **real look and
+atmosphere.** Claude wears the **Technical Artist** hat; *you* art-direct (mood,
+palette, light) and the studio paints. Your game gets a face — **Version 0.4.**
+Open Claude Code in this folder and say:
 
-> **"Start Module 6 — teach me to prompt like a pro."**
+> **"Start Module 7 — let's make my game look real."**
 
 **The run Dad opened, in order** (each unlocks when the one before is done):
 - **5 · Read the Machine** → read your code, first solo edit → **v0.2** ✅ DONE
-- **6 · Speak AI Fluently** → prompt like a pro, polish the game → **v0.3**
+- **6 · Speak AI Fluently** → prompt like a pro, polish the game → **v0.3** ✅ DONE
 - **7 · Create Worlds** → real graphics & atmosphere, you art-direct → **v0.4**
 - **8 · Design Great Games** → design your next room + puzzle → **v0.5**
 
@@ -301,6 +322,12 @@ perfectly, because the project remembered.
   object alive in it, predicted what it does before being told, and made his
   first solo edit by his own hand: moved the murder from 9:47 to 10:36 and traced
   the change through the whole clue chain. Game bumped to Version 0.2.
+- 🗣️ **AI Whisperer** (2026-07-07) — Turned vague asks into precise prompts and
+  got exactly what he pictured. Wrote his own polish prompts, sharpened each with
+  a real WHY and clear LIMITS, and landed three into the game (drawn brass sound
+  button; every foyer emoji replaced with a drawn object) — his best prompt fenced
+  off three things at once so the AI couldn't break his puzzle. Game bumped to
+  Version 0.3.
 - 🕵️ **AI Tamer** (secret, 2026-07-06) — Eli directed the AI to build his vision
   *his* way: he combined three changes at once and the engineer delivered.
 - 🐛 **Bug Hunter** (secret, 2026-07-06) — Eli noticed the dashboard was wrong
@@ -317,6 +344,13 @@ perfectly, because the project remembered.
        - Lead Engineer · ⭐⭐⭐⭐☆ · Technically solid.
        - QA · ⭐⭐⭐☆☆ · Found two bugs.
        - Producer · ⭐⭐⭐⭐☆ · Excellent progress for Version 0.1. -->
+
+**Version 0.3 — Prompt-Polished (Module 6, 2026-07-07)**
+- Creative Director (Eli) · ⭐⭐⭐⭐⭐ · Wrote and sharpened his own polish prompts; approved the drawn objects and the brass sound button. *"That's good for now."*
+- Prompt Coach · ⭐⭐⭐⭐⭐ · Landed a pro-level prompt with three protective limits in one go — real WHY, real fences. AI Whisperer, genuinely earned.
+- Art Director · ⭐⭐⭐⭐☆ · The cartoon emojis are gone; the foyer now reads as one consistent hand-drawn set in the manor's brass-and-gold palette. (Full painted graphics are still Module 7.)
+- QA · ⭐⭐⭐⭐⭐ · Verified headless after every change: all objects still clickable, clock still hidden at 0.4 opacity in its original spot, no emojis left, case still solves — zero console errors.
+- Producer · ⭐⭐⭐⭐⭐ · Three prompts written, sharpened, landed and verified in one session. A visibly better, more immersive game.
 
 **Version 0.1 — Director's Cut (Module 3, 2026-07-06)**
 - Creative Director (Eli) · ⭐⭐⭐⭐⭐ · *"This looks good for Version 0.1."* The puzzle, the mood, and the room are finally *his*.
