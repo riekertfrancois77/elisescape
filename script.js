@@ -267,7 +267,7 @@ const STUDIO_STATUS = [
 // the live URL, which reads the real MEMORY.md/ACHIEVEMENTS.md.
 const FALLBACK_MEMORY = `
 ## Game Version
-**0.3** — Arrival at Thornwood Manor, polished by prompts Eli wrote and sharpened himself: cartoon emojis replaced with drawn objects in the manor's brass style, puzzle kept fair (built on 0.2's hand-changed murder time 10:36).
+**0.4** — Arrival at Thornwood Manor, given a real face Eli art-directed himself (gold + mahogany + deep crimson): a grand chandelier, a mantel-and-chimney fireplace, a cloaked coat rack, a detailed crimson rug, a shadowed grandfather clock, plus moving light and a warm grand-hall sound (built on 0.3's prompt polish and 0.2's murder time 10:36).
 
 ## Progress Tracker
 - [x] Module 1
@@ -276,7 +276,7 @@ const FALLBACK_MEMORY = `
 - [x] Module 4
 - [x] Module 5
 - [x] Module 6
-- [ ] Module 7
+- [x] Module 7
 - [ ] Module 8
 - [ ] Module 9
 - [ ] Module 10
@@ -329,26 +329,29 @@ const FALLBACK_MEMORY = `
 - [x] 6
 
 ## Session Memory
+- 🎨 **Module 7 COMPLETE — World Builder unlocked. Game → Version 0.4.** Eli gave his game a **face** and art-directed all of it (Claude as Technical Artist). He chose the feeling first (*warm but wrong, grand and rich, a touch of creepy*) and a custom palette (**gold + mahogany + a bit of deep crimson**), then reacted and redirected pass after pass: a grand golden chandelier, gilded crown molding, a mantel-and-**chimney** fireplace lifted off the rug, a smaller gilded door, a coat rack with a draped cloak, a detailed crimson rug, and the great **grandfather clock** painted into its shadowy corner (kept dark so the puzzle stays fair). Then it came alive — flickering firelight, a breathing chandelier glow, and a warm low grand-hall drone. Every pass verified: the case still solves, the clock stays hidden.
 - 🗣️ **Module 6 COMPLETE — AI Whisperer unlocked. Game → Version 0.3.** Eli learned that **words are the controller.** Brain-first, he wrote his own polish prompts and sharpened each with a real WHY and clear LIMITS. Three landed and were verified headless: the cartoon 🔑/🔊 emojis gone (a drawn brass sound button now) and every floating emoji in the foyer replaced with a drawn object in the manor's own style — with the hall clock **still hidden** in its shadow and the puzzle still fair. His best prompt fenced off three things at once (still clickable · don't move anything · keep the clock hidden).
 - 🔧 **Module 5 COMPLETE — Code Reader unlocked. Game → Version 0.2.** Eli opened the hood on his own game and made his **first solo edit by his own hand** — he moved the murder from 9:47 to 10:36 in \`MURDER_TIME\`, then learned the engineer's loop (read → change → trace the ripple → verify): he chased the change through the whole clue chain (toast, candle, pocket-watch decoy, footman's countdown) and proved the case still solves. His game is now changed by *him*, not just directed.
 - 🧠 **Module 4 COMPLETE — Memory Keeper unlocked.** Eli learned the studio's biggest secret: AI forgets between sessions, so the *project* remembers for it — the same idea as his game's \`state\` object, one level up. He wrote his game into \`MEMORY.md\` in his own words ("an escape-room type of game with a murder-mystery aspect… looking at everything closely and solving clues") plus what he wants next (design + mechanics to keep improving).
 - 🏆 **Module 3 COMPLETE — Director Mode unlocked.** Eli directed five real changes into *Thornwood Manor*: a full deduction chain (clues → the 9:47 time of death → set the clock → a hidden key → the door), hidden clues + a 9:52 pocket-watch trap, a living code-made soundscape, and a CSS-painted foyer (firelight vs. moonlight). He rejected an AI version, overruled a design call to keep it fair, and caught a skipped change.
 - 🎮 **Module 2 COMPLETE** — a playable Version 0.1 of *One Night at Thornwood Manor* runs in the browser.
 - 🏆 Trophies so far: Creative Director, First Big Decision, Game Pillars Chosen, Studio Review Complete, Memory Created, One-Shot Power, First Playable, Director Mode, **Memory Keeper**, plus secret **AI Tamer** and **Bug Hunter**.
-- 🔓 **Dad opened Modules 5–8** — the "make your game visibly better" run: **5 Read the Machine ✅ → 6 Speak AI Fluently ✅ → 7 Create Worlds → 8 Design Great Games.** They unlock in order. **Module 7 is UP NOW.**
+- 🔓 **Dad opened Modules 5–8** — the "make your game visibly better" run: **5 Read the Machine ✅ → 6 Speak AI Fluently ✅ → 7 Create Worlds ✅ → 8 Design Great Games.** They unlock in order. **Module 8 is UP NOW — the last of the run.**
 
 ## Claude Instructions
-🗣️ **Module 6 complete, Director — you earned AI Whisperer.** You learned the
-skill under every skill: **your words are the controller.** You wrote your own
-prompts, sharpened each with a real WHY and clear LIMITS, and landed three polish
-changes — the cartoon emojis are gone, replaced by drawn objects in the manor's
-brass style, with your puzzle kept perfectly fair. **Version 0.3.**
+🎨 **Module 7 complete, Director — you earned World Builder.** You gave your game a
+**face** and art-directed every bit of it: you chose the feeling (*warm but wrong,
+grand and rich, a touch of creepy*) and the palette (*gold + mahogany + deep
+crimson*), then directed pass after pass — chandelier, chimney fireplace, gilded
+door, cloaked coat rack, crimson rug, shadowed grandfather clock — and brought it
+alive with moving light and a warm grand-hall sound. **Version 0.4.**
 
-🔓 **UP NEXT: MODULE 7 — CREATE WORLDS.** Point your prompting at the biggest
-thing yet: your game's real look and atmosphere. You art-direct, the studio
-paints — your game gets a face, **Version 0.4.** Open Claude Code and say:
+🔓 **UP NEXT: MODULE 8 — DESIGN GREAT GAMES.** The last of Dad's run and the
+biggest test of your designer brain: **design the next room and its puzzle
+yourself** while Claude plays devil's advocate to pressure-test it. Your game
+climbs to **Version 0.5.** Open Claude Code and say:
 
-> **"Start Module 7 — let's make my game look real."**
+> **"Start Module 8 — let's design my next room."**
 `;
 
 const FALLBACK_ACHIEVEMENTS = `
@@ -364,7 +367,7 @@ const FALLBACK_ACHIEVEMENTS = `
 - [x] **Memory Keeper**
 - [x] **Code Reader**
 - [x] **AI Whisperer**
-- [ ] **World Builder**
+- [x] **World Builder**
 - [ ] **Game Designer**
 
 ## Secret Achievements

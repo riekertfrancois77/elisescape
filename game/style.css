@@ -589,12 +589,30 @@ h1 {
    right. This is "A with a bit of B" made of light. */
 .firelight {
   position: absolute; inset: 0;
-  background: radial-gradient(ellipse at 30% 66%, rgba(255,150,60,0.14), transparent 46%);
-  animation: firelightpulse 3.4s ease-in-out infinite;
+  background: radial-gradient(ellipse at 30% 62%, rgba(255,150,60,0.16), transparent 48%);
+  animation: firelightpulse 2.6s ease-in-out infinite;
 }
+/* An irregular flicker, so the firelight jitters on the room like a real fire. */
 @keyframes firelightpulse {
-  0%, 100% { opacity: 0.85; }
-  50%      { opacity: 1; }
+  0%   { opacity: 0.82; }
+  18%  { opacity: 1;    }
+  33%  { opacity: 0.74; }
+  48%  { opacity: 0.96; }
+  66%  { opacity: 0.80; }
+  82%  { opacity: 0.92; }
+  100% { opacity: 0.85; }
+}
+/* The chandelier's warm pool spilling down into the room, breathing slowly and
+   OFFSET from the fire — so the two light sources feel alive independently. */
+.chandelier-cast {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 62% 56% at 50% 5%,
+              rgba(255,196,110,0.15), rgba(255,170,70,0.05) 40%, transparent 66%);
+  animation: chandelierpulse 5s ease-in-out infinite;
+}
+@keyframes chandelierpulse {
+  0%, 100% { opacity: 0.72; }
+  50%      { opacity: 1;    }
 }
 .moonlight {
   position: absolute; inset: 0;

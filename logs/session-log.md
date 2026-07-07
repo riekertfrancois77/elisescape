@@ -6,6 +6,33 @@
 
 ---
 
+## Module 7 — Create Worlds (COMPLETE · 2026-07-07)
+
+Claude wore the **Technical Artist** hat, but *I* was the Art Director. The rule
+was: I decide the feeling and the look FIRST, and the studio just paints it.
+
+- **I picked the feeling first.** Before any art, I said how the room should
+  feel: **warm but wrong, grand and rich, with a touch of creepy.** That tension
+  is my whole game — a beautiful house hiding a murder.
+- **I chose the colors** myself: **gold and mahogany with a bit of deep crimson.**
+- **Then I directed it, pass after pass** — I looked at each version and sent it
+  back with notes, like a real director:
+  - Added a **grand golden chandelier** and gilded molding.
+  - Made the **fireplace** stop clipping into the rug, then grander, then gave it
+    a proper **chimney** going up to the ceiling.
+  - Made the **door smaller** and more detailed with a gold arch.
+  - Added a **cloak on a coat rack** and made the **rug** more detailed.
+  - Added the **grandfather clock** into its dark corner — but Claude kept it in
+    shadow so I still have to *notice* it (that keeps my puzzle fair).
+- **Then we brought it alive:** the firelight flickers into the room, the
+  chandelier glows and breathes, and there's a warm deep grand-hall sound under
+  the party now.
+- Every single change we tested to make sure the game still solves and the clock
+  is still hidden. My game finally *looks* like the manor in my head — **Version
+  0.4.** Earned the **World Builder** trophy. 🎨
+
+---
+
 ## Module 6 — Speak AI Fluently (COMPLETE · 2026-07-07)
 
 Claude wore the **Prompt Coach** hat. The whole module was about one thing: my

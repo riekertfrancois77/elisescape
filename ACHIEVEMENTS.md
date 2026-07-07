@@ -44,8 +44,13 @@ earn them.
   emoji. His strongest prompt fenced off three things at once — still clickable,
   don't move anything, keep the clock hidden — so the AI couldn't break his
   puzzle. Game bumped to Version 0.3.)*
-- [ ] **World Builder** — Art-direct your game's real look and atmosphere: you
-  direct, the studio paints. *(Module 7 — Create Worlds.)*
+- [x] **World Builder** — Art-direct your game's real look and atmosphere: you
+  direct, the studio paints. *(Unlocked 2026-07-07 — Module 7. Eli chose the mood
+  and a custom palette (gold + mahogany + deep crimson), then art-directed pass
+  after pass: a grand chandelier, a mantel-and-chimney fireplace, a gilded door, a
+  cloaked coat rack, a detailed crimson rug, and a shadowed grandfather clock —
+  then brought it alive with flickering light and a warm grand-hall sound. Game
+  bumped to Version 0.4.)*
 - [ ] **Game Designer** — Design a new room and puzzle that make players feel
   clever. *(Module 8 — Design Great Games.)*
 

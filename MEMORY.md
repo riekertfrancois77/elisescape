@@ -8,12 +8,14 @@ Everything here is *your* game and *your* journey.
 ## Project State
 
 - **Creative Director:** Eli
-- **Current module:** **Module 7 — Create Worlds (now UNLOCKED / active)**.
-  **Module 6 (Speak AI Fluently) is COMPLETE** — Eli earned **AI Whisperer** by
-  writing and sharpening his *own* prompts to polish the game, bumping it to
-  **Version 0.3**. Modules 1–6 are all complete. Dad has opened **Modules 5–8**
+- **Current module:** **Module 8 — Design Great Games (now UNLOCKED / active)**.
+  **Module 7 (Create Worlds) is COMPLETE** — Eli earned **World Builder** by
+  art-directing his game's whole look (gold + mahogany + deep crimson; a grand
+  chandelier, a mantel-and-chimney fireplace, a coat rack, a shadowed grandfather
+  clock) and layering in moving light + a warm grand-hall sound, bumping it to
+  **Version 0.4**. Modules 1–7 are all complete. Dad has opened **Modules 5–8**
   (the "make your game visibly better" run: read code → prompt → graphics →
-  design); they unlock in order, so **Module 7 is active** and 8 waits its turn.
+  design); they unlock in order, so **Module 8 is active** — the last of the run.
 - **Game concept:** ***One Night at Thornwood Manor*** — a famous detective is
   trapped one night in a cozy, secret-filled early-1900s mansion during a house
   party where a murder has happened. A killer who leaves clues on purpose hides
@@ -43,16 +45,17 @@ Everything here is *your* game and *your* journey.
 <!-- Your game's version number. It climbs as modules make the game better.
      (Keep the number at the start of the first line, e.g. "0.2 — ...".) -->
 
-**0.3** — *Arrival at Thornwood Manor* (the Grand Foyer), **polished by prompts
-Eli wrote and sharpened himself** (Module 6). He hunted down the cartoonish
-emojis that broke his 1900s mood and replaced them with real drawn objects in
-the manor's own brass-and-gold style — a brass sound button, and drawn objects
-for every clickable thing in the foyer (toasting glasses, a hearth, a framed
-portrait, a coat rack, the hall clock, an arched door) — all while keeping the
-puzzle fair (clock still hidden, nothing moved, everything still clickable).
-Built on **0.2**, where he moved the murder from 9:47 to **10:36** by his own
-hand. This number climbs every time a module makes the game better — that's the
-whole point of the journey.
+**0.4** — *Arrival at Thornwood Manor* (the Grand Foyer), given **a real face**
+that Eli **art-directed himself** (Module 7). He chose the mood — *"warm but
+wrong, grand and rich, a touch of creepy"* — and the palette — *gold + mahogany
++ a bit of deep crimson* — and directed pass after pass: a grand golden
+chandelier, gilded crown molding, a mantel-and-**chimney** fireplace, a
+deep-crimson rug with a gold medallion, a coat rack with a draped cloak, and the
+great **grandfather clock** standing (still shadowed, still fair) in its corner.
+Then it came alive: flickering firelight + a breathing chandelier glow, and a
+warm low grand-hall drone under the party. Built on **0.3** (prompt-polished) and
+**0.2** (the hand-changed murder time 10:36). This number climbs every time a
+module makes the game better — that's the whole point of the journey.
 
 ## Progress Tracker
 
@@ -65,7 +68,7 @@ whole point of the journey.
 - [x] Module 4 — Build a Second Brain
 - [x] Module 5 — Read the Machine
 - [x] Module 6 — Speak AI Fluently
-- [ ] Module 7 — Create Worlds
+- [x] Module 7 — Create Worlds
 - [ ] Module 8 — Design Great Games
 - [ ] Module 9 — Summon the Experts
 - [ ] Module 10 — Build the Next Room
@@ -160,14 +163,14 @@ whole point of the journey.
 
 <!-- Unlocks when Module 6 is complete. Target: game climbs to Version 0.4. -->
 
-- [ ] 1. Meet the Technical Artist — you art-direct, the studio paints
-- [ ] 2. Art-direct first — describe the look and mood in your own words
-- [ ] 3. Lock a palette + atmosphere
-- [ ] 4. The studio paints — real graphics/atmosphere to your direction
-- [ ] 5. React & redirect — send it back for another pass
-- [ ] 6. Add immersion — light, motion, and sound layers
-- [ ] 7. Version bump — your game has a face: Version 0.4
-- [ ] 8. Achievement unlocked: World Builder
+- [x] 1. Meet the Technical Artist — you art-direct, the studio paints
+- [x] 2. Art-direct first — describe the look and mood in your own words
+- [x] 3. Lock a palette + atmosphere
+- [x] 4. The studio paints — real graphics/atmosphere to your direction
+- [x] 5. React & redirect — send it back for another pass
+- [x] 6. Add immersion — light, motion, and sound layers
+- [x] 7. Version bump — your game has a face: Version 0.4
+- [x] 8. Achievement unlocked: World Builder
 
 ## Module 8 Steps
 
@@ -186,6 +189,21 @@ whole point of the journey.
 
 <!-- The story of your studio so far — newest first. (Shown on the dashboard.) -->
 
+- 🎨 **MODULE 7 COMPLETE — World Builder unlocked. Game → Version 0.4.** Eli's game
+  got a **face**, and *he* was the Art Director the whole way (Claude wore the
+  **Technical Artist** hat and only held the brush). Brain-first: he decided the
+  *feeling* before a single pixel — *"warm but wrong, grand and rich, a touch of
+  creepy"* — and locked a custom palette, **gold + mahogany + a bit of deep
+  crimson**. Then he directed pass after pass like a real Art Director, reacting
+  and redirecting: a **grand golden chandelier**, gilded crown molding, and — over
+  several of his notes — a **mantel-and-chimney fireplace** lifted off the rug, a
+  **smaller gilded door**, a **coat rack with a draped cloak**, a **detailed
+  crimson rug** with a gold medallion, and the great **grandfather clock** painted
+  into its shadowy corner (kept dark on purpose so his puzzle stays fair). Finally
+  it came **alive**: flickering firelight and a breathing chandelier glow cast into
+  the room, plus a warm low **grand-hall drone** under the party — light + motion +
+  sound, layered. Every pass verified: the case still solves and the clock stays
+  hidden. His game finally *looks* like the manor in his head — **Version 0.4.**
 - 🗣️ **MODULE 6 COMPLETE — AI Whisperer unlocked. Game → Version 0.3.** Eli learned
   the studio's most reusable skill: **words are the controller.** With Claude in the
   **Prompt Coach** hat, he felt the gap between a vague ask and a sharp one — and his
@@ -272,27 +290,28 @@ whole point of the journey.
 
 <!-- Your exact next move. (Shown on the dashboard.) -->
 
-🗣️ **MODULE 6 COMPLETE, Director — you earned AI Whisperer.** You learned the
-skill under every other skill: **your words are the controller.** You wrote your
-own prompts, sharpened each one with a real **WHY** and clear **LIMITS**, and
-watched them land — the cartoon emojis that broke your 1900s mood are gone,
-replaced by drawn objects in the manor's own brass style, with your puzzle kept
-perfectly fair. Your sharpest prompt fenced off three things at once (still
-clickable · don't move anything · keep the clock hidden). Sharper prompts,
-sharper game — **Version 0.3.**
+🎨 **MODULE 7 COMPLETE, Director — you earned World Builder.** You gave your game
+a **face**, and *you* art-directed every bit of it. You chose the feeling first
+(*warm but wrong, grand and rich, a touch of creepy*) and the palette (*gold +
+mahogany + a bit of deep crimson*), then directed pass after pass — a grand
+chandelier, a mantel-and-chimney fireplace, a gilded door, a cloaked coat rack, a
+detailed crimson rug, and the shadowed grandfather clock — before bringing it
+alive with flickering light and a warm grand-hall sound. Your taste led every
+call. **Version 0.4.**
 
-🔓 **UP NEXT: MODULE 7 — CREATE WORLDS.** You've prompted the team like a pro —
-now you point that skill at the biggest thing yet: your game's **real look and
-atmosphere.** Claude wears the **Technical Artist** hat; *you* art-direct (mood,
-palette, light) and the studio paints. Your game gets a face — **Version 0.4.**
-Open Claude Code in this folder and say:
+🔓 **UP NEXT: MODULE 8 — DESIGN GREAT GAMES.** This is the last of Dad's four-module
+run, and the biggest test of your *designer* brain: you'll **design the next room
+and its puzzle yourself** — clues, deduction, payoff — and Claude becomes your
+design critic (devil's advocate) to pressure-test it. You'll also sharpen the
+current game with your new design eye. Your game climbs to **Version 0.5.** Open
+Claude Code in this folder and say:
 
-> **"Start Module 7 — let's make my game look real."**
+> **"Start Module 8 — let's design my next room."**
 
 **The run Dad opened, in order** (each unlocks when the one before is done):
 - **5 · Read the Machine** → read your code, first solo edit → **v0.2** ✅ DONE
 - **6 · Speak AI Fluently** → prompt like a pro, polish the game → **v0.3** ✅ DONE
-- **7 · Create Worlds** → real graphics & atmosphere, you art-direct → **v0.4**
+- **7 · Create Worlds** → real graphics & atmosphere, you art-direct → **v0.4** ✅ DONE
 - **8 · Design Great Games** → design your next room + puzzle → **v0.5**
 
 Modules 9–13 stay sealed until Dad opens them.
@@ -328,6 +347,12 @@ perfectly, because the project remembered.
   button; every foyer emoji replaced with a drawn object) — his best prompt fenced
   off three things at once so the AI couldn't break his puzzle. Game bumped to
   Version 0.3.
+- 🎨 **World Builder** (2026-07-07) — Art-directed his game's whole look and
+  atmosphere. Chose the mood and a custom palette (gold + mahogany + deep crimson),
+  then directed pass after pass — chandelier, mantel-and-chimney fireplace, gilded
+  door, cloaked coat rack, detailed crimson rug, shadowed grandfather clock — and
+  layered in moving light + a warm grand-hall sound. His taste led every call.
+  Game bumped to Version 0.4.
 - 🕵️ **AI Tamer** (secret, 2026-07-06) — Eli directed the AI to build his vision
   *his* way: he combined three changes at once and the engineer delivered.
 - 🐛 **Bug Hunter** (secret, 2026-07-06) — Eli noticed the dashboard was wrong
@@ -344,6 +369,14 @@ perfectly, because the project remembered.
        - Lead Engineer · ⭐⭐⭐⭐☆ · Technically solid.
        - QA · ⭐⭐⭐☆☆ · Found two bugs.
        - Producer · ⭐⭐⭐⭐☆ · Excellent progress for Version 0.1. -->
+
+**Version 0.4 — The Manor Gets a Face (Module 7, 2026-07-07)**
+- Creative & Art Director (Eli) · ⭐⭐⭐⭐⭐ · Art-directed the whole look himself — feeling first, palette locked, then pass after pass of react-and-redirect. *"Looks good."*
+- Technical Artist · ⭐⭐⭐⭐⭐ · Everything painted in pure CSS, no images: chandelier, mantel-and-chimney fireplace, gilded door, cloaked coat rack, medallion rug, shadowed grandfather clock — all to his direction.
+- Art Director (lens) · ⭐⭐⭐⭐⭐ · The room finally reads as one intentional set: gold + mahogany + deep crimson, warm-but-wrong, with the cold window as the "wrong."
+- Lighting/Immersion · ⭐⭐⭐⭐☆ · Flickering firelight + a breathing chandelier cast + a warm grand-hall drone — light, motion, and sound layered. Room hushes on the win.
+- QA · ⭐⭐⭐⭐⭐ · Every pass verified headless: the case still solves, the clock stays hidden (0.4 opacity), zero console errors.
+- Producer · ⭐⭐⭐⭐⭐ · A full visual glow-up shipped in one session, all under the Director's taste. Biggest leap in the game's look so far.
 
 **Version 0.3 — Prompt-Polished (Module 6, 2026-07-07)**
 - Creative Director (Eli) · ⭐⭐⭐⭐⭐ · Wrote and sharpened his own polish prompts; approved the drawn objects and the brass sound button. *"That's good for now."*

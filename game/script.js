@@ -38,6 +38,7 @@ let muted = false;       // is sound turned off?
 let tickTimer = null;    // the repeating tick... tock...
 let murmur = null;        // the low party hum
 let ambienceTimer = null; // the random "room is alive" sounds
+let hallOscA = null, hallOscB = null, hallGain = null; // warm grand-hall drone
 
 // Turn the sound engine on. Browsers only allow this after a user clicks,
 // so we call it from the "Begin the night" button.
@@ -160,10 +161,36 @@ function scheduleRoomSound() {
   }, delay);
 }
 
+// A warm, low grand-hall drone — a soft low note and a quiet fifth above it,
+// muffled so it sits UNDER everything like the air of a big rich room. Its
+// gentle dissonance is the "warm but wrong" mood Eli art-directed, in sound.
+function startHallTone() {
+  if (!audioCtx || hallGain) return;
+  hallGain = audioCtx.createGain();
+  const lp = audioCtx.createBiquadFilter();
+  lp.type = "lowpass";
+  lp.frequency.value = 260; // muffle it so it's felt more than heard
+  hallOscA = audioCtx.createOscillator();
+  hallOscA.type = "sine";
+  hallOscA.frequency.value = 110;    // a low, warm root
+  hallOscB = audioCtx.createOscillator();
+  hallOscB.type = "sine";
+  hallOscB.frequency.value = 164.81; // a soft fifth above — grand, a touch uneasy
+  hallOscA.connect(hallGain);
+  hallOscB.connect(hallGain);
+  hallGain.connect(lp).connect(audioCtx.destination);
+  const now = audioCtx.currentTime;
+  hallGain.gain.setValueAtTime(0.0001, now);
+  hallGain.gain.exponentialRampToValueAtTime(0.014, now + 3); // fade in slowly
+  hallOscA.start();
+  hallOscB.start();
+}
+
 // Start the room's atmosphere: a quiet tick, a party murmur, and a living
 // room full of random sounds.
 function startAmbience() {
   if (!audioCtx) return;
+  startHallTone(); // the warm grand-hall drone underneath it all
 
   // tick... tock... once a second, alternating pitch (quiet now).
   if (tickTimer) clearInterval(tickTimer);
@@ -200,6 +227,14 @@ function startAmbience() {
 function stopAmbience() {
   if (tickTimer) { clearInterval(tickTimer); tickTimer = null; }
   if (ambienceTimer) { clearTimeout(ambienceTimer); ambienceTimer = null; }
+  // Let the grand-hall drone fade out too, so the room truly hushes on the win.
+  if (hallGain) {
+    const now = audioCtx.currentTime;
+    hallGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.6);
+    if (hallOscA) hallOscA.stop(now + 0.7);
+    if (hallOscB) hallOscB.stop(now + 0.7);
+    hallGain = null; hallOscA = null; hallOscB = null;
+  }
 }
 
 // A little rising chime — you found something.

@@ -6,6 +6,43 @@
 
 ---
 
+## 2026-07-07 — Module 7 (Create Worlds)
+
+**Q (art-direct first — the feeling):** When someone walks into your manor, what
+should it *feel* like?
+**Eli:** *"they should feel it warm but wrong and its grand and rich with a touch
+of creepy"*
+**Studio note:** A real art-direction answer — he blended three feelings into one
+specific mood (glamour on top, dread underneath), which is the soul of his game.
+
+**Q (lock the palette):** Which color soul fits your manor — gold & crimson,
+emerald & mahogany, midnight & gold, or your own?
+**Eli:** *"for now lets go with gold and mahogany with a bit of deep crimson"*
+**Studio note:** A custom blend of two options — warmth of gold, richness of
+mahogany, a whisper of crimson for the "wrong." Locked as the palette.
+
+**Q (react & redirect — pass 1):** What's right, what's not-you?
+**Eli:** *"the window and paiting are good for now can you make the door frame
+smalelr and make it a bit more detailed... make the fire palce NOT clip into the
+carpet and make it a biut more grand and can you add a cloak and coat rack and
+maybe the rug be more detailed"*
+**Studio note:** Sharp, specific direction — kept what he liked, sent back the
+rest with clear notes. Textbook art directing.
+
+**Q (react & redirect — pass 2):** More?
+**Eli:** *"can you make the fire place more grander and the door a bit smaller"*
+→ then *"remove whatever is at the top of the fire place and replace it with a
+chemy [chimney] to the top that look nice"* → then *"now can you add a cloak
+[clock] for were the grandfather cloak [clock] is"*.
+**Studio note:** He iterated like a pro until the fireplace, chimney, and
+grandfather clock were right. (Clock painted DARK so his puzzle stays fair.)
+
+**Q (sign-off):** Is the room right — bring it to life?
+**Eli:** *"looks good"* — greenlit the immersion pass (moving light + grand-hall
+sound). Earned **World Builder**; game bumped to **Version 0.4.**
+
+---
+
 ## 2026-07-07 — Module 6 (Speak AI Fluently)
 
 **Q (pick the target):** Which ONE moment in *Thornwood Manor* do you most wish
