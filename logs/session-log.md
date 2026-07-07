@@ -6,6 +6,91 @@
 
 ---
 
+## Module 8 — Design Great Games (COMPLETE · 2026-07-07)
+
+Claude wore the **Game Designer** hat — but only as my *critic*. This was the
+most "my brain first" module of all: **I** designed the next room and its puzzle,
+and Claude just asked hard questions and tried to break it.
+
+- **I figured out my own puzzle rules** first, by explaining why my foyer puzzle
+  works: **1) it's FAIR** — you get clues that point to the answer, no guessing;
+  **2) it's HARD & CLEVER** — you have to work to put it together. That became my
+  checklist.
+- **I designed the next room:** a **library**, full of books and shelves, with one
+  **candlelit table** in the middle.
+- **What's off:** a **statue that matches the portrait from the first room** — but
+  it's holding the **wrong thing.** You have to notice and fix it.
+- **The clue (why it's fair):** you can **walk back between rooms**, so you can
+  always go check the portrait again. And the statue won't be the only puzzle in
+  that room.
+- **What he's holding:** a **goblet of wine** (that's the host — raising a toast
+  the night he dies). Fix the statue to hold the goblet and a **hidden room slides
+  open.**
+- **My real improvement to the game (Version 0.5):** we put the goblet **into the
+  foyer portrait now** — so the setup is already there, waiting, before I even
+  build the library. That's setup and payoff, and it was my idea.
+- My whole next-room design is **saved** so it can be built in Module 10. Earned
+  the **Game Designer** trophy. 🧩 **That finishes Dad's whole run — my game went
+  from 0.1 to 0.5, all by me.**
+
+---
+
+## Module 7 — Create Worlds (COMPLETE · 2026-07-07)
+
+Claude wore the **Technical Artist** hat, but *I* was the Art Director. The rule
+was: I decide the feeling and the look FIRST, and the studio just paints it.
+
+- **I picked the feeling first.** Before any art, I said how the room should
+  feel: **warm but wrong, grand and rich, with a touch of creepy.** That tension
+  is my whole game — a beautiful house hiding a murder.
+- **I chose the colors** myself: **gold and mahogany with a bit of deep crimson.**
+- **Then I directed it, pass after pass** — I looked at each version and sent it
+  back with notes, like a real director:
+  - Added a **grand golden chandelier** and gilded molding.
+  - Made the **fireplace** stop clipping into the rug, then grander, then gave it
+    a proper **chimney** going up to the ceiling.
+  - Made the **door smaller** and more detailed with a gold arch.
+  - Added a **cloak on a coat rack** and made the **rug** more detailed.
+  - Added the **grandfather clock** into its dark corner — but Claude kept it in
+    shadow so I still have to *notice* it (that keeps my puzzle fair).
+- **Then we brought it alive:** the firelight flickers into the room, the
+  chandelier glows and breathes, and there's a warm deep grand-hall sound under
+  the party now.
+- Every single change we tested to make sure the game still solves and the clock
+  is still hidden. My game finally *looks* like the manor in my head — **Version
+  0.4.** Earned the **World Builder** trophy. 🎨
+
+---
+
+## Module 6 — Speak AI Fluently (COMPLETE · 2026-07-07)
+
+Claude wore the **Prompt Coach** hat. The whole module was about one thing: my
+words are the controller — the better my prompt, the better my game.
+
+- **The vague prompt was mine.** I started by saying "polish my game," and Claude
+  showed me that "polish" could mean five totally different things — so a vague
+  prompt makes the AI guess and decide for me. A Director never lets that happen.
+- **The rule: I write the prompt first, then we sharpen it.** Claude wouldn't hand
+  me a finished prompt. I had to try, then we made it stronger together and named
+  *why* it got better.
+- **What I fixed:** the emojis. They looked cartoonish and silly in a murder game,
+  and some of them just floated in the air. (I actually spotted six emojis
+  floating in my room that Claude had missed — I used my game's own "notice what's
+  off" skill on my own studio!)
+- **My prompts landed three changes:** the 🔑 in the notebook became a real
+  detective's line, the cartoon 🔊 sound button became a **drawn brass speaker**
+  that matches the game, and every floating emoji in the foyer became a **drawn
+  object** in the same style.
+- **My best prompt had LIMITS.** I said: real objects, same style, still
+  clickable, DON'T move anything, and keep the clock hidden so it's not obvious.
+  Claude said three limits in one prompt is pro-level — the limits protected my
+  puzzle so the AI couldn't wreck it.
+- We **verified** every change: the game still solves, the clock is still hidden,
+  nothing moved. My game is sharper now — **Version 0.3.** Earned the
+  **AI Whisperer** trophy. 🗣️
+
+---
+
 ## Module 5 — Read the Machine (COMPLETE · 2026-07-07)
 
 I opened up my own game's code with Claude wearing the **Lead Engineer** hat. The

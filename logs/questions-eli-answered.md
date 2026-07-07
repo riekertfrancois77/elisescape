@@ -6,6 +6,130 @@
 
 ---
 
+## 2026-07-07 — Module 8 (Design Great Games)
+
+**Q (name what works):** Where does the answer 10:36 come from — could a player
+really work it out, or would they have to guess?
+**Eli:** *"it fair they get clues that point towards the time its meant to be
+hard"*
+**Studio note:** He named his own two puzzle rules — FAIR (clues point to the
+answer) and HARD & CLEVER (it's meant to make you work). That became his checklist.
+
+**Q (design the next room):** What is the next room, after the foyer?
+**Eli:** *"they walk into a room fileld with books and shelfs everywhere and one
+table in the middle with candle light on it"* — a **library**.
+**Studio note:** Great instinct — a library is full of hiding places (fair clues)
+and the single candlelit table gives the eye a focal point.
+
+**Q (what's "off"?):** In this library, what's the ONE wrong thing?
+**Eli:** *"there will be a staute that will match the picture from the first room
+and the staute will be slightly off and you have to adjust it"*
+**Studio note:** Advanced design — **setup and payoff.** The portrait from room 1
+comes back and matters in room 2.
+
+**Q (fairness — Rule 1):** How does the player know what the statue should look
+like?
+**Eli:** *"they can go between rooms so yes its fair and it wont be the only puzzle
+in that room"*
+**Studio note:** Defended his own design under pressure — the portrait stays a
+findable, re-checkable clue.
+
+**Q (the exact off detail):** What's different about the statue — facing wrong,
+wrong arm, wrong object, or your own idea?
+**Eli:** **C** — *"something missing or extra"* (the statue holds the wrong
+object; fix what it's holding).
+
+**Q (the payoff):** When the player fixes the statue, what happens?
+**Eli:** *"it will slide open a hidden room"*
+**Studio note:** Rewards the solve AND pulls the player deeper. Peak "cozy house
+that hides everything."
+
+**Q (the object):** What is the host holding in his portrait (that the statue must
+match)?
+**Eli:** *"they will need a goblet filled with wine"*
+**Studio note:** Belongs to the host (the toast-raising party-thrower). Became the
+Version 0.5 improvement — planted into the foyer portrait as setup.
+
+---
+
+## 2026-07-07 — Module 7 (Create Worlds)
+
+**Q (art-direct first — the feeling):** When someone walks into your manor, what
+should it *feel* like?
+**Eli:** *"they should feel it warm but wrong and its grand and rich with a touch
+of creepy"*
+**Studio note:** A real art-direction answer — he blended three feelings into one
+specific mood (glamour on top, dread underneath), which is the soul of his game.
+
+**Q (lock the palette):** Which color soul fits your manor — gold & crimson,
+emerald & mahogany, midnight & gold, or your own?
+**Eli:** *"for now lets go with gold and mahogany with a bit of deep crimson"*
+**Studio note:** A custom blend of two options — warmth of gold, richness of
+mahogany, a whisper of crimson for the "wrong." Locked as the palette.
+
+**Q (react & redirect — pass 1):** What's right, what's not-you?
+**Eli:** *"the window and paiting are good for now can you make the door frame
+smalelr and make it a bit more detailed... make the fire palce NOT clip into the
+carpet and make it a biut more grand and can you add a cloak and coat rack and
+maybe the rug be more detailed"*
+**Studio note:** Sharp, specific direction — kept what he liked, sent back the
+rest with clear notes. Textbook art directing.
+
+**Q (react & redirect — pass 2):** More?
+**Eli:** *"can you make the fire place more grander and the door a bit smaller"*
+→ then *"remove whatever is at the top of the fire place and replace it with a
+chemy [chimney] to the top that look nice"* → then *"now can you add a cloak
+[clock] for were the grandfather cloak [clock] is"*.
+**Studio note:** He iterated like a pro until the fireplace, chimney, and
+grandfather clock were right. (Clock painted DARK so his puzzle stays fair.)
+
+**Q (sign-off):** Is the room right — bring it to life?
+**Eli:** *"looks good"* — greenlit the immersion pass (moving light + grand-hall
+sound). Earned **World Builder**; game bumped to **Version 0.4.**
+
+---
+
+## 2026-07-07 — Module 6 (Speak AI Fluently)
+
+**Q (pick the target):** Which ONE moment in *Thornwood Manor* do you most wish
+felt better right now?
+**Eli:** *"the sounds and the emojis right now"*
+**Studio note:** Sharp Director's eye — the emojis are cartoonish in a serious
+1900s mystery (they're a thing that's "off," which is his game's own superpower).
+
+**Q (write your own prompt — the emojis):** Write me a prompt, in your own words,
+telling the studio what you want done about the emojis.
+**Eli:** *"they just feel out of place in how the game looks they look catoonish
+and silly when the game is about a murder and how they just sit there floating in
+the air you can change anything you want there is no limits"*
+**Studio note:** Strong WHAT + a genuinely strong WHY (cartoonish in a murder
+story; they float). The one coaching note: "no limits" hands your decisions away —
+limits *protect* the parts you love. We sharpened it to add a fence (change the
+look; don't touch the puzzle, story, or how the sound button works).
+
+**Q (the sound button decision):** The 🔊 isn't just decoration — players click it
+to mute. What should it become: a drawn speaker icon, a word, or your own idea?
+**Eli:** *"give me a for now and ill see if i like it"* (chose **A**, the drawn
+speaker) — then, after seeing it: *"it looks good nuy could you style it to look
+like the rest of of the game"* → *"it looks good"*.
+**Studio note:** Perfect Director loop — write, see it land, react, redirect.
+"Make it look like the rest of the game" is a sharp prompt too: it points at a
+clear reference so the studio knows exactly what to match.
+
+**Q (write your own prompt — the six floating room emojis):** Take a swing — WHAT,
+WHY, and the LIMITS.
+**Eli:** *"they seem to out of place i still wnt them to clickable but i dont want
+them to be emoji but rather the actual object that has the same style as the rest
+of everything and but DONT move anything yet and make it so the clock is still
+hidden but not abvoius that that is the thing"*
+**Studio note:** Pro-level prompt — WHAT (real objects, same style), WHY (out of
+place), and **three protective LIMITS** in one breath (still clickable · don't
+move anything · keep the clock hidden). The clock limit is the sharpest: it fenced
+off the puzzle's fairness so the AI couldn't give the game away. This is the moment
+that earned **AI Whisperer**.
+
+---
+
 ## 2026-07-07 — Module 5 (Read the Machine)
 
 **Q (predict the code):** Look at those two lines inside `state`: `hasKey: false`

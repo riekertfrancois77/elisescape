@@ -11,7 +11,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>One Night at Thornwood Manor — v0.1</title>
+  <title>One Night at Thornwood Manor — v0.5</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -21,14 +21,22 @@
 
     <!-- Sound on/off. Some browsers only allow sound after you click, so
          the tick and murmur begin once you press "Begin the night". -->
-    <button id="mute-btn" title="Sound on / off">🔊</button>
+    <button id="mute-btn" title="Sound on / off" aria-label="Sound on / off">
+      <svg class="ico-sound" viewBox="0 0 24 24" width="18" height="18" fill="none"
+           stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+           stroke-linejoin="round" aria-hidden="true">
+        <path d="M4 9v6h3l5 4V5L7 9H4z" fill="currentColor" stroke="none" />
+        <path d="M15.5 8.5a5 5 0 0 1 0 7" />
+        <path d="M17.7 6a8 8 0 0 1 0 12" />
+      </svg>
+    </button>
 
     <!-- ============ TITLE SCREEN ============ -->
     <section id="title-screen" class="screen active">
       <div class="title-inner">
         <p class="kicker">Eli AI Game Studio presents</p>
         <h1>One Night at<br /><span class="gold">Thornwood Manor</span></h1>
-        <p class="subtitle">A detective mystery &middot; Version&nbsp;0.1</p>
+        <p class="subtitle">A detective mystery &middot; Version&nbsp;0.5</p>
         <button class="btn" id="begin-btn">Begin the night</button>
         <p class="hint">A killer is hiding among the guests. Notice what's off.</p>
       </div>
@@ -59,11 +67,31 @@
           <div class="rug"></div>
           <div class="moonbeam"></div>
           <div class="doorway"></div>
-          <div class="hearth"><div class="fire-glow"></div></div>
+          <!-- The grand golden chandelier — Eli's "grand & rich" centerpiece
+               (Module 7). Gold arms, warm candle-glow, a slow sway. -->
+          <div class="chandelier">
+            <div class="chandelier-glow"></div>
+            <div class="chandelier-body">
+              <span class="candle"></span>
+              <span class="candle"></span>
+              <span class="candle"></span>
+              <span class="candle"></span>
+              <span class="candle"></span>
+            </div>
+          </div>
+          <div class="hearth"><div class="chimney"></div><div class="fire-glow"></div></div>
           <div class="frame"></div>
           <div class="window"></div>
+          <!-- A coat rack with a draped cloak, under the coat-rack hotspot. -->
+          <div class="coatrack"><span class="cloak"></span></div>
+          <!-- The great grandfather (longcase) clock, standing deep in the
+               shadowy corner under the clock hotspot. Kept dark on purpose so
+               the "notice what's off" puzzle stays fair. -->
+          <div class="grandclock"><div class="case"></div><div class="face"></div><div class="pendulum"></div></div>
           <div class="firelight"></div>
           <div class="moonlight"></div>
+          <!-- Warm light cast down from the chandelier, breathing on its own. -->
+          <div class="chandelier-cast"></div>
           <div class="shadow-corner"></div>
           <div class="vignette"></div>
         </div>
@@ -71,12 +99,44 @@
         <!-- Clickable things in the room. Each has a data-object name.
              The great clock is tucked into a shadowy corner and dimmed
              (class "dim") so it blends in — you have to notice it yourself. -->
-        <button class="hotspot" data-object="guests"    style="left:14%; top:56%;">🥂<span>Guests</span></button>
-        <button class="hotspot dim" data-object="fireplace" style="left:33%; top:62%;">🔥<span>Fireplace</span></button>
-        <button class="hotspot dim" data-object="portrait"  style="left:50%; top:28%;">🖼️<span>Portrait</span></button>
-        <button class="hotspot" data-object="coats"      style="left:72%; top:58%;">🎩<span>Coat rack</span></button>
-        <button class="hotspot dim" data-object="clock"  style="left:9%; top:84%;">🕰️<span>&nbsp;</span></button>
-        <button class="hotspot door" data-object="door"  style="left:88%; top:40%;">🚪<span>Way deeper</span></button>
+        <!-- The room's objects, now DRAWN (SVG line-art) instead of cartoon
+             emojis. Each icon is sized in "em", so the existing font-size rules
+             still control it — meaning the dimmed clock stays small and hidden,
+             and NOTHING moved. currentColor keeps them the room's warm cream.
+             (Eli's Module 6 prompt: real objects, same style, still clickable,
+             don't move anything, keep the clock hidden.) -->
+        <button class="hotspot" data-object="guests" style="left:14%; top:56%;">
+          <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 4h5l-.7 4.2a1.9 1.9 0 0 1-3.6 0z" fill="currentColor" stroke="none"/><path d="M6.5 8.4V13"/><path d="M4.7 13h3.6"/>
+            <path d="M15 4h5l-.7 4.2a1.9 1.9 0 0 1-3.6 0z" fill="currentColor" stroke="none"/><path d="M17.5 8.4V13"/><path d="M15.7 13h3.6"/>
+          </svg><span>Guests</span></button>
+        <button class="hotspot dim" data-object="fireplace" style="left:33%; top:62%;">
+          <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M2.5 7h19"/><rect x="4.5" y="7" width="15" height="14" rx="1"/>
+            <path d="M12 19c-2 0-3.3-1.4-3.3-3.2 0-1.7 1.2-2.6 1.7-3.6.35 1 .9.9 1.1.1.25-1.1-.3-1.9.25-2.9.6 1.3 3.5 2.4 3.5 5.1C15.3 17.5 14 19 12 19z" fill="currentColor" stroke="none"/>
+          </svg><span>Fireplace</span></button>
+        <button class="hotspot dim" data-object="portrait" style="left:50%; top:28%;">
+          <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="4" y="3" width="16" height="18" rx="1"/><rect x="6.5" y="5.5" width="11" height="13"/>
+            <circle cx="12" cy="10" r="2.1" fill="currentColor" stroke="none"/><path d="M8.2 17c0-2.3 1.7-3.6 3.8-3.6s3.8 1.3 3.8 3.6"/>
+          </svg><span>Portrait</span></button>
+        <button class="hotspot" data-object="coats" style="left:72%; top:58%;">
+          <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="3.6" x2="12" y2="19"/><circle cx="12" cy="3" r="1.1" fill="currentColor" stroke="none"/>
+            <path d="M12 6.6c2.6 0 3 1.6 3 3.2"/><path d="M12 6.6c-2.6 0-3 1.6-3 3.2"/>
+            <path d="M9 20l1.5-2M15 20l-1.5-2M12 19v1"/>
+            <path d="M15 10c1.6 1.1 1.9 4.2 1 6.6h-2.2c-.7-2.1-.7-4.6.1-6.4z" fill="currentColor" stroke="none" opacity="0.8"/>
+          </svg><span>Coat rack</span></button>
+        <button class="hotspot dim" data-object="clock" style="left:9%; top:84%;">
+          <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="7" y="2.5" width="10" height="19" rx="1.5"/><circle cx="12" cy="7.8" r="3.1"/>
+            <path d="M12 7.8V6.1M12 7.8l1.5 1"/><path d="M12 13v2"/><circle cx="12" cy="16.6" r="1.5"/>
+          </svg><span>&nbsp;</span></button>
+        <button class="hotspot door" data-object="door" style="left:88%; top:40%;">
+          <svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 21V8.5a7 7 0 0 1 14 0V21"/><path d="M4 21h16"/>
+            <path d="M8.5 8a3.5 3.5 0 0 1 7 0"/><circle cx="15.8" cy="13" r="0.95" fill="currentColor" stroke="none"/>
+          </svg><span>Way deeper</span></button>
       </div>
 
       <!-- The detective's tools: what you're looking at, and what you've found -->
@@ -103,7 +163,7 @@
         <h1 class="gold">The way opens.</h1>
         <p id="win-text"></p>
         <p class="win-tag">The night has only begun&hellip;</p>
-        <p class="version-note">That's <strong>Version&nbsp;0.1</strong> — the very first playable slice of your game.</p>
+        <p class="version-note">That's <strong>Version&nbsp;0.5</strong> — sharpened by your own game-designer eye, with the setup for your next room quietly planted.</p>
         <button class="btn" id="replay-btn">Play again</button>
       </div>
     </section>

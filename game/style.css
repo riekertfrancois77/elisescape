@@ -224,15 +224,26 @@ h1 {
   position: absolute;
   left: 0; right: 0; top: 0; height: 62%;
   background:
-    repeating-linear-gradient(90deg, rgba(0,0,0,0.16) 0 2px, transparent 2px 88px),
-    linear-gradient(#3a2a1a 0%, #31241699 60%, #2b1f14 100%);
-  box-shadow: inset 0 -8px 14px rgba(0,0,0,0.45);
+    /* deep mahogany grain */
+    repeating-linear-gradient(90deg, rgba(0,0,0,0.22) 0 2px, transparent 2px 86px),
+    /* a faint gilt pinstripe between the panels */
+    repeating-linear-gradient(90deg, rgba(201,162,74,0.06) 43px 45px, transparent 45px 86px),
+    /* rich, warm mahogany wood */
+    linear-gradient(#4a3020 0%, #3a2416 58%, #2a1810 100%);
+  box-shadow: inset 0 -8px 14px rgba(0,0,0,0.5), inset 0 44px 70px rgba(120,72,30,0.10);
 }
-.wall::after { /* the chair rail — a molding line near the floor */
+.wall::before { /* gilded crown molding running along the top of the wall */
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: 0; height: 8px;
+  background: linear-gradient(#e8c169, #c9a24a 45%, #7a5a24);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.45);
+}
+.wall::after { /* the chair rail — a gilded molding line near the floor */
   content: "";
   position: absolute;
   left: 0; right: 0; bottom: 0; height: 6px;
-  background: linear-gradient(#5a4325, #4a3720 40%, #241a10);
+  background: linear-gradient(#c9a24a, #8a6a2e 40%, #241a10);
 }
 
 /* The floor — dark wood planks receding into the dark. */
@@ -241,7 +252,7 @@ h1 {
   left: 0; right: 0; top: 62%; bottom: 0;
   background:
     repeating-linear-gradient(90deg, rgba(0,0,0,0.24) 0 3px, transparent 3px 64px),
-    linear-gradient(#2a1e12 0%, #1a1109 70%, #120b06 100%);
+    linear-gradient(#3a2413 0%, #241609 70%, #140c06 100%);
 }
 
 /* A warm patterned rug on the floor. */
@@ -252,8 +263,28 @@ h1 {
   width: 54%; height: 26%;
   border-radius: 50%;
   background:
-    radial-gradient(ellipse at center, rgba(150,45,45,0.42), rgba(95,28,28,0.28) 58%, transparent 74%);
-  box-shadow: inset 0 0 30px rgba(0,0,0,0.45);
+    /* faint concentric weave */
+    repeating-radial-gradient(ellipse at center, transparent 0 7px, rgba(0,0,0,0.05) 7px 9px),
+    radial-gradient(ellipse at center, rgba(185,45,52,0.5), rgba(120,28,34,0.42) 55%, rgba(78,20,24,0.5) 72%, transparent 78%);
+  box-shadow: inset 0 0 34px rgba(0,0,0,0.5), inset 0 0 0 5px rgba(201,162,74,0.16);
+}
+.rug::before { /* an ornate gold border ring woven into the rug */
+  content: "";
+  position: absolute;
+  inset: 12% 9%;
+  border-radius: 50%;
+  border: 2px solid rgba(201,162,74,0.3);
+  box-shadow: inset 0 0 0 4px rgba(120,28,34,0.35), inset 0 0 0 6px rgba(201,162,74,0.12);
+}
+.rug::after { /* a woven medallion in the centre */
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 32%; height: 50%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(201,162,74,0.22), rgba(185,45,52,0.12) 55%, transparent 68%);
+  box-shadow: 0 0 0 2px rgba(201,162,74,0.16);
 }
 
 /* An arched oak doorway — the "way deeper". Sits under the 🚪 hotspot. */
@@ -261,23 +292,142 @@ h1 {
   position: absolute;
   left: 88%; top: 45%;
   transform: translate(-50%, -50%);
-  width: 13%; height: 54%;
-  background: linear-gradient(#160f09, #0a0705);
-  border: 4px solid #2e2114;
-  border-radius: 60px 60px 5px 5px;
-  box-shadow: inset 0 0 30px rgba(0,0,0,0.85), 0 6px 20px rgba(0,0,0,0.5);
+  width: 8%; height: 39%;
+  background: linear-gradient(#1c130b, #0a0705);
+  border: 3px solid #3a2c18;
+  border-radius: 46px 46px 4px 4px;
+  box-shadow: inset 0 0 22px rgba(0,0,0,0.85), 0 6px 18px rgba(0,0,0,0.55);
+}
+.doorway::before { /* a gilded arched frame around the door */
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border: 2px solid #7a5a24;
+  border-radius: 50px 50px 5px 5px;
+  box-shadow: 0 0 0 1px rgba(201,162,74,0.25), inset 0 0 10px rgba(0,0,0,0.6);
+}
+.doorway::after { /* two sunken panels + a faint warm sliver at the seam */
+  content: "";
+  position: absolute;
+  inset: 12% 20% 7% 20%;
+  border: 1px solid rgba(201,162,74,0.20);
+  border-radius: 28px 28px 2px 2px;
+  background:
+    linear-gradient(90deg, transparent 47%, rgba(255,180,90,0.10) 49% 51%, transparent 53%),
+    linear-gradient(180deg, rgba(255,240,210,0.04), transparent 34%);
+}
+
+/* The grand golden chandelier hanging over the foyer — Eli's "grand & rich"
+   centerpiece (Module 7). A gold ring, five candle-flames, a warm halo, and a
+   slow sway. Pure CSS, no images. Sits behind the clickable objects (z-index 0)
+   so gameplay is unchanged. */
+.chandelier {
+  position: absolute;
+  top: -1%; left: 50%;
+  width: 22%; height: 26%;
+  transform: translateX(-50%);
+  transform-origin: top center;
+  animation: sway 7s ease-in-out infinite;
+}
+.chandelier::before { /* the chain up to the ceiling */
+  content: "";
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 2px; height: 30%;
+  background: linear-gradient(#2a2012, #c9a24a);
+}
+.chandelier-glow { /* the warm pool of candlelight it throws */
+  position: absolute;
+  top: 12%; left: 50%;
+  transform: translateX(-50%);
+  width: 210%; height: 210%;
+  background: radial-gradient(ellipse at 50% 34%,
+              rgba(255,196,104,0.20), rgba(255,168,66,0.06) 46%, transparent 66%);
+  animation: glowpulse 3.8s ease-in-out infinite;
+}
+.chandelier-body { /* the gold frame */
+  position: absolute;
+  top: 30%; left: 50%;
+  transform: translateX(-50%);
+  width: 74%; height: 42%;
+  border: 2px solid #c9a24a;
+  border-top: none;
+  border-radius: 8px 8px 52% 52% / 8px 8px 90% 90%;
+  box-shadow: inset 0 0 10px rgba(201,162,74,0.4), 0 3px 10px rgba(0,0,0,0.5);
+}
+.chandelier-body::before { /* the top gold crown ring */
+  content: "";
+  position: absolute;
+  top: -7px; left: 50%;
+  transform: translateX(-50%);
+  width: 32%; height: 10px;
+  border: 2px solid #c9a24a;
+  border-radius: 50%;
+}
+.candle { /* a candle-flame on the ring */
+  position: absolute;
+  top: 62%;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 40%, #fff3c4, #ffbb4a 55%, #e8781e 82%, transparent);
+  box-shadow: 0 0 9px 3px rgba(255,172,74,0.6);
+  animation: flicker 1.6s ease-in-out infinite;
+}
+.candle:nth-child(1) { left: 6%;  animation-delay: 0s;    }
+.candle:nth-child(2) { left: 28%; animation-delay: 0.4s;  }
+.candle:nth-child(3) { left: 50%; top: 52%; animation-delay: 0.8s; }
+.candle:nth-child(4) { left: 72%; animation-delay: 0.25s; }
+.candle:nth-child(5) { left: 92%; animation-delay: 0.6s;  }
+@keyframes sway {
+  0%, 100% { transform: translateX(-50%) rotate(-1deg); }
+  50%      { transform: translateX(-50%) rotate(1deg); }
 }
 
 /* The fireplace — a dark hearth with a living, flickering fire. Under the 🔥. */
 .hearth {
   position: absolute;
-  left: 33%; top: 63%;
+  left: 33%; top: 55%;
   transform: translate(-50%, -50%);
-  width: 17%; height: 21%;
+  width: 20%; height: 22%;
   background: linear-gradient(#1a120b, #0d0805);
   border: 4px solid #2e2114;
   border-radius: 8px 8px 4px 4px;
-  box-shadow: inset 0 0 20px rgba(0,0,0,0.9);
+  /* gold jambs + lintel framing the fire opening */
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.9), inset 0 0 0 3px rgba(201,162,74,0.28);
+}
+.hearth::before { /* a grand mantel shelf with a gold cornice, overhanging the fire */
+  content: "";
+  position: absolute;
+  top: -16%; left: -20%; right: -20%;
+  height: 14%;
+  background: linear-gradient(#5a4224, #3a2a16 60%, #2e2114);
+  border-top: 2px solid #e8c169;
+  border-bottom: 2px solid #7a5a24;
+  border-radius: 4px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.55), inset 0 1px 0 rgba(232,193,105,0.4);
+}
+.hearth .chimney { /* a grand chimney breast rising from the mantel to the ceiling */
+  position: absolute;
+  bottom: 116%; left: 15%; right: 15%;
+  height: 188%;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,0.28), transparent 14%, transparent 86%, rgba(0,0,0,0.3)),
+    linear-gradient(#4a3524, #372817);
+  border-left: 2px solid #7a5a24;
+  border-right: 2px solid #7a5a24;
+  border-radius: 2px;
+  box-shadow: inset 0 0 18px rgba(0,0,0,0.45), 0 0 0 1px rgba(201,162,74,0.12);
+}
+.hearth .chimney::before { /* a gilded cornice where the breast meets the ceiling */
+  content: "";
+  position: absolute;
+  top: 0; left: -8%; right: -8%;
+  height: 5%;
+  background: linear-gradient(#5a4224, #2e2114);
+  border-top: 2px solid #c9a24a;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 .hearth::after { /* warm glow spilling into the room */
   content: "";
@@ -348,16 +498,121 @@ h1 {
   filter: blur(3px);
 }
 
+/* The great grandfather clock, standing in the shadowy corner under the clock
+   hotspot (Module 7). Painted DARK so it stays hidden — you have to look for it,
+   the same fairness rule Eli set in Module 6. Faint firelight just catches the
+   brass face if you look closely. */
+.grandclock {
+  position: absolute;
+  left: 9%; top: 78%;
+  transform: translate(-50%, -50%);
+  width: 8%; height: 42%;
+}
+.grandclock .case { /* the tall mahogany case with an arched hood */
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(#241810, #150d07);
+  border: 2px solid #2e2013;
+  border-radius: 46% 46% 4px 4px / 13% 13% 2px 2px;
+  box-shadow: inset 0 0 14px rgba(0,0,0,0.8);
+}
+.grandclock .face { /* the brass clock face near the top of the hood */
+  position: absolute;
+  top: 5%; left: 50%;
+  transform: translateX(-50%);
+  width: 66%; aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 45%, #4a3c20, #241a0e 72%);
+  border: 2px solid #4a3818;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
+}
+.grandclock .pendulum { /* the pendulum bob, swinging slowly in the waist */
+  position: absolute;
+  bottom: 16%; left: 50%;
+  width: 15%; aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, #5a4622, #2e2210);
+  opacity: 0.75;
+  transform-origin: 50% -240%;
+  animation: pendulum 2.4s ease-in-out infinite;
+}
+@keyframes pendulum {
+  0%, 100% { transform: translateX(-50%) rotate(6deg); }
+  50%      { transform: translateX(-50%) rotate(-6deg); }
+}
+
+/* A coat rack with a draped cloak, under the coat-rack hotspot (Module 7). */
+.coatrack {
+  position: absolute;
+  left: 72%; top: 55%;
+  transform: translate(-50%, -50%);
+  width: 9%; height: 36%;
+}
+.coatrack::before { /* the mahogany pole */
+  content: "";
+  position: absolute;
+  left: 50%; top: 0;
+  transform: translateX(-50%);
+  width: 3px; height: 100%;
+  background: linear-gradient(#4a3320, #2a1c10);
+  box-shadow: 1px 0 2px rgba(0,0,0,0.5);
+}
+.coatrack::after { /* the tripod base on the floor */
+  content: "";
+  position: absolute;
+  left: 50%; bottom: 0;
+  transform: translateX(-50%);
+  width: 52%; height: 5%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, #3a2818, transparent 72%);
+}
+.coatrack .cloak { /* a deep-crimson cloak hanging on a gold hook */
+  position: absolute;
+  top: 12%; left: 50%;
+  width: 66%; height: 58%;
+  background: linear-gradient(160deg, #5a1f24, #3a1418 58%, #240c10);
+  border-radius: 46% 22% 38% 52% / 62% 30% 44% 72%;
+  box-shadow: inset 0 0 12px rgba(0,0,0,0.55), inset 6px 0 10px rgba(0,0,0,0.4);
+  transform: rotate(4deg);
+}
+.coatrack .cloak::before { /* the little gold hook it hangs from */
+  content: "";
+  position: absolute;
+  top: -10%; left: -6%;
+  width: 22%; height: 22%;
+  border: 2px solid #c9a24a;
+  border-bottom: none; border-left: none;
+  border-radius: 0 60% 0 0;
+}
+
 /* Two lights fighting: warm firelight from the left, cold moonlight from the
    right. This is "A with a bit of B" made of light. */
 .firelight {
   position: absolute; inset: 0;
-  background: radial-gradient(ellipse at 30% 66%, rgba(255,150,60,0.14), transparent 46%);
-  animation: firelightpulse 3.4s ease-in-out infinite;
+  background: radial-gradient(ellipse at 30% 62%, rgba(255,150,60,0.16), transparent 48%);
+  animation: firelightpulse 2.6s ease-in-out infinite;
 }
+/* An irregular flicker, so the firelight jitters on the room like a real fire. */
 @keyframes firelightpulse {
-  0%, 100% { opacity: 0.85; }
-  50%      { opacity: 1; }
+  0%   { opacity: 0.82; }
+  18%  { opacity: 1;    }
+  33%  { opacity: 0.74; }
+  48%  { opacity: 0.96; }
+  66%  { opacity: 0.80; }
+  82%  { opacity: 0.92; }
+  100% { opacity: 0.85; }
+}
+/* The chandelier's warm pool spilling down into the room, breathing slowly and
+   OFFSET from the fire — so the two light sources feel alive independently. */
+.chandelier-cast {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 62% 56% at 50% 5%,
+              rgba(255,196,110,0.15), rgba(255,170,70,0.05) 40%, transparent 66%);
+  animation: chandelierpulse 5s ease-in-out infinite;
+}
+@keyframes chandelierpulse {
+  0%, 100% { opacity: 0.72; }
+  50%      { opacity: 1;    }
 }
 .moonlight {
   position: absolute; inset: 0;
@@ -503,16 +758,28 @@ h1 {
   z-index: 10;
   width: 38px;
   height: 38px;
-  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   line-height: 1;
-  background: rgba(20, 14, 9, 0.7);
-  border: 1px solid #3a2c1c;
+  /* A little brass fixture on the wall — warm shadow, a brass rim, and a
+     glowing gold icon, so it matches the great clock and the gold accents
+     instead of sitting on top of the game. */
+  background: radial-gradient(circle at 50% 36%, #2a1f12, #160f09);
+  border: 1px solid #7a5a24;
   border-radius: 50%;
   cursor: pointer;
-  color: #f3e9d8;
-  transition: transform 0.12s ease;
+  color: #e8c169;
+  box-shadow: 0 0 0 1px rgba(58, 44, 20, 0.6),
+              0 2px 8px rgba(0, 0, 0, 0.55),
+              inset 0 1px 2px rgba(240, 208, 137, 0.18);
+  transition: transform 0.12s ease, border-color 0.12s ease, color 0.12s ease;
 }
-#mute-btn:hover { transform: scale(1.1); }
+#mute-btn:hover {
+  transform: scale(1.1);
+  border-color: #e8c169;
+  color: #f0d089;
+}
 
 /* ---- Small screens ---- */
 @media (max-width: 640px) {

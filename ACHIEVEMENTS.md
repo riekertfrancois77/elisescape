@@ -37,12 +37,27 @@ earn them.
   `MEMORY.md` in his own words. The studio now starts every session smarter.)*
 - [x] **Code Reader** — Read your own game's code and make your first solo edit —
   by your own hand. *(Module 5 — Read the Machine, 2026-07-07.)*
-- [ ] **AI Whisperer** — Turn a vague ask into a precise prompt and get exactly
-  what you pictured. *(Module 6 — Speak AI Fluently.)*
-- [ ] **World Builder** — Art-direct your game's real look and atmosphere: you
-  direct, the studio paints. *(Module 7 — Create Worlds.)*
-- [ ] **Game Designer** — Design a new room and puzzle that make players feel
-  clever. *(Module 8 — Design Great Games.)*
+- [x] **AI Whisperer** — Turn a vague ask into a precise prompt and get exactly
+  what you pictured. *(Unlocked 2026-07-07 — Module 6. Eli wrote his own polish
+  prompts and sharpened each with a real WHY and clear LIMITS, landing three into
+  the game: a drawn brass sound button and drawn objects replacing every foyer
+  emoji. His strongest prompt fenced off three things at once — still clickable,
+  don't move anything, keep the clock hidden — so the AI couldn't break his
+  puzzle. Game bumped to Version 0.3.)*
+- [x] **World Builder** — Art-direct your game's real look and atmosphere: you
+  direct, the studio paints. *(Unlocked 2026-07-07 — Module 7. Eli chose the mood
+  and a custom palette (gold + mahogany + deep crimson), then art-directed pass
+  after pass: a grand chandelier, a mantel-and-chimney fireplace, a gilded door, a
+  cloaked coat rack, a detailed crimson rug, and a shadowed grandfather clock —
+  then brought it alive with flickering light and a warm grand-hall sound. Game
+  bumped to Version 0.4.)*
+- [x] **Game Designer** — Design a new room and puzzle that make players feel
+  clever. *(Unlocked 2026-07-07 — Module 8. Eli designed his next room himself —
+  a candlelit library with a statue that must be made to match the host's portrait
+  (a raised goblet of wine), sliding open a hidden room — named his own puzzle
+  rules (fair + hard/clever), and defended the design under pressure-testing. He
+  shipped a real improvement to the live game (the planted goblet setup, Version
+  0.5) and locked the blueprint in `design/next-room.md` for Module 10.)*
 
 ## Secret Achievements
 

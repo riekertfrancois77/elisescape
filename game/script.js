@@ -38,6 +38,7 @@ let muted = false;       // is sound turned off?
 let tickTimer = null;    // the repeating tick... tock...
 let murmur = null;        // the low party hum
 let ambienceTimer = null; // the random "room is alive" sounds
+let hallOscA = null, hallOscB = null, hallGain = null; // warm grand-hall drone
 
 // Turn the sound engine on. Browsers only allow this after a user clicks,
 // so we call it from the "Begin the night" button.
@@ -160,10 +161,36 @@ function scheduleRoomSound() {
   }, delay);
 }
 
+// A warm, low grand-hall drone — a soft low note and a quiet fifth above it,
+// muffled so it sits UNDER everything like the air of a big rich room. Its
+// gentle dissonance is the "warm but wrong" mood Eli art-directed, in sound.
+function startHallTone() {
+  if (!audioCtx || hallGain) return;
+  hallGain = audioCtx.createGain();
+  const lp = audioCtx.createBiquadFilter();
+  lp.type = "lowpass";
+  lp.frequency.value = 260; // muffle it so it's felt more than heard
+  hallOscA = audioCtx.createOscillator();
+  hallOscA.type = "sine";
+  hallOscA.frequency.value = 110;    // a low, warm root
+  hallOscB = audioCtx.createOscillator();
+  hallOscB.type = "sine";
+  hallOscB.frequency.value = 164.81; // a soft fifth above — grand, a touch uneasy
+  hallOscA.connect(hallGain);
+  hallOscB.connect(hallGain);
+  hallGain.connect(lp).connect(audioCtx.destination);
+  const now = audioCtx.currentTime;
+  hallGain.gain.setValueAtTime(0.0001, now);
+  hallGain.gain.exponentialRampToValueAtTime(0.014, now + 3); // fade in slowly
+  hallOscA.start();
+  hallOscB.start();
+}
+
 // Start the room's atmosphere: a quiet tick, a party murmur, and a living
 // room full of random sounds.
 function startAmbience() {
   if (!audioCtx) return;
+  startHallTone(); // the warm grand-hall drone underneath it all
 
   // tick... tock... once a second, alternating pitch (quiet now).
   if (tickTimer) clearInterval(tickTimer);
@@ -200,6 +227,14 @@ function startAmbience() {
 function stopAmbience() {
   if (tickTimer) { clearInterval(tickTimer); tickTimer = null; }
   if (ambienceTimer) { clearTimeout(ambienceTimer); ambienceTimer = null; }
+  // Let the grand-hall drone fade out too, so the room truly hushes on the win.
+  if (hallGain) {
+    const now = audioCtx.currentTime;
+    hallGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.6);
+    if (hallOscA) hallOscA.stop(now + 0.7);
+    if (hallOscB) hallOscB.stop(now + 0.7);
+    hallGain = null; hallOscA = null; hallOscB = null;
+  }
 }
 
 // A little rising chime — you found something.
@@ -324,7 +359,7 @@ function clickObject(object) {
     // THE TRAP — now WITHOUT the "always ran fast" giveaway (Eli's call). The
     // only tell is subtle and physical: the hands were knocked crooked in the
     // struggle, so the time it shows can't be trusted. You have to NOTICE that.
-    examine("Beneath the host's proud portrait, on a side table, lies his gold pocket watch — smashed in the fall, its glass starred, the hands knocked crooked on their pin. Jarred as they are, they point somewhere near 10:41.");
+    examine("The host's proud portrait looms above a side table — painted mid-toast, a goblet of deep red wine raised high in his right hand, his smile too pleased. Below it lies his gold pocket watch, smashed in the fall, its glass starred, the hands knocked crooked on their pin. Jarred as they are, they point somewhere near 10:41.");
     addClue("Pocket watch, hands jarred crooked — points near 10:41.");
 
   } else if (object === "coats") {
@@ -384,7 +419,7 @@ function handleClock() {
       // VERSION C: no "correct!" — just a soft click and the key, quietly.
       state.hasKey = true;
       keyClick();
-      addClue("🔑 A brass key, hidden inside the clock's case.", true); // silent
+      addClue("A brass key, hidden inside the clock's case.", true); // silent
       examine("You turn the hands to the hour of death. Deep in the old case something shifts — a soft click — and a little panel springs open. Inside lies a brass key. You take it.");
     } else {
       // No hint. No pointing back at the clues. You have to be sure.
@@ -469,10 +504,27 @@ document.getElementById("begin-btn").addEventListener("click", function () {
   showNextStoryLine();
 });
 
-// Sound on/off button.
+// Sound on/off button. The icon is DRAWN in code (an SVG), not a cartoon emoji:
+// a little brass speaker with sound-waves when on, and the waves replaced by an
+// X when muted. Same button, same job — it just fits the manor now.
+const SPEAKER_ON =
+  '<svg class="ico-sound" viewBox="0 0 24 24" width="18" height="18" fill="none"' +
+  ' stroke="currentColor" stroke-width="1.6" stroke-linecap="round"' +
+  ' stroke-linejoin="round" aria-hidden="true">' +
+  '<path d="M4 9v6h3l5 4V5L7 9H4z" fill="currentColor" stroke="none" />' +
+  '<path d="M15.5 8.5a5 5 0 0 1 0 7" />' +
+  '<path d="M17.7 6a8 8 0 0 1 0 12" /></svg>';
+const SPEAKER_OFF =
+  '<svg class="ico-sound" viewBox="0 0 24 24" width="18" height="18" fill="none"' +
+  ' stroke="currentColor" stroke-width="1.6" stroke-linecap="round"' +
+  ' stroke-linejoin="round" aria-hidden="true">' +
+  '<path d="M4 9v6h3l5 4V5L7 9H4z" fill="currentColor" stroke="none" />' +
+  '<line x1="15.5" y1="9.5" x2="20.5" y2="14.5" />' +
+  '<line x1="20.5" y1="9.5" x2="15.5" y2="14.5" /></svg>';
+
 document.getElementById("mute-btn").addEventListener("click", function () {
   muted = !muted;
-  this.textContent = muted ? "🔇" : "🔊";
+  this.innerHTML = muted ? SPEAKER_OFF : SPEAKER_ON;
 });
 
 // Story screen: "Continue" -> next line, or into the room.
