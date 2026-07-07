@@ -185,7 +185,7 @@ const FALLBACK_MEMORY = `
 - [x] Module 1
 - [x] Module 2
 - [x] Module 3
-- [ ] Module 4
+- [x] Module 4
 - [ ] Module 5
 - [ ] Module 6
 - [ ] Module 7
@@ -232,18 +232,29 @@ const FALLBACK_MEMORY = `
 - [x] 6
 - [x] 7
 
+## Module 4 Steps
+- [x] 1
+- [x] 2
+- [x] 3
+- [x] 4
+- [x] 5
+- [x] 6
+
 ## Session Memory
+- 🧠 **Module 4 COMPLETE — Memory Keeper unlocked.** Eli learned the studio's biggest secret: AI forgets between sessions, so the *project* remembers for it — the same idea as his game's `state` object, one level up. He wrote his game into `MEMORY.md` in his own words ("an escape-room type of game with a murder-mystery aspect… looking at everything closely and solving clues") plus what he wants next (design + mechanics to keep improving).
 - 🏆 **Module 3 COMPLETE — Director Mode unlocked.** Eli directed five real changes into *Thornwood Manor*: a full deduction chain (clues → the 9:47 time of death → set the clock → a hidden key → the door), hidden clues + a 9:52 pocket-watch trap, a living code-made soundscape, and a CSS-painted foyer (firelight vs. moonlight). He rejected an AI version, overruled a design call to keep it fair, and caught a skipped change.
 - 🎮 **Module 2 COMPLETE** — a playable Version 0.1 of *One Night at Thornwood Manor* runs in the browser.
-- 🏆 Trophies so far: Creative Director, First Big Decision, Game Pillars Chosen, Studio Review Complete, Memory Created, One-Shot Power, First Playable, **Director Mode**, plus secret **AI Tamer** and **Bug Hunter**.
-- 🔓 **Module 4 — Build a Second Brain** is unlocked and waiting.
+- 🏆 Trophies so far: Creative Director, First Big Decision, Game Pillars Chosen, Studio Review Complete, Memory Created, One-Shot Power, First Playable, Director Mode, **Memory Keeper**, plus secret **AI Tamer** and **Bug Hunter**.
+- 🔒 **Module 5 — Read the Machine** is sealed until Dad opens it.
 
 ## Claude Instructions
-Open Claude Code in this folder and say:
+🧠 **Module 4 complete, Director — you earned Memory Keeper.** The studio now
+remembers your game across every session, in your own words.
 
-> **"Start Module 4 — teach me how the studio remembers."**
+Modules 5–13 stay sealed until Dad opens them. To test your new second brain,
+open Claude Code in this folder and say:
 
-Modules 5–13 stay sealed until Dad opens them.
+> **"Hey studio, where are we?"**
 `;
 
 const FALLBACK_ACHIEVEMENTS = `
@@ -256,7 +267,7 @@ const FALLBACK_ACHIEVEMENTS = `
 - [x] **One-Shot Power**
 - [x] **First Playable**
 - [x] **Director Mode**
-- [ ] **Memory Keeper**
+- [x] **Memory Keeper**
 
 ## Secret Achievements
 - [ ] **Curiosity Pays**

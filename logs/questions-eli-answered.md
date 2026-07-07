@@ -6,6 +6,28 @@
 
 ---
 
+## 2026-07-07 — Module 4 (Build a Second Brain)
+
+**Q (the game in your own words):** If a brand-new person on your studio team
+asked "what is your game, in a nutshell?" — how would you describe *One Night at
+Thornwood Manor* in your own words?
+**Eli:** *"its a escape room type of game with a murder mystery aspect to it that
+will have you looking at everything closely and sloving clues"*
+**Studio note:** A pro-grade one-liner — genre by feel ("escape-room type… with
+a murder-mystery aspect"), the player's *action* baked in ("looking at
+everything closely and solving clues" = Pillar 1, Notice What's Off), and short.
+Written straight into `MEMORY.md` under "In Eli's Own Words" as the studio's
+truest memory of the game.
+
+**Q (the forward arrow):** What would you most want to see added or improved
+next for your game?
+**Eli:** *"i want the games design to improve and its mechanics"*
+**Studio note:** The perfect north star for Modules 5–13 — every one of them
+levels up design and/or mechanics and bumps the version number. Logged as the
+"what's next" in his own-words memory.
+
+---
+
 ## 2026-07-06 — Module 3 (Direct the Team)
 
 **Q (first change to direct):** What's the first thing you'd change about your

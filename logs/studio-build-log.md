@@ -8,6 +8,27 @@
 
 ---
 
+## Module 4 dashboard sync (2026-07-07)
+
+After Eli's Module 4 session, kept the dashboard's `file://` fallback in step
+with real progress (the stale-state bug Eli caught in Module 3 — the fallback
+must be updated by hand or a double-clicked dashboard lies):
+
+- `script.js` `FALLBACK_MEMORY`: ticked Module 4 in the Progress Tracker, added
+  a **Module 4 Steps** block (all 6 done), refreshed Session Memory + Claude
+  Instructions to the Module-4-complete state.
+- `script.js` `FALLBACK_ACHIEVEMENTS`: **Memory Keeper** → `[x]`.
+- No new rewards or amounts touched (Memory Keeper's `$5` Dad Vault entry was
+  already wired at line ~152 and fires automatically on unlock).
+- `DAD_OPENED_THROUGH` still **4** — Modules 5–13 remain sealed until Dad opens
+  Module 5.
+
+(Eli-facing memory — his own-words game summary, the Module 4 diary entry, and
+the Memory Keeper trophy — was written to `MEMORY.md` / `session-log.md` /
+`ACHIEVEMENTS.md` / `questions-eli-answered.md` as part of the session itself.)
+
+---
+
 ## Dad re-threads the journey around the game (2026-07-06)
 
 After reviewing Eli's game and his momentum (he loves iterating *his* game,

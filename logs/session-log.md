@@ -6,6 +6,35 @@
 
 ---
 
+## Module 4 — Build a Second Brain (COMPLETE · 2026-07-07)
+
+Eli learned how the studio remembers, with Claude wearing the **Studio Producer**
+hat (the keeper of the studio's memory).
+
+- **The big idea:** AI forgets everything between sessions — so the *project* has
+  to remember for it. The memory files ARE the studio's second brain.
+- **The parallel he already knew:** his own game has a `state` object in
+  `game/script.js` — the game's memory of clues found and the key earned. The
+  studio's `MEMORY.md` + logs are the exact same idea, one level up.
+- **The memory files, learned:** `MEMORY.md` (state of the whole game),
+  `logs/session-log.md` (his diary), `logs/decisions-made.md` (locked calls),
+  `logs/questions-eli-answered.md` (his words, verbatim), `design/*.md` (the
+  design harness).
+- **He summarized his game in his OWN words:** *"its a escape room type of game
+  with a murder mystery aspect to it that will have you looking at everything
+  closely and sloving clues."* A pro one-liner — genre by feel + the player's
+  action baked in. Written straight into `MEMORY.md` under "In Eli's Own Words."
+- **His forward arrow:** what he wants next is *"the game's design to improve and
+  its mechanics"* — logged as the north star for the modules ahead.
+- **The test:** saw how a cold-start Claude reconstructs the whole project from
+  the files alone — proof the project remembers so Claude never has to. Real
+  test to run himself: close the session, come back, ask "where are we?".
+- **Trophy:** 🧠 Memory Keeper.
+- **Next:** Module 5 — Read the Machine (his first solo code edit), sealed until
+  Dad opens it.
+
+---
+
 ## Module 3 — Direct the Team (COMPLETE · 2026-07-06)
 
 Eli played his game, made a change list, and directed it one change at a time —

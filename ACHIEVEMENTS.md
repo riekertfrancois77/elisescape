@@ -30,8 +30,11 @@ earn them.
   into Thornwood Manor: a full deduction chain, hidden clues + a pocket-watch trap,
   a room soundscape, and a CSS-painted set. He rejected an AI version, overruled a
   design call to keep the trap fair, and caught the team skipping a change.)*
-- [ ] **Memory Keeper** — Teach the studio to remember, so every session starts
-  smarter than the last. *(Module 4.)*
+- [x] **Memory Keeper** — Teach the studio to remember, so every session starts
+  smarter than the last. *(Unlocked 2026-07-07 — Eli learned that AI forgets
+  between sessions and the project must remember for it; drew the parallel to his
+  own game's `state` object; and wrote his game's summary + what's next into
+  `MEMORY.md` in his own words. The studio now starts every session smarter.)*
 
 ## Secret Achievements
 

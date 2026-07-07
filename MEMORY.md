@@ -20,6 +20,22 @@ Everything here is *your* game and *your* journey.
 - **Studio status:** First game designed. Foundation locked. Director earned
   his title.
 
+## In Eli's Own Words
+
+<!-- Written by Eli himself (Module 4). His summary of his game, in his own
+     words — the studio's truest memory of what this game is. -->
+
+**The game, in a nutshell (Eli, 2026-07-07):**
+
+> *"It's an escape-room type of game with a murder-mystery aspect to it that
+> will have you looking at everything closely and solving clues."*
+
+**Where I'm at & what's next (Eli, 2026-07-07):**
+
+> The game is real and playable at **Version 0.1** — the Grand Foyer works.
+> I'm the Director and I've already directed five changes into it. **What I
+> want next: the game's design and its mechanics to keep improving.**
+
 ## Game Version
 
 <!-- Your game's version number. It climbs as modules make the game better.
@@ -37,7 +53,7 @@ journey.
 - [x] Module 1 — Think Like a Game Studio
 - [x] Module 2 — From Vision to Prototype
 - [x] Module 3 — Direct the Team
-- [ ] Module 4 — Build a Second Brain
+- [x] Module 4 — Build a Second Brain
 - [ ] Module 5 — Read the Machine
 - [ ] Module 6 — Speak AI Fluently
 - [ ] Module 7 — Create Worlds
@@ -98,17 +114,26 @@ journey.
 
 <!-- Unlocks when Module 3 is complete. -->
 
-- [ ] 1. Open your game's memory (MEMORY.md + your journey log)
-- [ ] 2. Learn what each memory file is for
-- [ ] 3. Summarize your game in your own words
-- [ ] 4. Write it into the memory with Claude
-- [ ] 5. Test it across a fresh session
-- [ ] 6. Achievement unlocked: Memory Keeper
+- [x] 1. Open your game's memory (MEMORY.md + your journey log)
+- [x] 2. Learn what each memory file is for
+- [x] 3. Summarize your game in your own words
+- [x] 4. Write it into the memory with Claude
+- [x] 5. Test it across a fresh session
+- [x] 6. Achievement unlocked: Memory Keeper
 
 ## Session Memory
 
 <!-- The story of your studio so far — newest first. (Shown on the dashboard.) -->
 
+- 🧠 **MODULE 4 COMPLETE — Memory Keeper unlocked.** Eli learned the studio's
+  biggest secret: **AI forgets between sessions — the *project* remembers for
+  it.** He saw the parallel to his own game (his `state` object is the game's
+  memory; the studio's `MEMORY.md` + logs are the *studio's* memory), learned
+  what each memory file holds, and then did the real work — he **wrote his game
+  into `MEMORY.md` in his own words**: *"an escape-room type of game with a
+  murder-mystery aspect… looking at everything closely and solving clues,"* plus
+  what he wants next (**the design and mechanics to keep improving**). The studio
+  now starts every future session already knowing his game.
 - 🏆 **MODULE 3 COMPLETE — Director Mode unlocked.** Eli directed **five real
   changes** into *Thornwood Manor* and made it his. He turned "read the clue" into
   a full **deduction chain** (gather clues → work out the 9:47 time of death → set
@@ -158,22 +183,28 @@ journey.
 
 <!-- Your exact next move. (Shown on the dashboard.) -->
 
-🏆 **MODULE 3 COMPLETE, Director — you earned Director Mode.** You took a working
-game and made it *yours*: five directed changes, one rejected AI version, one
-overruled design call, and one change you caught the team skipping. *Thornwood
-Manor* is a real detective puzzle now — deduce the time of death, set the clock,
-earn the key, open the door — in a room lit by firelight and moonlight.
+🧠 **MODULE 4 COMPLETE, Director — you earned Memory Keeper.** You learned the
+studio's biggest trick: **AI forgets between sessions, so the *project*
+remembers for it** — the same way your game's `state` object remembers every
+clue. You wrote your game into `MEMORY.md` in your *own words*, so every future
+session starts already knowing *One Night at Thornwood Manor*.
 
-🔓 **UP NEXT: MODULE 4 — BUILD A SECOND BRAIN (now unlocked).** You've felt the
-studio "remember" your game between sessions. Module 4 shows you the trick behind
-it: **project memory**. You'll open the memory files, learn what each one holds,
-and start writing to them yourself — so every session starts smarter than the last.
+🔒 **UP NEXT: MODULE 5 — READ THE MACHINE (sealed until Dad opens it).** This is
+the big one: you crack open your game's *own code* and make your **first solo
+edit** — the moment you stop only directing and start *building* with your own
+hands. It's also when your game bumps to **Version 0.2**, because from here on
+every module makes *Thornwood Manor* visibly better (your call: design +
+mechanics).
 
-When you're ready, open Claude Code in this folder and say:
+Modules 5–13 stay sealed until **Dad** opens them. When Dad's ready, he opens
+Module 5 and I'll write the mission.
 
-> **"Start Module 4 — teach me how the studio remembers."**
+**To run the memory test yourself:** close this session, come back later, open
+Claude Code in this folder and say:
 
-*(Modules 5–13 stay sealed until Dad opens them.)*
+> **"Hey studio, where are we?"**
+
+Watch a brand-new me answer perfectly — because the project remembered.
 
 ## Achievements Unlocked
 
@@ -189,6 +220,9 @@ When you're ready, open Claude Code in this folder and say:
 - 🏆 **Director Mode** (2026-07-06) — Directed five real changes into the game,
   rejected an AI version, overruled a design call to keep it fair, and made the
   studio build *Thornwood Manor* his way.
+- 🧠 **Memory Keeper** (2026-07-07) — Learned that AI forgets between sessions
+  and the project must remember for it; wrote his game's summary and what's next
+  into `MEMORY.md` in his own words. The studio now starts every session smarter.
 - 🕵️ **AI Tamer** (secret, 2026-07-06) — Eli directed the AI to build his vision
   *his* way: he combined three changes at once and the engineer delivered.
 - 🐛 **Bug Hunter** (secret, 2026-07-06) — Eli noticed the dashboard was wrong
