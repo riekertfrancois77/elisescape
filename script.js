@@ -273,6 +273,12 @@ const STUDIO_STATUS = [
 // NOTE: this file:// fallback must be kept in step with real progress, or a
 // double-clicked dashboard shows stale state (the bug Eli caught). Better: open
 // the live URL, which reads the real MEMORY.md/ACHIEVEMENTS.md.
+//
+// ⚠️ BACKTICKS: these two blocks are TEMPLATE LITERALS. Any literal backtick in
+// the content ends the string early and breaks the ENTIRE dashboard (http AND
+// file://). When you paste a MEMORY.md/ACHIEVEMENTS.md bullet in here, escape
+// every backtick as \` (e.g. \`state\`, \`design/next-room.md\`). ALWAYS run
+// `node --check script.js` after editing this file — it catches exactly this.
 const FALLBACK_MEMORY = `
 ## Game Version
 **0.5** — Arrival at Thornwood Manor, sharpened by Eli's own game-designer eye: the foyer portrait now shows the host mid-toast with a raised goblet of wine — a setup Eli planted for his next room (a statue that must be made to match the portrait). Built on 0.4's art-directed look, 0.3's prompt polish and 0.2's murder time 10:36.
@@ -337,7 +343,7 @@ const FALLBACK_MEMORY = `
 - [x] 6
 
 ## Session Memory
-- 🧩 **Module 8 COMPLETE — Game Designer unlocked. Game → Version 0.5.** The purest "Eli's brain first" module: he **designed his next room and its puzzle himself** while Claude (Game Designer / critic) only pressure-tested. He named his own puzzle rules — **FAIR** (findable clues, no guessing) and **HARD & CLEVER** (you earn the aha) — then designed a **candlelit library** with a **statue that matches the host's portrait but holds the wrong thing**; the player fixes what it holds (a **goblet of wine**) and a **hidden room slides open**. He defended its fairness himself (you can travel between rooms to re-check the portrait), shipped a real improvement to the live game (the foyer portrait now shows the raised goblet — the planted **setup**, Version 0.5), and locked the blueprint in `design/next-room.md` for Module 10.
+- 🧩 **Module 8 COMPLETE — Game Designer unlocked. Game → Version 0.5.** The purest "Eli's brain first" module: he **designed his next room and its puzzle himself** while Claude (Game Designer / critic) only pressure-tested. He named his own puzzle rules — **FAIR** (findable clues, no guessing) and **HARD & CLEVER** (you earn the aha) — then designed a **candlelit library** with a **statue that matches the host's portrait but holds the wrong thing**; the player fixes what it holds (a **goblet of wine**) and a **hidden room slides open**. He defended its fairness himself (you can travel between rooms to re-check the portrait), shipped a real improvement to the live game (the foyer portrait now shows the raised goblet — the planted **setup**, Version 0.5), and locked the blueprint in \`design/next-room.md\` for Module 10.
 - 🎨 **Module 7 COMPLETE — World Builder unlocked. Game → Version 0.4.** Eli gave his game a **face** and art-directed all of it (Claude as Technical Artist). He chose the feeling first (*warm but wrong, grand and rich, a touch of creepy*) and a custom palette (**gold + mahogany + a bit of deep crimson**), then reacted and redirected pass after pass: a grand golden chandelier, gilded crown molding, a mantel-and-**chimney** fireplace lifted off the rug, a smaller gilded door, a coat rack with a draped cloak, a detailed crimson rug, and the great **grandfather clock** painted into its shadowy corner (kept dark so the puzzle stays fair). Then it came alive — flickering firelight, a breathing chandelier glow, and a warm low grand-hall drone. Every pass verified: the case still solves, the clock stays hidden.
 - 🗣️ **Module 6 COMPLETE — AI Whisperer unlocked. Game → Version 0.3.** Eli learned that **words are the controller.** Brain-first, he wrote his own polish prompts and sharpened each with a real WHY and clear LIMITS. Three landed and were verified headless: the cartoon 🔑/🔊 emojis gone (a drawn brass sound button now) and every floating emoji in the foyer replaced with a drawn object in the manor's own style — with the hall clock **still hidden** in its shadow and the puzzle still fair. His best prompt fenced off three things at once (still clickable · don't move anything · keep the clock hidden).
 - 🔧 **Module 5 COMPLETE — Code Reader unlocked. Game → Version 0.2.** Eli opened the hood on his own game and made his **first solo edit by his own hand** — he moved the murder from 9:47 to 10:36 in \`MURDER_TIME\`, then learned the engineer's loop (read → change → trace the ripple → verify): he chased the change through the whole clue chain (toast, candle, pocket-watch decoy, footman's countdown) and proved the case still solves. His game is now changed by *him*, not just directed.
@@ -353,7 +359,7 @@ next room and its puzzle with your own head** — a candlelit library with a sta
 that must be made to match the host's portrait (a raised goblet of wine), sliding
 a hidden room open when you fix it. You defended it under pressure, kept it fair,
 and planted the setup into your live game. **Version 0.5.** Blueprint saved in
-`design/next-room.md`.
+\`design/next-room.md\`.
 
 🏁 **You've completed Dad's whole run (Modules 5–8)** — your game climbed **0.1 →
 0.5**, all by you. **Modules 9–13 are sealed** until **Dad** opens them. A taste of
