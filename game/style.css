@@ -224,15 +224,26 @@ h1 {
   position: absolute;
   left: 0; right: 0; top: 0; height: 62%;
   background:
-    repeating-linear-gradient(90deg, rgba(0,0,0,0.16) 0 2px, transparent 2px 88px),
-    linear-gradient(#3a2a1a 0%, #31241699 60%, #2b1f14 100%);
-  box-shadow: inset 0 -8px 14px rgba(0,0,0,0.45);
+    /* deep mahogany grain */
+    repeating-linear-gradient(90deg, rgba(0,0,0,0.22) 0 2px, transparent 2px 86px),
+    /* a faint gilt pinstripe between the panels */
+    repeating-linear-gradient(90deg, rgba(201,162,74,0.06) 43px 45px, transparent 45px 86px),
+    /* rich, warm mahogany wood */
+    linear-gradient(#4a3020 0%, #3a2416 58%, #2a1810 100%);
+  box-shadow: inset 0 -8px 14px rgba(0,0,0,0.5), inset 0 44px 70px rgba(120,72,30,0.10);
 }
-.wall::after { /* the chair rail — a molding line near the floor */
+.wall::before { /* gilded crown molding running along the top of the wall */
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: 0; height: 8px;
+  background: linear-gradient(#e8c169, #c9a24a 45%, #7a5a24);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.45);
+}
+.wall::after { /* the chair rail — a gilded molding line near the floor */
   content: "";
   position: absolute;
   left: 0; right: 0; bottom: 0; height: 6px;
-  background: linear-gradient(#5a4325, #4a3720 40%, #241a10);
+  background: linear-gradient(#c9a24a, #8a6a2e 40%, #241a10);
 }
 
 /* The floor — dark wood planks receding into the dark. */
@@ -241,7 +252,7 @@ h1 {
   left: 0; right: 0; top: 62%; bottom: 0;
   background:
     repeating-linear-gradient(90deg, rgba(0,0,0,0.24) 0 3px, transparent 3px 64px),
-    linear-gradient(#2a1e12 0%, #1a1109 70%, #120b06 100%);
+    linear-gradient(#3a2413 0%, #241609 70%, #140c06 100%);
 }
 
 /* A warm patterned rug on the floor. */
@@ -252,8 +263,8 @@ h1 {
   width: 54%; height: 26%;
   border-radius: 50%;
   background:
-    radial-gradient(ellipse at center, rgba(150,45,45,0.42), rgba(95,28,28,0.28) 58%, transparent 74%);
-  box-shadow: inset 0 0 30px rgba(0,0,0,0.45);
+    radial-gradient(ellipse at center, rgba(185,45,52,0.5), rgba(120,28,34,0.42) 55%, rgba(78,20,24,0.5) 72%, transparent 78%);
+  box-shadow: inset 0 0 34px rgba(0,0,0,0.5), inset 0 0 0 5px rgba(201,162,74,0.16);
 }
 
 /* An arched oak doorway — the "way deeper". Sits under the 🚪 hotspot. */
@@ -266,6 +277,73 @@ h1 {
   border: 4px solid #2e2114;
   border-radius: 60px 60px 5px 5px;
   box-shadow: inset 0 0 30px rgba(0,0,0,0.85), 0 6px 20px rgba(0,0,0,0.5);
+}
+
+/* The grand golden chandelier hanging over the foyer — Eli's "grand & rich"
+   centerpiece (Module 7). A gold ring, five candle-flames, a warm halo, and a
+   slow sway. Pure CSS, no images. Sits behind the clickable objects (z-index 0)
+   so gameplay is unchanged. */
+.chandelier {
+  position: absolute;
+  top: -1%; left: 50%;
+  width: 22%; height: 26%;
+  transform: translateX(-50%);
+  transform-origin: top center;
+  animation: sway 7s ease-in-out infinite;
+}
+.chandelier::before { /* the chain up to the ceiling */
+  content: "";
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 2px; height: 30%;
+  background: linear-gradient(#2a2012, #c9a24a);
+}
+.chandelier-glow { /* the warm pool of candlelight it throws */
+  position: absolute;
+  top: 12%; left: 50%;
+  transform: translateX(-50%);
+  width: 210%; height: 210%;
+  background: radial-gradient(ellipse at 50% 34%,
+              rgba(255,196,104,0.20), rgba(255,168,66,0.06) 46%, transparent 66%);
+  animation: glowpulse 3.8s ease-in-out infinite;
+}
+.chandelier-body { /* the gold frame */
+  position: absolute;
+  top: 30%; left: 50%;
+  transform: translateX(-50%);
+  width: 74%; height: 42%;
+  border: 2px solid #c9a24a;
+  border-top: none;
+  border-radius: 8px 8px 52% 52% / 8px 8px 90% 90%;
+  box-shadow: inset 0 0 10px rgba(201,162,74,0.4), 0 3px 10px rgba(0,0,0,0.5);
+}
+.chandelier-body::before { /* the top gold crown ring */
+  content: "";
+  position: absolute;
+  top: -7px; left: 50%;
+  transform: translateX(-50%);
+  width: 32%; height: 10px;
+  border: 2px solid #c9a24a;
+  border-radius: 50%;
+}
+.candle { /* a candle-flame on the ring */
+  position: absolute;
+  top: 62%;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 40%, #fff3c4, #ffbb4a 55%, #e8781e 82%, transparent);
+  box-shadow: 0 0 9px 3px rgba(255,172,74,0.6);
+  animation: flicker 1.6s ease-in-out infinite;
+}
+.candle:nth-child(1) { left: 6%;  animation-delay: 0s;    }
+.candle:nth-child(2) { left: 28%; animation-delay: 0.4s;  }
+.candle:nth-child(3) { left: 50%; top: 52%; animation-delay: 0.8s; }
+.candle:nth-child(4) { left: 72%; animation-delay: 0.25s; }
+.candle:nth-child(5) { left: 92%; animation-delay: 0.6s;  }
+@keyframes sway {
+  0%, 100% { transform: translateX(-50%) rotate(-1deg); }
+  50%      { transform: translateX(-50%) rotate(1deg); }
 }
 
 /* The fireplace — a dark hearth with a living, flickering fire. Under the 🔥. */
