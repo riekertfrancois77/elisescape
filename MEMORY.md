@@ -8,11 +8,12 @@ Everything here is *your* game and *your* journey.
 ## Project State
 
 - **Creative Director:** Eli
-- **Current module:** **Module 5 — Read the Machine (now UNLOCKED / active)**.
-  **Module 4 (Build a Second Brain) is COMPLETE** — Eli earned **Memory Keeper**.
-  Modules 1–4 are all complete. Dad has now opened **Modules 5–8** (the "make
-  your game visibly better" run: read code → prompt → graphics → design); they
-  unlock in order, so **Module 5 is active** and 6–8 wait their turn.
+- **Current module:** **Module 6 — Speak AI Fluently (now UNLOCKED / active)**.
+  **Module 5 (Read the Machine) is COMPLETE** — Eli earned **Code Reader** and
+  made his first solo edit, bumping the game to **Version 0.2**. Modules 1–5 are
+  all complete. Dad has opened **Modules 5–8** (the "make your game visibly
+  better" run: read code → prompt → graphics → design); they unlock in order, so
+  **Module 6 is active** and 7–8 wait their turn.
 - **Game concept:** ***One Night at Thornwood Manor*** — a famous detective is
   trapped one night in a cozy, secret-filled early-1900s mansion during a house
   party where a murder has happened. A killer who leaves clues on purpose hides
@@ -42,9 +43,10 @@ Everything here is *your* game and *your* journey.
 <!-- Your game's version number. It climbs as modules make the game better.
      (Keep the number at the start of the first line, e.g. "0.2 — ...".) -->
 
-**0.1** — *Arrival at Thornwood Manor* (the Grand Foyer). This number climbs
-every time a module makes the game better — that's the whole point of the
-journey.
+**0.2** — *Arrival at Thornwood Manor* (the Grand Foyer), first changed by
+Eli's **own hand**: he read his game's code and moved the murder from 9:47 to
+**10:36**, updating the whole clue chain to match. This number climbs every
+time a module makes the game better — that's the whole point of the journey.
 
 ## Progress Tracker
 
@@ -55,7 +57,7 @@ journey.
 - [x] Module 2 — From Vision to Prototype
 - [x] Module 3 — Direct the Team
 - [x] Module 4 — Build a Second Brain
-- [ ] Module 5 — Read the Machine
+- [x] Module 5 — Read the Machine
 - [ ] Module 6 — Speak AI Fluently
 - [ ] Module 7 — Create Worlds
 - [ ] Module 8 — Design Great Games
@@ -126,14 +128,14 @@ journey.
 
 <!-- Unlocks when Module 4 is complete. Target: game climbs to Version 0.2. -->
 
-- [ ] 1. Meet your codebase — open game/script.js, the machine you built
-- [ ] 2. Find the memory — spot your `state` object alive in real code
-- [ ] 3. Read before you're told — predict what a chunk does, then check
-- [ ] 4. Trace one clue — from click to deduction to the door
-- [ ] 5. Your first solo edit — change the murder time yourself
-- [ ] 6. Make it yours — a few more safe edits (a line, a color, a sound)
-- [ ] 7. Version bump — the game you edited by hand is Version 0.2
-- [ ] 8. Achievement unlocked: Code Reader
+- [x] 1. Meet your codebase — open game/script.js, the machine you built
+- [x] 2. Find the memory — spot your `state` object alive in real code
+- [x] 3. Read before you're told — predict what a chunk does, then check
+- [x] 4. Trace one clue — from click to deduction to the door
+- [x] 5. Your first solo edit — change the murder time yourself
+- [x] 6. Make it yours — a few more safe edits (a line, a color, a sound)
+- [x] 7. Version bump — the game you edited by hand is Version 0.2
+- [x] 8. Achievement unlocked: Code Reader
 
 ## Module 6 Steps
 
@@ -178,6 +180,19 @@ journey.
 
 <!-- The story of your studio so far — newest first. (Shown on the dashboard.) -->
 
+- 🔧 **MODULE 5 COMPLETE — Code Reader unlocked. Game → Version 0.2.** Eli opened
+  the hood on his own game and stopped being *only* a director. Brain-first the
+  whole way: he read his `state` object as **real running code** (and nailed what
+  `hasKey: false` and `clues: []` remember), read the clock's `if (cleaned ===
+  target)` and worked out it means *the typed time must match the real murder
+  time*. Then his **first solo edit** — he changed `MURDER_TIME` from **9:47 to
+  10:36** by his own hand. Lead Engineer lesson landed hard: one change *ripples*
+  — so he traced it and updated the whole clue chain to match (guest's toast "just
+  gone ten", candle past the 10th ring, pocket-watch decoy near 10:41, footman's
+  countdown reaching "twenty-four" before eleven = 10:36). Then he learned to
+  **verify**: we drove the logic headless and proved 10:36 opens the door, the old
+  9:47 now fails, and the trap still fools cheats. His game is now changed by *him*,
+  not just directed — **Version 0.2.**
 - 🧠 **MODULE 4 COMPLETE — Memory Keeper unlocked.** Eli learned the studio's
   biggest secret: **AI forgets between sessions — the *project* remembers for
   it.** He saw the parallel to his own game (his `state` object is the game's
@@ -236,23 +251,25 @@ journey.
 
 <!-- Your exact next move. (Shown on the dashboard.) -->
 
-🧠 **MODULE 4 COMPLETE, Director — you earned Memory Keeper.** You learned the
-studio's biggest trick: **AI forgets between sessions, so the *project*
-remembers for it** — the same way your game's `state` object remembers every
-clue. You wrote your game into `MEMORY.md` in your *own words*, so every future
-session starts already knowing *One Night at Thornwood Manor*.
+🔧 **MODULE 5 COMPLETE, Director — you earned Code Reader.** You cracked open
+your game's **own code**, found your `state` object alive and running, read it
+*before* being told what it does — and then made your **first solo edit by your
+own hand**: you moved the murder from 9:47 to **10:36**. You learned the loop
+every real engineer lives by: **read → change → trace the ripple → verify.** One
+tweak touched the whole clue chain, and you chased down every piece and proved
+the case still solves. Your game is now changed by *you*, not just directed by
+you — **Version 0.2.**
 
-🔓 **UP NOW: MODULE 5 — READ THE MACHINE.** Dad just opened it (plus 6, 7, and
-8 — the run that makes your game *visibly better*, version by version). This is
-the big one: you crack open your game's **own code** and make your **first solo
-edit** — the moment you stop only directing and start *building* with your own
-hands. Your game bumps to **Version 0.2.** Open Claude Code in this folder and
-say:
+🔓 **UP NEXT: MODULE 6 — SPEAK AI FLUENTLY.** You've directed the team and now
+you've reached into the machine yourself. Next you sharpen your sharpest tool:
+**words.** You'll learn to turn a vague "make it better" into a precise prompt
+that gets you *exactly* what you pictured — and use it to polish your game to
+**Version 0.3.** Open Claude Code in this folder and say:
 
-> **"Start Module 5 — show me my own game's code and let me edit it."**
+> **"Start Module 6 — teach me to prompt like a pro."**
 
 **The run Dad opened, in order** (each unlocks when the one before is done):
-- **5 · Read the Machine** → read your code, first solo edit → **v0.2**
+- **5 · Read the Machine** → read your code, first solo edit → **v0.2** ✅ DONE
 - **6 · Speak AI Fluently** → prompt like a pro, polish the game → **v0.3**
 - **7 · Create Worlds** → real graphics & atmosphere, you art-direct → **v0.4**
 - **8 · Design Great Games** → design your next room + puzzle → **v0.5**
@@ -280,6 +297,10 @@ perfectly, because the project remembered.
 - 🧠 **Memory Keeper** (2026-07-07) — Learned that AI forgets between sessions
   and the project must remember for it; wrote his game's summary and what's next
   into `MEMORY.md` in his own words. The studio now starts every session smarter.
+- 🔧 **Code Reader** (2026-07-07) — Read his own game's code, found the `state`
+  object alive in it, predicted what it does before being told, and made his
+  first solo edit by his own hand: moved the murder from 9:47 to 10:36 and traced
+  the change through the whole clue chain. Game bumped to Version 0.2.
 - 🕵️ **AI Tamer** (secret, 2026-07-06) — Eli directed the AI to build his vision
   *his* way: he combined three changes at once and the engineer delivered.
 - 🐛 **Bug Hunter** (secret, 2026-07-06) — Eli noticed the dashboard was wrong

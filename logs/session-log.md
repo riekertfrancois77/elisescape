@@ -6,6 +6,32 @@
 
 ---
 
+## Module 5 — Read the Machine (COMPLETE · 2026-07-07)
+
+I opened up my own game's code with Claude wearing the **Lead Engineer** hat. The
+whole rule was: *I* guess what the code does first, and Claude only tells me after.
+
+- **I met my game's brain.** It's a file called `script.js`, and right at the top
+  is the `state` object I learned about in Module 4 — except now it's REAL running
+  code. I read `hasKey: false` and `clues: []` and figured out it's remembering
+  that the player doesn't have the key yet and hasn't found any clues.
+- **I read the clock code.** The line `if (cleaned === target)` means the game
+  checks if the time you type into the clock is EXACTLY equal to the real murder
+  time. Only if it matches do you get the key.
+- **My first solo edit — by my own hand.** I changed the murder time from **9:47
+  to 10:36.** That's the one spot the whole game asks "what's the real answer?"
+- **The ripple lesson.** Changing one thing broke the clues — they still pointed
+  at 9:47! So I learned real engineers trace their change through everything it
+  touches. We fixed all four clues to point at 10:36 (the toast, the candle, the
+  broken pocket watch, the footman counting down).
+- **I learned to verify.** We didn't just hope it worked — we tested it and proved
+  10:36 opens the door, the old 9:47 fails now, and the sneaky pocket-watch trap
+  still fools people. All green.
+- My game is now changed by ME, not just directed by me. **Version 0.2.** Earned
+  the **Code Reader** trophy. 🔧
+
+---
+
 ## Module 4 — Build a Second Brain (COMPLETE · 2026-07-07)
 
 Eli learned how the studio remembers, with Claude wearing the **Studio Producer**

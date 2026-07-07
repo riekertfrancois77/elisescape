@@ -6,6 +6,32 @@
 
 ---
 
+## 2026-07-07 — Module 5 (Read the Machine)
+
+**Q (predict the code):** Look at those two lines inside `state`: `hasKey: false`
+and `clues: []`. What do you think the game is remembering with those two things?
+**Eli:** *"its remembering that they player does not have the key and the player
+doesnt have any clues yet"*
+**Studio note:** Nailed it — read the *purpose* of the code, not just the words.
+`clues: []` = an empty list. The whole game is really just those two values
+changing.
+
+**Q (predict the code):** `if (cleaned === target)` — what has to be true for the
+player to get the key?
+**Eli:** *"line 1 2 and 3 are all true"* (guided: the one condition is that the
+typed time equals the real murder time).
+**Studio note:** Right instinct that the lines run when something is *true*;
+sharpened to the key idea — it's one question (typed time `===` real time), and
+only then do the reward lines run.
+
+**Q (your first solo edit):** What time do you want the murder to happen at?
+**Eli:** *"i would like to change the time to 10:36"* — then, when offered more
+edits, *"lock it in."*
+**Studio note:** Eli's first edit by his own hand. `MURDER_TIME` → "10:36"; the
+whole clue chain updated to match and verified.
+
+---
+
 ## 2026-07-07 — Module 4 (Build a Second Brain)
 
 **Q (the game in your own words):** If a brand-new person on your studio team
