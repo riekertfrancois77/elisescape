@@ -8,6 +8,43 @@
 
 ---
 
+## Dad adds the "Paint Your World" bonus mission — AI art assets (2026-07-08)
+
+Dad asked whether Module 7 taught Eli to *generate his own visual assets* with AI
+and where assets live. Honest answer: no — M7 was CSS/SVG code-painting only, zero
+asset files (that constraint was baked into the studio from the start). Dad's call:
+add a **bonus mission** teaching real AI-generated 2D art. Two-step build:
+
+- **Investigated the tooling.** Claude Code has **no native image generator**. The
+  path is the **Canva MCP connector**: `generate-design` (prompt → **4 candidates**)
+  → `create-design-from-candidate` → `export-design` (PNG, custom size, transparent
+  bg) → save file. Proved it end-to-end: generated a painted foyer background and
+  saved it to **`game/assets/foyer-bg.png`** (1600×900) — the repo's first asset
+  file and first `game/assets/` folder. Committed as a demo/starter (not wired in).
+  ⚠️ Caveat flagged to Dad: the Canva connector must be enabled in **Eli's** Claude
+  Code sessions for the hands-on part.
+- **Built the bonus mission** ("Paint Your World", Concept Artist hat):
+  - `modules/module-bonus-paint-your-world.md` — concept, the **image-prompt
+    formula** (subject · style · composition · palette · lighting · "no text"),
+    the **best-of-4** rule, brain-first (coach the prompt / show all 4 / never pick
+    for him), and the **craft-4-assets** goal (background · character · object ·
+    next-room). Target **v0.6**.
+  - Dashboard: new **★ BONUS MISSION** section in `index.html` + gold `.bonus` card
+    CSS; `BONUS` data + `renderBonus()` + `openBonusMission()` in `script.js`; the
+    bonus card is always playable and flips to COMPLETE when **Concept Artist** is
+    earned. Added the **Concept Artist** visible achievement (+ `FALLBACK`), a
+    "Makes Real Art" studio-status capability, and a `## Bonus Steps` tracker in
+    `MEMORY.md`. Scoped `renderModules` to `#modules-grid` so it never grabs the
+    bonus card.
+  - `CLAUDE.md` Current State/roadmap + `LOCKED_MODULES.md` updated; MEMORY Project
+    State/Claude Instructions now point Eli at the bonus.
+- **Cash:** left `REWARDS` untouched — flagged to Dad that the bonus pays $0 unless
+  he wants to add a reward (pool is at $100).
+- This relaxes the founding "no external files" rule **for images**, with Dad's
+  explicit go-ahead. Still no frameworks; still HTML/CSS/JS + asset files.
+
+---
+
 ## Dad tunes the Vault for Modules 5–8 (2026-07-07)
 
 After Eli finished Module 5, Dad wired cash into the new run:

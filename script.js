@@ -215,6 +215,7 @@ const ACHIEVEMENTS = [
   { name: "AI Whisperer",           desc: "Turn a vague ask into a precise prompt and get exactly what you pictured." },
   { name: "World Builder",          desc: "Art-direct your game's real look and atmosphere — you direct, the studio paints." },
   { name: "Game Designer",          desc: "Design a new room and puzzle that make players feel clever." },
+  { name: "Concept Artist",         desc: "Direct an AI to paint real 2D art for your game — and craft it in yourself. (Bonus)" },
 ];
 const SECRET_ACHIEVEMENTS = ["Curiosity Pays", "Better Than School", "AI Tamer", "Bug Hunter", "Game Studio Brain"];
 
@@ -262,6 +263,7 @@ const STUDIO_STATUS = [
   { label: "Fluent in AI",              done: (s) => s.earnedNames.has("AI Whisperer") },
   { label: "Art Department",            done: (s) => s.earnedNames.has("World Builder") },
   { label: "Game Design",               done: (s) => s.earnedNames.has("Game Designer") },
+  { label: "Makes Real Art (AI assets)", done: (s) => s.earnedNames.has("Concept Artist") },
   { label: "Shipped to an Audience",    done: (s) => s.moduleDone[12] === true },
 ];
 
@@ -382,6 +384,7 @@ const FALLBACK_ACHIEVEMENTS = `
 - [x] **AI Whisperer**
 - [x] **World Builder**
 - [x] **Game Designer**
+- [ ] **Concept Artist**
 
 ## Secret Achievements
 - [ ] **Curiosity Pays**
@@ -461,11 +464,32 @@ function renderModules(done) {
       </article>`;
   }).join("");
 
-  document.querySelectorAll(".module-card").forEach((card) => {
+  $("modules-grid").querySelectorAll(".module-card").forEach((card) => {
     const open = () => openModule(Number(card.dataset.module));
     card.addEventListener("click", open);
     card.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); } });
   });
+}
+
+// The bonus mission card — always playable once opened; "complete" when its
+// achievement is earned. Lives in its own #bonus-grid, apart from the 13.
+function renderBonus(earnedNames) {
+  const grid = $("bonus-grid");
+  if (!grid) return;
+  const done = earnedNames.has(BONUS.achievement);
+  const badge = done ? "COMPLETE" : "BONUS · UNLOCKED";
+  grid.innerHTML = `
+    <article class="module-card unlocked bonus${done ? " done" : ""}" data-bonus="1" tabindex="0"
+             role="button" aria-label="Bonus Mission: ${BONUS.title} (${badge})">
+      <span class="module-badge">${badge}</span>
+      <div class="module-num">★</div>
+      <div class="module-title">${BONUS.title}</div>
+      <p class="module-teaser">${BONUS.teaser}</p>
+    </article>`;
+  const card = grid.querySelector(".module-card");
+  const open = () => openBonusMission();
+  card.addEventListener("click", open);
+  card.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); } });
 }
 
 function renderProgress(memoryMd) {
@@ -643,6 +667,41 @@ let missionStepsDone = {};
 // Module completion array (from MEMORY.md Progress Tracker), for gating.
 let completedModulesState = [];
 
+// Bonus mission — a special unlock from Dad, OUTSIDE the numbered 13. Always
+// playable once opened; "complete" when the Concept Artist achievement is earned.
+const BONUS = {
+  achievement: "Concept Artist",
+  title: "Paint Your World",
+  teaser: "Stop painting in code — direct an AI to make REAL 2D art for your game, and craft it in yourself. Bumps your game to Version 0.6.",
+  purpose: `Your game's art has been painted in code (CSS + SVG). Real studios
+    use art FILES — images made by artists. In this bonus mission YOU become that
+    artist: you learn to prompt for pictures (a whole new skill from prompting for
+    words), you direct an AI to paint real 2D art in your game's style, you pick
+    the best of 4 every time, and you craft FOUR real assets into your game — all
+    living in a new game/assets/ folder. Your game climbs to Version 0.6.`,
+  goals: [
+    "Real games use art FILES — and now you can make your own with AI.",
+    "Prompting for pictures is its own skill: subject · style · composition · palette · lighting · what to leave OUT.",
+    "You always get 4 options — the director picks the one that's most YOUR game.",
+    "Match your game's look (gold + mahogany + crimson, painterly, warm-but-eerie) so every asset feels like one world.",
+    "Assets live in game/assets/ — the real structure of a real game project.",
+  ],
+  steps: [
+    "Meet the Concept Artist — your game's art can be real image files now, made by AI you direct.",
+    "See where art lives — the new game/assets/ folder (every real game has one).",
+    "Learn the image-prompt formula — subject · style · composition · palette · lighting · \"no text.\" (step by step)",
+    "Study a real one — the demo foyer background: what prompt made it, what you'd change.",
+    "Asset #1 — YOU write the prompt; generate 4 options; pick the one most YOUR game.",
+    "Assets #2, #3, #4 — art-direct, generate 4, choose. (background · character · object · next-room — your call.)",
+    "Drop all 4 into game/assets/ and wire them into the game.",
+    "Version bump → 0.6. Achievement unlock: Concept Artist.",
+  ],
+  start: `"Start the Bonus Mission — I want to make real art for my game."`,
+  outro: `You direct; the AI paints. Write your own prompts, always look at all 4
+    options, and pick the one that feels like YOUR world. Save the session, then
+    refresh here to claim Concept Artist and see Version 0.6.`,
+};
+
 const MISSIONS = {
   1: {
     title: "Think Like a Game Studio",
@@ -805,6 +864,26 @@ function openMission(n) {
     <p class="m-purpose">${mi.outro}</p>`);
 }
 
+function openBonusMission() {
+  const done = missionStepsDone["bonus"] || [];
+  const steps = BONUS.steps.map((s, i) => `<li class="${done[i] ? "done" : ""}">${s}</li>`).join("");
+  showModal(`
+    <p class="m-kicker">// ★ BONUS MISSION — UNLOCKED — MISSION BRIEFING</p>
+    <h3>${BONUS.title}</h3>
+    <p class="m-purpose">${BONUS.purpose}</p>
+
+    <h4>WHAT YOU'LL LEARN</h4>
+    <ul class="goal-list">${BONUS.goals.map((g) => `<li>${g}</li>`).join("")}</ul>
+
+    <h4>MISSION FLOW</h4>
+    <ol class="mission-steps">${steps}</ol>
+
+    <h4>HOW TO START</h4>
+    <p class="m-purpose">Open <strong>Claude Code</strong> in this project folder and say:</p>
+    <blockquote>${BONUS.start}</blockquote>
+    <p class="m-purpose">${BONUS.outro}</p>`);
+}
+
 function showModal(html) {
   $("modal-content").innerHTML = html;
   $("modal-backdrop").hidden = false;
@@ -892,9 +971,11 @@ console.log(
   for (let n = 1; n <= MODULES.length; n++) {
     missionStepsDone[n] = checkboxes(section(memoryMd, `Module ${n} Steps`)).map((c) => c.done);
   }
+  missionStepsDone["bonus"] = checkboxes(section(memoryMd, "Bonus Steps")).map((c) => c.done);
   const rState = rewardState(memoryMd, achMd);
   renderVersion(memoryMd);
   renderModules(completedModules);
+  renderBonus(rState.earnedNames);
   renderStudioStatus(rState);
   renderMemory(memoryMd);
   renderClaudePanel(memoryMd);

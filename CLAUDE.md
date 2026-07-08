@@ -108,10 +108,19 @@ engineers, artists, producers. You advise, prototype, and build. He decides.
   his game's summary + what's next into `MEMORY.md` in his own words. Earned
   **Memory Keeper**. (He said it felt "way too short" — expected for the one
   conceptual module; the modules below are the hands-on, game-first answer.)
-- **Module 5: Read the Machine** (`modules/module-05.md`) — **UNLOCKED /
-  active.** Current module. Claude wears the **Lead Engineer** hat; Eli reads his
-  *own* game's code (brain-first: predict, then confirm) and makes his first solo
-  edit. Bumps the game to **Version 0.2**. Follow that module's flow.
+- **Modules 5–8 (Dad's "make the game visibly better" run)** — **ALL COMPLETE
+  (2026-07-07).** Eli read his own code and made his first solo edit (M5, **Code
+  Reader**, v0.2), learned to prompt and polished the game (M6, **AI Whisperer**,
+  v0.3), art-directed a real look (M7, **World Builder**, v0.4), and designed his
+  next room + puzzle himself (M8, **Game Designer**, v0.5 + `design/next-room.md`).
+  Game now at **Version 0.5**.
+- **★ Bonus Mission: Paint Your World** (`modules/module-bonus-paint-your-world.md`)
+  — **UNLOCKED / active (2026-07-08).** Current mission. Outside the numbered 13.
+  Claude wears the **Concept Artist** hat; Eli learns to generate **real 2D art
+  assets with AI** (via the **Canva** connector — the only image-gen path; confirm
+  it's enabled), masters image-prompting, picks the best of **4** each time, and
+  crafts **4 assets** into `game/assets/`. Bumps the game to **Version 0.6**.
+  Brain-first: coach the prompt, never write it; show all 4, never pick for him.
 
 ### Roadmap for Modules 5–13 (reordered 2026-07-06 by Dad)
 
@@ -120,11 +129,13 @@ throughout (he creates; AI reviews/researches/builds). Mission files are written
 when Dad opens each module. **Modules 5–8 are opened** — mission files written,
 version targets set (v0.2 → v0.5).
 
-5. **Read the Machine** 🔓 — read his *own* game's code; first solo edit. → v0.2
-6. **Speak AI Fluently** 🔓 — prompting; sharpen prompts by directing polish. → v0.3
-7. **Create Worlds** 🔓 — real graphics & immersion; *he* art-directs, AI paints. → v0.4
-8. **Design Great Games** 🔓 — he designs the next room + puzzle with his own
-   head; also sharpens the current game. → v0.5
+5. **Read the Machine** ✅ — read his *own* game's code; first solo edit. → v0.2
+6. **Speak AI Fluently** ✅ — prompting; sharpen prompts by directing polish. → v0.3
+7. **Create Worlds** ✅ — real graphics & immersion; *he* art-directs, AI paints. → v0.4
+8. **Design Great Games** ✅ — he designed the next room + puzzle with his own
+   head; also sharpened the current game. → v0.5
+★. **Bonus: Paint Your World** 🔓 *active* — generate real 2D art **assets** with
+   AI (Canva), best-of-4, craft 4 into `game/assets/`. Outside the numbered 13. → v0.6
 9. **Summon the Experts** — spawn **research sub-agents** (e.g. "what makes 2026
    mystery games immersive"); he curates the findings as Director, then AI
    implements the winners. The "your brain first, then AI reviews" module.

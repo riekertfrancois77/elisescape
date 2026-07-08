@@ -58,6 +58,9 @@ earn them.
   rules (fair + hard/clever), and defended the design under pressure-testing. He
   shipped a real improvement to the live game (the planted goblet setup, Version
   0.5) and locked the blueprint in `design/next-room.md` for Module 10.)*
+- [ ] **Concept Artist** — Direct an AI to paint real 2D art for your game — and
+  craft it in yourself. *(Bonus Mission — Paint Your World. Learn to prompt for
+  pictures, pick the best of 4, and craft 4 real assets into `game/assets/`.)*
 
 ## Secret Achievements
 

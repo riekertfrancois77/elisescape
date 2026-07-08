@@ -4,9 +4,14 @@ Modules 9–13 are sealed. Only Dad can order an unlock. If Eli asks about one,
 Claude Code may share **only** the teaser line below, then redirect him to the
 current unlocked module.
 
-**Opened by Dad so far:** Modules 1–8. They unlock **in order** — each opens
-when the one before it is complete (Modules 1–4 ✓ done · **Module 5 active** ·
-Modules 6–8 opened and waiting their turn · Modules 9–13 still sealed).
+**Opened by Dad so far:** Modules 1–8 (all ✓ complete) **plus a ★ Bonus Mission
+("Paint Your World")** opened 2026-07-08 and active now. Numbered modules unlock
+**in order**; the bonus sits outside the 13 and is playable anytime. Modules 9–13
+are still sealed.
+
+**★ Bonus — Paint Your World** 🔓 *active* — Generate real 2D art **assets** with
+AI (via the Canva connector): learn image-prompting, pick the best of 4, and craft
+4 assets into `game/assets/`. Bumps the game to v0.6. (Not part of the numbered 13.)
 
 **The through-line:** every remaining module makes *Eli's* game — *One Night at
 Thornwood Manor* — better, and bumps its **version number** (0.1 → 0.2 → …). The

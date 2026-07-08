@@ -8,13 +8,15 @@ Everything here is *your* game and *your* journey.
 ## Project State
 
 - **Creative Director:** Eli
-- **Current module:** **None active — Dad's opened run (Modules 5–8) is COMPLETE.**
-  **Module 8 (Design Great Games) is COMPLETE** — Eli earned **Game Designer** by
-  designing his next room (a candlelit library with a statue-matches-the-portrait
-  puzzle) himself and defending it, then shipping a design improvement that bumped
-  the game to **Version 0.5**. **Modules 1–8 are all complete.** Modules **9–13 are
-  sealed** until **Dad** opens them (`DAD_OPENED_THROUGH = 8`). The next-room
-  blueprint is saved in `design/next-room.md`, ready to *build* in Module 10.
+- **Current module:** **★ BONUS MISSION — "Paint Your World" (UNLOCKED / active).**
+  Dad opened a bonus mission (2026-07-08, outside the numbered 13): Eli learns to
+  **generate real 2D art assets with AI** (Canva), pick the best of 4 each time,
+  and craft **4 assets** into `game/assets/` — bumping the game to **Version 0.6**.
+  **Modules 1–8 are all complete** — Eli finished Dad's whole run (5–8), earning
+  Code Reader, AI Whisperer, World Builder, Game Designer and taking the game to
+  **Version 0.5**. Numbered Modules **9–13 stay sealed** until **Dad** opens them
+  (`DAD_OPENED_THROUGH = 8`). The next-room blueprint is in `design/next-room.md`,
+  ready to *build* in Module 10.
 - **Game concept:** ***One Night at Thornwood Manor*** — a famous detective is
   trapped one night in a cozy, secret-filled early-1900s mansion during a house
   party where a murder has happened. A killer who leaves clues on purpose hides
@@ -193,6 +195,20 @@ module makes the game better — that's the whole point of the journey.
 - [x] 7. Lock the blueprint — next-room design saved for Module 10
 - [x] 8. Achievement unlocked: Game Designer
 
+## Bonus Steps
+
+<!-- ★ BONUS MISSION — "Paint Your World" (Dad opened it 2026-07-08). Outside the
+     numbered 13. Target: game climbs to Version 0.6. Ticked off as Eli goes. -->
+
+- [ ] 1. Meet the Concept Artist — real art files, made by AI you direct
+- [ ] 2. See where art lives — the new game/assets/ folder
+- [ ] 3. Learn the image-prompt formula (subject · style · composition · palette · lighting · no text)
+- [ ] 4. Study the demo foyer background — what prompt made it, what you'd change
+- [ ] 5. Asset #1 — you write the prompt, generate 4, pick the best
+- [ ] 6. Assets #2, #3, #4 — art-direct, generate 4, choose (4 assets total)
+- [ ] 7. Drop all 4 into game/assets/ and wire them into the game
+- [ ] 8. Version bump → 0.6. Achievement unlocked: Concept Artist
+
 ## Session Memory
 
 <!-- The story of your studio so far — newest first. (Shown on the dashboard.) -->
@@ -325,7 +341,16 @@ under pressure**, kept it fair, and planted the setup into your live game.
 **0.1 → 0.5** — smarter, sharper, better-looking, and better-designed, all by
 *you*. A huge milestone, Director.
 
-🔒 **What's next is up to Dad.** Modules **9–13 are sealed** until he opens them
+★ **NEW: BONUS MISSION UNLOCKED — "Paint Your World."** Dad opened a special
+bonus (outside the 13). Until now your game's art was painted in *code* — now you
+learn to **make real 2D art with AI**: you'll master prompting for pictures, pick
+the best of **4** options every time, and craft **4 real art assets** into your
+game (they live in the new `game/assets/` folder). Bumps the game to **Version
+0.6.** Open Claude Code and say:
+
+> **"Start the Bonus Mission — I want to make real art for my game."**
+
+🔒 **What else is next is up to Dad.** Modules **9–13 are sealed** until he opens them
 (`DAD_OPENED_THROUGH = 8`). A tiny taste: **Module 9 — Summon the Experts** (spawn
 research sub-agents and curate their findings), then **Module 10 — Build the Next
 Room** (your library blueprint becomes *real*). Ask Dad when you want more unlocked.

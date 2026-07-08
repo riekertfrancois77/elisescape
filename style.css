@@ -169,6 +169,14 @@ main { max-width: 1200px; margin: 0 auto; padding: 40px 28px 80px; display: grid
 .module-card.queued .module-title { color: var(--text); }
 .module-hint { display: block; margin-top: 7px; font-style: normal; font-size: .72rem; color: var(--violet); }
 
+/* bonus = a special unlock from Dad, outside the numbered thirteen (gold) */
+.module-card.bonus { border-color: rgba(255, 201, 77, .55); box-shadow: 0 0 30px rgba(255, 201, 77, .1); }
+.module-card.bonus:hover { box-shadow: 0 0 40px rgba(255, 201, 77, .28); border-color: var(--gold); }
+.module-card.bonus .module-num { color: var(--gold); text-shadow: 0 0 16px rgba(255, 201, 77, .6); }
+.module-card.bonus .module-badge { background: rgba(255, 201, 77, .14); color: var(--gold); border: 1px solid rgba(255, 201, 77, .55); }
+.module-card.bonus.done .module-badge { background: rgba(61, 220, 132, .12); color: var(--ok); border-color: rgba(61, 220, 132, .5); }
+.bonus-grid { grid-template-columns: minmax(280px, 460px); }
+
 /* ===== panels grid ===== */
 .panels-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
 
