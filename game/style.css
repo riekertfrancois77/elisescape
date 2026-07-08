@@ -457,17 +457,29 @@ h1 {
   50%      { opacity: 1; }
 }
 
-/* A gilded portrait frame on the wall, under the 🖼️ hotspot. */
+/* A gilded portrait frame on the wall, under the 🖼️ hotspot. It now holds a
+   REAL painted portrait of the murdered host — an AI art asset Eli directed in
+   the Bonus Mission (assets/host-portrait.png): the graying, grinning host
+   raising his golden goblet, mid-toast, the setup for the library-statue puzzle
+   he designed in Module 8. */
 .frame {
   position: absolute;
-  left: 50%; top: 28%;
+  left: 50%; top: 27%;
   transform: translate(-50%, -50%);
-  width: 12%; height: 23%;
+  width: 13%; height: 27%;
   background: linear-gradient(#2b2233, #1a1426);
+  background-image: url('assets/host-portrait.png');
+  background-size: cover;
+  background-position: center 22%;   /* keep his face + raised goblet in view */
   border: 6px solid #7a5a24;
   border-radius: 4px;
   box-shadow: 0 0 0 2px #3a2c14, 0 6px 20px rgba(0,0,0,0.6), inset 0 0 26px rgba(0,0,0,0.7);
 }
+
+/* The portrait hotspot no longer needs its placeholder picture-icon — a REAL
+   painted portrait of the host now fills the frame. Hide the icon so it doesn't
+   sit on his face, but keep the button's size and its clickable area intact. */
+.hotspot[data-object="portrait"] svg { opacity: 0; }
 
 /* A tall window with cold night beyond it — the source of the moonlight. */
 .window {
