@@ -507,17 +507,17 @@ h1 {
    just catches its brass face if you lean in close. */
 .grandclock {
   position: absolute;
-  left: 9%; top: 78%;
+  left: 10%; top: 70%;
   transform: translate(-50%, -50%);
-  width: 11%; height: 46%;
+  width: 15%; height: 58%;               /* bigger, as the Director directed */
   background-image: url('assets/grandfather-clock.png');
   background-size: contain;
   background-position: center bottom;
   background-repeat: no-repeat;
-  /* Sink the painting into shadow so the puzzle stays fair — dim, low-contrast,
-     and a touch see-through, like everything else hiding in that dark corner. */
-  filter: brightness(0.4) contrast(0.92) saturate(0.85);
-  opacity: 0.82;
+  /* The painting now has a TRANSPARENT background (the black was cut out), so it
+     drops cleanly into the room. Kept a little shadowed so it still sits in the
+     manor's warm gloom rather than glowing, but visible now — the Director's call. */
+  filter: brightness(0.72) saturate(0.92);
   pointer-events: none; /* the clickable clue is the .hotspot, not the picture */
 }
 
