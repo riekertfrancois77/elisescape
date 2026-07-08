@@ -10,7 +10,7 @@ achievements and progress Eli sees). This table is the canonical amount list —
 it must match the `REWARDS` array in `script.js`. To change a payout, update
 both.
 
-## Reward Map ($100 total)
+## Reward Map ($105 total)
 
 | Reward | Amount | Earned when |
 |---|---|---|
@@ -22,17 +22,20 @@ both.
 | Prompt like a pro | $5 | Module 6 (AI Whisperer unlocked) |
 | Art-direct your game's world | $5 | Module 7 (World Builder unlocked) |
 | Design your next room + puzzle | $5 | Module 8 (Game Designer unlocked) |
+| **Make real AI art for your game — ★ Bonus** | **$5** | **Bonus Mission (Concept Artist unlocked)** |
 | Discover secret achievements | $5 each (up to $25) | each secret achievement found |
 | Ship & demo your game to the family | $25 | Module 13 complete |
 | Finish the whole 13-module journey | $5 | all 13 modules complete |
 
-**Dad's change (2026-07-07):** added **$5 each for Modules 5–8** (reward the real
-work along the way) and lowered the **finish-all-13 bonus from $25 → $5** to fund
-it — pool holds at **$100**. Big lump-sums now sit earlier and at the ship, not
-piled on the very end.
+**Dad's change (2026-07-07):** added **$5 each for Modules 5–8** and lowered the
+**finish-all-13 bonus from $25 → $5** to fund it — pool held at $100.
 
-**Earned so far:** $40 — Creative Director ($10) + Modules 2–5 ($5 each) + secrets
-AI Tamer & Bug Hunter ($5 each). Eli can ask Dad to claim it.
+**Dad's change (2026-07-08):** added the **★ Bonus Mission** reward — **$5 for
+Concept Artist** (make real AI art for the game). Pool is now **$105**.
+
+**Earned so far:** $55 — Creative Director ($10) + Modules 2–8 ($5 each) + secrets
+AI Tamer & Bug Hunter ($5 each). The **$5 Bonus** is up for grabs when Eli finishes
+Paint Your World. Eli can ask Dad to claim the $55.
 
 ## Dad's Notes
 

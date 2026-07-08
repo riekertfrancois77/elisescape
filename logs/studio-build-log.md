@@ -18,9 +18,10 @@ add a **bonus mission** teaching real AI-generated 2D art. Two-step build:
 - **Investigated the tooling.** Claude Code has **no native image generator**. The
   path is the **Canva MCP connector**: `generate-design` (prompt → **4 candidates**)
   → `create-design-from-candidate` → `export-design` (PNG, custom size, transparent
-  bg) → save file. Proved it end-to-end: generated a painted foyer background and
-  saved it to **`game/assets/foyer-bg.png`** (1600×900) — the repo's first asset
-  file and first `game/assets/` folder. Committed as a demo/starter (not wired in).
+  bg) → save file. Proved it end-to-end: generated a painted foyer background
+  (`foyer-bg.png`, 1600×900) to confirm the pipeline. **Dad's call: removed the
+  demo so Eli starts from a blank `game/assets/` folder** (kept the folder + a
+  `README.md` explaining what goes there); he generates all four assets himself.
   ⚠️ Caveat flagged to Dad: the Canva connector must be enabled in **Eli's** Claude
   Code sessions for the hands-on part.
 - **Built the bonus mission** ("Paint Your World", Concept Artist hat):
@@ -38,8 +39,9 @@ add a **bonus mission** teaching real AI-generated 2D art. Two-step build:
     bonus card.
   - `CLAUDE.md` Current State/roadmap + `LOCKED_MODULES.md` updated; MEMORY Project
     State/Claude Instructions now point Eli at the bonus.
-- **Cash:** left `REWARDS` untouched — flagged to Dad that the bonus pays $0 unless
-  he wants to add a reward (pool is at $100).
+- **Cash (Dad's call):** added a **$5 Concept Artist** reward for the bonus —
+  synced `REWARDS` (`script.js`) + `DAD_VAULT.md`. Pool is now **$105** (earned
+  stays $55 until Eli finishes the bonus).
 - This relaxes the founding "no external files" rule **for images**, with Dad's
   explicit go-ahead. Still no frameworks; still HTML/CSS/JS + asset files.
 

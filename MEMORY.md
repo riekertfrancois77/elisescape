@@ -203,7 +203,7 @@ module makes the game better — that's the whole point of the journey.
 - [ ] 1. Meet the Concept Artist — real art files, made by AI you direct
 - [ ] 2. See where art lives — the new game/assets/ folder
 - [ ] 3. Learn the image-prompt formula (subject · style · composition · palette · lighting · no text)
-- [ ] 4. Study the demo foyer background — what prompt made it, what you'd change
+- [ ] 4. Worked example — turn a plain idea into a full prompt together, part by part
 - [ ] 5. Asset #1 — you write the prompt, generate 4, pick the best
 - [ ] 6. Assets #2, #3, #4 — art-direct, generate 4, choose (4 assets total)
 - [ ] 7. Drop all 4 into game/assets/ and wire them into the game

@@ -241,6 +241,8 @@ const REWARDS = [
     earned: (s) => s.earnedNames.has("World Builder") },
   { label: "Design your next room + puzzle — Module 8", amount: 5, when: "unlock Game Designer",
     earned: (s) => s.earnedNames.has("Game Designer") },
+  { label: "Make real AI art for your game — ★ Bonus", amount: 5, when: "unlock Concept Artist",
+    earned: (s) => s.earnedNames.has("Concept Artist") },
   { label: "Discover secret achievements", per: 5, cap: 5, when: "$5 each — keep exploring",
     count: (s) => s.secretCount },
   { label: "Ship & demo your game to the family — Module 13", amount: 25, when: "Module 13 complete",
