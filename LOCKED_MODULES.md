@@ -1,13 +1,14 @@
 # LOCKED_MODULES.md
 
-Modules 9–13 are sealed. Only Dad can order an unlock. If Eli asks about one,
+Modules 10–13 are sealed. Only Dad can order an unlock. If Eli asks about one,
 Claude Code may share **only** the teaser line below, then redirect him to the
 current unlocked module.
 
-**Opened by Dad so far:** Modules 1–8 (all ✓ complete) **plus a ★ Bonus Mission
-("Paint Your World")** opened 2026-07-08 and active now. Numbered modules unlock
-**in order**; the bonus sits outside the 13 and is playable anytime. Modules 9–13
-are still sealed.
+**Opened by Dad so far:** Modules 1–8 (all ✓ complete), **Module 9 — Summon the
+Experts** (opened 2026-07-08, now the active numbered module), **plus a ★ Bonus
+Mission ("Paint Your World")** — also active. Numbered modules unlock **in order**;
+the bonus sits outside the 13 and is playable anytime. Modules 10–13 are still
+sealed.
 
 **★ Bonus — Paint Your World** 🔓 *active* — Generate real 2D art **assets** with
 AI (via the Canva connector): learn image-prompting, pick the best of 4, and craft
@@ -28,12 +29,12 @@ and builds.**
    art-direct; the studio paints. The big look-and-feel glow-up. → **v0.4**
 8. **Design Great Games** 🔓 — The craft of making players feel clever. Design
    your next room and its puzzle — with your own head first. → **v0.5**
+9. **Summon the Experts** 🔓 *active* — Command a team of AI **research sub-agents**
+   after the world's best ideas (what makes 2026 mystery games immersive), curate
+   the winners like a Director, and build them into your game. → **v0.7**
 
 ## Locked Previews (still sealed — Dad's call to open)
 
-9. **Summon the Experts** 🔒 — Send a team of AI researchers after the world's
-   best ideas (what makes 2026 mystery games immersive), curate the winners like
-   a Director, and build them into your game.
 10. **Build the Next Room** 🔒 — Turn your design into a whole new playable room.
     Thornwood grows from one room into a real game.
 11. **Hunt Bugs** 🔒 — Things will break. Directors don't panic — they hunt.

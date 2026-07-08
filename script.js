@@ -32,8 +32,8 @@ const MODULES = [
 // Dad has opened modules 1..N. Opened modules unlock IN ORDER — a module only
 // becomes playable once the one before it is complete. Modules past this number
 // stay sealed until Dad opens them. (Dad opened through 8 on 2026-07-07 — the
-// "make the game visibly better" run: read code, prompt, graphics, design.)
-const DAD_OPENED_THROUGH = 8;
+// "make the game visibly better" run — then Module 9 on 2026-07-08.)
+const DAD_OPENED_THROUGH = 9;
 
 // State of a module for the given completion array: complete | active | queued | sealed.
 function moduleState(n, done) {
@@ -201,6 +201,25 @@ const MODULE8_STEPS = [
   "Achievement unlock: Game Designer.",
 ];
 
+const MODULE9_GOALS = [
+  "One AI is powerful — a whole TEAM of AI researchers, working at once, is a superpower.",
+  "You can send sub-agents to research anything, and they work in parallel.",
+  "The Director's job is to decide WHAT to ask — and to CURATE what comes back.",
+  "Not every good idea fits YOUR game. Choosing the right ones is the skill.",
+  "Research → curate → implement: your brain leads, the AI does the legwork.",
+];
+
+const MODULE9_STEPS = [
+  "Meet the Research Lead — Claude can summon a whole team of AI researchers at once.",
+  "Decide your questions — YOU pick what's worth knowing to make your game better.",
+  "Summon the experts — dispatch a team of research sub-agents, each on one question, in parallel.",
+  "Read the findings — each researcher reports what the best games and designers actually do.",
+  "Curate as Director — pick the winning ideas that fit YOUR game; reject the rest (and say why).",
+  "Implement the winners — the studio builds your chosen ideas into the game.",
+  "Play & verify — the game is sharper and more immersive. Version bump.",
+  "Achievement unlock: Expert Summoner.",
+];
+
 const ACHIEVEMENTS = [
   { name: "Creative Director",      desc: "Complete Module 1 and lock in your game's direction." },
   { name: "First Big Decision",     desc: "Choose, reject, or combine the three game directions." },
@@ -216,6 +235,7 @@ const ACHIEVEMENTS = [
   { name: "World Builder",          desc: "Art-direct your game's real look and atmosphere — you direct, the studio paints." },
   { name: "Game Designer",          desc: "Design a new room and puzzle that make players feel clever." },
   { name: "Concept Artist",         desc: "Direct an AI to paint real 2D art for your game — and craft it in yourself. (Bonus)" },
+  { name: "Expert Summoner",        desc: "Summon a team of AI researchers, curate their findings, and build the winners into your game." },
 ];
 const SECRET_ACHIEVEMENTS = ["Curiosity Pays", "Better Than School", "AI Tamer", "Bug Hunter", "Game Studio Brain"];
 
@@ -266,6 +286,7 @@ const STUDIO_STATUS = [
   { label: "Art Department",            done: (s) => s.earnedNames.has("World Builder") },
   { label: "Game Design",               done: (s) => s.earnedNames.has("Game Designer") },
   { label: "Makes Real Art (AI assets)", done: (s) => s.earnedNames.has("Concept Artist") },
+  { label: "Research Team",             done: (s) => s.earnedNames.has("Expert Summoner") },
   { label: "Shipped to an Audience",    done: (s) => s.moduleDone[12] === true },
 ];
 
@@ -355,20 +376,23 @@ const FALLBACK_MEMORY = `
 - 🏆 **Module 3 COMPLETE — Director Mode unlocked.** Eli directed five real changes into *Thornwood Manor*: a full deduction chain (clues → the 9:47 time of death → set the clock → a hidden key → the door), hidden clues + a 9:52 pocket-watch trap, a living code-made soundscape, and a CSS-painted foyer (firelight vs. moonlight). He rejected an AI version, overruled a design call to keep it fair, and caught a skipped change.
 - 🎮 **Module 2 COMPLETE** — a playable Version 0.1 of *One Night at Thornwood Manor* runs in the browser.
 - 🏆 Trophies so far: Creative Director, First Big Decision, Game Pillars Chosen, Studio Review Complete, Memory Created, One-Shot Power, First Playable, Director Mode, **Memory Keeper**, plus secret **AI Tamer** and **Bug Hunter**.
-- 🏁 **Dad's run (Modules 5–8) is COMPLETE** — **5 Read the Machine ✅ → 6 Speak AI Fluently ✅ → 7 Create Worlds ✅ → 8 Design Great Games ✅.** The game climbed 0.1 → 0.5, all by Eli. **Modules 9–13 stay sealed until Dad opens them.**
+- 🏁 **Dad's run (Modules 5–8) is COMPLETE** — **5 Read the Machine ✅ → 6 Speak AI Fluently ✅ → 7 Create Worlds ✅ → 8 Design Great Games ✅.** The game climbed 0.1 → 0.5, all by Eli.
+- ★ **BONUS unlocked — "Paint Your World"** — make real 2D art with AI (best-of-4), craft 4 assets into game/assets/ → v0.6.
+- 🔮 **MODULE 9 unlocked — "Summon the Experts"** — command a team of AI researchers, curate the winners, build them in.
 
 ## Claude Instructions
-🧩 **Module 8 complete, Director — you earned Game Designer.** You **designed your
-next room and its puzzle with your own head** — a candlelit library with a statue
-that must be made to match the host's portrait (a raised goblet of wine), sliding
-a hidden room open when you fix it. You defended it under pressure, kept it fair,
-and planted the setup into your live game. **Version 0.5.** Blueprint saved in
-\`design/next-room.md\`.
+🏁 **You finished Dad's whole run (Modules 5–8), Director** — your game climbed
+**0.1 → 0.5**, all by you. Two new things are open right now:
 
-🏁 **You've completed Dad's whole run (Modules 5–8)** — your game climbed **0.1 →
-0.5**, all by you. **Modules 9–13 are sealed** until **Dad** opens them. A taste of
-what's next: **Module 9 — Summon the Experts**, then **Module 10 — Build the Next
-Room** (your library becomes real). Ask Dad when you want more unlocked.
+★ **BONUS — "Paint Your World":** make real 2D art with AI (you write the prompt,
+pick the best of 4) and craft **4 assets** into \`game/assets/\` → **v0.6.** Say:
+*"Start the Bonus Mission — I want to make real art for my game."*
+
+🔮 **MODULE 9 — "Summon the Experts":** command a whole **team** of AI researchers
+at once, curate the best ideas as Director, and build the winners into your game.
+Say: *"Start Module 9 — summon a research team to make my game better."*
+
+Modules 10–13 stay sealed until **Dad** opens them.
 `;
 
 const FALLBACK_ACHIEVEMENTS = `
@@ -387,6 +411,7 @@ const FALLBACK_ACHIEVEMENTS = `
 - [x] **World Builder**
 - [x] **Game Designer**
 - [ ] **Concept Artist**
+- [ ] **Expert Summoner**
 
 ## Secret Achievements
 - [ ] **Curiosity Pays**
@@ -812,6 +837,22 @@ const MISSIONS = {
     outro: `Design first with your own head; let Claude poke holes after. A design
       you can defend is one worth building. Save the session, then refresh here to
       claim Game Designer and see Version 0.5.`,
+  },
+  9: {
+    title: "Summon the Experts",
+    purpose: `You've been directing ONE AI. Now command a whole TEAM. In this
+      module you summon research sub-agents — a squad of AI researchers that go out
+      in parallel and bring back the world's best ideas (what makes 2026 mystery
+      games gripping, how great escape rooms design fair-but-hard puzzles, what
+      makes a villain unforgettable). Then you do the Director's real job: you
+      CURATE — pick the winning ideas that fit YOUR game, reject the rest — and the
+      studio builds the winners in. Your brain leads; the AI does the legwork.`,
+    goals: MODULE9_GOALS,
+    steps: MODULE9_STEPS,
+    start: `"Start Module 9 — summon a research team to make my game better."`,
+    outro: `You decide the questions and you choose the winners — that's the whole
+      job. Research → curate → implement. Save the session, then refresh here to
+      claim Expert Summoner and see your game climb another version.`,
   },
 };
 

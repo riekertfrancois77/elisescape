@@ -136,17 +136,17 @@ version targets set (v0.2 → v0.5).
    head; also sharpened the current game. → v0.5
 ★. **Bonus: Paint Your World** 🔓 *active* — generate real 2D art **assets** with
    AI (Canva), best-of-4, craft 4 into `game/assets/`. Outside the numbered 13. → v0.6
-9. **Summon the Experts** — spawn **research sub-agents** (e.g. "what makes 2026
-   mystery games immersive"); he curates the findings as Director, then AI
-   implements the winners. The "your brain first, then AI reviews" module.
+9. **Summon the Experts** 🔓 *active* — spawn **research sub-agents** (e.g. "what
+   makes 2026 mystery games immersive"); he curates the findings as Director, then
+   AI implements the winners. The "your brain first, then AI reviews" module. → v0.7
 10. **Build the Next Room** — build the room he designed in Module 8; the manor grows.
 11. **Hunt Bugs** — debug the bigger game.
 12. **Cross Into the Real World** — his circuit / brazier becomes a game mechanic.
 13. **Ship Like a Pro** — ship the game.
 
-- Modules 9–13 remain **sealed** until Dad explicitly opens them.
-- **Sequential unlocking:** Dad has "opened through" Module 8
-  (`DAD_OPENED_THROUGH = 8` in `script.js`, set 2026-07-07). Opened modules still
-  unlock **in order** — Eli sees only Module 5 as active until he finishes it.
-  When Dad opens more, bump that number, write the mission file, and update
-  `LOCKED_MODULES.md` + this section.
+- Modules 10–13 remain **sealed** until Dad explicitly opens them.
+- **Sequential unlocking:** Dad has "opened through" Module 9
+  (`DAD_OPENED_THROUGH = 9` in `script.js`, set 2026-07-08). Opened modules still
+  unlock **in order** — with 1–8 done, **Module 9 is the active numbered module**
+  (and the ★ Bonus is available alongside it). When Dad opens more, bump that
+  number, write the mission file, and update `LOCKED_MODULES.md` + this section.

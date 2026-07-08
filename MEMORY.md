@@ -8,15 +8,15 @@ Everything here is *your* game and *your* journey.
 ## Project State
 
 - **Creative Director:** Eli
-- **Current module:** **★ BONUS MISSION — "Paint Your World" (UNLOCKED / active).**
-  Dad opened a bonus mission (2026-07-08, outside the numbered 13): Eli learns to
-  **generate real 2D art assets with AI** (Canva), pick the best of 4 each time,
-  and craft **4 assets** into `game/assets/` — bumping the game to **Version 0.6**.
-  **Modules 1–8 are all complete** — Eli finished Dad's whole run (5–8), earning
-  Code Reader, AI Whisperer, World Builder, Game Designer and taking the game to
-  **Version 0.5**. Numbered Modules **9–13 stay sealed** until **Dad** opens them
-  (`DAD_OPENED_THROUGH = 8`). The next-room blueprint is in `design/next-room.md`,
-  ready to *build* in Module 10.
+- **Current — TWO things open:** **★ BONUS MISSION — "Paint Your World"** (make
+  real 2D art with AI → v0.6) **and Module 9 — "Summon the Experts"** (command a
+  team of AI research sub-agents, curate the winners, build them in). Both were
+  opened by Dad (bonus 2026-07-08; Module 9 2026-07-08). Eli can do them in either
+  order. **Modules 1–8 are all complete** — Eli finished Dad's whole run (5–8),
+  earning Code Reader, AI Whisperer, World Builder, Game Designer, taking the game
+  to **Version 0.5**. Numbered Modules **10–13 stay sealed** until **Dad** opens
+  them (`DAD_OPENED_THROUGH = 9`). The next-room blueprint is in
+  `design/next-room.md`, ready to *build* in Module 10.
 - **Game concept:** ***One Night at Thornwood Manor*** — a famous detective is
   trapped one night in a cozy, secret-filled early-1900s mansion during a house
   party where a murder has happened. A killer who leaves clues on purpose hides
@@ -209,6 +209,20 @@ module makes the game better — that's the whole point of the journey.
 - [ ] 7. Drop all 4 into game/assets/ and wire them into the game
 - [ ] 8. Version bump → 0.6. Achievement unlocked: Concept Artist
 
+## Module 9 Steps
+
+<!-- Unlocks when Module 8 is complete (opened by Dad 2026-07-08). Target: game
+     climbs another version as the research winners get built in. -->
+
+- [ ] 1. Meet the Research Lead — Claude can summon a team of AI researchers at once
+- [ ] 2. Decide your questions — you pick what's worth knowing to make the game better
+- [ ] 3. Summon the experts — dispatch research sub-agents, each on one question, in parallel
+- [ ] 4. Read the findings — each researcher reports what the best games do
+- [ ] 5. Curate as Director — pick the winners that fit your game, reject the rest
+- [ ] 6. Implement the winners — the studio builds your chosen ideas in
+- [ ] 7. Play & verify — the game is sharper and more immersive; version bump
+- [ ] 8. Achievement unlocked: Expert Summoner
+
 ## Session Memory
 
 <!-- The story of your studio so far — newest first. (Shown on the dashboard.) -->
@@ -350,9 +364,20 @@ game (they live in the new `game/assets/` folder). Bumps the game to **Version
 
 > **"Start the Bonus Mission — I want to make real art for my game."**
 
-🔒 **What else is next is up to Dad.** Modules **9–13 are sealed** until he opens them
-(`DAD_OPENED_THROUGH = 8`). A tiny taste: **Module 9 — Summon the Experts** (spawn
-research sub-agents and curate their findings), then **Module 10 — Build the Next
+🔮 **NEW: MODULE 9 UNLOCKED — "Summon the Experts."** Dad opened it. You've been
+directing ONE AI — now command a whole **team.** You'll summon **research
+sub-agents** that go out in parallel and bring back the world's best ideas (what
+makes 2026 mystery games gripping, how great puzzles stay fair-but-hard, what makes
+a villain unforgettable). Then you do the Director's real job: **curate** — pick
+the winners that fit *your* game, reject the rest — and the studio builds them in.
+Open Claude Code and say:
+
+> **"Start Module 9 — summon a research team to make my game better."**
+
+(You can do the Bonus and Module 9 in either order.)
+
+🔒 **What else is next is up to Dad.** Modules **10–13 are sealed** until he opens
+them (`DAD_OPENED_THROUGH = 9`). Next after those: **Module 10 — Build the Next
 Room** (your library blueprint becomes *real*). Ask Dad when you want more unlocked.
 
 **The run Dad opened — all done:**

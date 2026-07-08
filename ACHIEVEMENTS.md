@@ -61,6 +61,8 @@ earn them.
 - [ ] **Concept Artist** — Direct an AI to paint real 2D art for your game — and
   craft it in yourself. *(Bonus Mission — Paint Your World. Learn to prompt for
   pictures, pick the best of 4, and craft 4 real assets into `game/assets/`.)*
+- [ ] **Expert Summoner** — Summon a team of AI researchers, curate their findings,
+  and build the winners into your game. *(Module 9 — Summon the Experts.)*
 
 ## Secret Achievements
 

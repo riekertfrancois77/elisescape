@@ -8,6 +8,30 @@
 
 ---
 
+## Dad opens Module 9 — Summon the Experts (research sub-agents) (2026-07-08)
+
+The module Dad most wanted — Eli commands a **team** of AI research sub-agents,
+curates the findings as Director, then AI builds the winners in. Brain-first: Eli
+sets the questions and picks the winners; the AI does the legwork.
+
+- **`DAD_OPENED_THROUGH` 8 → 9** in `script.js`. Sequential gating: with 1–8 done,
+  Module 9 is now the active numbered module (Modules 10–13 still sealed). The
+  ★ Bonus stays available alongside it.
+- **`modules/module-09.md`** — mission: the research→curate→implement loop, the
+  brain-first rule (Eli sets questions / picks winners), and a note that the team
+  is **real** (Claude spawns Agent/Task sub-agents in parallel, web-search where
+  available — a native capability, no connector). Target **v0.7**.
+- **Dashboard** (`script.js`): `MODULE9_GOALS/STEPS`, `MISSIONS[9]`, new visible
+  achievement **Expert Summoner** (+ `FALLBACK`), a "Research Team" studio
+  capability, and refreshed `FALLBACK_MEMORY` Session-Memory/Claude-Instructions
+  (bonus + Module 9 both shown as open). `MEMORY.md` gained `## Module 9 Steps` and
+  updated Project State / Claude Instructions; `ACHIEVEMENTS.md`, `CLAUDE.md`,
+  `LOCKED_MODULES.md` updated.
+- **Cash:** left `REWARDS` untouched — flagged to Dad that Module 9 pays $0 unless
+  he wants to match the $5/module pattern (pool is at $105).
+
+---
+
 ## Dad adds the "Paint Your World" bonus mission — AI art assets (2026-07-08)
 
 Dad asked whether Module 7 taught Eli to *generate his own visual assets* with AI
