@@ -8,10 +8,13 @@ Everything here is *your* game and *your* journey.
 ## Project State
 
 - **Creative Director:** Eli
-- **Current module:** **★ BONUS MISSION — "Paint Your World" (UNLOCKED / active).**
-  Dad opened a bonus mission (2026-07-08, outside the numbered 13): Eli learns to
-  **generate real 2D art assets with AI** (Canva), pick the best of 4 each time,
-  and craft **4 assets** into `game/assets/` — bumping the game to **Version 0.6**.
+- **Current module:** **★ BONUS MISSION — "Paint Your World" — COMPLETE
+  (2026-07-08).** Eli learned to **generate real 2D art assets with AI** (Canva),
+  wrote his own image prompts with the six-part formula, picked the best of 4 each
+  time, and crafted **4 real assets** into `game/assets/` — a grandfather clock, a
+  golden pocket-watch, the host's wall portrait, and a hidden killer. Earned
+  **Concept Artist**; game bumped to **Version 0.6**. Next up is whatever **Dad**
+  opens (Modules 9–13 still sealed).
   **Modules 1–8 are all complete** — Eli finished Dad's whole run (5–8), earning
   Code Reader, AI Whisperer, World Builder, Game Designer and taking the game to
   **Version 0.5**. Numbered Modules **9–13 stay sealed** until **Dad** opens them
@@ -45,6 +48,22 @@ Everything here is *your* game and *your* journey.
 
 <!-- Your game's version number. It climbs as modules make the game better.
      (Keep the number at the start of the first line, e.g. "0.2 — ...".) -->
+
+**0.6** — *Arrival at Thornwood Manor* (the Grand Foyer), given its **first real
+art assets** — image files Eli made by directing an AI (the ★ Bonus Mission,
+2026-07-08). Until now the whole look was painted in *code*; now the game loads
+actual paintings from a new `game/assets/` folder. Eli learned the six-part
+image-prompt formula, wrote his **own** prompts, and picked the best of **4**
+every time (sharpening with one-dial changes). Four assets landed: a **grandfather
+clock** now stands as a real painting in its shadowy corner (kept dim so the puzzle
+stays fair); a **golden pocket-watch** appears as a framed evidence photo when you
+examine the portrait; the **murdered host** hangs on the wall as a real oil
+portrait, raising his golden goblet (planting the library-statue puzzle); and — a
+sharp *designer* call by Eli — a **killer** (a masked woman in emerald with icy
+eyes) is painted and wired in but kept **hidden**, so her face never spoils the
+mystery. Built on **0.5** (the designer's eye), **0.4** (art-directed look),
+**0.3** (prompt polish) and **0.2** (the hand-changed murder time 10:36). This
+number climbs every time a module makes the game better — that's the whole point.
 
 **0.5** — *Arrival at Thornwood Manor* (the Grand Foyer), sharpened by Eli's own
 **game-designer eye** (Module 8): the host's foyer portrait now shows him
@@ -200,19 +219,41 @@ module makes the game better — that's the whole point of the journey.
 <!-- ★ BONUS MISSION — "Paint Your World" (Dad opened it 2026-07-08). Outside the
      numbered 13. Target: game climbs to Version 0.6. Ticked off as Eli goes. -->
 
-- [ ] 1. Meet the Concept Artist — real art files, made by AI you direct
-- [ ] 2. See where art lives — the new game/assets/ folder
-- [ ] 3. Learn the image-prompt formula (subject · style · composition · palette · lighting · no text)
-- [ ] 4. Worked example — turn a plain idea into a full prompt together, part by part
-- [ ] 5. Asset #1 — you write the prompt, generate 4, pick the best
-- [ ] 6. Assets #2, #3, #4 — art-direct, generate 4, choose (4 assets total)
-- [ ] 7. Drop all 4 into game/assets/ and wire them into the game
-- [ ] 8. Version bump → 0.6. Achievement unlocked: Concept Artist
+- [x] 1. Meet the Concept Artist — real art files, made by AI you direct
+- [x] 2. See where art lives — the new game/assets/ folder
+- [x] 3. Learn the image-prompt formula (subject · style · composition · palette · lighting · no text)
+- [x] 4. Worked example — turn a plain idea into a full prompt together, part by part
+- [x] 5. Asset #1 — you write the prompt, generate 4, pick the best
+- [x] 6. Assets #2, #3, #4 — art-direct, generate 4, choose (4 assets total)
+- [x] 7. Drop all 4 into game/assets/ and wire them into the game
+- [x] 8. Version bump → 0.6. Achievement unlocked: Concept Artist
 
 ## Session Memory
 
 <!-- The story of your studio so far — newest first. (Shown on the dashboard.) -->
 
+- 🎨 **★ BONUS MISSION COMPLETE — Concept Artist unlocked. Game → Version 0.6.**
+  Eli's game got its **first real art** — image files he made by directing an AI
+  (Claude wore the **Concept Artist** hat and only held the brush). Brain-first the
+  whole way: he learned the six-part **image-prompt formula** (subject · style ·
+  composition · palette · lighting · what to leave out) and wrote **his own**
+  prompts, part by part, on his own game. He picked the best of **4** every time —
+  and learned the pro move of **changing one dial at a time** to refine (turning a
+  smirk into a grin, a wine glass into a golden goblet, tuning the killer's dress).
+  He crafted **four real assets** into the new `game/assets/` folder: a **grandfather
+  clock** (real painting, kept dim in its corner so the puzzle stays fair — his own
+  fairness rule), a **golden pocket-watch** (shows as a framed evidence photo when
+  you examine the portrait), the **murdered host** (a real oil portrait hung on the
+  wall, raising his golden goblet — planting the library-statue puzzle he designed
+  in Module 8), and a **killer** — a masked woman in an emerald gown with icy blue
+  eyes. His sharpest moment was pure *game designer*: he refused to hang the
+  killer's portrait where players could see it — *"or else the player would know"* —
+  so she's painted and wired in but kept **hidden**, reserved for the future
+  unmasking, never a spoiler. He even learned when NOT to use an asset (he chose to
+  keep his hand-built CSS foyer instead of a full background painting). Every asset
+  verified headless: the whole case still solves, the clock stays fair, the killer
+  stays secret, zero errors. His game finally loads **real art he directed** —
+  **Version 0.6.**
 - 🧩 **MODULE 8 COMPLETE — Game Designer unlocked. Game → Version 0.5.** The purest
   "Eli's brain first" module of the run: he **designed his next room and its puzzle
   entirely himself**, and Claude (the **Game Designer / critic** hat) only asked
@@ -330,25 +371,22 @@ module makes the game better — that's the whole point of the journey.
 
 <!-- Your exact next move. (Shown on the dashboard.) -->
 
-🧩 **MODULE 8 COMPLETE, Director — you earned Game Designer.** The hardest, most
-*you* module yet: you **designed your next room and its puzzle with your own head**
-— a candlelit library with a statue that must be made to match the host's portrait
-(a goblet of wine), sliding a hidden room open when you fix it. You **defended it
-under pressure**, kept it fair, and planted the setup into your live game.
-**Version 0.5.** Your blueprint is saved in `design/next-room.md`.
+🎨 **★ BONUS MISSION COMPLETE, Director — you earned Concept Artist.** You made
+your game's **first real art**: you learned the six-part image-prompt formula,
+wrote your **own** prompts, and picked the best of **4** every time — refining like
+a pro by changing **one dial at a time**. Four real assets now live in
+`game/assets/` and in your game: a **grandfather clock**, a **golden pocket-watch**,
+the **host's portrait** on the wall, and a **hidden killer**. Your sharpest call
+was pure game designer — you refused to show the killer's face *"or else the player
+would know,"* so she's in the game but kept secret. **Version 0.6.** 🎉
 
-🏁 **YOU'VE COMPLETED DAD'S WHOLE RUN (Modules 5–8).** Your game climbed from
-**0.1 → 0.5** — smarter, sharper, better-looking, and better-designed, all by
-*you*. A huge milestone, Director.
+🏁 **YOU'VE COMPLETED DAD'S WHOLE RUN (Modules 5–8) PLUS the Bonus.** Your game
+climbed from **0.1 → 0.6** — smarter, sharper, better-looking, better-designed, and
+now painted with real art, all by *you*. A huge milestone, Director.
 
-★ **NEW: BONUS MISSION UNLOCKED — "Paint Your World."** Dad opened a special
-bonus (outside the 13). Until now your game's art was painted in *code* — now you
-learn to **make real 2D art with AI**: you'll master prompting for pictures, pick
-the best of **4** options every time, and craft **4 real art assets** into your
-game (they live in the new `game/assets/` folder). Bumps the game to **Version
-0.6.** Open Claude Code and say:
-
-> **"Start the Bonus Mission — I want to make real art for my game."**
+🔓 **The next-room blueprint (`design/next-room.md`) is ready to *build*** in
+Module 10 — and now you even have the host portrait (with his golden goblet) that
+the library statue must match.
 
 🔒 **What else is next is up to Dad.** Modules **9–13 are sealed** until he opens them
 (`DAD_OPENED_THROUGH = 8`). A tiny taste: **Module 9 — Summon the Experts** (spawn
@@ -360,6 +398,7 @@ Room** (your library blueprint becomes *real*). Ask Dad when you want more unloc
 - **6 · Speak AI Fluently** → prompt like a pro, polish the game → **v0.3** ✅ DONE
 - **7 · Create Worlds** → real graphics & atmosphere, you art-direct → **v0.4** ✅ DONE
 - **8 · Design Great Games** → design your next room + puzzle → **v0.5** ✅ DONE
+- **★ Bonus · Paint Your World** → make real 2D art with AI, craft 4 assets in → **v0.6** ✅ DONE
 
 Modules 9–13 stay sealed until Dad opens them.
 
@@ -406,6 +445,13 @@ perfectly, because the project remembered.
   (fair + hard/clever), and defended the design under pressure-testing. Shipped a
   real improvement to the live game (planted the goblet setup in the foyer portrait,
   Version 0.5) and locked the blueprint in `design/next-room.md` for Module 10.
+- 🎨 **Concept Artist** (★ Bonus, 2026-07-08) — Learned to make real 2D art by
+  directing an AI. Mastered the six-part image-prompt formula and wrote his own
+  prompts, picked the best of 4 every time (refining one dial at a time), and
+  crafted four real assets into `game/assets/`: a grandfather clock and a golden
+  pocket-watch, the host's wall portrait, and a killer kept hidden so she never
+  spoils the mystery. Wired them into the game, kept the puzzle fair and playable,
+  and verified every one headless. Game bumped to Version 0.6.
 - 🕵️ **AI Tamer** (secret, 2026-07-06) — Eli directed the AI to build his vision
   *his* way: he combined three changes at once and the engineer delivered.
 - 🐛 **Bug Hunter** (secret, 2026-07-06) — Eli noticed the dashboard was wrong
@@ -422,6 +468,14 @@ perfectly, because the project remembered.
        - Lead Engineer · ⭐⭐⭐⭐☆ · Technically solid.
        - QA · ⭐⭐⭐☆☆ · Found two bugs.
        - Producer · ⭐⭐⭐⭐☆ · Excellent progress for Version 0.1. -->
+
+**Version 0.6 — Real Art, Directed (★ Bonus Mission, 2026-07-08)**
+- Creative & Art Director (Eli) · ⭐⭐⭐⭐⭐ · Learned to prompt for pictures, wrote his own prompts, picked the best of 4 every time, and refined one dial at a time. Four real assets, his taste on every call.
+- Concept Artist (lens) · ⭐⭐⭐⭐⭐ · Grandfather clock, golden pocket-watch, host portrait, hidden killer — all in one consistent painterly gold/mahogany/crimson world. Backgrounds cut to transparency cleanly.
+- Game Designer (Eli) · ⭐⭐⭐⭐⭐ · Two designer wins without prompting: kept the clock dimmed so the puzzle stays fair, and refused to show the killer's face so the mystery isn't spoiled. Thinking two rooms ahead.
+- Player Experience · ⭐⭐⭐⭐⭐ · The foyer now has a real host on the wall and a gleaming clock; the pocket-watch appears as an evidence photo when you find it. A big step up in immersion.
+- QA · ⭐⭐⭐⭐⭐ · Verified headless: the full case still solves (clues → clock 10:36 → key → door → win), all four assets load, the killer stays hidden even on the win screen, zero console errors.
+- Producer · ⭐⭐⭐⭐⭐ · Four real assets designed, generated, cut, wired, and verified in one session — plus a clean version bump to 0.6. The game now loads real art.
 
 **Version 0.5 — The Designer's Eye (Module 8, 2026-07-07)**
 - Creative Director & Game Designer (Eli) · ⭐⭐⭐⭐⭐ · Designed the next room + puzzle himself and defended it; shipped the setup into the live game.

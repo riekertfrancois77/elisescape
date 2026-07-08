@@ -6,6 +6,41 @@
 
 ---
 
+## ★ Bonus Mission — Paint Your World (COMPLETE · 2026-07-08)
+
+Claude wore the **Concept Artist** hat. Until now my whole game was painted in
+*code*. This mission I learned to make **real art** — actual picture files — by
+telling an AI what to paint. My game went to **Version 0.6**.
+
+- **I learned the image-prompt formula** — six parts: subject · style ·
+  composition · palette · lighting · what to leave out. I wrote my **own** prompts,
+  part by part, on my own game.
+- **I got 4 choices every time and picked the best myself.** I also learned the pro
+  trick: to fix something, change **one thing at a time** (I turned the host's
+  smirk into a grin, then swapped his wine glass for a golden goblet).
+- **I made 4 real assets** and they live in `game/assets/` now:
+  1. **Grandfather clock** — a mahogany clock with a Big Ben face. It stands in my
+     game now, but I kept it dark in the corner so my puzzle stays fair.
+  2. **Golden pocket-watch** — the 10:41 trap. It shows up as an evidence photo
+     when you look at the portrait.
+  3. **The host** — my murdered host, graying with a scar and a big grin, raising
+     his golden goblet. He hangs on the wall now (that goblet is the setup for my
+     library statue puzzle).
+  4. **The killer** — a woman in an emerald dress and a feathered mask with icy
+     blue eyes. But I told Claude **not to show her in the game** — because then
+     the player would know who the killer is! So she's saved and hidden, only for
+     the ending.
+- **I also decided NOT to use one asset** — I made a whole background painting but
+  chose to keep my hand-built foyer instead. My call.
+
+The best part: I protected my own mystery by hiding the killer. That's thinking
+like a real game designer.
+
+- **Achievement:** 🎨 **Concept Artist.**
+- **Next:** whatever **Dad** unlocks next (Modules 9–13 are still sealed).
+
+---
+
 ## Module 8 — Design Great Games (COMPLETE · 2026-07-07)
 
 Claude wore the **Game Designer** hat — but only as my *critic*. This was the

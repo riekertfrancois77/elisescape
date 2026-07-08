@@ -58,9 +58,13 @@ earn them.
   rules (fair + hard/clever), and defended the design under pressure-testing. He
   shipped a real improvement to the live game (the planted goblet setup, Version
   0.5) and locked the blueprint in `design/next-room.md` for Module 10.)*
-- [ ] **Concept Artist** — Direct an AI to paint real 2D art for your game — and
-  craft it in yourself. *(Bonus Mission — Paint Your World. Learn to prompt for
-  pictures, pick the best of 4, and craft 4 real assets into `game/assets/`.)*
+- [x] **Concept Artist** — Direct an AI to paint real 2D art for your game — and
+  craft it in yourself. *(Bonus Mission — Paint Your World, 2026-07-08. Eli learned
+  the six-part image-prompt formula and wrote his own prompts, picked the best of
+  4 every time (refining with one-dial changes), and crafted 4 real assets into
+  `game/assets/`: a grandfather clock and a golden pocket-watch, the host's wall
+  portrait, and — his own designer call — a killer kept hidden so she never spoils
+  the mystery. Game → Version 0.6.)*
 
 ## Secret Achievements
 

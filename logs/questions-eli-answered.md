@@ -6,6 +6,47 @@
 
 ---
 
+## 2026-07-08 — ★ Bonus Mission (Paint Your World)
+
+**Q (what to paint first — background, person, or object?):**
+**Eli:** "the grandfather cloak" → (confirmed) "the grandfather clock"
+
+**Q (describe the clock — subject):**
+**Eli:** "a tall wooden clock that is grand and is very nice looking" — then shared
+a reference photo and: "on the body it had a bell kind of thing that rings every
+hour similar to this." Later: "make the face look more like a big ben kind of face."
+
+**Q (which candidate of 4?):** **Eli:** "number 3 looks the best."
+**Follow-up (bigger + transparent):** **Eli:** "first make the cloak bigger and
+change the background around the cloak to transparent not black." (Approved the
+result: "looks good.")
+
+**Q (asset #2 — what next?):** **Eli:** "lets do a background" — then, after seeing
+both a straight-on and a corner view (4 each): "can we leave the background how it
+is for now" (chose to keep the hand-built CSS foyer).
+
+**Q (asset #2, take two):** **Eli:** "lets do the pocket watch."
+**Subject:** "its opened displaying the trap time and its a small round watch that
+is made of gold." **Pick:** "number 4 is good but make the background transparent."
+Kept it despite tiny dial text + ~10:08 hands: "keep it."
+
+**Q (asset #3 — a character; who?):** **Eli:** "the murdered host."
+**Subject:** "he is a graying man with a fancy suit and tux with slicked back hair
+and a mustache he is smirking always and has a scar down his neck." Agreed to add
+the raised goblet ("yes").
+**Picks/refinements:** "number 3 is good but make him grin more" → "1 is good but
+change the glass to a golden goblet" → "1 is the best" → "use that."
+**On framing it:** chose Option A — framed with his dark background ("1 is good").
+
+**Q (asset #4 — the killer; describe her):**
+**Eli:** "she is a young woman, they are wearing an emerald dress because they are
+in the party and they are wearing a mask as it was a masked party." Mask + eyes:
+"its a feathered mask and she has icy blue eyes."
+**Design call (do NOT show her):** "dont frame it just have it in your memory or
+else the player would know." (Killer kept hidden so she never spoils the mystery.)
+**Dress refinements:** "make the dress less revealing" → "it shows her shoulders" →
+"no make it so it shows her shoulders." **Pick:** "4 looks best."
+
 ## 2026-07-07 — Module 8 (Design Great Games)
 
 **Q (name what works):** Where does the answer 10:36 come from — could a player

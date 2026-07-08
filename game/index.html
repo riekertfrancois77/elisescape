@@ -11,7 +11,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>One Night at Thornwood Manor — v0.5</title>
+  <title>One Night at Thornwood Manor — v0.6</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -36,7 +36,7 @@
       <div class="title-inner">
         <p class="kicker">Eli AI Game Studio presents</p>
         <h1>One Night at<br /><span class="gold">Thornwood Manor</span></h1>
-        <p class="subtitle">A detective mystery &middot; Version&nbsp;0.5</p>
+        <p class="subtitle">A detective mystery &middot; Version&nbsp;0.6</p>
         <button class="btn" id="begin-btn">Begin the night</button>
         <p class="hint">A killer is hiding among the guests. Notice what's off.</p>
       </div>
@@ -168,8 +168,14 @@
       <div class="win-inner">
         <h1 class="gold">The way opens.</h1>
         <p id="win-text"></p>
+        <!-- The KILLER's portrait — a real art asset Eli directed in the Bonus
+             Mission (assets/killer-portrait.png). Kept HIDDEN on purpose: showing
+             the killer's face would spoil the whole mystery, so — Eli's own
+             design call — she is loaded and reserved here for the future
+             UNMASKING ending, and never shown during play. -->
+        <img id="killer-reveal" class="killer-reveal" src="assets/killer-portrait.png" alt="The killer, unmasked — revealed only when the case is finally cracked" hidden />
         <p class="win-tag">The night has only begun&hellip;</p>
-        <p class="version-note">That's <strong>Version&nbsp;0.5</strong> — sharpened by your own game-designer eye, with the setup for your next room quietly planted.</p>
+        <p class="version-note">That's <strong>Version&nbsp;0.6</strong> — your first real art assets, painted by an AI you directed: a grandfather clock and a golden pocket-watch in the room, the host hung on the wall, and a killer kept hidden until the end.</p>
         <button class="btn" id="replay-btn">Play again</button>
       </div>
     </section>

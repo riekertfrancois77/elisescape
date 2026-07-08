@@ -672,6 +672,20 @@ h1 {
 }
 #examine-image[hidden] { display: none; }
 
+/* The killer's reveal portrait — Eli's secret. Never shown during play (that
+   would spoil the mystery). Styled here for the future unmasking ending, but
+   kept hidden until then. */
+.killer-reveal {
+  display: block;
+  width: 220px;
+  max-width: 60%;
+  margin: 16px auto 6px;
+  border-radius: 8px;
+  border: 5px solid #7a5a24;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.6);
+}
+.killer-reveal[hidden] { display: none; }
+
 /* ---- The brass dial (the door's code entry, built into the room) ---- */
 #dial {
   margin-top: 14px;

@@ -8,6 +8,36 @@
 
 ---
 
+## Eli ran the Bonus Mission — plumbing notes (2026-07-08)
+
+Backstage bits from running "Paint Your World" (the Eli-facing story is in
+`session-log.md`; keep this out of his memory):
+
+- **Image gen path:** Canva MCP (`generate-design` → `create-design-from-candidate`
+  → `export-design` PNG). `poster`/`desktop_wallpaper` design types gave the right
+  portrait/landscape aspect. `generate-design` timed out twice (60s) and succeeded
+  on immediate retry — build retries in if this becomes common.
+- **Transparency:** Canva's transparent-PNG export doesn't help when the art has a
+  painted background, so backgrounds were cut locally with **Pillow** (installed via
+  pip; not preinstalled) using an edge flood-fill + alpha feather + auto-crop. Works
+  cleanly for high-contrast objects (clock, watch); a person on a dark background
+  (the host) left holes in the black tux, so that one was kept framed with its
+  backdrop instead — worth a nicer matting tool later.
+- **Game wiring:** added an `#examine-image` slot to the Examine panel (shows a
+  found clue as an evidence photo, e.g. the pocket-watch) and a hidden
+  `#killer-reveal` element (loaded but never shown — Eli's no-spoiler call).
+- **Version display:** bumped the game's shown version 0.5 → 0.6 in
+  `game/index.html` (title tag, subtitle, win-screen note).
+- **Dashboard fallbacks:** updated `script.js` `FALLBACK_MEMORY` (Game Version →
+  0.6) and `FALLBACK_ACHIEVEMENTS` (Concept Artist → [x]) so the dashboard reflects
+  progress even when opened as `file://`.
+- **Verification:** every asset checked headless (Playwright/Chromium at
+  `/opt/pw-browsers`, launched via the global module) — full case still solves,
+  clock stays fair/dim, killer stays hidden on the win screen, all 4 assets load,
+  zero console errors.
+
+---
+
 ## Dad adds the "Paint Your World" bonus mission — AI art assets (2026-07-08)
 
 Dad asked whether Module 7 taught Eli to *generate his own visual assets* with AI

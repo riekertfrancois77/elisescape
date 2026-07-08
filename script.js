@@ -285,7 +285,7 @@ const STUDIO_STATUS = [
 // `node --check script.js` after editing this file — it catches exactly this.
 const FALLBACK_MEMORY = `
 ## Game Version
-**0.5** — Arrival at Thornwood Manor, sharpened by Eli's own game-designer eye: the foyer portrait now shows the host mid-toast with a raised goblet of wine — a setup Eli planted for his next room (a statue that must be made to match the portrait). Built on 0.4's art-directed look, 0.3's prompt polish and 0.2's murder time 10:36.
+**0.6** — Arrival at Thornwood Manor, given its first real art assets — image files Eli made by directing an AI (the ★ Bonus Mission). He learned the six-part image-prompt formula, wrote his own prompts, and picked the best of 4 every time. Four assets landed in game/assets/: a grandfather clock and a golden pocket-watch, the host's wall portrait (raising his golden goblet), and — his own designer call — a killer kept hidden so she never spoils the mystery. Built on 0.5's designer eye, 0.4's art-directed look, 0.3's prompt polish and 0.2's murder time 10:36.
 
 ## Progress Tracker
 - [x] Module 1
@@ -386,7 +386,7 @@ const FALLBACK_ACHIEVEMENTS = `
 - [x] **AI Whisperer**
 - [x] **World Builder**
 - [x] **Game Designer**
-- [ ] **Concept Artist**
+- [x] **Concept Artist**
 
 ## Secret Achievements
 - [ ] **Curiosity Pays**
