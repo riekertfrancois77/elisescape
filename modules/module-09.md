@@ -2,116 +2,146 @@
 
 **Status:** OPENED by Dad (2026-07-08) · **Unlocks when Module 8 is complete.**
 **Role:** Eli is Creative Director. Claude wears the **Research Lead** hat — it
-commands a team of research sub-agents and reports back; Eli decides the questions
-and picks the winners.
+explains the plan, lays out *who could help and what each would do*, summons the
+experts Eli picks **one at a time**, and brings back each one's feedback. Eli
+decides who to bring in and which feedback to build.
 
 **Version target:** the game climbs another version (→ **v0.7**, or **v0.6** if the
-Bonus isn't done yet) once the research winners are built in.
+Bonus isn't done yet) once his chosen improvements are built in.
 
 ## Purpose
 
-Every module so far, Eli directed **one** AI. This one hands him a **team.** He
-learns that Claude can spawn **research sub-agents** — a squad of AI researchers
-that go out **in parallel**, each chasing a different question, and bring back the
-world's best current thinking. Then Eli does the Director's real job: he **curates**
-— reads the findings, keeps the ideas that fit *his* game, throws out the rest — and
-the studio builds the winners in.
+Every module so far, Eli directed **one** AI. This one hands him a **team** — and,
+more importantly, teaches him the *craft* of using one. He learns that Claude can
+summon **expert sub-agents** (researchers, engineers, reviewers), that a great
+director decides **who to bring in and why**, and that the real skill is **choosing
+which advice to take** — not swallowing all of it.
 
-This is the clearest "your brain first, then AI" module of all: the AI can research
-faster than any human, but only Eli can decide **what's worth asking**, **who to
-ask**, and **what's right for his game.**
+The whole module is run **for his craft, out loud**: at every step Claude says
+*why this step makes him a better game-maker*, not just what to click. And Eli
+**drives every decision** — which experts, in what order, and which of their notes
+actually make it into his game. Nothing here is done *for* him.
 
 ## Teach this FIRST — the concept (before you summon anyone)
 
 **Do not open by spawning agents.** Spend the first part of the session *teaching*,
 so Eli understands what he's doing and makes real choices. Cover these, simply but
-sharply, and check he gets each before moving on:
+sharply, and check he gets each before moving on — and for each, say **why it makes
+him a better game-maker**:
 
 - **What a sub-agent is.** A separate AI worker you send off on ONE job. You can
-  send out many at once and they all work at the same time — a *team*, not one
-  helper you ask everything.
+  summon a whole *team* of them — a researcher, an engineer, a reviewer — instead of
+  asking one helper everything. *Why it helps your craft: real studios are teams of
+  specialists; learning to run one is how big games get made.*
 - **Why a PANEL beats one generalist.** Ask one AI "how do I make my game better?"
-  and you get a shallow, averaged answer. A **panel of specialists** — each an
-  expert in ONE thing — goes *deep*, and they'll even disagree. Disagreement is
-  useful: it shows you the real trade-offs. (Real studios do this — a review board,
-  a writers' room.)
-- **Two kinds of panelist** — and they do different jobs:
-  - **Researchers / experts** — go *out* and bring back knowledge. ("What makes
-    2026 detective games feel immersive?")
-  - **Reviewers / critics** — look *at YOUR game* through an expert's eyes and tell
-    you what's weak. ("A horror-atmosphere designer reviews your foyer.")
-- **The Director's real skill: matching the right expert to the question.** A sound
-  designer answers different questions than a puzzle designer. **Choosing who sits
-  on the panel IS the thinking** — that's the part only Eli can do.
+  and you get a shallow, averaged answer. A **panel of specialists** — each expert in
+  ONE thing — goes *deep*, and they'll even disagree. Disagreement is useful: it
+  shows you the real trade-offs. *Why it helps your craft: you learn to weigh expert
+  opinions instead of just obeying one.*
+- **Three kinds of teammate** — they do different jobs:
+  - **Researchers / experts** — go *out* and bring back knowledge. ("What makes 2026
+    detective games feel immersive?")
+  - **Reviewers / critics** — look *at YOUR game* and tell you what's weak. ("A
+    horror-atmosphere designer reviews your foyer.")
+  - **Engineers** — figure out *how* to actually build an idea, and whether it's
+    worth the effort. ("How would we add footstep sounds without breaking the
+    puzzle?")
+- **The Director's real skill: choosing who to bring in, and which of their advice
+  to take.** A sound designer answers different questions than a puzzle designer, and
+  not every note is right for *your* game. **Deciding who's on the team and what you
+  keep IS the craft** — that's the part only Eli can do.
 
 ## The tool (how the "team" works)
 
-The research team is real, not pretend. In this session Claude spawns **sub-agents**
-(the Agent/Task tool) — separate AI workers that each take one research question and
-run at the same time, then report back. They can search the web for current, 2026
-thinking. This is a **native Claude Code capability** — no extra connector needed.
-If web access is unavailable in the session, say so honestly and fall back to what
-the researchers can reason out, rather than pretending to have searched.
+The team is real, not pretend. In this session Claude spawns **sub-agents** (the
+Agent/Task tool) — separate AI workers that each take one job and report back. They
+can search the web for current, 2026 thinking. This is a **native Claude Code
+capability** — no extra connector needed. If web access is unavailable in the
+session, say so honestly and fall back to what the experts can reason out, rather
+than pretending to have searched.
+
+**Summon them ONE AT A TIME, not all at once.** Even though the team *could* run in
+parallel, run this module **one expert at a time so Eli stays in the driver's seat**:
+summon → read that expert's feedback → **Eli decides what (if anything) to keep** →
+*then* summon the next. He processes each voice and makes a real call before the next
+one speaks. That's the whole point — he's directing a team, not receiving a report.
 
 ## The Brain-First Rule
 
-**Eli decides the questions; Eli picks the winners.** Two hard rules:
+**Eli drives every decision here.** He decides what to improve, *who* to bring in,
+in *what order*, and *which* of their feedback gets built. Claude teaches, lays out
+options, and does the legwork — but never chooses for him. Three hard rules:
 
-- **Don't hand him the research questions.** Ask what *he* wants his game to be
-  better at, and shape his answers into researchable questions — but the direction
-  is his.
-- **Don't pick the winning ideas for him.** Lay out what each researcher found,
-  neutrally, and let *him* choose what fits *One Night at Thornwood Manor* — and say
-  why. Curating is the whole skill.
+- **Don't hand him the goals or questions.** Ask what *he* wants his game to be
+  better at; shape his answers into questions — but the direction is his.
+- **Don't pick his team for him.** Show the candidates with full visibility (below)
+  and let *him* choose who's in and why.
+- **Don't decide what to integrate.** After each expert reports, *Eli* says take it,
+  tweak it, or skip it — and why. Choosing what to keep is the whole craft.
 
-## Help Eli design his panel (coach, don't decide)
+## Show the candidates, THEN let Eli pick his team (full visibility)
 
-After the teaching, *before* summoning anyone, walk Eli through building his own
-panel — one question at a time. Guide, never hand him the answer:
+After the teaching, and after Eli has said what he wants his game to be better at,
+**lay out a lineup of candidate teammates — with full visibility on what each one
+would actually do** — so his choice is informed, not blind. For each candidate give:
 
-1. **Start from his goals.** *"What do you most want your game to be better at?"*
-   Turn each wish into a plain question.
-2. **Cast the expert.** For each question ask: *"Who in the real world would KNOW
-   this best? Who would you put in the room?"* Let him name the kind of expert. If
-   he's stuck, offer a *menu* to pick from (not the answer): a detective-fiction
-   writer · an escape-room designer · a horror / atmosphere artist · a game-sound
-   designer · a UX playtester · a mystery-game critic.
-3. **Make him say WHY.** *"What will that expert see that the others won't?"* This
-   is the heart of the module — he should be able to defend each pick.
-4. **Researcher or reviewer?** For each seat ask: *"Is this person bringing in
-   outside ideas (researcher), or judging YOUR game (reviewer)?"* A good panel
-   often has both.
-5. **Keep it small and DIVERSE.** Aim for **3–4** panelists, all *different*.
-   Explain why: four clones of the same expert just repeat each other — four
-   different experts cover four blind spots. Diversity is the point.
-6. **Then, and only then, summon them.** Now he's chosen his panel with reasons —
-   dispatch them.
+- **Who they are** (e.g. *Escape-Room Designer*, *Horror-Atmosphere Artist*,
+  *Game-Sound Engineer*, *Detective-Fiction Writer*, *UX Playtester*, *Mystery-Game
+  Critic*).
+- **What they'd do** in one line — the exact question they'd chase or the part of
+  *his* game they'd review ("would study how 2026 escape rooms keep puzzles fair but
+  hard, and pitch 3 ideas for your deduction chain").
+- **Whether they're a researcher, reviewer, or engineer.**
+
+Then coach him to **pick his team** — guide, never decide:
+
+1. **Match to his goals.** *"Which of these would help most with what YOU want to
+   improve?"*
+2. **Make him say WHY.** *"What will that one see that the others won't?"* He should
+   be able to defend each pick — that's the heart of the module.
+3. **Keep it small and DIVERSE.** Aim for **3–4**, all *different* — four clones
+   repeat each other; four different experts cover four blind spots.
+4. **Set the order.** *"Who do you want to hear from first?"* He's directing.
+
+## Summon them ONE AT A TIME — Eli chooses what to keep
+
+Now run the loop, **one expert per round** (never all at once):
+
+1. **Summon** the next teammate Eli chose (spawn the sub-agent for real).
+2. **Report their feedback** clearly and neutrally — their top ideas or critique in
+   plain language. Don't spin it toward "just do all of it."
+3. **Eli decides: take it, tweak it, or skip it** — and says *why.* Record his call.
+4. **Next expert.** Repeat until his whole team has spoken.
+
+Only ideas Eli chose to **take** get built. The ones he skipped are his call too —
+saying no is directing.
 
 ## What You'll Learn
 
-- One AI is powerful; a **team** of AI specialists, working at once, is a superpower.
-- A **panel of different experts** beats one generalist — they go deep and disagree.
-- There are two kinds of panelist: **researchers** (bring outside ideas) and
-  **reviewers** (judge your game) — and you choose the mix.
-- The Director's real skill is **casting the right expert for each question** — and
-  knowing *why*.
-- **Research → curate → implement:** your brain leads, the AI does the legwork.
+- A **team** of AI specialists — researchers, reviewers, engineers — is a superpower.
+- A **team of different experts** beats one generalist: they go deep and disagree.
+- You choose your team from **full visibility** — you see what each one *would do*
+  before you pick.
+- Directing a team means **hearing one voice at a time** and **deciding what to
+  keep** — taking all the advice is not the job.
+- **Every step has a why:** each move here makes you a sharper game-maker, not just
+  a button-pusher.
 
 ## Rules for Claude Code in This Module
 
-- **Educate FIRST.** Teach the concept (see "Teach this FIRST") before spawning
-  anything. Eli should understand what a sub-agent team is and why a diverse panel
-  beats one generalist *before* he builds his.
-- **Help him design his own panel** (see "Help Eli design his panel") — coach him
-  to cast each expert and defend WHY. Don't hand him the panel; offer a menu only
-  if he's stuck, and make him choose.
-- **Actually spawn sub-agents** (the Agent/Task tool) — one per panelist, run in
-  parallel. Make Eli *feel* the team working, not a single voice.
-- When the team reports, present each finding **clearly and neutrally** — the top
-  ideas, in plain language — and let **Eli curate**. Never pick for him.
-- Turn his chosen winners into **concrete changes** to *his* game and build them
-  (respecting the studio's constraints — HTML/CSS/JS, plus the art-asset pipeline
-  from the Bonus if he's done it).
+- **Educate FIRST, and say the WHY.** Teach the concept (see "Teach this FIRST")
+  before spawning anything, and at each step name *why it makes Eli a better
+  game-maker* — not just what to do.
+- **Give full visibility, then let him pick.** Lay out the candidate teammates and
+  exactly what each would do (see "Show the candidates"), then coach Eli to choose
+  his team and defend WHY. Don't choose for him.
+- **Summon ONE AT A TIME** (see "Summon them one at a time"). Spawn the sub-agent
+  for real, report its feedback neutrally, and let **Eli decide take / tweak / skip**
+  before the next one is summoned. Never dump all the feedback at once, and never
+  push him to accept everything.
+- Build **only** the ideas Eli chose to keep — concrete changes to *his* game,
+  within the studio's constraints (HTML/CSS/JS, plus the Bonus art pipeline if he's
+  done it).
 - Keep the game **playable** — the deduction chain must still solve; verify it.
 - **Bump the version** in `MEMORY.md`'s `## Game Version`; tick `## Module 9 Steps`;
   add a Session-Memory + `logs/session-log.md` entry in Eli's voice; unlock
@@ -119,24 +149,25 @@ panel — one question at a time. Guide, never hand him the answer:
 
 ## Mission Flow
 
-1. **Learn the concept** — what a sub-agent team is, and why a *panel* of different
-   experts beats one generalist. (Teach first — don't summon yet.)
-2. **Decide your questions** — *Eli* picks what's worth knowing to make his game better.
-3. **Design your panel** — cast the right expert/reviewer for each question, and say
-   WHY (keep it small and diverse).
-4. **Summon the experts** — dispatch the panel of sub-agents in parallel.
-5. **Read the findings** — each panelist reports what the best games/designers do.
-6. **Curate as Director** — Eli keeps the winners that fit his game, rejects the rest.
-7. **Implement + verify** — the studio builds his chosen ideas in; the game still
-   plays and is sharper. Version bump.
+1. **Learn what we're doing & why** — what an expert sub-agent team is, why a team of
+   specialists beats one generalist, and how this makes you a better game-maker.
+   (Teach first — don't summon yet.)
+2. **Decide what to improve** — *Eli* picks what he wants his game to be better at.
+3. **See the candidates** — Claude lays out possible experts/engineers/reviewers with
+   **full visibility** on what each one would do.
+4. **Pick your team** — Eli chooses who's in, why, and in what order (small + diverse).
+5. **Summon one at a time** — each expert reports its feedback; *Eli* decides take /
+   tweak / skip before the next is summoned.
+6. **Build what he kept** — the studio builds only his chosen changes into the game.
+7. **Play & verify** — the game still solves and is sharper. Version bump.
 8. **Achievement unlock:** Expert Summoner.
 
 ## Done When
 
-- Eli **understood the concept** (why a diverse expert panel beats one generalist)
-  before any agent ran.
-- He **designed his own panel** — cast each expert/reviewer and can say *why*.
-- He saw the **team** run in parallel, then **curated** the findings (winners in,
-  rest out, with reasons).
-- The winning ideas are **built into the game** and it still plays.
+- Eli **understood what he was doing and why** (why a team of specialists helps his
+  craft) before any agent ran.
+- He **chose his own team from full visibility** — and can say why he picked each.
+- Experts were summoned **one at a time**, and **Eli decided take/tweak/skip** on
+  each one's feedback himself.
+- Only the ideas he **chose to keep** were built, and the game still plays.
 - The version is bumped, the memory updated, and **Expert Summoner** is unlocked.

@@ -17,14 +17,16 @@ sets the questions and picks the winners; the AI does the legwork.
 - **`DAD_OPENED_THROUGH` 8 → 9** in `script.js`. Sequential gating: with 1–8 done,
   Module 9 is now the active numbered module (Modules 10–13 still sealed). The
   ★ Bonus stays available alongside it.
-- **`modules/module-09.md`** — mission: **educate FIRST** (what a sub-agent team
-  is; why a diverse panel beats one generalist; researchers vs reviewers), then a
-  **"design your panel" coaching loop** (cast each expert and defend WHY — coach,
-  don't decide), then research→curate→implement. Note that the team is **real**
-  (Claude spawns Agent/Task sub-agents in parallel, web-search where available — a
-  native capability, no connector). Target **v0.7**. *(Dad's steer 2026-07-08:
-  teach the concept and help him pick the right panel of reviewers/experts and
-  understand why — don't just do the work for him.)*
+- **`modules/module-09.md`** — mission (revised twice to Dad's steers, 2026-07-08):
+  **educate FIRST and say the WHY at each step** (what a sub-agent team is; why a
+  team of specialists beats one generalist; researchers/reviewers/**engineers**; how
+  it sharpens his *game-making craft*). Then **full-visibility candidate lineup** —
+  Claude shows each possible expert/engineer/reviewer and exactly *what they'd do* —
+  and Eli **picks his team** (who, why, what order). Then **summon ONE AT A TIME**:
+  each expert reports, **Eli decides take / tweak / skip** before the next is
+  summoned; only what he keeps gets built. Team is **real** (Agent/Task sub-agents,
+  native, no connector). Emphasis throughout: **Eli drives every call — nothing done
+  for him.** Target **v0.7**.
 - **Dashboard** (`script.js`): `MODULE9_GOALS/STEPS`, `MISSIONS[9]`, new visible
   achievement **Expert Summoner** (+ `FALLBACK`), a "Research Team" studio
   capability, and refreshed `FALLBACK_MEMORY` Session-Memory/Claude-Instructions

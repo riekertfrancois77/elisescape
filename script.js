@@ -202,21 +202,21 @@ const MODULE8_STEPS = [
 ];
 
 const MODULE9_GOALS = [
-  "One AI is powerful — a whole TEAM of AI specialists, working at once, is a superpower.",
-  "A panel of DIFFERENT experts beats one generalist — they go deep and disagree.",
-  "Two kinds of panelist: researchers (bring outside ideas) and reviewers (judge your game).",
-  "The Director's real skill is casting the RIGHT expert for each question — and knowing why.",
-  "Research → curate → implement: your brain leads, the AI does the legwork.",
+  "A TEAM of AI specialists — researchers, reviewers, engineers — is a superpower.",
+  "A team of DIFFERENT experts beats one generalist: they go deep and disagree.",
+  "You choose your team from FULL VISIBILITY — you see what each would do before you pick.",
+  "Directing a team means hearing one voice at a time and deciding what to KEEP.",
+  "Every step has a WHY — each move here makes you a sharper game-maker.",
 ];
 
 const MODULE9_STEPS = [
-  "Learn the concept — what a sub-agent team is, and why a panel of experts beats one generalist. (Learn first — don't summon yet.)",
-  "Decide your questions — YOU pick what's worth knowing to make your game better.",
-  "Design your panel — cast the right expert / reviewer for each question, and say WHY (small + diverse).",
-  "Summon the experts — dispatch your panel of sub-agents, in parallel.",
-  "Read the findings — each panelist reports what the best games and designers actually do.",
-  "Curate as Director — pick the winners that fit YOUR game; reject the rest (and say why).",
-  "Implement + verify — the studio builds your chosen ideas in; the game still plays. Version bump.",
+  "Learn what we're doing & why — an expert team, why specialists beat one generalist, and how it sharpens your craft. (Learn first — don't summon yet.)",
+  "Decide what to improve — YOU pick what you want your game to be better at.",
+  "See the candidates — Claude shows possible experts / engineers / reviewers, with full visibility on what each would do.",
+  "Pick your team — you choose who's in, why, and in what order (small + diverse).",
+  "Summon ONE AT A TIME — each expert reports its feedback; YOU decide take / tweak / skip before the next.",
+  "Build what you kept — the studio builds only your chosen changes into the game.",
+  "Play & verify — the game still solves and is sharper. Version bump.",
   "Achievement unlock: Expert Summoner.",
 ];
 
