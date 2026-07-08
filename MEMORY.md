@@ -214,13 +214,13 @@ module makes the game better — that's the whole point of the journey.
 <!-- Unlocks when Module 8 is complete (opened by Dad 2026-07-08). Target: game
      climbs another version as the research winners get built in. -->
 
-- [ ] 1. Meet the Research Lead — Claude can summon a team of AI researchers at once
+- [ ] 1. Learn the concept — what a sub-agent team is, and why a panel of experts beats one generalist (learn first)
 - [ ] 2. Decide your questions — you pick what's worth knowing to make the game better
-- [ ] 3. Summon the experts — dispatch research sub-agents, each on one question, in parallel
-- [ ] 4. Read the findings — each researcher reports what the best games do
-- [ ] 5. Curate as Director — pick the winners that fit your game, reject the rest
-- [ ] 6. Implement the winners — the studio builds your chosen ideas in
-- [ ] 7. Play & verify — the game is sharper and more immersive; version bump
+- [ ] 3. Design your panel — cast the right expert/reviewer for each question, and say WHY (small + diverse)
+- [ ] 4. Summon the experts — dispatch your panel of sub-agents, in parallel
+- [ ] 5. Read the findings — each panelist reports what the best games do
+- [ ] 6. Curate as Director — pick the winners that fit your game, reject the rest
+- [ ] 7. Implement + verify — the studio builds your chosen ideas in; the game still plays; version bump
 - [ ] 8. Achievement unlocked: Expert Summoner
 
 ## Session Memory

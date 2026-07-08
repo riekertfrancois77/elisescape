@@ -202,21 +202,21 @@ const MODULE8_STEPS = [
 ];
 
 const MODULE9_GOALS = [
-  "One AI is powerful — a whole TEAM of AI researchers, working at once, is a superpower.",
-  "You can send sub-agents to research anything, and they work in parallel.",
-  "The Director's job is to decide WHAT to ask — and to CURATE what comes back.",
-  "Not every good idea fits YOUR game. Choosing the right ones is the skill.",
+  "One AI is powerful — a whole TEAM of AI specialists, working at once, is a superpower.",
+  "A panel of DIFFERENT experts beats one generalist — they go deep and disagree.",
+  "Two kinds of panelist: researchers (bring outside ideas) and reviewers (judge your game).",
+  "The Director's real skill is casting the RIGHT expert for each question — and knowing why.",
   "Research → curate → implement: your brain leads, the AI does the legwork.",
 ];
 
 const MODULE9_STEPS = [
-  "Meet the Research Lead — Claude can summon a whole team of AI researchers at once.",
+  "Learn the concept — what a sub-agent team is, and why a panel of experts beats one generalist. (Learn first — don't summon yet.)",
   "Decide your questions — YOU pick what's worth knowing to make your game better.",
-  "Summon the experts — dispatch a team of research sub-agents, each on one question, in parallel.",
-  "Read the findings — each researcher reports what the best games and designers actually do.",
-  "Curate as Director — pick the winning ideas that fit YOUR game; reject the rest (and say why).",
-  "Implement the winners — the studio builds your chosen ideas into the game.",
-  "Play & verify — the game is sharper and more immersive. Version bump.",
+  "Design your panel — cast the right expert / reviewer for each question, and say WHY (small + diverse).",
+  "Summon the experts — dispatch your panel of sub-agents, in parallel.",
+  "Read the findings — each panelist reports what the best games and designers actually do.",
+  "Curate as Director — pick the winners that fit YOUR game; reject the rest (and say why).",
+  "Implement + verify — the studio builds your chosen ideas in; the game still plays. Version bump.",
   "Achievement unlock: Expert Summoner.",
 ];
 
