@@ -328,8 +328,15 @@ function addClue(text, silent) {
 /* ---------------------------------------------------------------------
    3c. EXAMINE — write what the detective sees into the panel.
    --------------------------------------------------------------------- */
-function examine(text) {
+function examine(text, image) {
   document.getElementById("examine-text").textContent = text;
+  // Show a real painted clue up close when one is provided (e.g. the pocket
+  // watch). Any other examine hides it again.
+  const img = document.getElementById("examine-image");
+  if (img) {
+    if (image) { img.src = image; img.hidden = false; }
+    else { img.hidden = true; img.removeAttribute("src"); }
+  }
   // Looking at anything else puts the brass dial away.
   const dial = document.getElementById("dial");
   if (dial) dial.innerHTML = "";
@@ -359,7 +366,7 @@ function clickObject(object) {
     // THE TRAP — now WITHOUT the "always ran fast" giveaway (Eli's call). The
     // only tell is subtle and physical: the hands were knocked crooked in the
     // struggle, so the time it shows can't be trusted. You have to NOTICE that.
-    examine("The host's proud portrait looms above a side table — painted mid-toast, a goblet of deep red wine raised high in his right hand, his smile too pleased. Below it lies his gold pocket watch, smashed in the fall, its glass starred, the hands knocked crooked on their pin. Jarred as they are, they point somewhere near 10:41.");
+    examine("The host's proud portrait looms above a side table — painted mid-toast, a goblet of deep red wine raised high in his right hand, his smile too pleased. Below it lies his gold pocket watch, smashed in the fall, its glass starred, the hands knocked crooked on their pin. Jarred as they are, they point somewhere near 10:41.", "assets/pocket-watch.png");
     addClue("Pocket watch, hands jarred crooked — points near 10:41.");
 
   } else if (object === "coats") {

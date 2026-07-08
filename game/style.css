@@ -644,6 +644,22 @@ h1 {
   color: #ede1cc;
 }
 
+/* A found clue, shown up close as a real painted asset (the gold pocket watch).
+   Framed in warm mahogany + a thin gold rim so it reads as an evidence photo,
+   with a soft glow so the cut-out object sits on the dark panel nicely. */
+#examine-image {
+  display: block;
+  width: 100%;
+  max-width: 210px;
+  margin: 14px auto 2px;
+  border-radius: 10px;
+  background: radial-gradient(circle at 50% 42%, #241811, #140d07);
+  border: 1px solid #6b4f22;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.55), inset 0 0 24px rgba(0,0,0,0.6);
+  padding: 8px;
+}
+#examine-image[hidden] { display: none; }
+
 /* ---- The brass dial (the door's code entry, built into the room) ---- */
 #dial {
   margin-top: 14px;
