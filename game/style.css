@@ -124,12 +124,13 @@ h1 {
 .room {
   position: relative;
   flex: 1.55;
-  /* warm floor + wall, a fire-lit party room */
-  background:
-    radial-gradient(ellipse at 50% 38%, rgba(255, 214, 140, 0.22), transparent 60%),
-    linear-gradient(#2e2013 0%, #241a12 55%, #1a1109 100%);
+  /* Eli's AI-painted Grand Foyer (Bonus Mission — his first real art asset). */
+  background: #1a1109 url("assets/foyer-bg.png") center / cover no-repeat;
   border-right: 2px solid #0c0906;
 }
+/* The old code-painted set is switched off now that the real painting is the
+   room. (Kept in the HTML so we can flip back any time.) */
+.scene { display: none; }
 
 .room-label {
   position: absolute;
