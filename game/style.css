@@ -132,6 +132,32 @@ h1 {
    room. (Kept in the HTML so we can flip back any time.) */
 .scene { display: none; }
 
+/* The creeping gloom (Module 9 — "the room reacts"): a cold shadow that fades
+   in as clues pile up. Opacity is set from JS, capped so the room stays playable. */
+.gloom {
+  position: absolute;
+  inset: 0;
+  z-index: 1;               /* above the painting, below the hotspots (z-index 2) */
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+  background:
+    radial-gradient(ellipse at 50% 42%, transparent 30%, rgba(10, 14, 34, 0.55) 100%),
+    linear-gradient(rgba(6, 10, 26, 0.28), rgba(3, 5, 16, 0.5));
+}
+
+/* The hidden killer's taunt (Module 9): a cold, ghostly whisper in the panel. */
+.taunt {
+  min-height: 1.2em;
+  margin: 8px 0 0;
+  font-style: italic;
+  color: #9fb4d6;
+  text-shadow: 0 0 8px rgba(120, 150, 210, 0.4);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.taunt.show { opacity: 1; }
+
 /* Eli's AI-painted grandfather clock shown up close in the Examine panel when
    the detective inspects the clock (Bonus asset #2). */
 .examine-art {

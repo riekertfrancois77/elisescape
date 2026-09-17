@@ -64,8 +64,13 @@ earn them.
   the best of 4 each time, and crafted FOUR real assets into `game/assets/` and the
   game — a Grand Foyer background, a grandfather clock, the host's portrait, and the
   library statue — directing revisions along the way. Game bumped to Version 0.6.)*
-- [ ] **Expert Summoner** — Summon a team of AI researchers, curate their findings,
-  and build the winners into your game. *(Module 9 — Summon the Experts.)*
+- [x] **Expert Summoner** — Summon a team of AI researchers, curate their findings,
+  and build the winners into your game. *(Unlocked 2026-07-08 — Module 9. Eli
+  learned the craft first, then summoned a diverse 4-expert panel (Puzzle Designer,
+  Mystery-Game Designer, Detective-Fiction Writer, Game Engineer) ONE AT A TIME,
+  decided take/tweak/skip on each, and took the engineer's honest scope call. Built
+  the safe set — a two-clue time split, a lying witness, a taunting killer, and a
+  room that reacts — and saved the bigger ideas for their own sessions. Game → Version 0.7.)*
 
 ## Secret Achievements
 

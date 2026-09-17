@@ -18,6 +18,7 @@
 const state = {
   hasKey: false, // Has the detective set the clock and taken the hidden key?
   clues: [],     // The list of clues in the notebook.
+  taunts: 0,     // How many taunts the hidden killer has whispered so far.
 };
 
 // The one true answer: the time of the murder. You DON'T get told it — you
@@ -318,6 +319,8 @@ function addClue(text, silent) {
   li.textContent = text;
   list.appendChild(li);
 
+  updateGloom(); // the room curdles a little with every clue you notice
+
   // Every clue rings the same soft chime — so the sound never singles out any
   // one thing. The KEY, though, is added silently (silent = true): Version C
   // gives you no "correct!" fanfare when you finally crack it.
@@ -337,23 +340,68 @@ function examine(text) {
 
 
 /* ---------------------------------------------------------------------
+   3c-2. THE KILLER TAUNTS (Module 9 idea) — a second presence in the room.
+   As you search wrong things or fail the clock, the hidden culprit whispers,
+   escalating. The moment you find the key, he goes silent for good.
+   --------------------------------------------------------------------- */
+const TAUNTS = [
+  "A whisper drifts from somewhere behind you: “Warmer, Detective…”",
+  "“Still nothing? And they call you famous.”",
+  "“You always were one step behind me.”",
+  "“Tick… tock… Detective.”",
+  "“Look closer. It was right in front of you all along.”",
+];
+
+function showTaunt() {
+  if (state.hasKey) return; // once the key is found, the killer falls silent
+  const el = document.getElementById("taunt");
+  if (!el) return;
+  el.textContent = TAUNTS[Math.min(state.taunts, TAUNTS.length - 1)];
+  el.classList.remove("show");
+  void el.offsetWidth; // restart the fade-in animation
+  el.classList.add("show");
+  state.taunts = state.taunts + 1;
+}
+
+function clearTaunt() {
+  const el = document.getElementById("taunt");
+  if (el) { el.textContent = ""; el.classList.remove("show"); }
+}
+
+
+/* ---------------------------------------------------------------------
+   3c-3. THE ROOM REACTS (Module 9 idea) — the more you notice, the more the
+   cozy foyer curdles: a cold gloom creeps in, one step per clue. Capped so the
+   room never gets too dark to play (the engineer's fairness note).
+   --------------------------------------------------------------------- */
+function updateGloom() {
+  const gloom = document.getElementById("gloom");
+  if (!gloom) return;
+  const steps = Math.min(state.clues.length, 4); // cap at 4 so hotspots stay clickable
+  gloom.style.opacity = String(steps * 0.09);    // up to ~0.36
+}
+
+
+/* ---------------------------------------------------------------------
    3d. REACTIONS — what each object in the room says when you click it.
    Most things are cozy and innocent (that's the disguise). Only ONE
    thing is truly off — the great clock.
    --------------------------------------------------------------------- */
 function clickObject(object) {
   if (object === "guests") {
-    // CLUE 1 — a lower bound, told as testimony. The notebook records only the
-    // FACT (a half-hour chime just gone ten); the detective must realise that
-    // means the host was still alive at 10:30.
-    examine("A tearful guest clutches your sleeve. 'His last toast — he raised his glass the very moment the hall clock chimed the half hour, just gone ten. So merry, he was. Who could have...' Her voice breaks.");
-    addClue("Host's last toast: on the half-hour chime, just gone ten.");
+    // CLUE 1 — a lower bound, told as testimony. PLUS a LYING witness (Module 9):
+    // a second guest claims a later time that the physical clues disprove. The
+    // detective must trust evidence over words.
+    examine("A tearful guest clutches your sleeve. 'His last toast — he raised his glass the very moment the hall clock chimed the half hour, just gone ten.' Behind her, a wine-flushed gentleman scoffs: 'Nonsense — I saw him laughing by the fire at a quarter to eleven, alive as you or me!'");
+    addClue("Host's last toast: on the half-hour chime, just gone ten. (So: alive at 10:30.)");
+    addClue("A guest CLAIMS he saw the host alive at 10:45 — but do the other facts agree?");
+    showTaunt();
 
   } else if (object === "fireplace") {
-    // CLUE 2 — the hour, told obliquely. You read a burnt candle, not a sentence
-    // that says "the 9 o'clock hour".
+    // CLUE 2 — the HOUR half of the time (Module 9 split): read from a burnt candle.
     examine("On the mantel, a tall candle is scored with a ring for every hour. Its flame has eaten down past the tenth ring — but stops short of the eleventh. Beside it lies a single spent match.");
-    addClue("Candle burned past the 10th hour-ring, not yet the 11th.");
+    addClue("Candle burned past the 10th hour-ring, not yet the 11th — so the hour was ten.");
+    showTaunt();
 
   } else if (object === "portrait") {
     // THE TRAP — now WITHOUT the "always ran fast" giveaway (Eli's call). The
@@ -371,14 +419,14 @@ function clickObject(object) {
       art.alt = "";
       dial.appendChild(art);
     })();
+    showTaunt();
 
   } else if (object === "coats") {
-    // CLUE 3 — the exact minute, but told LESS directly now. The footman was
-    // counting the minutes DOWN to the eleven o'clock chime; he'd reached "twenty-four"
-    // when the scream came. The detective has to realise: twenty-four minutes left
-    // before eleven = 10:36. No "before the chime" spelled out anymore.
+    // CLUE 3 — the MINUTE half of the time (Module 9 split): the footman counted
+    // DOWN to eleven and reached "twenty-four" — so 60 − 24 = 36 minutes.
     examine("By the cloakroom a footman is shaking. 'I count the minutes down to the hour — a habit, sir. I'd just whispered \"twenty-four\" when the scream tore through the hall. The eleven o'clock chime never followed it.'");
-    addClue("Footman counting down to eleven's chime — had reached 'twenty-four' when the scream came.");
+    addClue("Footman counting down to eleven — reached 'twenty-four' when the scream came (twenty-four minutes before eleven).");
+    showTaunt();
 
   } else if (object === "clock") {
     // The great clock is now the LOCK: set its hands to the deduced time.
@@ -436,11 +484,13 @@ function handleClock() {
       // VERSION C: no "correct!" — just a soft click and the key, quietly.
       state.hasKey = true;
       keyClick();
+      clearTaunt(); // the killer falls silent the moment you crack it
       addClue("A brass key, hidden inside the clock's case.", true); // silent
       examine("You turn the hands to the hour of death. Deep in the old case something shifts — a soft click — and a little panel springs open. Inside lies a brass key. You take it.");
     } else {
       // No hint. No pointing back at the clues. You have to be sure.
       msg.textContent = "The hands turn. The old clock ticks on, and nothing stirs.";
+      showTaunt(); // the hidden killer enjoys your failure
     }
   }
 
@@ -492,10 +542,15 @@ function win() {
 function resetGame() {
   state.hasKey = false;
   state.clues = [];
+  state.taunts = 0;
 
   // Clear the notebook back to empty.
   const list = document.getElementById("clue-list");
   list.innerHTML = '<li class="empty">No clues yet. Look closer.</li>';
+
+  // Reset the killer's taunts and the creeping gloom.
+  clearTaunt();
+  updateGloom();
 
   // Reset the examine text and hide the clock back in shadow.
   examine("You stand in the warm glow of the foyer. Click things to look closely, Detective.");

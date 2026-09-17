@@ -6,6 +6,33 @@
 
 ---
 
+## Module 9 — Summon the Experts (COMPLETE · 2026-07-08)
+
+Claude wore the **Research Lead** hat. Before summoning anyone, it taught me the
+big idea: I can call up a whole **team** of AI experts, not just one helper — and
+the real skill is **choosing who to bring in and which of their advice to keep.**
+
+- **I said what I wanted better:** the game felt too short, had no ending, and was
+  too simple.
+- **I built my team** from a lineup — 🧩 Puzzle Designer, 🔍 Mystery-Game Designer,
+  ✍️ Detective-Fiction Writer, 🔧 Game Engineer — all different jobs, no overlap.
+- **I heard them one at a time** and decided take / tweak / skip on each.
+- **What we BUILT this session (the safe stuff):**
+  - **Split the time** — the candle gives the hour, the footman gives the minutes,
+    so I have to *combine* two clues (not just read one).
+  - **A lying witness** — a guest claims the host was alive at 10:45, but the facts
+    prove otherwise. I have to trust evidence over words.
+  - **The killer taunts me** as I search ("Tick… tock… Detective."), and goes quiet
+    the second I get the key.
+  - **The room reacts** — it gets darker and colder the more clues I find.
+- **What I kept for later:** my engineer said the big stuff (a connect-the-clues
+  step, naming the killer, and my full **ending**) each needs its own session so I
+  don't break the game — so we saved them in `design/expert-ideas.md`.
+- The game still solves, and it's deeper and tenser now. **Version 0.7.** Earned
+  the **Expert Summoner** trophy. 🔮
+
+---
+
 ## ★ Bonus Mission — Paint Your World (COMPLETE · 2026-07-08)
 
 Claude wore the **Concept Artist** hat, but *I* was the Art Director. This was the

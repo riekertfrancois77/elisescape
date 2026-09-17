@@ -6,6 +6,36 @@
 
 ---
 
+## 2026-07-08 — Module 9 (Summon the Experts)
+
+**Q (what to improve):** What do you most want to make better about Thornwood Manor?
+**Eli:** *"it feels nice but it's too short and doesn't have an ending and it feels a
+bit too simple."*
+**Studio note:** Named three real design problems (length, ending, depth) — a clear
+brief for the team.
+
+**Q (pick your team):** Which experts do you want, and who first?
+**Eli:** *"can i get d a and b and e"* — Puzzle Designer (D), Mystery-Game Designer
+(A), Detective-Fiction Writer (B), Game Engineer (E); **confirmed order D → A → B → E.**
+**Studio note:** A diverse 4-expert panel, engineer last (build advice after ideas).
+
+**Q (Puzzle Designer's 3 depth ideas — take/tweak/skip?):** **Eli: "take all 3"**
+(split the time · lying witness · name-the-culprit second lock).
+
+**Q (Mystery-Game Designer's 3 ideas):** **Eli: "take all 3"** (killer taunts ·
+connect-the-clues step · the room reacts).
+
+**Q (Detective-Fiction Writer's 3 endings):** **Eli: "take all 3"** → blended into one
+multi-beat finale (Face-Off → name the clue → Dawn Breaks).
+
+**Q (Engineer's scope — build the safe set 1–4 now, save 5–7 for their own sessions?):**
+**Eli: "yes sounds good."**
+**Studio note:** Took the engineer's honest scope call — shipped the additive set
+(split time, lying witness, taunts, reacting room) in v0.7; saved the gated ideas
+(connect-the-clues, name-the-culprit, the ending) to `design/expert-ideas.md`.
+
+---
+
 ## 2026-07-08 — ★ Bonus Mission (Paint Your World)
 
 **Asset #1 — Grand Foyer background.** Subject: the Grand Foyer with all its objects

@@ -306,7 +306,7 @@ const STUDIO_STATUS = [
 // `node --check script.js` after editing this file — it catches exactly this.
 const FALLBACK_MEMORY = `
 ## Game Version
-**0.6** — Arrival at Thornwood Manor, now with Eli's first real AI-painted art assets (★ Bonus — Paint Your World): a painterly Grand Foyer background (the real room now), a grandfather clock and the host's portrait shown in the Examine panel, and a library statue teasing the next room on the win screen. Built on 0.5's designer eye, 0.4's art-directed look, 0.3's prompt polish and 0.2's murder time 10:36.
+**0.7** — Arrival at Thornwood Manor, made deeper by a panel of AI experts Eli summoned and curated (Module 9): the murder time now splits across two clues (candle = hour, footman = minutes), a lying witness must be caught, the hidden killer taunts you and goes silent when you win, and the foyer curdles darker with every clue. Built on 0.6's real AI art, 0.5's designer eye, 0.4's art-directed look, 0.3's prompt polish and 0.2's murder time 10:36.
 
 ## Progress Tracker
 - [x] Module 1
@@ -317,7 +317,7 @@ const FALLBACK_MEMORY = `
 - [x] Module 6
 - [x] Module 7
 - [x] Module 8
-- [ ] Module 9
+- [x] Module 9
 - [ ] Module 10
 - [ ] Module 11
 - [ ] Module 12
@@ -368,6 +368,7 @@ const FALLBACK_MEMORY = `
 - [x] 6
 
 ## Session Memory
+- 🔮 **Module 9 COMPLETE — Expert Summoner unlocked. Game → Version 0.7.** Eli learned to command a **team**, not just one AI. Claude (Research Lead) taught the craft first — why a panel of specialists beats one generalist, and that the real skill is choosing who to bring in and what to keep. Eli named his goals (*too short · no ending · too simple*), built a diverse 4-expert panel (Puzzle Designer, Mystery-Game Designer, Detective-Fiction Writer, Game Engineer), summoned them **one at a time**, and decided take/tweak/skip on each. He took the engineer's honest scope advice and built the safe set: a **two-clue time split**, a **lying witness**, a **taunting killer** (silent once you win), and a **room that curdles darker** with each clue. Bigger ideas (a connect-the-clues gate, a name-the-culprit lock, a multi-beat ending) saved to `design/expert-ideas.md`. Case still solves.
 - 🎨 **★ BONUS COMPLETE — "Paint Your World." Concept Artist unlocked. Game → Version 0.6.** Eli's game got its first **real AI-made art assets**, and *he* directed every one (Claude as Concept Artist, via the Canva connector). He mastered the 6-part image-prompt formula (subject · style · composition · palette · lighting · leave-out), wrote every prompt himself, and chose the best of **4** each time. Four assets: a painterly **Grand Foyer** (now the real background, clickables realigned onto it), a **grandfather clock** and the **host's portrait** (up close in the Examine panel), and the **library statue** teasing his Module 8 next room on the win screen. He even directed revisions one dial at a time. Every step verified — the case still solves, the clock stays hidden.
 - 🧩 **Module 8 COMPLETE — Game Designer unlocked. Game → Version 0.5.** The purest "Eli's brain first" module: he **designed his next room and its puzzle himself** while Claude (Game Designer / critic) only pressure-tested. He named his own puzzle rules — **FAIR** (findable clues, no guessing) and **HARD & CLEVER** (you earn the aha) — then designed a **candlelit library** with a **statue that matches the host's portrait but holds the wrong thing**; the player fixes what it holds (a **goblet of wine**) and a **hidden room slides open**. He defended its fairness himself (you can travel between rooms to re-check the portrait), shipped a real improvement to the live game (the foyer portrait now shows the raised goblet — the planted **setup**, Version 0.5), and locked the blueprint in \`design/next-room.md\` for Module 10.
 - 🎨 **Module 7 COMPLETE — World Builder unlocked. Game → Version 0.4.** Eli gave his game a **face** and art-directed all of it (Claude as Technical Artist). He chose the feeling first (*warm but wrong, grand and rich, a touch of creepy*) and a custom palette (**gold + mahogany + a bit of deep crimson**), then reacted and redirected pass after pass: a grand golden chandelier, gilded crown molding, a mantel-and-**chimney** fireplace lifted off the rug, a smaller gilded door, a coat rack with a draped cloak, a detailed crimson rug, and the great **grandfather clock** painted into its shadowy corner (kept dark so the puzzle stays fair). Then it came alive — flickering firelight, a breathing chandelier glow, and a warm low grand-hall drone. Every pass verified: the case still solves, the clock stays hidden.
@@ -379,18 +380,21 @@ const FALLBACK_MEMORY = `
 - 🏆 Trophies so far: Creative Director, First Big Decision, Game Pillars Chosen, Studio Review Complete, Memory Created, One-Shot Power, First Playable, Director Mode, **Memory Keeper**, plus secret **AI Tamer** and **Bug Hunter**.
 - 🏁 **Dad's run (Modules 5–8) is COMPLETE** — **5 Read the Machine ✅ → 6 Speak AI Fluently ✅ → 7 Create Worlds ✅ → 8 Design Great Games ✅.** The game climbed 0.1 → 0.5, all by Eli.
 - ★ **BONUS COMPLETE — "Paint Your World"** — Eli made 4 real AI art assets (best-of-4) and crafted them into game/assets/ and the game → v0.6. **Concept Artist** unlocked.
+- 🔮 **Module 9 COMPLETE — "Summon the Experts"** — Eli ran a curated 4-expert panel and built the safe set (two-clue split, lying witness, taunts, reacting room) → v0.7. **Expert Summoner** unlocked. Bigger ideas saved in design/expert-ideas.md.
 - 🔮 **MODULE 9 unlocked — "Summon the Experts"** — command a team of AI researchers, curate the winners, build them in.
 
 ## Claude Instructions
-🎨 **★ Bonus Mission COMPLETE, Director — you earned Concept Artist.** You directed
-AI to paint your game's first real art assets (foyer, clock, host, statue), wrote
-every prompt yourself, and chose best-of-4. Your game now uses real art files. **Version 0.6.**
+🔮 **Module 9 COMPLETE, Director — you earned Expert Summoner.** You commanded a
+team: you named your goals, summoned a 4-expert panel one at a time, curated
+take/tweak/skip on each, and shipped the safe set (two-clue split, lying witness,
+taunting killer, reacting room). **Version 0.7.**
 
-🔮 **UP NEXT: MODULE 9 — "Summon the Experts":** command a whole **team** of AI
-researchers at once, curate the best ideas as Director, and build the winners into
-your game → **v0.7.** Say: *"Start Module 9 — summon a research team to make my game better."*
+🏁 **You've now done everything that's open — Modules 1–9 and the ★ Bonus.** Your
+game climbed **0.1 → 0.7**, all directed by you. Two of your own plans wait for Dad
+to open more: the library room (`design/next-room.md`, Module 10) and the bigger
+expert ideas (`design/expert-ideas.md`).
 
-Modules 10–13 stay sealed until **Dad** opens them.
+Modules 10–13 stay sealed until **Dad** opens them. Ask him when you want more.
 `;
 
 const FALLBACK_ACHIEVEMENTS = `
@@ -409,7 +413,7 @@ const FALLBACK_ACHIEVEMENTS = `
 - [x] **World Builder**
 - [x] **Game Designer**
 - [x] **Concept Artist**
-- [ ] **Expert Summoner**
+- [x] **Expert Summoner**
 
 ## Secret Achievements
 - [ ] **Curiosity Pays**

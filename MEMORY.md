@@ -8,16 +8,17 @@ Everything here is *your* game and *your* journey.
 ## Project State
 
 - **Creative Director:** Eli
-- **Current — active: Module 9 — "Summon the Experts"** (command a team of AI
-  research sub-agents, curate the winners, build them in). The **★ BONUS MISSION —
-  "Paint Your World" is now COMPLETE** — Eli earned **Concept Artist** by
-  directing AI to paint **four real 2D art assets** (a Grand Foyer background, a
-  grandfather clock, the host's portrait, and the library statue) and crafting
-  them into `game/assets/` and the game, taking it to **Version 0.6**. Both were
-  opened by Dad (bonus 2026-07-08; Module 9 2026-07-08). **Modules 1–8 are all
-  complete** (Dad's run 5–8 done). Numbered Modules **10–13 stay sealed** until
-  **Dad** opens them (`DAD_OPENED_THROUGH = 9`). The next-room blueprint is in
-  `design/next-room.md`, ready to *build* in Module 10.
+- **Current — nothing active; all opened content is COMPLETE.** **Module 9 —
+  "Summon the Experts" is COMPLETE** — Eli earned **Expert Summoner** by running a
+  panel of AI specialist sub-agents (Puzzle Designer, Mystery-Game Designer,
+  Detective-Fiction Writer, Game Engineer) one at a time, curating their advice,
+  and building the safe set into the game (→ **Version 0.7**). The **★ Bonus —
+  "Paint Your World" is also COMPLETE** (Concept Artist, v0.6). **Modules 1–9 and
+  the Bonus are all done.** Numbered Modules **10–13 stay sealed** until **Dad**
+  opens them (`DAD_OPENED_THROUGH = 9`). Two deferred design docs are ready for
+  future sessions: `design/next-room.md` (build in Module 10) and
+  `design/expert-ideas.md` (the big kept-but-not-yet-built ideas: connect-the-clues,
+  name-the-culprit lock, and the multi-beat ending).
 - **Game concept:** ***One Night at Thornwood Manor*** — a famous detective is
   trapped one night in a cozy, secret-filled early-1900s mansion during a house
   party where a murder has happened. A killer who leaves clues on purpose hides
@@ -46,6 +47,17 @@ Everything here is *your* game and *your* journey.
 
 <!-- Your game's version number. It climbs as modules make the game better.
      (Keep the number at the start of the first line, e.g. "0.2 — ...".) -->
+
+**0.7** — *Arrival at Thornwood Manor* (the Grand Foyer), made **deeper** by a
+panel of AI experts Eli summoned and curated (Module 9). Four upgrades built: the
+time is now **split across two clues** (candle = the hour, footman = the minutes),
+a **lying witness** contradicts the physical evidence (trust facts over words), the
+hidden **killer taunts** you as you search (and falls silent when you crack it), and
+the **foyer curdles colder and darker** with every clue you notice. Built on **0.6**
+(real AI art assets), **0.5** (his designer eye), **0.4** (art-directed look), **0.3**
+(prompt polish) and **0.2** (the hand-changed murder time 10:36). Bigger, tenser
+kept ideas (a connect-the-clues gate, a name-the-culprit lock, and a multi-beat
+ending) are saved for their own sessions in `design/expert-ideas.md`.
 
 **0.6** — *Arrival at Thornwood Manor* (the Grand Foyer), now with Eli's first
 **real AI-painted art assets** (★ Bonus Mission — Paint Your World): he directed
@@ -91,7 +103,7 @@ module makes the game better — that's the whole point of the journey.
 - [x] Module 6 — Speak AI Fluently
 - [x] Module 7 — Create Worlds
 - [x] Module 8 — Design Great Games
-- [ ] Module 9 — Summon the Experts
+- [x] Module 9 — Summon the Experts
 - [ ] Module 10 — Build the Next Room
 - [ ] Module 11 — Hunt Bugs
 - [ ] Module 12 — Cross Into the Real World
@@ -225,19 +237,36 @@ module makes the game better — that's the whole point of the journey.
 <!-- Unlocks when Module 8 is complete (opened by Dad 2026-07-08). Target: game
      climbs another version as the research winners get built in. -->
 
-- [ ] 1. Learn what we're doing & why — an expert team, why specialists beat one generalist, how it sharpens your craft (learn first)
-- [ ] 2. Decide what to improve — you pick what you want your game to be better at
-- [ ] 3. See the candidates — Claude shows possible experts/engineers/reviewers with full visibility on what each would do
-- [ ] 4. Pick your team — you choose who's in, why, and in what order (small + diverse)
-- [ ] 5. Summon one at a time — each expert reports; you decide take/tweak/skip before the next
-- [ ] 6. Build what you kept — the studio builds only your chosen changes in
-- [ ] 7. Play & verify — the game still solves and is sharper; version bump
-- [ ] 8. Achievement unlocked: Expert Summoner
+- [x] 1. Learn what we're doing & why — an expert team, why specialists beat one generalist, how it sharpens your craft (learn first)
+- [x] 2. Decide what to improve — you pick what you want your game to be better at
+- [x] 3. See the candidates — Claude shows possible experts/engineers/reviewers with full visibility on what each would do
+- [x] 4. Pick your team — you choose who's in, why, and in what order (small + diverse)
+- [x] 5. Summon one at a time — each expert reports; you decide take/tweak/skip before the next
+- [x] 6. Build what you kept — the studio builds only your chosen changes in
+- [x] 7. Play & verify — the game still solves and is sharper; version bump
+- [x] 8. Achievement unlocked: Expert Summoner
 
 ## Session Memory
 
 <!-- The story of your studio so far — newest first. (Shown on the dashboard.) -->
 
+- 🔮 **MODULE 9 COMPLETE — Expert Summoner unlocked. Game → Version 0.7.** Eli
+  stopped directing *one* AI and learned to command a **team.** Claude wore the
+  **Research Lead** hat and taught the craft first (what a sub-agent is, why a
+  *panel of specialists* beats one generalist, the three kinds of teammate —
+  researcher / reviewer / engineer — and that the real skill is **choosing who to
+  bring in and what to keep**). Then Eli named his goals in his own words —
+  *"it's too short, it has no ending, and it feels too simple"* — built a diverse
+  **4-expert team**, set the order, and summoned them **one at a time**, deciding
+  take/tweak/skip on each: a **Puzzle Designer** (add depth), a **Mystery-Game
+  Designer** (make it bigger), a **Detective-Fiction Writer** (an ending), and a
+  **Game Engineer** (how to build it). He kept a lot — then took the engineer's
+  honest scope advice and built the **safe, additive set** this session: the time
+  now **splits across two clues**, a **lying witness** must be caught, the **killer
+  taunts** you and goes silent when you win, and the **room curdles darker** with
+  every clue. The bigger, riskier ideas (a connect-the-clues gate, a name-the-killer
+  lock, a multi-beat ending) he kept for their own sessions (`design/expert-ideas.md`).
+  Every change verified: the case still solves. **Version 0.7.**
 - 🎨 **★ BONUS MISSION COMPLETE — "Paint Your World." Concept Artist unlocked. Game
   → Version 0.6.** Eli's game stopped being painted in *code* and got its first
   **real AI-made art assets** — and *he* directed every one (Claude wore the
@@ -372,26 +401,24 @@ module makes the game better — that's the whole point of the journey.
 
 <!-- Your exact next move. (Shown on the dashboard.) -->
 
-🎨 **★ BONUS MISSION COMPLETE, Director — you earned Concept Artist.** You directed
-AI to paint your game's first **real art assets** — a Grand Foyer background, a
-grandfather clock, the host's portrait, and the library statue — writing every
-image prompt yourself, choosing the best of **4** each time, and even directing
-revisions one dial at a time. Your game now uses real art files in `game/assets/`.
-**Version 0.6.**
+🔮 **MODULE 9 COMPLETE, Director — you earned Expert Summoner.** You learned to
+command a whole **team**: you named what your game needed (shorter → deeper → an
+ending), built a diverse 4-expert panel, summoned them **one at a time**, and
+decided take/tweak/skip on each. Then you took your engineer's honest scope advice
+and shipped the safe set — a two-clue time split, a lying witness, a taunting
+killer, and a room that curdles darker as you search. **Version 0.7.**
 
-🔮 **UP NEXT: MODULE 9 — "Summon the Experts."** Dad opened it, and it's your active
-numbered module now. You've been directing ONE AI — now command a whole **team.**
-You'll summon **research sub-agents** that go out in parallel and bring back the
-world's best ideas (what makes 2026 mystery games gripping, how great puzzles stay
-fair-but-hard, what makes a villain unforgettable). Then you do the Director's real
-job: **curate** — pick the winners that fit *your* game, reject the rest — and the
-studio builds them in. Bumps the game to **Version 0.7.** Open Claude Code and say:
+🏁 **YOU'VE NOW DONE EVERYTHING THAT'S OPEN — Modules 1–9 and the ★ Bonus.** Your
+game climbed **0.1 → 0.7**, all directed by you.
 
-> **"Start Module 9 — summon a research team to make my game better."**
+🔒 **What's next is up to Dad.** Modules **10–13 are sealed** (`DAD_OPENED_THROUGH = 9`).
+Two of your own plans are saved and waiting for when he opens them:
+- **`design/next-room.md`** — the candlelit **library + statue puzzle** you designed → built in **Module 10 (Build the Next Room).**
+- **`design/expert-ideas.md`** — the bigger expert ideas you kept but saved for their
+  own sessions: a **connect-the-clues** gate, a **name-the-culprit** lock, and your
+  **multi-beat ending** (Face-Off → name the clue → Dawn Breaks).
 
-🔒 **What else is next is up to Dad.** Modules **10–13 are sealed** until he opens
-them (`DAD_OPENED_THROUGH = 9`). Next after those: **Module 10 — Build the Next
-Room** (your library blueprint becomes *real*). Ask Dad when you want more unlocked.
+Ask Dad when you want more unlocked.
 
 **The run Dad opened — all done:**
 - **5 · Read the Machine** → read your code, first solo edit → **v0.2** ✅ DONE
@@ -449,6 +476,11 @@ perfectly, because the project remembered.
   choosing the best of 4 every time. Made four assets — a Grand Foyer background, a
   grandfather clock, the host's portrait, and the library statue — and crafted them
   into `game/assets/` and the game, including iterative revisions. Game → Version 0.6.
+- 🔮 **Expert Summoner** (2026-07-08) — Summoned a panel of AI specialist sub-agents
+  (Puzzle Designer, Mystery-Game Designer, Detective-Fiction Writer, Game Engineer),
+  one at a time, and curated their advice as Director — deciding take/tweak/skip on
+  each and taking the engineer's scope call. Built the chosen safe set (two-clue time
+  split, lying witness, killer taunts, reacting room). Game → Version 0.7.
 - 🕵️ **AI Tamer** (secret, 2026-07-06) — Eli directed the AI to build his vision
   *his* way: he combined three changes at once and the engineer delivered.
 - 🐛 **Bug Hunter** (secret, 2026-07-06) — Eli noticed the dashboard was wrong
@@ -465,6 +497,14 @@ perfectly, because the project remembered.
        - Lead Engineer · ⭐⭐⭐⭐☆ · Technically solid.
        - QA · ⭐⭐⭐☆☆ · Found two bugs.
        - Producer · ⭐⭐⭐⭐☆ · Excellent progress for Version 0.1. -->
+
+**Version 0.7 — Summon the Experts (Module 9, 2026-07-08)**
+- Creative Director (Eli) · ⭐⭐⭐⭐⭐ · Ran a 4-expert panel, curated take/tweak/skip on each, and made the scope call. Directing a team, not receiving a report.
+- Puzzle Designer · ⭐⭐⭐⭐⭐ · Split the time across two clues + a lying witness — the deduction is real assembly now, still fair.
+- Mystery-Game Designer · ⭐⭐⭐⭐☆ · Killer taunts + a reacting room turn a quiet search into a tense duel.
+- Game Engineer · ⭐⭐⭐⭐⭐ · Honest scope: shipped the safe additive set now, flagged the gated ideas for their own sessions so the game never broke.
+- QA · ⭐⭐⭐⭐⭐ · Verified: case still solves (candle+footman → 10:36), taunts escalate then fall silent, gloom capped so hotspots stay clickable, no console errors.
+- Producer · ⭐⭐⭐⭐⭐ · A deeper, tenser game from a curated team — and a written backlog of bigger ideas. Version 0.7.
 
 **Version 0.6 — Paint Your World (★ Bonus Mission, 2026-07-08)**
 - Creative & Art Director (Eli) · ⭐⭐⭐⭐⭐ · Directed four real AI art assets, wrote every prompt himself, chose best-of-4, and directed revisions like a pro.

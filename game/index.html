@@ -11,7 +11,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>One Night at Thornwood Manor — v0.6</title>
+  <title>One Night at Thornwood Manor — v0.7</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -36,7 +36,7 @@
       <div class="title-inner">
         <p class="kicker">Eli AI Game Studio presents</p>
         <h1>One Night at<br /><span class="gold">Thornwood Manor</span></h1>
-        <p class="subtitle">A detective mystery &middot; Version&nbsp;0.6</p>
+        <p class="subtitle">A detective mystery &middot; Version&nbsp;0.7</p>
         <button class="btn" id="begin-btn">Begin the night</button>
         <p class="hint">A killer is hiding among the guests. Notice what's off.</p>
       </div>
@@ -96,6 +96,11 @@
           <div class="vignette"></div>
         </div>
 
+        <!-- The creeping gloom: grows as the detective notices more clues
+             (Module 9 — "the room reacts"). Sits above the painting, below the
+             clickable hotspots, and ignores clicks. -->
+        <div class="gloom" id="gloom" aria-hidden="true"></div>
+
         <!-- Clickable things in the room. Each has a data-object name.
              The great clock is tucked into a shadowy corner and dimmed
              (class "dim") so it blends in — you have to notice it yourself. -->
@@ -144,6 +149,8 @@
         <div class="examine">
           <h2>Examine</h2>
           <p id="examine-text">You stand in the warm glow of the foyer. Click things to look closely, Detective.</p>
+          <!-- The hidden killer's whisper appears here as you search (Module 9). -->
+          <p id="taunt" class="taunt" aria-live="polite"></p>
           <!-- The brass dial appears here when you click the door. -->
           <div id="dial"></div>
         </div>
@@ -165,7 +172,7 @@
         <img class="teaser-art" src="assets/library-statue.png" alt="A marble statue waiting in the dark" />
         <p class="teaser-caption">Ahead, in the candlelight, a marble statue stands watch&hellip; and something about it is <em>wrong</em>.</p>
         <p class="win-tag">The night has only begun&hellip;</p>
-        <p class="version-note">That's <strong>Version&nbsp;0.6</strong> — with your first real AI-painted art assets, made by you.</p>
+        <p class="version-note">That's <strong>Version&nbsp;0.7</strong> — deeper and darker, built from a team of experts you summoned and curated.</p>
         <button class="btn" id="replay-btn">Play again</button>
       </div>
     </section>
