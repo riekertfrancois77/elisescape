@@ -361,6 +361,16 @@ function clickObject(object) {
     // struggle, so the time it shows can't be trusted. You have to NOTICE that.
     examine("The host's proud portrait looms above a side table — painted mid-toast, a goblet of deep red wine raised high in his right hand, his smile too pleased. Below it lies his gold pocket watch, smashed in the fall, its glass starred, the hands knocked crooked on their pin. Jarred as they are, they point somewhere near 10:41.");
     addClue("Pocket watch, hands jarred crooked — points near 10:41.");
+    // Show Eli's AI-painted host portrait up close (Bonus asset #3). The raised
+    // goblet here is the setup for the Module 8 library statue puzzle.
+    (function () {
+      const dial = document.getElementById("dial");
+      const art = document.createElement("img");
+      art.className = "examine-art";
+      art.src = "assets/host-portrait.png";
+      art.alt = "";
+      dial.appendChild(art);
+    })();
 
   } else if (object === "coats") {
     // CLUE 3 — the exact minute, but told LESS directly now. The footman was
