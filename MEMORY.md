@@ -8,14 +8,15 @@ Everything here is *your* game and *your* journey.
 ## Project State
 
 - **Creative Director:** Eli
-- **Current — TWO things open:** **★ BONUS MISSION — "Paint Your World"** (make
-  real 2D art with AI → v0.6) **and Module 9 — "Summon the Experts"** (command a
-  team of AI research sub-agents, curate the winners, build them in). Both were
-  opened by Dad (bonus 2026-07-08; Module 9 2026-07-08). Eli can do them in either
-  order. **Modules 1–8 are all complete** — Eli finished Dad's whole run (5–8),
-  earning Code Reader, AI Whisperer, World Builder, Game Designer, taking the game
-  to **Version 0.5**. Numbered Modules **10–13 stay sealed** until **Dad** opens
-  them (`DAD_OPENED_THROUGH = 9`). The next-room blueprint is in
+- **Current — active: Module 9 — "Summon the Experts"** (command a team of AI
+  research sub-agents, curate the winners, build them in). The **★ BONUS MISSION —
+  "Paint Your World" is now COMPLETE** — Eli earned **Concept Artist** by
+  directing AI to paint **four real 2D art assets** (a Grand Foyer background, a
+  grandfather clock, the host's portrait, and the library statue) and crafting
+  them into `game/assets/` and the game, taking it to **Version 0.6**. Both were
+  opened by Dad (bonus 2026-07-08; Module 9 2026-07-08). **Modules 1–8 are all
+  complete** (Dad's run 5–8 done). Numbered Modules **10–13 stay sealed** until
+  **Dad** opens them (`DAD_OPENED_THROUGH = 9`). The next-room blueprint is in
   `design/next-room.md`, ready to *build* in Module 10.
 - **Game concept:** ***One Night at Thornwood Manor*** — a famous detective is
   trapped one night in a cozy, secret-filled early-1900s mansion during a house
@@ -45,6 +46,16 @@ Everything here is *your* game and *your* journey.
 
 <!-- Your game's version number. It climbs as modules make the game better.
      (Keep the number at the start of the first line, e.g. "0.2 — ...".) -->
+
+**0.6** — *Arrival at Thornwood Manor* (the Grand Foyer), now with Eli's first
+**real AI-painted art assets** (★ Bonus Mission — Paint Your World): he directed
+the AI to paint **four** assets and crafted them in — a painterly **Grand Foyer
+background** (now the actual room), a **grandfather clock** and the **host's
+portrait** (shown up close in the Examine panel), and a **library statue** that
+teases his Module 8 next-room puzzle on the win screen. All live in
+`game/assets/`. Built on **0.5** (his game-designer eye), **0.4** (the look Eli
+art-directed), **0.3** (prompt polish) and **0.2** (the hand-changed murder time
+10:36). This number climbs every time a module makes the game better.
 
 **0.5** — *Arrival at Thornwood Manor* (the Grand Foyer), sharpened by Eli's own
 **game-designer eye** (Module 8): the host's foyer portrait now shows him
@@ -200,14 +211,14 @@ module makes the game better — that's the whole point of the journey.
 <!-- ★ BONUS MISSION — "Paint Your World" (Dad opened it 2026-07-08). Outside the
      numbered 13. Target: game climbs to Version 0.6. Ticked off as Eli goes. -->
 
-- [ ] 1. Meet the Concept Artist — real art files, made by AI you direct
-- [ ] 2. See where art lives — the new game/assets/ folder
-- [ ] 3. Learn the image-prompt formula (subject · style · composition · palette · lighting · no text)
-- [ ] 4. Worked example — turn a plain idea into a full prompt together, part by part
-- [ ] 5. Asset #1 — you write the prompt, generate 4, pick the best
-- [ ] 6. Assets #2, #3, #4 — art-direct, generate 4, choose (4 assets total)
-- [ ] 7. Drop all 4 into game/assets/ and wire them into the game
-- [ ] 8. Version bump → 0.6. Achievement unlocked: Concept Artist
+- [x] 1. Meet the Concept Artist — real art files, made by AI you direct
+- [x] 2. See where art lives — the new game/assets/ folder
+- [x] 3. Learn the image-prompt formula (subject · style · composition · palette · lighting · no text)
+- [x] 4. Worked example — turn a plain idea into a full prompt together, part by part
+- [x] 5. Asset #1 — you write the prompt, generate 4, pick the best
+- [x] 6. Assets #2, #3, #4 — art-direct, generate 4, choose (4 assets total)
+- [x] 7. Drop all 4 into game/assets/ and wire them into the game
+- [x] 8. Version bump → 0.6. Achievement unlocked: Concept Artist
 
 ## Module 9 Steps
 
@@ -227,6 +238,23 @@ module makes the game better — that's the whole point of the journey.
 
 <!-- The story of your studio so far — newest first. (Shown on the dashboard.) -->
 
+- 🎨 **★ BONUS MISSION COMPLETE — "Paint Your World." Concept Artist unlocked. Game
+  → Version 0.6.** Eli's game stopped being painted in *code* and got its first
+  **real AI-made art assets** — and *he* directed every one (Claude wore the
+  **Concept Artist** hat and only held the brush, via the **Canva** connector).
+  He learned that prompting for **pictures** is its own skill and mastered the
+  6-part image-prompt formula (**subject · style · composition · palette ·
+  lighting · what to leave out**), writing every prompt himself, seeing **4
+  options** each time, and choosing like a real art director. He made **four
+  assets**: a painterly **Grand Foyer** (now the game's real background, with the
+  clickables realigned onto the painting), a **grandfather clock** and the
+  **host's portrait** (shown up close in the Examine panel — the host raising the
+  goblet that sets up his statue puzzle), and the **library statue** teasing his
+  Module 8 next room on the win screen. He even directed *revisions* — turning one
+  dial at a time (cranked up the statue's "wrongness," then added its marble suit)
+  — real iterative art direction. Every step verified: the case still solves, the
+  clock stays hidden. His game finally uses real art files in `game/assets/` —
+  **Version 0.6.**
 - 🧩 **MODULE 8 COMPLETE — Game Designer unlocked. Game → Version 0.5.** The purest
   "Eli's brain first" module of the run: he **designed his next room and its puzzle
   entirely himself**, and Claude (the **Game Designer / critic** hat) only asked
@@ -344,37 +372,22 @@ module makes the game better — that's the whole point of the journey.
 
 <!-- Your exact next move. (Shown on the dashboard.) -->
 
-🧩 **MODULE 8 COMPLETE, Director — you earned Game Designer.** The hardest, most
-*you* module yet: you **designed your next room and its puzzle with your own head**
-— a candlelit library with a statue that must be made to match the host's portrait
-(a goblet of wine), sliding a hidden room open when you fix it. You **defended it
-under pressure**, kept it fair, and planted the setup into your live game.
-**Version 0.5.** Your blueprint is saved in `design/next-room.md`.
+🎨 **★ BONUS MISSION COMPLETE, Director — you earned Concept Artist.** You directed
+AI to paint your game's first **real art assets** — a Grand Foyer background, a
+grandfather clock, the host's portrait, and the library statue — writing every
+image prompt yourself, choosing the best of **4** each time, and even directing
+revisions one dial at a time. Your game now uses real art files in `game/assets/`.
+**Version 0.6.**
 
-🏁 **YOU'VE COMPLETED DAD'S WHOLE RUN (Modules 5–8).** Your game climbed from
-**0.1 → 0.5** — smarter, sharper, better-looking, and better-designed, all by
-*you*. A huge milestone, Director.
-
-★ **NEW: BONUS MISSION UNLOCKED — "Paint Your World."** Dad opened a special
-bonus (outside the 13). Until now your game's art was painted in *code* — now you
-learn to **make real 2D art with AI**: you'll master prompting for pictures, pick
-the best of **4** options every time, and craft **4 real art assets** into your
-game (they live in the new `game/assets/` folder). Bumps the game to **Version
-0.6.** Open Claude Code and say:
-
-> **"Start the Bonus Mission — I want to make real art for my game."**
-
-🔮 **NEW: MODULE 9 UNLOCKED — "Summon the Experts."** Dad opened it. You've been
-directing ONE AI — now command a whole **team.** You'll summon **research
-sub-agents** that go out in parallel and bring back the world's best ideas (what
-makes 2026 mystery games gripping, how great puzzles stay fair-but-hard, what makes
-a villain unforgettable). Then you do the Director's real job: **curate** — pick
-the winners that fit *your* game, reject the rest — and the studio builds them in.
-Open Claude Code and say:
+🔮 **UP NEXT: MODULE 9 — "Summon the Experts."** Dad opened it, and it's your active
+numbered module now. You've been directing ONE AI — now command a whole **team.**
+You'll summon **research sub-agents** that go out in parallel and bring back the
+world's best ideas (what makes 2026 mystery games gripping, how great puzzles stay
+fair-but-hard, what makes a villain unforgettable). Then you do the Director's real
+job: **curate** — pick the winners that fit *your* game, reject the rest — and the
+studio builds them in. Bumps the game to **Version 0.7.** Open Claude Code and say:
 
 > **"Start Module 9 — summon a research team to make my game better."**
-
-(You can do the Bonus and Module 9 in either order.)
 
 🔒 **What else is next is up to Dad.** Modules **10–13 are sealed** until he opens
 them (`DAD_OPENED_THROUGH = 9`). Next after those: **Module 10 — Build the Next
@@ -431,6 +444,11 @@ perfectly, because the project remembered.
   (fair + hard/clever), and defended the design under pressure-testing. Shipped a
   real improvement to the live game (planted the goblet setup in the foyer portrait,
   Version 0.5) and locked the blueprint in `design/next-room.md` for Module 10.
+- 🎨 **Concept Artist** (2026-07-08, ★ Bonus) — Directed AI to paint his game's first
+  **real 2D art assets** (via Canva), mastering the 6-part image-prompt formula and
+  choosing the best of 4 every time. Made four assets — a Grand Foyer background, a
+  grandfather clock, the host's portrait, and the library statue — and crafted them
+  into `game/assets/` and the game, including iterative revisions. Game → Version 0.6.
 - 🕵️ **AI Tamer** (secret, 2026-07-06) — Eli directed the AI to build his vision
   *his* way: he combined three changes at once and the engineer delivered.
 - 🐛 **Bug Hunter** (secret, 2026-07-06) — Eli noticed the dashboard was wrong
@@ -447,6 +465,13 @@ perfectly, because the project remembered.
        - Lead Engineer · ⭐⭐⭐⭐☆ · Technically solid.
        - QA · ⭐⭐⭐☆☆ · Found two bugs.
        - Producer · ⭐⭐⭐⭐☆ · Excellent progress for Version 0.1. -->
+
+**Version 0.6 — Paint Your World (★ Bonus Mission, 2026-07-08)**
+- Creative & Art Director (Eli) · ⭐⭐⭐⭐⭐ · Directed four real AI art assets, wrote every prompt himself, chose best-of-4, and directed revisions like a pro.
+- Concept Artist · ⭐⭐⭐⭐⭐ · Mastered the 6-part image-prompt formula; the four assets share one painterly, warm-but-eerie world.
+- Art Director (lens) · ⭐⭐⭐⭐⭐ · The foyer is now a real painting; the clock, host and statue all match the manor's gold/mahogany/crimson look.
+- QA · ⭐⭐⭐⭐⭐ · Verified headless after each asset: hotspots realigned to the painting, clock still hidden, case still solves, zero console errors.
+- Producer · ⭐⭐⭐⭐⭐ · Four real assets shipped into `game/assets/` and wired in — the game's biggest visual leap yet. Version 0.6.
 
 **Version 0.5 — The Designer's Eye (Module 8, 2026-07-07)**
 - Creative Director & Game Designer (Eli) · ⭐⭐⭐⭐⭐ · Designed the next room + puzzle himself and defended it; shipped the setup into the live game.

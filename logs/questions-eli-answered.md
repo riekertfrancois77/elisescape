@@ -6,6 +6,36 @@
 
 ---
 
+## 2026-07-08 — ★ Bonus Mission (Paint Your World)
+
+**Asset #1 — Grand Foyer background.** Subject: the Grand Foyer with all its objects
+**except the staircase** (*"all of them are good but the staircase"*). Style:
+painterly/cinematic/eerie. Composition: *"a wide eye level view of the room."*
+Palette: same gold/mahogany/crimson. Lighting: *"the fireplace makes you cozy but
+the darkness is around it from the moonlight."* Leave-out: no text, **but add
+people** (*"add some people in to make it feel more alive"* — true to the house
+party). **Chose option 3 of 4.**
+
+**Asset #2 — grandfather clock.** Subject (his words): *"tall with a round face and a
+long body with a long dangly thing [pendulum] down it, dark wood and brass."*
+Composition: *"straight forward,"* object alone. Warm firelight one side. **Chose
+option 2 of 4.**
+
+**Asset #3 — the murdered host's portrait.** A proud, powerful 1900s host raising a
+goblet of wine, waist-up, oil-painting style; *"make it so it's mainly warm light."*
+**Chose option 1 of 4.** (He asked to *see the images*, not just links — so from
+here we rendered every option as a viewable picture.)
+
+**Asset #4 — the library statue.** The Module 8 statue, deliberately WRONG:
+*"his hand is empty, he is facing the wrong way, and something about his arms are
+off."* He directed **two revisions**, one dial at a time: first *"1 is the best but
+make it have the things I was talking about"* (cranked up the wrongness), then
+*"give them a suit"* (added a marble suit). **Chose option 2 of the suited batch.**
+Wired onto the win screen as a next-room teaser. Earned **Concept Artist**; game →
+**Version 0.6.**
+
+---
+
 ## 2026-07-07 — Module 8 (Design Great Games)
 
 **Q (name what works):** Where does the answer 10:36 come from — could a player

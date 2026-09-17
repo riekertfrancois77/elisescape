@@ -144,6 +144,24 @@ h1 {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
 }
 
+/* Eli's AI-painted library statue, teased on the win screen (Bonus asset #4). */
+.teaser-art {
+  display: block;
+  width: 150px;
+  max-width: 45%;
+  margin: 14px auto 6px;
+  border: 1px solid #6b5325;
+  border-radius: 8px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.7);
+}
+.teaser-caption {
+  max-width: 32ch;
+  margin: 0 auto 6px;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #c9ac78;
+}
+
 .room-label {
   position: absolute;
   top: 14px;

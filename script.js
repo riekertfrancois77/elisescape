@@ -306,7 +306,7 @@ const STUDIO_STATUS = [
 // `node --check script.js` after editing this file — it catches exactly this.
 const FALLBACK_MEMORY = `
 ## Game Version
-**0.5** — Arrival at Thornwood Manor, sharpened by Eli's own game-designer eye: the foyer portrait now shows the host mid-toast with a raised goblet of wine — a setup Eli planted for his next room (a statue that must be made to match the portrait). Built on 0.4's art-directed look, 0.3's prompt polish and 0.2's murder time 10:36.
+**0.6** — Arrival at Thornwood Manor, now with Eli's first real AI-painted art assets (★ Bonus — Paint Your World): a painterly Grand Foyer background (the real room now), a grandfather clock and the host's portrait shown in the Examine panel, and a library statue teasing the next room on the win screen. Built on 0.5's designer eye, 0.4's art-directed look, 0.3's prompt polish and 0.2's murder time 10:36.
 
 ## Progress Tracker
 - [x] Module 1
@@ -368,6 +368,7 @@ const FALLBACK_MEMORY = `
 - [x] 6
 
 ## Session Memory
+- 🎨 **★ BONUS COMPLETE — "Paint Your World." Concept Artist unlocked. Game → Version 0.6.** Eli's game got its first **real AI-made art assets**, and *he* directed every one (Claude as Concept Artist, via the Canva connector). He mastered the 6-part image-prompt formula (subject · style · composition · palette · lighting · leave-out), wrote every prompt himself, and chose the best of **4** each time. Four assets: a painterly **Grand Foyer** (now the real background, clickables realigned onto it), a **grandfather clock** and the **host's portrait** (up close in the Examine panel), and the **library statue** teasing his Module 8 next room on the win screen. He even directed revisions one dial at a time. Every step verified — the case still solves, the clock stays hidden.
 - 🧩 **Module 8 COMPLETE — Game Designer unlocked. Game → Version 0.5.** The purest "Eli's brain first" module: he **designed his next room and its puzzle himself** while Claude (Game Designer / critic) only pressure-tested. He named his own puzzle rules — **FAIR** (findable clues, no guessing) and **HARD & CLEVER** (you earn the aha) — then designed a **candlelit library** with a **statue that matches the host's portrait but holds the wrong thing**; the player fixes what it holds (a **goblet of wine**) and a **hidden room slides open**. He defended its fairness himself (you can travel between rooms to re-check the portrait), shipped a real improvement to the live game (the foyer portrait now shows the raised goblet — the planted **setup**, Version 0.5), and locked the blueprint in \`design/next-room.md\` for Module 10.
 - 🎨 **Module 7 COMPLETE — World Builder unlocked. Game → Version 0.4.** Eli gave his game a **face** and art-directed all of it (Claude as Technical Artist). He chose the feeling first (*warm but wrong, grand and rich, a touch of creepy*) and a custom palette (**gold + mahogany + a bit of deep crimson**), then reacted and redirected pass after pass: a grand golden chandelier, gilded crown molding, a mantel-and-**chimney** fireplace lifted off the rug, a smaller gilded door, a coat rack with a draped cloak, a detailed crimson rug, and the great **grandfather clock** painted into its shadowy corner (kept dark so the puzzle stays fair). Then it came alive — flickering firelight, a breathing chandelier glow, and a warm low grand-hall drone. Every pass verified: the case still solves, the clock stays hidden.
 - 🗣️ **Module 6 COMPLETE — AI Whisperer unlocked. Game → Version 0.3.** Eli learned that **words are the controller.** Brain-first, he wrote his own polish prompts and sharpened each with a real WHY and clear LIMITS. Three landed and were verified headless: the cartoon 🔑/🔊 emojis gone (a drawn brass sound button now) and every floating emoji in the foyer replaced with a drawn object in the manor's own style — with the hall clock **still hidden** in its shadow and the puzzle still fair. His best prompt fenced off three things at once (still clickable · don't move anything · keep the clock hidden).
@@ -377,20 +378,17 @@ const FALLBACK_MEMORY = `
 - 🎮 **Module 2 COMPLETE** — a playable Version 0.1 of *One Night at Thornwood Manor* runs in the browser.
 - 🏆 Trophies so far: Creative Director, First Big Decision, Game Pillars Chosen, Studio Review Complete, Memory Created, One-Shot Power, First Playable, Director Mode, **Memory Keeper**, plus secret **AI Tamer** and **Bug Hunter**.
 - 🏁 **Dad's run (Modules 5–8) is COMPLETE** — **5 Read the Machine ✅ → 6 Speak AI Fluently ✅ → 7 Create Worlds ✅ → 8 Design Great Games ✅.** The game climbed 0.1 → 0.5, all by Eli.
-- ★ **BONUS unlocked — "Paint Your World"** — make real 2D art with AI (best-of-4), craft 4 assets into game/assets/ → v0.6.
+- ★ **BONUS COMPLETE — "Paint Your World"** — Eli made 4 real AI art assets (best-of-4) and crafted them into game/assets/ and the game → v0.6. **Concept Artist** unlocked.
 - 🔮 **MODULE 9 unlocked — "Summon the Experts"** — command a team of AI researchers, curate the winners, build them in.
 
 ## Claude Instructions
-🏁 **You finished Dad's whole run (Modules 5–8), Director** — your game climbed
-**0.1 → 0.5**, all by you. Two new things are open right now:
+🎨 **★ Bonus Mission COMPLETE, Director — you earned Concept Artist.** You directed
+AI to paint your game's first real art assets (foyer, clock, host, statue), wrote
+every prompt yourself, and chose best-of-4. Your game now uses real art files. **Version 0.6.**
 
-★ **BONUS — "Paint Your World":** make real 2D art with AI (you write the prompt,
-pick the best of 4) and craft **4 assets** into \`game/assets/\` → **v0.6.** Say:
-*"Start the Bonus Mission — I want to make real art for my game."*
-
-🔮 **MODULE 9 — "Summon the Experts":** command a whole **team** of AI researchers
-at once, curate the best ideas as Director, and build the winners into your game.
-Say: *"Start Module 9 — summon a research team to make my game better."*
+🔮 **UP NEXT: MODULE 9 — "Summon the Experts":** command a whole **team** of AI
+researchers at once, curate the best ideas as Director, and build the winners into
+your game → **v0.7.** Say: *"Start Module 9 — summon a research team to make my game better."*
 
 Modules 10–13 stay sealed until **Dad** opens them.
 `;
@@ -410,7 +408,7 @@ const FALLBACK_ACHIEVEMENTS = `
 - [x] **AI Whisperer**
 - [x] **World Builder**
 - [x] **Game Designer**
-- [ ] **Concept Artist**
+- [x] **Concept Artist**
 - [ ] **Expert Summoner**
 
 ## Secret Achievements

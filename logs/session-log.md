@@ -6,6 +6,33 @@
 
 ---
 
+## ★ Bonus Mission — Paint Your World (COMPLETE · 2026-07-08)
+
+Claude wore the **Concept Artist** hat, but *I* was the Art Director. This was the
+first time my game got **real art** — actual picture files, not shapes drawn in
+code. I learned that asking an AI for a *picture* is its own skill.
+
+- **The formula.** Every good image prompt has 6 parts: **subject, style,
+  composition, palette, lighting, and what to leave OUT.** I wrote every prompt
+  myself and picked the best of **4** every time.
+- **Asset #1 — the Grand Foyer background.** A painterly, warm-but-wrong room with
+  a chandelier, fireplace, the host's portrait, and guests in the shadows. It's the
+  real background of my game now, and we moved the clickable spots to line up with
+  it.
+- **Asset #2 — the grandfather clock.** Dark wood and brass. It shows up close in
+  the Examine panel when you inspect the clock.
+- **Asset #3 — the murdered host's portrait.** Him raising his goblet of wine —
+  the exact clue for my Module 8 statue puzzle. Shows up when you look at the
+  portrait.
+- **Asset #4 — the library statue.** The statue from the room I designed, on
+  purpose WRONG (empty hand, facing the wrong way, off arms). I made it better by
+  changing **one thing at a time** — first cranked up the wrongness, then gave it a
+  marble suit. It teases my next room on the win screen.
+- Four real assets live in `game/assets/` now, and the game still solves. My game
+  climbed to **Version 0.6.** Earned the **Concept Artist** trophy. 🎨
+
+---
+
 ## Module 8 — Design Great Games (COMPLETE · 2026-07-07)
 
 Claude wore the **Game Designer** hat — but only as my *critic*. This was the
