@@ -398,6 +398,13 @@ function handleClock() {
   const dial = document.getElementById("dial");
   dial.innerHTML = ""; // start fresh
 
+  // Show Eli's AI-painted grandfather clock up close (Bonus asset #2).
+  const art = document.createElement("img");
+  art.className = "examine-art";
+  art.src = "assets/grandfather-clock.png";
+  art.alt = "";
+  dial.appendChild(art);
+
   const input = document.createElement("input");
   input.type = "text";
   input.inputMode = "numeric";

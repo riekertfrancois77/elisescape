@@ -132,6 +132,18 @@ h1 {
    room. (Kept in the HTML so we can flip back any time.) */
 .scene { display: none; }
 
+/* Eli's AI-painted grandfather clock shown up close in the Examine panel when
+   the detective inspects the clock (Bonus asset #2). */
+.examine-art {
+  display: block;
+  width: 150px;
+  max-width: 60%;
+  margin: 10px auto 4px;
+  border: 1px solid #6b5325;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+}
+
 .room-label {
   position: absolute;
   top: 14px;
